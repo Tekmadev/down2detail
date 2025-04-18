@@ -55,17 +55,17 @@ const Navigation = () => {
                   <NavLink key={item.href} href={item.href}>
                     {item.label}
                   </NavLink>
-                );
+                )
               }
-              // Service dropdown
+              // SErvice dropdown
               if (item.label === "Services") {
                 return (
-                  <MenuItem
-                    key={item.href}
-                    setActive={handleSetActive}
-                    active={activeItem}
-                    item={item.label}
-                    label={item.label}
+                  <MenuItem 
+                  key={item.href} 
+                  setActive={handleSetActive}
+                  active={activeItem}
+                  item={item.label}
+                  label={item.label}
                   >
                     <div className="grid grid-cols-2 gap-6 min-w-[400px]">
                       {Object.entries(servicesByCategory).map(
