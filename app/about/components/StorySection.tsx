@@ -9,7 +9,7 @@ export default function StorySection() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#d6781c]/20 rounded-full"></div>
               <Image
-                src="/images/Auto-Detailing.png"
+                src="/images/shutHero.jpg"
                 alt="Down2Detail working on luxury vehicles"
                 width={600}
                 height={450}
