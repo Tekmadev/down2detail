@@ -114,28 +114,28 @@ export default function Approach() {
 
             <div className="grid grid-cols-2 gap-4">
                 <Image
-                src="/images/services/full-detailing.jpg"
+                src="/images/services-detailing/interior.jpeg"
                 alt="Interior Detailing"
                 width={300}
                 height={400}
                 className="rounded-lg shadow-md w-full h-auto object-cover"
                 />
                 <Image
-                src="/images/services/paint-correction.jpg"
+                src="images/services-detailing/paint.jpg"
                 alt="Paint Correction"
                 width={300}
                 height={350}
                 className="rounded-lg shadow-md w-full h-auto object-cover mt-12"
                 />
                 <Image
-                src="/images/services/ceramic-coating.jpg"
+                src="images/services-detailing/cleaning-engine.webp"
                 alt="Ceramic Coating"
                 width={300}
                 height={400}
                 className="rounded-lg shadow-md w-full h-auto object-cover mt-12"
                 />
                 <Image
-                src="/images/services/engine-bay.jpg"
+                src="/images/services-detailing/gloss.jpg"
                 alt="Engine Bay Detailing"
                 width={300}
                 height={350}

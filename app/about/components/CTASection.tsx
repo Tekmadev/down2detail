@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTASection() {
     return (
-        <section className="py-16 md:py-24 bg-[#d6781c]/10">
+        <section className="py-16 md:py-24 bg-[#89807a]/20">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
           Ready to Transform Your Space?
@@ -18,12 +18,6 @@ export default function CTASection() {
             className="px-8 py-3 bg-[#d6781c] text-white font-medium rounded-lg hover:bg-[#c2410c] transition-colors duration-300"
           >
             Get a Free Consultation
-          </Link>
-          <Link
-            href="/gallery"
-            className="px-8 py-3 border-2 border-[#d6781c] text-[#d6781c] font-medium rounded-lg hover:bg-[#d6781c] hover:text-white transition-colors duration-300"
-          >
-            View Our Work
           </Link>
         </div>
       </div>
