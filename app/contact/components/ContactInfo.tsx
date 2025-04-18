@@ -91,7 +91,7 @@ export default function ContactInfo() {
             <h3 className="font-semibold text-secondary">Email</h3>
             <p className="text-secondary-light mt-1">
               <a
-                href="mailto:precisioncontractinginfo@gmail.com"
+                href="mailto:down2detail.ca@gmail.com"
                 className="hover:text-[#d6781c] transition-colors break-words"
               >
                 down2detail.ca@gmail.com
