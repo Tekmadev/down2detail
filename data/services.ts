@@ -4,7 +4,6 @@ export type Service = {
     href: string;
     category?: string;
     shortDescription: string;
-    longDescription: string;
     features: string[];
     benefits: string[];
     price: number;
@@ -16,46 +15,13 @@ export type Service = {
     faqs?: Array<{ question: string; answer: string }>;
   };
   
-  export const services: Service[] = [
-    {
-      id: "exterior-wash-wax",
-      label: "Exterior Wash & Wax",
-      href: "/services/exterior-wash-wax",
-      category: "Exterior Detailing",
-      shortDescription: "Exterior revitalization with wax and protection.",
-      longDescription: "Revitalize your vehicle’s exterior with meticulous detailing including paint correction, waxing, and sealant application for lasting shine and protection.",
-      features: ["Paint-safe hand wash", "Clay bar treatment", "Premium wax finish"],
-      benefits: ["Protects paint", "Boosts shine", "Enhances resale value"],
-      description:
-        "Revitalize your vehicle’s exterior with our meticulous detailing services, including paint correction, waxing, and professional sealant application for lasting shine and protection.",
-      imageShowcase: "/images/services-detailing/wash.jpg",
-      price: 119.99,
-      currency: "CAD",
-      image: "/images/services/wash-wax.jpg",
-    },
-    {
-      id: "interior-detailing",
-      label: "Interior Detailing",
-      href: "/services/interior-detailing",
-      category: "Interior Detailing",
-      shortDescription: "Stain extraction, deep clean and protection inside.",
-      longDescription: "We target and remove stains from carpets, seats, and other surfaces. Includes deodorizing and protective finish.",
-      features: ["Stain extraction", "Vacuuming", "Interior surface protection"],
-      benefits: ["Removes odors", "Cleans deeply", "Protects interior materials"],
-      description:
-        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We’ll target and remove stains from your carpets, fabric seats, and other surfaces.",
-      imageShowcase: "/images/services-detailing/interior.jpeg",
-      price: 149.99 - 279.99,
-      currency: "CAD",
-      image: "/images/services/interior-detailing.jpg"
-    },
+  export const PremiumServices: Service[] = [
     {
       id: "interior-exterior-detailing",
       label: "Int. & Ext. Detailing",
       href: "/services/interior-exterior-detailing",
       category: "Interior Detailing",
       shortDescription: "Full-service detailing for the entire vehicle.",
-      longDescription: "Complete cleaning and protection package for both interior and exterior surfaces.",
       features: ["Full interior + exterior", "Vacuum & shampoo", "Wax & sealant"],
       benefits: ["All-in-one service", "Restores vehicle condition", "Time-saving bundle"],
       description:
@@ -71,7 +37,84 @@ export type Service = {
       href: "/services/gloss-enhancer",
       category: "Exterior Detailing",
       shortDescription: "Paint decontamination and gloss boosting.",
-      longDescription: "Deep Clean paint service removing airborne contaminants, brake dust, and rail dust while enhancing gloss.",
+      features: ["Paint decontamination", "Gloss enhancer", "Brake dust removal"],
+      benefits: ["Ultra clean surface", "Brilliant finish", "Better coating adherence"],
+      description:
+        "Enhance the appearance of your vehicle with our Deep Clean paint service, which eliminates stubborn contaminants like airborne compounds, brake dust, and rail dust while also boosting shine of the car.",
+      imageShowcase: "/images/services-detailing/gloss.jpg",
+      price: 369.99,
+      currency: "CAD",
+      image: "/images/services/gloss-enhancer.jpg"
+    },
+    {
+      id: "engine-bay-cleaning",
+      label: "Engine Bay Cleaning",
+      href: "/services/engine-bay-cleaning",
+      category: "Interior Detailing",
+      shortDescription: "Degrease and detail your engine area.",
+      features: ["Degreasing", "Steam clean", "Safe rinse"],
+      benefits: ["Improves resale value", "Spot problems early", "Better engine cooling"],
+      description:
+        "Revitalize your car’s engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
+      imageShowcase: "/images/services-detailing/Cleaning-engine.webp",
+      price: 109.99,
+      currency: "CAD",
+      image: "/images/services/engine-bay.jpg"
+    },
+  ]
+
+  export const services: Service[] = [
+    {
+      id: "exterior-wash-wax",
+      label: "Exterior Wash & Wax",
+      href: "/services/exterior-wash-wax",
+      category: "Exterior Detailing",
+      shortDescription: "Exterior revitalization with wax and protection.",
+      features: ["Paint-safe hand wash", "Clay bar treatment", "Premium wax finish"],
+      benefits: ["Protects paint", "Boosts shine", "Enhances resale value"],
+      description:
+        "Revitalize your vehicle’s exterior with our meticulous detailing services, including paint correction, waxing, and professional sealant application for lasting shine and protection.",
+      imageShowcase: "/images/services-detailing/wash.jpg",
+      price: 119.99,
+      currency: "CAD",
+      image: "/images/services/wash-wax.jpg",
+    },
+    {
+      id: "interior-detailing",
+      label: "Interior Detailing",
+      href: "/services/interior-detailing",
+      category: "Interior Detailing",
+      shortDescription: "Stain extraction, deep clean and protection inside.",
+      features: ["Stain extraction", "Vacuuming", "Interior surface protection"],
+      benefits: ["Removes odors", "Cleans deeply", "Protects interior materials"],
+      description:
+        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We’ll target and remove stains from your carpets, fabric seats, and other surfaces.",
+      imageShowcase: "/images/services-detailing/interior.jpeg",
+      price: 149.99 - 279.99,
+      currency: "CAD",
+      image: "/images/services/interior-detailing.jpg"
+    },
+    {
+      id: "interior-exterior-detailing",
+      label: "Int. & Ext. Detailing",
+      href: "/services/interior-exterior-detailing",
+      category: "Interior Detailing",
+      shortDescription: "Full-service detailing for the entire vehicle.",
+      features: ["Full interior + exterior", "Vacuum & shampoo", "Wax & sealant"],
+      benefits: ["All-in-one service", "Restores vehicle condition", "Time-saving bundle"],
+      description:
+        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We’ll target and remove stains from your carpets, fabric seats, and other surfaces.",
+      imageShowcase: "/images/services-detailing/intext.jpg",
+      price: 129.99,
+      currency: "CAD",
+      image: "/images/services/full-detailing.jpg"
+    },
+    {
+      id: "gloss-enhancer",
+      label: "Gloss Enhancer",
+      href: "/services/gloss-enhancer",
+      category: "Exterior Detailing",
+      shortDescription: "Paint decontamination and gloss boosting.",
       features: ["Paint decontamination", "Gloss enhancer", "Brake dust removal"],
       benefits: ["Ultra clean surface", "Brilliant finish", "Better coating adherence"],
       description:
@@ -87,7 +130,6 @@ export type Service = {
       href: "/services/one-step-polish",
       category: "Interior Detailing",
       shortDescription: "Removes 50%-70% of swirls and scratches.",
-      longDescription: "Our polish removes major surface defects for a clearer and shinier finish.",
       features: ["Cut + polish combo", "Gloss restoration", "Swirl reduction"],
       benefits: ["Improves appearance", "Cost-effective solution", "Quick result"],
       description:
@@ -103,7 +145,6 @@ export type Service = {
       href: "/services/paint-correction",
       category: "Exterior Detailing",
       shortDescription: "Up to 90% paint imperfection removal.",
-      longDescription: "High-end correction using compound and polish to restore clarity and color depth.",
       features: ["Multi-stage correction", "Professional polishing", "Paint restoration"],
       benefits: ["Like-new paint look", "Removes major defects", "Prepares for ceramic coating"],
       description:
@@ -119,7 +160,6 @@ export type Service = {
       href: "/services/ceramic-coating",
       category: "Exterior Detailing",
       shortDescription: "Durable nano-coating for long-term surface protection.",
-      longDescription: "Protect your paint, glass, wheels, and plastics with ceramic coating technology that lasts 1-4 years.",
       features: ["Hydrophobic protection", "UV & chemical resistance", "Lasts up to 4 years"],
       benefits: ["Easier cleaning", "Enhanced shine", "Long-term value"],
       description:
@@ -135,7 +175,6 @@ export type Service = {
       href: "/services/engine-bay-cleaning",
       category: "Interior Detailing",
       shortDescription: "Degrease and detail your engine area.",
-      longDescription: "Remove built-up grime, oil, and debris to improve appearance and prevent deterioration.",
       features: ["Degreasing", "Steam clean", "Safe rinse"],
       benefits: ["Improves resale value", "Spot problems early", "Better engine cooling"],
       description:
@@ -151,7 +190,6 @@ export type Service = {
       href: "/services/headlight-restoration",
       category: "Exterior Detailing",
       shortDescription: "Restore clarity and visibility in headlights.",
-      longDescription: "Remove oxidation, yellowing and cloudiness for safer driving and modern appearance.",
       features: ["Sanding & polishing", "UV sealant", "Improves beam output"],
       benefits: ["Better night vision", "Saves replacement costs", "Increases safety"],
       description:
@@ -167,7 +205,6 @@ export type Service = {
       href: "/services/headlight-tint",
       category: "Exterior Detailing",
       shortDescription: "Protect headlights from UV damage.",
-      longDescription: "Reduce glare and improve visibility with a headlight tint that lasts up to 5 years.",
       features: ["UV protection", "Glare reduction", "Improves beam output"],
       benefits: ["Better night vision", "Saves replacement costs", "Increases safety"],
       description:
@@ -183,7 +220,6 @@ export type Service = {
       href: "/services/leather-seat-treatment",
       category: "Interior Detailing",
       shortDescription: "Condition and protect your leather seats.",
-      longDescription: "Deep clean and nourish leather surfaces to prevent drying and cracking.",
       features: ["Leather cleaner", "Premium conditioner", "UV protection"],
       benefits: ["Preserves softness", "Prevents aging", "Restores appearance"],
       description:
@@ -195,3 +231,20 @@ export type Service = {
     }
   ];
   
+  export function getServiceById(id :String): Service | undefined {
+    return services.find((service) => service.id === id);
+  }
+
+  export function getServicesByCategory(category:string): Service[]{
+    return services.filter((service) => service.category === category);
+  }
+
+  export function getAllServiceCategories(): string[] {
+    const categories = new Set<string>();
+    services.forEach((service) => {
+      if(service.category){
+        categories.add(service.category);
+      }
+    });
+    return Array.from(categories);
+  }
