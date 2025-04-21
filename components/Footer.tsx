@@ -7,6 +7,7 @@ import FooterLink from "./ui/FooterLink";
 import { services } from "../data/services";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/data/navigation";
+import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -28,15 +29,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1">
             <div className="mb-6">
-              <Link href="/" className="inline-block">
-                <Image
-                  src="/images/Logo.png"
-                  alt="Down2Detail Logo"
-                  width={150}
-                  height={78}
-                  className="mb-4"
-                />
-              </Link>
+              <LogoWithSpinningDs
+                logoWidth={80}
+                logoHeight={80}
+                textSize="text-2xl"
+                className="inline-block"
+              />
               <p className="text-secondary mb-4">
                 Your trusted partner for all auto detailing needs.
               </p>
@@ -155,12 +153,15 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="pt-8 mt-8 border-t border-gray-300 text-center">
           <p className="text-secondary">
-            &copy; {new Date().getFullYear()} Down2Detail.
-            All rights reserved.
+            &copy; {new Date().getFullYear()} Down2Detail. All rights reserved.
           </p>
           <p className="text-secondary mt-2">
             Developed by{" "}
-            <a href="https://www.tekmadev.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.tekmadev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Tekmadev
             </a>
           </p>
