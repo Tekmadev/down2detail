@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navigation } from "../data/navigation";
 import NavLink from "./ui/NavLink";
+import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,20 +29,8 @@ const Navigation = () => {
   return (
     <nav className="bg-white shadow-md py-4 px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-left">
-        <Link href="/" className="flex items-center">
-          <div className="relative w-32 h-18 flex items-center">
-            <Image
-              src="/images/Logo.png"
-              alt="Down2Detail Logo"
-              width={90}
-              height={105}
-              className="object-contain"
-              priority
-            />
-          </div>
-        </Link>
+        <LogoWithSpinningDs logoWidth={90} logoHeight={90} />
 
-        
         <div className="hidden md:flex items-center space-x-6 ">
           {navigation.map((item) => (
             <NavLink key={item.href} href={item.href}>
@@ -51,12 +40,11 @@ const Navigation = () => {
           <Link
             href="/book"
             className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
-            >
+          >
             Book Now
-        </Link>
+          </Link>
         </div>
 
-        
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -89,7 +77,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
