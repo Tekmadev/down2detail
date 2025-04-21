@@ -2,87 +2,87 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-    {
-      id: "exterior-wash-wax",
-      title: "Exterior Wash & Wax",
-      description:
-        "Revitalize your vehicle’s exterior with our meticulous detailing services, including paint correction, waxing, and professional sealant application for lasting shine and protection.",
-      image: "/images/services/wash-wax.jpg",
-      href: "/services/exterior-wash-wax",
-    },
-    {
-      id: "interior-detailing",
-      title: "Interior Detailing",
-      description:
-        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We’ll target and remove stains from your carpets, fabric seats, and other surfaces.",
-      image: "/images/services/interior-detailing.jpg",
-      href: "/services/interior-detailing",
-    },
-    {
-      id: "interior-exterior-detailing",
-      title: "Int. & Ext. Detailing",
-      description:
-        "Our interior and exterior detailing service rejuvenates your car’s interior and exterior.",
-      image: "/images/services/full-detailing.jpg",
-      href: "/services/interior-exterior-detailing",
-    },
-    {
-      id: "gloss-enhancer",
-      title: "Gloss Enhancer",
-      description:
-        "Enhance the appearance of your vehicle with our Deep Clean paint service, which eliminates stubborn contaminants like airborne compounds, brake dust, and rail dust while also boosting shine of the car.",
-      image: "/images/services/gloss-enhancer.jpg",
-      href: "/services/gloss-enhancer",
-    },
-    {
-      id: "one-step-polish",
-      title: "One Step Polish",
-      description:
-        "With our exceptional services, we can effectively eliminate 50%-70% of scratches and swirls, leaving your car with a flawless, glossy finish.",
-      image: "/images/services/one-step-polish.jpg",
-      href: "/services/one-step-polish",
-    },
-    {
-      id: "paint-correction",
-      title: "Paint Correction",
-      description:
-        "Elevate your vehicle’s appearance with our professional auto detailing techniques and high-quality products, eliminating up to 90% of imperfections on your car’s paint.",
-      image: "/images/services/paint-correction.jpg",
-      href: "/services/paint-correction",
-    },
-    {
-      id: "ceramic-coating",
-      title: "Ceramic Coating",
-      description:
-        "Experience the ultimate protection and enhancement for your car’s paint, wheels, windows, plastics, and leathers with our advanced ceramic coating. Lasts up to 1–4 years.",
-      image: "/images/services/ceramic-coating.jpg",
-      href: "/services/ceramic-coating",
-    },
-    {
-      id: "engine-bay-cleaning",
-      title: "Engine Bay Cleaning",
-      description:
-        "Revitalize your car’s engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
-      image: "/images/services/engine-bay.jpg",
-      href: "/services/engine-bay-cleaning",
-    },
-    {
-      id: "headlight-restoration",
-      title: "Headlight Restoration",
-      description:
-        "Enhance visibility and aesthetics with our headlight restoration, addressing cloudiness and yellowing to improve both safety and the overall look of your vehicle.",
-      image: "/images/services/headlight-restoration.jpg",
-      href: "/services/headlight-restoration",
-    },
-    {
-      id: "leather-seat-treatment",
-      title: "Leather Seat Treatment",
-      description:
-        "Indulge in luxurious leather seat treatment, including thorough cleaning and conditioning to preserve your vehicle’s leather upholstery.",
-      image: "/images/services/leather-treatment.jpg",
-      href: "/services/leather-seat-treatment",
-    },
-  ];
+  {
+    id: "exterior-wash-wax",
+    title: "Exterior Wash & Wax",
+    description:
+      "Revitalize your vehicle's exterior with our meticulous detailing services, including paint correction, waxing, and professional sealant application for lasting shine and protection.",
+    image: "/images/services/wash-wax.jpg",
+    href: "/services/exterior-wash-wax",
+  },
+  {
+    id: "interior-detailing",
+    title: "Interior Detailing",
+    description:
+      "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We'll target and remove stains from your carpets, fabric seats, and other surfaces.",
+    image: "/images/services/interior-detailing.jpg",
+    href: "/services/interior-detailing",
+  },
+  {
+    id: "interior-exterior-detailing",
+    title: "Int. & Ext. Detailing",
+    description:
+      "Our interior and exterior detailing service rejuvenates your car's interior and exterior.",
+    image: "/images/services/full-detailing.jpg",
+    href: "/services/interior-exterior-detailing",
+  },
+  {
+    id: "gloss-enhancer",
+    title: "Gloss Enhancer",
+    description:
+      "Enhance the appearance of your vehicle with our Deep Clean paint service, which eliminates stubborn contaminants like airborne compounds, brake dust, and rail dust while also boosting shine of the car.",
+    image: "/images/services/gloss-enhancer.jpg",
+    href: "/services/gloss-enhancer",
+  },
+  {
+    id: "one-step-polish",
+    title: "One Step Polish",
+    description:
+      "With our exceptional services, we can effectively eliminate 50%-70% of scratches and swirls, leaving your car with a flawless, glossy finish.",
+    image: "/images/services/one-step-polish.jpg",
+    href: "/services/one-step-polish",
+  },
+  {
+    id: "paint-correction",
+    title: "Paint Correction",
+    description:
+      "Elevate your vehicle's appearance with our professional auto detailing techniques and high-quality products, eliminating up to 90% of imperfections on your car's paint.",
+    image: "/images/services/paint-correction.jpg",
+    href: "/services/paint-correction",
+  },
+  {
+    id: "ceramic-coating",
+    title: "Ceramic Coating",
+    description:
+      "Experience the ultimate protection and enhancement for your car's paint, wheels, windows, plastics, and leathers with our advanced ceramic coating. Lasts up to 1–4 years.",
+    image: "/images/services/ceramic-coating.jpg",
+    href: "/services/ceramic-coating",
+  },
+  {
+    id: "engine-bay-cleaning",
+    title: "Engine Bay Cleaning",
+    description:
+      "Revitalize your car's engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
+    image: "/images/services/engine-bay.jpg",
+    href: "/services/engine-bay-cleaning",
+  },
+  {
+    id: "headlight-restoration",
+    title: "Headlight Restoration",
+    description:
+      "Enhance visibility and aesthetics with our headlight restoration, addressing cloudiness and yellowing to improve both safety and the overall look of your vehicle.",
+    image: "/images/services/headlight-restoration.jpg",
+    href: "/services/headlight-restoration",
+  },
+  {
+    id: "leather-seat-treatment",
+    title: "Leather Seat Treatment",
+    description:
+      "Indulge in luxurious leather seat treatment, including thorough cleaning and conditioning to preserve your vehicle's leather upholstery.",
+    image: "/images/services/leather-treatment.jpg",
+    href: "/services/leather-seat-treatment",
+  },
+];
 
 const Services = () => {
   return (
@@ -118,22 +118,7 @@ const Services = () => {
                   {service.title}
                 </h4>
                 <p className="text-secondary-light mb-4">
-                  {service.id === "carpet-cleaning" ? (
-                    <>
-                      {service.description}
-                      <a
-                        href={service.link?.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#d6781c] font-medium hover:underline"
-                      >
-                        {service.link?.text}
-                      </a>
-                      {" for specialized cleaning services."}
-                    </>
-                  ) : (
-                    service.description
-                  )}
+                  {service.description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 mt-4">
                   <Link
