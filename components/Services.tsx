@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { services } from "@/data/services";
+import { PremiumServices } from "@/data/services";
 
 const Services = () => {
   return (
@@ -17,7 +17,7 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service) => (
+          {PremiumServices.map((service) => (
             <div
               key={service.id}
               className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
