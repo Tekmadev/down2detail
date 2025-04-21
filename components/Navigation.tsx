@@ -33,7 +33,6 @@ const Navigation = () => {
     return acc;
   }, {} as Record<string, typeof services>);
 
-
   const handleSetActive = (item: string | null) => {
     setActiveItem(item);
   };
@@ -56,48 +55,45 @@ const Navigation = () => {
                   <NavLink key={item.href} href={item.href}>
                     {item.label}
                   </NavLink>
-                )
+                );
               }
-              // SErvice dropdown
+              // Service dropdown
               if (item.label === "Services") {
                 return (
-                  <MenuItem 
-                  key={item.href} 
-                  setActive={handleSetActive}
-                  active={activeItem}
-                  item={item.label}
-                  label={item.label}
+                  <MenuItem
+                    key={item.href}
+                    setActive={handleSetActive}
+                    active={activeItem}
+                    item={item.label}
+                    label={item.label}
                   >
                     <div className="grid grid-cols-2 gap-6 min-w-[400px]">
                       {Object.entries(servicesByCategory).map(
                         ([category, categoryServices]) => (
                           <CategorySection key={category} title={category}>
                             {categoryServices.map((service) => (
-                              <NavMenuLink key={service.href} href={service.href}>
+                              <NavMenuLink
+                                key={service.href}
+                                href={service.href}
+                              >
                                 {service.label}
                               </NavMenuLink>
                             ))}
                           </CategorySection>
                         )
                       )}
-                        
-
                     </div>
                   </MenuItem>
-                )
+                );
               }
             })}
             <Link
               href="/book"
               className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
-              >
+            >
               Book Now
             </Link>
-
-
-
           </Menu>
-          
         </div>
 
         <div className="md:hidden">
