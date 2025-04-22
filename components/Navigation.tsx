@@ -9,6 +9,7 @@ import NavLink from "./ui/NavLink";
 import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
 import { Menu, MenuItem, NavMenuLink, CategorySection } from "./ui/navbar-menu";
 import { services } from "@/data/services";
+import CalendlyPopText from "./CalendlyPopText";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -96,7 +97,6 @@ const Navigation = () => {
             </Link>
           </Menu>
         </div>
-
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
