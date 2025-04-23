@@ -89,12 +89,7 @@ const Navigation = () => {
                 );
               }
             })}
-            <Link
-              href="/book"
-              className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
-            >
-              Book Now
-            </Link>
+            <CalendlyPopText/>
           </Menu>
         </div>
         <div className="md:hidden">
