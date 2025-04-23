@@ -7,9 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { navigation } from "../data/navigation";
 import NavLink from "./ui/NavLink";
 import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
+import { Menu, MenuItem, NavMenuLink, CategorySection } from "./ui/navbar-menu";
+import { services } from "@/data/services";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,6 +23,19 @@ const Navigation = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const servicesByCategory = services.reduce((acc, service) => {
+    const category = service.category || "Other";
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(service);
+    return acc;
+  }, {} as Record<string, typeof services>);
+
+  const handleSetActive = (item: string | null) => {
+    setActiveItem(item);
+  };
 
   const mobileMenuVariants = {
     hidden: { opacity: 0, height: 0, transition: { duration: 0.2 } },
@@ -32,17 +48,52 @@ const Navigation = () => {
         <LogoWithSpinningDs logoWidth={90} logoHeight={90} />
 
         <div className="hidden md:flex items-center space-x-6 ">
-          {navigation.map((item) => (
-            <NavLink key={item.href} href={item.href}>
-              {item.label}
-            </NavLink>
-          ))}
-          <Link
-            href="/book"
-            className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
-          >
-            Book Now
-          </Link>
+          <Menu setActive={handleSetActive}>
+            {navigation.map((item) => {
+              if (item.label !== "Services") {
+                return (
+                  <NavLink key={item.href} href={item.href}>
+                    {item.label}
+                  </NavLink>
+                );
+              }
+              // Service dropdown
+              if (item.label === "Services") {
+                return (
+                  <MenuItem
+                    key={item.href}
+                    setActive={handleSetActive}
+                    active={activeItem}
+                    item={item.label}
+                    label={item.label}
+                  >
+                    <div className="grid grid-cols-2 gap-6 min-w-[400px]">
+                      {Object.entries(servicesByCategory).map(
+                        ([category, categoryServices]) => (
+                          <CategorySection key={category} title={category}>
+                            {categoryServices.map((service) => (
+                              <NavMenuLink
+                                key={service.href}
+                                href={service.href}
+                              >
+                                {service.label}
+                              </NavMenuLink>
+                            ))}
+                          </CategorySection>
+                        )
+                      )}
+                    </div>
+                  </MenuItem>
+                );
+              }
+            })}
+            <Link
+              href="/book"
+              className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
+            >
+              Book Now
+            </Link>
+          </Menu>
         </div>
 
         <div className="md:hidden">
