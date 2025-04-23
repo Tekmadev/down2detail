@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect} from "react";
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -26,9 +26,9 @@ export default function ContactForm() {
   const [messageSent, setMessageSent] = useState(false);
   const [formStatus, setFormStatus] = useState<FormStatus>("idle");
 
-  const formatPhoneNumber = (value) =>{
+  const formatPhoneNumber = (value: string) => {
     const digits = value.replace(/\D/g, "");
-    if(digits.length <= 3){
+    if(digits.length <= 3) {
       return `${digits}`;
     }else if (digits.length <= 6){
       return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
