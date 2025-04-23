@@ -40,24 +40,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-4 mt-6">
                 <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 320 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/down2detail.ca/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
