@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
@@ -11,7 +11,6 @@ type FormData = {
   phone: string;
   message: string;
 };
-
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -28,12 +27,15 @@ export default function ContactForm() {
 
   const formatPhoneNumber = (value: string) => {
     const digits = value.replace(/\D/g, "");
-    if(digits.length <= 3) {
+    if (digits.length <= 3) {
       return `${digits}`;
-    }else if (digits.length <= 6){
+    } else if (digits.length <= 6) {
       return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
-    }else {
-      return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6, 10)}`;
+    } else {
+      return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(
+        6,
+        10
+      )}`;
     }
   };
 
@@ -52,30 +54,30 @@ export default function ContactForm() {
     }));
   };
 
-  function handleSendEmail(e){
+  function handleSendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    if(form.current){
+    if (form.current) {
       emailjs
-      .sendForm(
-        'service_3mj6l2m',  // Service ID from environment variables
-        'template_t5979wi',  // Template ID from environment variables
-        form.current,
-        'g4JzxjffiwgMMQsmu' // Public Key from environment variables
-      )
-      .then(
+        .sendForm(
+          "service_3mj6l2m", // Service ID from environment variables
+          "template_t5979wi", // Template ID from environment variables
+          form.current,
+          "g4JzxjffiwgMMQsmu" // Public Key from environment variables
+        )
+        .then(
           (response) => {
-              console.log("SUCCESS!", response.text);
-              setMessageSent(true);
-              e.target.reset();
+            console.log("SUCCESS!", response.text);
+            setMessageSent(true);
+            (e.target as HTMLFormElement).reset();
           },
           (error) => {
-              console.error("FAILED...", error.text);
-              alert("Failed to sent messages");
+            console.error("FAILED...", error.text);
+            alert("Failed to sent messages");
           }
-      );
+        );
     }
-  };
+  }
   useEffect(() => {
     if (messageSent) {
       const timer = setTimeout(() => {
@@ -176,7 +178,9 @@ export default function ContactForm() {
           {formStatus === "submitting" ? "Sending..." : "Send Message"}
         </button>
         {messageSent && (
-          <p className="success-message">Your message has been sent successfully!</p>
+          <p className="success-message">
+            Your message has been sent successfully!
+          </p>
         )}
       </form>
     </div>
