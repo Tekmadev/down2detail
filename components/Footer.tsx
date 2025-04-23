@@ -86,6 +86,35 @@ const Footer = () => {
                 ))}
               </div>
             </div>
+
+            {/* Newsletter */}
+            <div className="col-span-1">
+              <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
+                Newsletter
+              </h3>
+              <p className="text-secondary mb-6">
+                Subscribe to our newsletter to get our latest updates and news
+                about our services.
+              </p>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300"
+                >
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
           </div>
         </div>
 
