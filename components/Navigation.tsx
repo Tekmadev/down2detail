@@ -66,6 +66,7 @@ const Navigation = () => {
                     active={activeItem}
                     item={item.label}
                     label={item.label}
+                    href={item.href}
                   >
                     <div className="grid grid-cols-2 gap-6 min-w-[400px]">
                       {Object.entries(servicesByCategory).map(

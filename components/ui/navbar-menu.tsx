@@ -19,11 +19,13 @@ export const MenuItem = ({
   item,
   children,
   label,
+  href,
 }: {
   setActive: (item: string | null) => void;
   active: string | null;
   item: string;
   label?: string;
+  href?: string;
   children?: React.ReactNode;
 }) => {
   const [dropdownPosition, setDropdownPosition] = useState<
@@ -122,13 +124,30 @@ export const MenuItem = ({
       onMouseEnter={handleMenuMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div
-        className="cursor-pointer text-secondary hover:text-[#d6781c] font-medium transition-colors relative group pb-1"
-        onClick={handleClick}
-      >
-        {label || item}
-        <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#d6781c] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-in-out" />
-      </div>
+      {href ? (
+        <Link href={href} className="block">
+          <div
+            className="cursor-pointer text-secondary hover:text-[#d6781c] font-medium transition-colors relative group pb-1"
+            onClick={(e) => {
+              if (active !== item) {
+                // Just toggle dropdown on click if not navigating
+                setActive(item);
+              }
+            }}
+          >
+            {label || item}
+            <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#d6781c] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-in-out" />
+          </div>
+        </Link>
+      ) : (
+        <div
+          className="cursor-pointer text-secondary hover:text-[#d6781c] font-medium transition-colors relative group pb-1"
+          onClick={handleClick}
+        >
+          {label || item}
+          <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#d6781c] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-in-out" />
+        </div>
+      )}
       <AnimatePresence>
         {active === item && (
           <motion.div
