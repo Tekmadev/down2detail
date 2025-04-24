@@ -19,7 +19,7 @@ const CalendlyPopText = () => {
   const openCalendly = () => {
     // @ts-ignore
     window.Calendly.initPopupWidget({
-      url: "https://calendly.com/hamza-ekram786/30min?background_color=d9d9d9",
+      url: "https://calendly.com/down2detail-ca/consultation",
     });
   };
 
