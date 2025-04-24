@@ -176,8 +176,18 @@ const Footer = () => {
               >
                 SUBSCRIBE
               </button>
-              {success && <p className="text-success">{success}</p>}
-              {error && <p className="text-danger">{error}</p>}
+              {error && (
+            <div className="text-sm flex items-center gap-1 font-normal text-red-500">
+              <i className="fas fa-exclamation-circle text-sm"></i>
+              {error}
+            </div>
+          )}
+          {success && (
+            <div className="text-sm flex items-center gap-1 font-normal text-green-500">
+              <i className="fas fa-check-circle text-sm"></i>
+              {success}
+            </div>
+          )}
             </form>
           </div>
         </div>
