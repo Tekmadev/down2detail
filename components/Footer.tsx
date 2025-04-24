@@ -8,8 +8,15 @@ import { services } from "../data/services";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/data/navigation";
 import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
-import {db} from "@/config/firebase";
-import {collection, addDoc, query, where, getDocs, serverTimestamp} from "firebase/firestore";
+import { db } from "@/config/firebase";
+import {
+  collection,
+  addDoc,
+  query,
+  where,
+  getDocs,
+  serverTimestamp,
+} from "firebase/firestore";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -17,9 +24,9 @@ const Footer = () => {
   const [success, setSuccess] = useState("");
   const pathname = usePathname();
 
-  const handleNewsletter = async (e) => {
+  const handleNewsletter = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Newsletter submitted")
+    console.log("Newsletter submitted");
 
     if (!email) {
       setError("Plase enter your email adress");
@@ -30,7 +37,7 @@ const Footer = () => {
       return;
     }
     const emailVerifier = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(!emailVerifier.test(email)){
+    if (!emailVerifier.test(email)) {
       setError("Please enter a valid email address");
       setEmail("");
       setTimeout(() => {
@@ -38,12 +45,12 @@ const Footer = () => {
       }, 5000);
       return;
     }
-    try{
+    try {
       const emailRef = collection(db, "newsletter");
       const q = query(emailRef, where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
-      if(!querySnapshot.empty){
+      if (!querySnapshot.empty) {
         setError("This email is already registered");
         setEmail("");
         setTimeout(() => {
@@ -52,20 +59,20 @@ const Footer = () => {
         return;
       }
 
-      await addDoc(collection(db, "newsletter"),{
+      await addDoc(collection(db, "newsletter"), {
         email: email,
         createdAt: serverTimestamp(),
       });
 
       setSuccess("Thank you for subscribing!");
       setEmail("");
-      
+
       setTimeout(() => {
         setSuccess("");
       }, 5000);
-    }catch (error){
-      console.error("Error:", error)
-      setError("Something went wrong. Please try again later.")
+    } catch (error) {
+      console.error("Error:", error);
+      setError("Something went wrong. Please try again later.");
     }
   };
 
