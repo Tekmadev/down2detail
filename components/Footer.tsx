@@ -39,7 +39,7 @@ const Footer = () => {
       return;
     }
     try{
-      const emailRef = collection(db, "email_signup");
+      const emailRef = collection(db, "newsletter");
       const q = query(emailRef, where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
@@ -52,7 +52,7 @@ const Footer = () => {
         return;
       }
 
-      await addDoc(collection(db, "email_signup"),{
+      await addDoc(collection(db, "newsletter"),{
         email: email,
         createdAt: serverTimestamp(),
       });
