@@ -8,17 +8,65 @@ import { services } from "../data/services";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/data/navigation";
 import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
+import {db} from "@/config/firebase";
+import {collection, addDoc, query, where, getDocs, serverTimestamp} from "firebase/firestore";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const pathname = usePathname();
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleNewsletter = async (e) => {
     e.preventDefault();
-    // Here you would normally handle the newsletter subscription
-    console.log("Subscribing email:", email);
-    alert("Thank you for subscribing!");
-    setEmail("");
+    console.log("Newsletter submitted")
+
+    if (!email) {
+      setError("Plase enter your email adress");
+      setEmail("");
+      setTimeout(() => {
+        setError("");
+      }, 5000);
+      return;
+    }
+    const emailVerifier = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailVerifier.test(email)){
+      setError("Please enter a valid email address");
+      setEmail("");
+      setTimeout(() => {
+        setError("");
+      }, 5000);
+      return;
+    }
+    try{
+      const emailRef = collection(db, "email_signup");
+      const q = query(emailRef, where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      if(!querySnapshot.empty){
+        setError("This email is already registered");
+        setEmail("");
+        setTimeout(() => {
+          setError("");
+        }, 5000);
+        return;
+      }
+
+      await addDoc(collection(db, "email_signup"),{
+        email: email,
+        createdAt: serverTimestamp(),
+      });
+
+      setSuccess("Thank you for subscribing!");
+      setEmail("");
+      
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000);
+    }catch (error){
+      console.error("Error:", error)
+      setError("Something went wrong. Please try again later.")
+    }
   };
 
   return (
@@ -112,15 +160,14 @@ const Footer = () => {
               Subscribe to our newsletter to get our latest updates and news
               about our services.
             </p>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleNewsletter} className="space-y-4">
               <div>
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Your Email"
                   className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required
                 />
               </div>
               <button
@@ -129,6 +176,8 @@ const Footer = () => {
               >
                 SUBSCRIBE
               </button>
+              {success && <p className="text-success">{success}</p>}
+              {error && <p className="text-danger">{error}</p>}
             </form>
           </div>
         </div>
