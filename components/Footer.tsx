@@ -7,17 +7,73 @@ import FooterLink from "./ui/FooterLink";
 import { services } from "../data/services";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/data/navigation";
+import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
+import { db } from "@/config/firebase";
+import {
+  collection,
+  addDoc,
+  query,
+  where,
+  getDocs,
+  serverTimestamp,
+} from "firebase/firestore";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const pathname = usePathname();
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleNewsletter = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you would normally handle the newsletter subscription
-    console.log("Subscribing email:", email);
-    alert("Thank you for subscribing!");
-    setEmail("");
+    console.log("Newsletter submitted");
+
+    if (!email) {
+      setError("Plase enter your email adress");
+      setEmail("");
+      setTimeout(() => {
+        setError("");
+      }, 5000);
+      return;
+    }
+    const emailVerifier = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailVerifier.test(email)) {
+      setError("Please enter a valid email address");
+      setEmail("");
+      setTimeout(() => {
+        setError("");
+      }, 5000);
+      return;
+    }
+    try {
+      const emailRef = collection(db, "newsletter");
+      const q = query(emailRef, where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        setError("This email is already registered");
+        setEmail("");
+        setTimeout(() => {
+          setError("");
+        }, 5000);
+        return;
+      }
+
+      await addDoc(collection(db, "newsletter"), {
+        email: email,
+        createdAt: serverTimestamp(),
+      });
+
+      setSuccess("Thank you for subscribing!");
+      setEmail("");
+
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000);
+    } catch (error) {
+      console.error("Error:", error);
+      setError("Something went wrong. Please try again later.");
+    }
   };
 
   return (
@@ -28,38 +84,18 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1">
             <div className="mb-6">
-              <Link href="/" className="inline-block">
-                <Image
-                  src="/images/Logo.png"
-                  alt="Down2Detail Logo"
-                  width={150}
-                  height={78}
-                  className="mb-4"
-                />
-              </Link>
+              <LogoWithSpinningDs
+                logoWidth={80}
+                logoHeight={80}
+                textSize="text-2xl"
+                className="inline-block"
+              />
               <p className="text-secondary mb-4">
                 Your trusted partner for all auto detailing needs.
               </p>
               <div className="flex space-x-4 mt-6">
                 <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 320 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/down2detail.ca/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
@@ -131,15 +167,14 @@ const Footer = () => {
               Subscribe to our newsletter to get our latest updates and news
               about our services.
             </p>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleNewsletter} className="space-y-4">
               <div>
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Your Email"
                   className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  required
                 />
               </div>
               <button
@@ -148,6 +183,8 @@ const Footer = () => {
               >
                 SUBSCRIBE
               </button>
+              {success && <p className="text-success">{success}</p>}
+              {error && <p className="text-danger">{error}</p>}
             </form>
           </div>
         </div>
@@ -155,12 +192,15 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="pt-8 mt-8 border-t border-gray-300 text-center">
           <p className="text-secondary">
-            &copy; {new Date().getFullYear()} Down2Detail.
-            All rights reserved.
+            &copy; {new Date().getFullYear()} Down2Detail. All rights reserved.
           </p>
           <p className="text-secondary mt-2">
             Developed by{" "}
-            <a href="https://www.tekmadev.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.tekmadev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Tekmadev
             </a>
           </p>

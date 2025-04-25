@@ -1,6 +1,9 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+
+type FormStatus = "idle" | "submitting" | "success" | "error";
 
 type FormData = {
   name: string;
@@ -9,8 +12,6 @@ type FormData = {
   message: string;
 };
 
-type FormStatus = "idle" | "submitting" | "success" | "error";
-
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -18,8 +19,30 @@ export default function ContactForm() {
     phone: "",
     message: "",
   });
-  const [formStatus, setFormStatus] = useState<FormStatus>("idle");
+  const form = useRef<HTMLFormElement>(null);
   const [errorMessage, setErrorMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
+  const [formStatus, setFormStatus] = useState<FormStatus>("idle");
+
+  const formatPhoneNumber = (value: string) => {
+    const digits = value.replace(/\D/g, "");
+    if (digits.length <= 3) {
+      return `${digits}`;
+    } else if (digits.length <= 6) {
+      return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    } else {
+      return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(
+        6,
+        10
+      )}`;
+    }
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const input = e.target.value;
+    setPhone(formatPhoneNumber(input));
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -31,13 +54,48 @@ export default function ContactForm() {
     }));
   };
 
+  function handleSendEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_3mj6l2m", // Service ID from environment variables
+          "template_t5979wi", // Template ID from environment variables
+          form.current,
+          "g4JzxjffiwgMMQsmu" // Public Key from environment variables
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.text);
+            setMessageSent(true);
+            (e.target as HTMLFormElement).reset();
+          },
+          (error) => {
+            console.error("FAILED...", error.text);
+            alert("Failed to sent messages");
+          }
+        );
+    }
+  }
+  useEffect(() => {
+    if (messageSent) {
+      const timer = setTimeout(() => {
+        setMessageSent(false);
+      }, 5000);
+
+      // Cleanup timer on component unmount or when result changes
+      return () => clearTimeout(timer);
+    }
+  }, [messageSent]);
+
   return (
     <div>
       <h2 className="text-2xl font-semibold text-secondary mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
         Send Us a Message
       </h2>
 
-      <form className="space-y-5">
+      <form className="space-y-5" ref={form} onSubmit={handleSendEmail}>
         <div>
           <label
             htmlFor="name"
@@ -85,8 +143,8 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            value={formData.phone}
-            onChange={handleChange}
+            value={phone}
+            onChange={handlePhoneChange}
             className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
             required
           />
@@ -119,6 +177,11 @@ export default function ContactForm() {
         >
           {formStatus === "submitting" ? "Sending..." : "Send Message"}
         </button>
+        {messageSent && (
+          <p className="success-message">
+            Your message has been sent successfully!
+          </p>
+        )}
       </form>
     </div>
   );

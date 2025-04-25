@@ -6,9 +6,14 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navigation } from "../data/navigation";
 import NavLink from "./ui/NavLink";
+import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
+import { Menu, MenuItem, NavMenuLink, CategorySection } from "./ui/navbar-menu";
+import { services } from "@/data/services";
+import CalendlyPopText from "./CalendlyPopText";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,6 +25,19 @@ const Navigation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const servicesByCategory = services.reduce((acc, service) => {
+    const category = service.category || "Other";
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(service);
+    return acc;
+  }, {} as Record<string, typeof services>);
+
+  const handleSetActive = (item: string | null) => {
+    setActiveItem(item);
+  };
+
   const mobileMenuVariants = {
     hidden: { opacity: 0, height: 0, transition: { duration: 0.2 } },
     visible: { opacity: 1, height: "auto", transition: { duration: 0.3 } },
@@ -28,35 +46,52 @@ const Navigation = () => {
   return (
     <nav className="bg-white shadow-md py-4 px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-left">
-        <Link href="/" className="flex items-center">
-          <div className="relative w-32 h-18 flex items-center">
-            <Image
-              src="/images/Logo.png"
-              alt="Down2Detail Logo"
-              width={90}
-              height={105}
-              className="object-contain"
-              priority
-            />
-          </div>
-        </Link>
+        <LogoWithSpinningDs logoWidth={90} logoHeight={90} />
 
-        
         <div className="hidden md:flex items-center space-x-6 ">
-          {navigation.map((item) => (
-            <NavLink key={item.href} href={item.href}>
-              {item.label}
-            </NavLink>
-          ))}
-          <Link
-            href="/book"
-            className="ml-4 px-5 py-2 bg-[#535251] text-white rounded-md hover:bg-[#161616] transition"
-            >
-            Book Now
-        </Link>
+          <Menu setActive={handleSetActive}>
+            {navigation.map((item) => {
+              if (item.label !== "Services") {
+                return (
+                  <NavLink key={item.href} href={item.href}>
+                    {item.label}
+                  </NavLink>
+                );
+              }
+              // Service dropdown
+              if (item.label === "Services") {
+                return (
+                  <MenuItem
+                    key={item.href}
+                    setActive={handleSetActive}
+                    active={activeItem}
+                    item={item.label}
+                    label={item.label}
+                    href={item.href}
+                  >
+                    <div className="grid grid-cols-2 gap-6 min-w-[400px]">
+                      {Object.entries(servicesByCategory).map(
+                        ([category, categoryServices]) => (
+                          <CategorySection key={category} title={category}>
+                            {categoryServices.map((service) => (
+                              <NavMenuLink
+                                key={service.href}
+                                href={service.href}
+                              >
+                                {service.label}
+                              </NavMenuLink>
+                            ))}
+                          </CategorySection>
+                        )
+                      )}
+                    </div>
+                  </MenuItem>
+                );
+              }
+            })}
+            <CalendlyPopText/>
+          </Menu>
         </div>
-
-        
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -89,7 +124,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
