@@ -117,7 +117,7 @@ const Navigation = () => {
             <CalendlyPopText/>
           </Menu>
         </div>
-        <div className="md:hidden">
+        <div  className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-secondary focus:outline-none"
@@ -148,6 +148,7 @@ const Navigation = () => {
           </button>
         </div>
       </div>
+      
 
       <AnimatePresence>
         {isMenuOpen && (
@@ -159,47 +160,50 @@ const Navigation = () => {
             className="md:hidden px-4 pt-2 pb-4"
           >
             <div className="flex flex-col space-y-3">
-              {navigation.map((item) => (//{
-               // if (item.label !== "Services"){
-                 // return (
-                  <NavLink
-                    key={item.href}
-                    href={item.href}
-                    isMobile
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </NavLink>
-                    
-              ))}
-              <div onClick={() => setIsMenuOpen(false)} className="flex flex-col space-y-3" >
-                <CalendlyPopText/>
-              </div>
-              
-               {/* if(item.label == "Services"){
+              {navigation.map((item) => {
+                if (item.label !== "Services"){
+                  return (
+                    <NavLink
+                      key={item.href}
+                      href={item.href}
+                      isMobile
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.label}
+                    </NavLink>
+                  );
+                }
+                
+                if(item.label == "Services"){
                   return (
                     <div key={item.href} className="space-y-2">
                       <div
-                        className="text-secondary hover:text-[#d6781c] font-medium transition-colors flex items-center justify-between cursor-pointer py-2"
-                        onClick={() => handleMobileItemClick(item.label)}
+                        className="text-secondary hover:text-[#d6781c] font-medium transition-colors flex items-center justify-between cursor-pointer py-2" 
                       >
-                        {item.label}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={`h-4 w-4 transition-transform ${
-                            activeItem === item.label ? "rotate-180" : ""
-                          }`}
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
+                         <Link
+                          href={item.href}
+                          onClick={() => setIsMenuOpen(false)} 
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
+                          {item.label}
+                        </Link>
+                        <button onClick={() => handleMobileItemClick(item.label)}>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className={`h-4 w-4 transition-transform ${
+                              activeItem === item.label ? "rotate-180" : ""
+                            }`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
                       </div>
 
                       <AnimatePresence>
@@ -230,8 +234,6 @@ const Navigation = () => {
                                     ))}
                                   </div>
                                 </div>
-                                
-                                
                               )
                             )}
                           </motion.div>
@@ -241,9 +243,10 @@ const Navigation = () => {
                   );
                 }
                 return null;
-              ))}*/}
-            </div>
-          </motion.div>
+              })}
+              <CalendlyPopText/>
+            </div>  
+          </motion.div>    
         )}
       </AnimatePresence>
     </nav>
