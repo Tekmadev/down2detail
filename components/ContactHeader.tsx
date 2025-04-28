@@ -1,6 +1,6 @@
 const ContactHeader = () => {
     return(
-        <div className="bg-[#89807a] text-white py-2 md:py-3">
+        <div className="bg-[#b53904] text-white py-2 md:py-3">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
         <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
           <div className="flex items-center">
