@@ -2,6 +2,7 @@ import { getServiceById, getServicesByCategory, services } from "@/data/services
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import CalendlyPopText from "@/components/CalendlyPopText";
 
 export function generateStaticParams(){
     return services.map((service) => ({
@@ -57,7 +58,7 @@ export default function ServicePage({
                         href="/contact"
                         className="inline-block bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-3 px-10 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
                         >
-                        Restore My Vehicle
+                        Book Now
                         </Link>
                     </div>
                     </div>
