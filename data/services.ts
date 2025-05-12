@@ -534,22 +534,6 @@ export type Service = {
         }
       ]
     }
-  ];
-  
-  export function getServiceById(id :String): Service | undefined {
-    return services.find((service) => service.id === id);
-  }
-
-  export function getServicesByCategory(category:string): Service[]{
-    return services.filter((service) => service.category === category);
-  }
-
-  export function getAllServiceCategories(): string[] {
-    const categories = new Set<string>();
-    services.forEach((service) => {
-      if(service.category){
-        categories.add(service.category);
-      }
-    });
-    return Array.from(categories);
-  }
+  });
+  return Array.from(categories);
+}
