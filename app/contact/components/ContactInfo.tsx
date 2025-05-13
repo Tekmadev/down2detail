@@ -34,8 +34,8 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-secondary">Address</h3>
             <p className="text-secondary-light mt-1">
-              Acadie, <br />
-              Montreal, ON K1A 0A1
+            3399 Boulevard Crémazie Est, <br />
+            Montréal, QC, Canada
             </p>
           </div>
         </div>
