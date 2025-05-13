@@ -22,58 +22,64 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const pathname = usePathname();
 
   const handleNewsletter = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Newsletter submitted");
+
+    // Reset messages
+    setError("");
+    setSuccess("");
 
     if (!email) {
-      setError("Plase enter your email adress");
-      setEmail("");
-      setTimeout(() => {
-        setError("");
-      }, 5000);
+      setError("Please enter your email address");
       return;
     }
-    const emailVerifier = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailVerifier.test(email)) {
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
       setError("Please enter a valid email address");
-      setEmail("");
-      setTimeout(() => {
-        setError("");
-      }, 5000);
       return;
     }
+
+    setIsLoading(true);
+
     try {
-      const emailRef = collection(db, "newsletter");
-      const q = query(emailRef, where("email", "==", email));
+      // Check if email already exists in the newsletter collection
+      const emailsRef = collection(db, "newsletter");
+      const q = query(emailsRef, where("email", "==", email));
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
         setError("This email is already registered");
-        setEmail("");
-        setTimeout(() => {
-          setError("");
-        }, 5000);
+        setIsLoading(false);
         return;
       }
 
+      // Add new email to the newsletter collection
       await addDoc(collection(db, "newsletter"), {
         email: email,
         createdAt: serverTimestamp(),
       });
 
+      // Show success message
       setSuccess("Thank you for subscribing!");
-      setEmail("");
 
-      setTimeout(() => {
-        setSuccess("");
-      }, 5000);
-    } catch (error) {
-      console.error("Error:", error);
+      // Clear the input
+      setEmail("");
+    } catch (err) {
+      console.error("Error:", err);
       setError("Something went wrong. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
+
+    // Clear success message after 5 seconds
+    setTimeout(() => {
+      setSuccess("");
+    }, 5000);
   };
 
   return (
@@ -167,24 +173,76 @@ const Footer = () => {
               Subscribe to our newsletter to get our latest updates and news
               about our services.
             </p>
-            <form onSubmit={handleNewsletter} className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+            <form onSubmit={handleNewsletter} className="space-y-4" noValidate>
+              <div className="flex flex-col gap-2">
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary ${
+                      error
+                        ? error.includes("already registered")
+                          ? "border-amber-500"
+                          : "border-red-500"
+                        : "border-gray-300"
+                    }`}
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      setError("");
+                      setSuccess("");
+                    }}
+                    disabled={isLoading}
+                  />
+                  <button
+                    type="submit"
+                    className="w-full sm:w-auto whitespace-nowrap bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300 disabled:opacity-70"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? "SUBSCRIBING..." : "SUBSCRIBE"}
+                  </button>
+                </div>
+                {error && (
+                  <div
+                    className={`flex items-center gap-1 text-sm ${
+                      error.includes("already registered")
+                        ? "text-amber-500"
+                        : "text-red-500"
+                    }`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {error}
+                  </div>
+                )}
+                {success && (
+                  <div className="flex items-center gap-1 text-sm text-green-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {success}
+                  </div>
+                )}
               </div>
-              <button
-                type="submit"
-                className="w-full bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300"
-              >
-                SUBSCRIBE
-              </button>
-              {success && <p className="text-success">{success}</p>}
-              {error && <p className="text-danger">{error}</p>}
             </form>
           </div>
         </div>
