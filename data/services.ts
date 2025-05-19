@@ -25,7 +25,7 @@ export type Service = {
       features: ["Full interior + exterior", "Vacuum & shampoo", "Wax & sealant"],
       benefits: ["All-in-one service", "Restores vehicle condition", "Time-saving bundle"],
       description:
-        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We’ll target and remove stains from your carpets, fabric seats, and other surfaces.",
+        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We'll target and remove stains from your carpets, fabric seats, and other surfaces.",
       imageShowcase: "/images/services-detailing/intext.jpg",
       price: "129.99",
       currency: "CAD",
@@ -55,7 +55,7 @@ export type Service = {
       features: ["Degreasing", "Steam clean", "Safe rinse"],
       benefits: ["Improves resale value", "Spot problems early", "Better engine cooling"],
       description:
-        "Revitalize your car’s engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
+        "Revitalize your car's engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
       imageShowcase: "/images/services-detailing/Cleaning-engine.webp",
       price: "109.99",
       currency: "CAD",
@@ -65,260 +65,67 @@ export type Service = {
 
   export const services: Service[] = [
     {
-      id: "exterior-wash-wax",
-      label: "Exterior Wash & Wax",
-      href: "/services/exterior-wash-wax",
+      id: "exterior-detailing",
+      label: "Exterior Detailing",
+      href: "/services/exterior-detailing",
       category: "Exterior",
-      shortDescription: "Exterior revitalization with wax and protection.",
-      features: ["Pre-wash",
-                "Deep clean paint with hand",
-                "Paint Decontamination to remove embedded contaminants such as brake dust, rail dust, ferrous (iron containing) particles, paint overspray",
-                "Clay Treatment",
-                "Wax protection to protect the paint finish from future contaminants"],
-      benefits: ["Protects paint", "Boosts shine", "Enhances resale value"],
-      description:
-        "Deep clean paint, remove embedded contaminants and protective wax application to restore your vehicle's shine and shield it from environmental elements, ensuring a lasting glossy finish.",
-      imageShowcase: "/images/services-detailing/wash.jpg",
-      price: "119.99",
+      shortDescription: "Complete exterior cleaning and protection.",
+      features: ["Pre-wash", "Deep clean paint", "Clay treatment", "Wax protection"],
+      benefits: ["Restores shine", "Protects paint", "Enhances appearance"],
+      description: "Professional exterior detailing service that includes thorough cleaning, paint decontamination, and protection.",
+      imageShowcase: "/images/services-detailing/exterior.jpg",
+      price: "149.99",
       currency: "CAD",
-      image: "/images/services/wash-wax.jpg",
-      faqs:[
+      image: "/images/services/exterior-detailing.jpg",
+      faqs: [
         {
-          question: "What is included in the Exterior Wash & Wax service?",
-          answer : "We provide a paint-safe hand wash, clay bar treatment, and a premium wax finish to protect your paint and enhance shine."
+          question: "What is included in exterior detailing?",
+          answer: "Our exterior detailing includes pre-wash, deep cleaning, clay treatment, and protective wax application."
         },
         {
-          question: "How long does a typical detailing service take?",
-          answer : "Most services take between 1 to 4 hours, depending on the package and condition of the vehicle."
-        },
-        {
-          question: "Are your products safe for all vehicles?",
-          answer : "Yes! We use professional-grade, paint-safe and interior-safe products suitable for all vehicle types."
-        },
+          question: "How long does it take?",
+          answer: "Typically 2-3 hours depending on the vehicle size and condition."
+        }
       ]
     },
     {
-      id: "interior-detailing",
-      label: "Interior Detailing",
-      href: "/services/interior-detailing",
-      category: "Interior",
-      shortDescription: "Stain extraction, deep clean and protection inside.",
-      features: ["Vacuuming all over the inside",
-                "Cleaning of door contours",
-                "Cleaning of door frames, trunk & cash registers",
-                "Deep cleaning of removable carpets, floor, & fabric seats",
-                "Meticulous cleaning of the dashboard",
-                "Cleaning of the centre console"],
-      benefits: ["Removes odors", "Cleans deeply", "Protects interior materials"],
-      description:
-        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. We'll target and remove stains from your carpets, fabric seats, and any other surfaces, giving you a truly flawless and inviting cabin. Deep cleaning of all interior surfaces, followed by a meticulous vacuuming to eliminate dirt, and creating a fresh and pristine interior environment.",
-      imageShowcase: "/images/services-detailing/interior.jpeg",
-      price: "149.99 - 279.99",
+      id: "paint-decontamination",
+      label: "Paint Decontamination",
+      href: "/services/paint-decontamination",
+      category: "Exterior",
+      shortDescription: "Remove embedded contaminants from paint.",
+      features: ["Iron removal", "Clay treatment", "Surface preparation"],
+      benefits: ["Smoother paint", "Better protection", "Enhanced shine"],
+      description: "Professional paint decontamination service that removes embedded contaminants for a smoother surface.",
+      imageShowcase: "/images/services-detailing/decontamination.jpg",
+      price: "199.99",
       currency: "CAD",
-      image: "/images/services/interior-detailing.jpg",
-      faqs:[
+      image: "/images/services/paint-decontamination.jpg",
+      faqs: [
         {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-        {
-          question: "Can I drop off my car early or late?",
-          answer : "Yes, we offer flexible drop-off and pickup times. Let us know ahead, and we’ll do our best to accommodate you."
-        },
-        {
-          question: "Is there a cancellation policy?",
-          answer : "Yes — we kindly ask for 24 hours' notice for cancellations or rescheduling, so we can manage bookings efficiently."
-        },
+          question: "How often should I decontaminate my paint?",
+          answer: "We recommend every 6-12 months depending on driving conditions."
+        }
       ]
     },
     {
-      id: "interior-exterior-detailing",
-      label: "Int. & Ext. Detailing",
-      href: "/services/interior-exterior-detailing",
-      category: "Interior",
-      shortDescription: "Full-service detailing for the entire vehicle.",
-      features: ["Pre-wash",
-                "Exterior foam wash",
-                "Wheels & calipers cleaning",
-                "Tire dressing",
-                "Vacuuming all over the inside & deep surface cleaning with soft bristle brush",
-                "Wiping down the interior panels, windows, seats, windshields & air vents"],
-      benefits: ["All-in-one service", "Restores vehicle condition", "Time-saving bundle"],
-      description:
-        "Experience a high-quality interior detailing service with our specialized stain extraction techniques. Our interior and exterior detailing service rejuvenates your car's interior and exterior.",
-      imageShowcase: "/images/services-detailing/intext.jpg",
+      id: "engine-bay-detailing",
+      label: "Engine Bay Detailing",
+      href: "/services/engine-bay-detailing",
+      category: "Exterior",
+      shortDescription: "Professional engine bay cleaning.",
+      features: ["Degreasing", "Steam cleaning", "Protection application"],
+      benefits: ["Better cooling", "Easier maintenance", "Improved appearance"],
+      description: "Thorough cleaning and protection of your engine bay area.",
+      imageShowcase: "/images/services-detailing/engine-bay.jpg",
       price: "129.99",
       currency: "CAD",
-      image: "/images/services/full-detailing.jpg",
-      faqs:[
-        {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-        {
-          question: "Can I drop off my car early or late?",
-          answer : "Yes, we offer flexible drop-off and pickup times. Let us know ahead, and we’ll do our best to accommodate you."
-        },
-        {
-          question: "Is there a cancellation policy?",
-          answer : "Yes — we kindly ask for 24 hours' notice for cancellations or rescheduling, so we can manage bookings efficiently."
-        },
-      ]
-    },
-    {
-      id: "gloss-enhancer",
-      label: "Gloss Enhancer",
-      href: "/services/gloss-enhancer",
-      category: "Polish",
-      shortDescription: "Paint decontamination and gloss boosting.",
-      features: ["Deep clean paint & paint decontamination included",
-                "Clay Treatment",
-                "Enhance paint gloss with soft pad/polish",
-                "Paint sealant apply (Lasts 6 months)"],
-      benefits: ["Ultra clean surface", "Brilliant finish", "Better coating adherence"],
-      description:
-        "Enhance the appearance of your vehicle with our Deep Clean paint service, which eliminates stubborn contaminants like airborne compounds, brake dust, and rail dust while also boosting shine of the car.",
-      imageShowcase: "/images/services-detailing/gloss.jpg",
-      price: "369.99",
-      currency: "CAD",
-      image: "/images/services/gloss-enhancer.jpg",
-      faqs:[
-        {
-          question: "Do I need to make an appointment?",
-          answer : "Yes, appointments help us ensure high-quality service and availability. You can book directly from the service pages."
-        },
-        {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-        {
-          question: "Can I drop off my car early or late?",
-          answer : "Yes, we offer flexible drop-off and pickup times. Let us know ahead, and we’ll do our best to accommodate you."
-        },
-      ]
-    },
-    {
-      id: "one-step-polish",
-      label: "One Step Polish",
-      href: "/services/one-step-polish",
-      category: "Polish",
-      shortDescription: "Removes 50%-70% of swirls and scratches.",
-      features: ["Deep clean paint & paint decontamination included",
-        "Clay Treatment",
-        "One step paint correction with cutting pad",
-        "Paint sealant apply (Lasts 6 months)"],
-      benefits: ["Improves appearance", "Cost-effective solution", "Quick result"],
-      description:
-        "With our exceptional services, we can effectively eliminate 50%-70% of scratches and swirls, leaving your car with a flawless, glossy finish.",
-      imageShowcase: "/images/services-detailing/One-ste.jpg",
-      price: "449.99 - 549.99",
-      currency: "CAD",
-      image: "/images/services/one-step-polish.jpg",
-      faqs:[
-        {
-          question: "Are your products safe for all vehicles?",
-          answer : "Yes! We use professional-grade, paint-safe and interior-safe products suitable for all vehicle types."
-        },
-        {
-          question: "Do I need to make an appointment?",
-          answer : "Yes, appointments help us ensure high-quality service and availability. You can book directly from the service pages."
-        },
-        {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-      ]
-    },
-    {
-      id: "paint-correction",
-      label: "Paint Correction",
-      href: "/services/paint-correction",
-      category: "Polish",
-      shortDescription: "Up to 90% paint imperfection removal.",
-      features: ["Deep clean paint & paint decontamination included",
-        "Clay Treatment",
-        "Multiple steps of compound & polish",
-        "Paint sealant apply (Lasts 6 months)"],
-      benefits: ["Like-new paint look", "Removes major defects", "Prepares for ceramic coating"],
-      description:
-        "Elevate your vehicle’s appearance with our professional auto detailing techniques and high-quality products, eliminating up to 90% of imperfections on your car’s paint.",
-      imageShowcase: "/images/services-detailing/paint.jpg",
-      price: "749.99 - 949.99",
-      currency: "CAD",
-      image: "/images/services/paint-correction.jpg",
-      faqs:[
-        {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-        {
-          question: "Can I drop off my car early or late?",
-          answer : "Yes, we offer flexible drop-off and pickup times. Let us know ahead, and we’ll do our best to accommodate you."
-        },
-        {
-          question: "Is there a cancellation policy?",
-          answer : "Yes — we kindly ask for 24 hours' notice for cancellations or rescheduling, so we can manage bookings efficiently."
-        },
-      ]
-    },
-    {
-      id: "ceramic-coating",
-      label: "Ceramic Coating",
-      href: "/services/ceramic-coating",
-      category: "Protection",
-      shortDescription: "Durable nano-coating for long-term surface protection.",
-      features: ["Ceramic coating on paint surface",
-                "Ceramic coating on wheels & calipers",
-                "Ceramic coating on windows & glasses",
-                "Ceramic coating on plastics",
-                "Ceramic coating on leathers"],
-      benefits: ["Easier cleaning", "Enhanced shine", "Long-term value"],
-      description:
-        "Experience the ultimate protection and enhancement for your car’s paint, wheels, windows, plastics, and leathers with our advanced ceramic coating. Lasts up to 1–4 years.",
-      imageShowcase: "/images/services-detailing/ceramic.jpg",
-      price: "159.99 - 359.99",
-      currency: "CAD",
-      image: "/images/services/ceramic-coating.jpg",
-      faqs:[
-        {
-          question: "Are your products safe for all vehicles?",
-          answer : "Yes! We use professional-grade, paint-safe and interior-safe products suitable for all vehicle types."
-        },
-        {
-          question: "Do I need to make an appointment?",
-          answer : "Yes, appointments help us ensure high-quality service and availability. You can book directly from the service pages."
-        },
-      ]
-    },
-    {
-      id: "engine-bay-cleaning",
-      label: "Engine Bay Cleaning",
-      href: "/services/engine-bay-cleaning",
-      category: "Interior",
-      shortDescription: "Degrease and detail your engine area.",
-      features: ["Remove any excess debris, cover any electrical components, air intakes and alarms to stop water damage",
-                "Degrease the engine, underside bonnet & agitated with various brushes",
-                "Application of protection to ensure the engine stays clean for long & is protected from the environment"],
-      benefits: ["Improves resale value", "Spot problems early", "Better engine cooling"],
-      description:
-        "Revitalize your car’s engine bay with our expert cleaning service, eliminating any build-up of dirt, grease, and grime for a spotless and well-maintained appearance.",
-      imageShowcase: "/images/services-detailing/Cleaning-engine.webp",
-      price: "109.99",
-      currency: "CAD",
       image: "/images/services/engine-bay.jpg",
-      faqs:[
+      faqs: [
         {
-          question: "Are your products safe for all vehicles?",
-          answer : "Yes! We use professional-grade, paint-safe and interior-safe products suitable for all vehicle types."
-        },
-        {
-          question: "Do I need to make an appointment?",
-          answer : "Yes, appointments help us ensure high-quality service and availability. You can book directly from the service pages."
-        },
-        {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
+          question: "Is it safe to clean the engine bay?",
+          answer: "Yes, we take all necessary precautions to protect sensitive components."
+        }
       ]
     },
     {
@@ -326,57 +133,179 @@ export type Service = {
       label: "Headlight Restoration",
       href: "/services/headlight-restoration",
       category: "Exterior",
-      shortDescription: "Restore clarity and visibility in headlights.",
-      features: ["Restoration of headlights", "Application of UV sealant to prevent the headlights from oxidizing again and maintain the clarity and functionality of your headlights"],
-      benefits: ["Better night vision", "Saves replacement costs", "Increases safety"],
-      description:
-        "Enhance visibility and aesthetics with our headlight restoration, addressing cloudiness and yellowing to improve both safety and the overall look of your vehicle.",
-      imageShowcase: "/images/services-detailing/headlight.jpeg",
-      price: "129.99 - 259.99",
+      shortDescription: "Restore cloudy headlights to like-new condition.",
+      features: ["Sanding", "Polishing", "UV protection"],
+      benefits: ["Better visibility", "Improved safety", "Enhanced appearance"],
+      description: "Professional headlight restoration service that removes oxidation and restores clarity.",
+      imageShowcase: "/images/services-detailing/headlight.jpg",
+      price: "149.99",
       currency: "CAD",
-      image: "/images/services/headlight-restoration.jpg",
-      faqs:[
+      image: "/images/services/headlight.jpg",
+      faqs: [
         {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
-        {
-          question: "Can I drop off my car early or late?",
-          answer : "Yes, we offer flexible drop-off and pickup times. Let us know ahead, and we’ll do our best to accommodate you."
-        },
-        {
-          question: "Is there a cancellation policy?",
-          answer : "Yes — we kindly ask for 24 hours' notice for cancellations or rescheduling, so we can manage bookings efficiently."
-        },
+          question: "How long does the restoration last?",
+          answer: "With proper maintenance, results can last 1-2 years."
+        }
       ]
     },
     {
-      id: "headlight-tint",
-      label: "Headlight Tint",
-      href: "/services/headlight-tint",
+      id: "headlight-taillight-tint",
+      label: "Headlight & Taillight Tint",
+      href: "/services/headlight-taillight-tint",
       category: "Exterior",
-      shortDescription: "Protect headlights from UV damage.",
-      features: ["UV protection", "Glare reduction", "Improves beam output"],
-      benefits: ["Better night vision", "Saves replacement costs", "Increases safety"],
-      description:
-        "Keep your car protected with tint film. Our kits contain tinted taillights and headlights covers that protect your car or truck from the environment. It covers for cars and trucks are available in several shades and colors. Choose between different levels of tail light & headlight tint film that can help with scratches or other imperfections.",
-      imageShowcase: "/images/services-detailing/tint.jpg",
+      shortDescription: "Professional tinting for lights.",
+      features: ["UV protection", "Custom tint levels", "Professional installation"],
+      benefits: ["UV protection", "Custom look", "Enhanced appearance"],
+      description: "Professional tinting service for headlights and taillights.",
+      imageShowcase: "/images/services-detailing/light-tint.jpg",
+      price: "199.99",
+      currency: "CAD",
+      image: "/images/services/light-tint.jpg",
+      faqs: [
+        {
+          question: "Is tinting legal?",
+          answer: "We ensure all tinting meets local regulations and safety standards."
+        }
+      ]
+    },
+    {
+      id: "gloss-enhancer",
+      label: "Gloss Enhancer",
+      href: "/services/gloss-enhancer",
+      category: "Exterior",
+      shortDescription: "Enhance paint gloss and shine.",
+      features: ["Paint preparation", "Gloss enhancement", "Protection"],
+      benefits: ["Enhanced shine", "Better protection", "Improved appearance"],
+      description: "Professional service to enhance your vehicle's paint gloss and shine.",
+      imageShowcase: "/images/services-detailing/gloss.jpg",
       price: "179.99",
       currency: "CAD",
-      image: "/images/services/headlight-tint.jpg",
-      faqs:[
+      image: "/images/services/gloss.jpg",
+      faqs: [
         {
-          question: "Do I need to make an appointment?",
-          answer : "Yes, appointments help us ensure high-quality service and availability. You can book directly from the service pages."
-        },
+          question: "How long does the gloss enhancement last?",
+          answer: "Results typically last 3-6 months with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "one-step-polish",
+      label: "One-Step Polish",
+      href: "/services/one-step-polish",
+      category: "Exterior",
+      shortDescription: "Quick paint enhancement and correction.",
+      features: ["Paint correction", "Polish application", "Protection"],
+      benefits: ["Improved appearance", "Quick results", "Cost-effective"],
+      description: "Single-step paint correction and enhancement service.",
+      imageShowcase: "/images/services-detailing/one-step.jpg",
+      price: "249.99",
+      currency: "CAD",
+      image: "/images/services/one-step.jpg",
+      faqs: [
         {
-          question: "Will detailing help with resale value?",
-          answer : "Yes! A well-detailed car looks newer and more appealing to buyers, often increasing resale value."
-        },
+          question: "What imperfections can be removed?",
+          answer: "Light to moderate swirl marks and scratches can be significantly reduced."
+        }
+      ]
+    },
+    {
+      id: "paint-correction",
+      label: "Paint Correction",
+      href: "/services/paint-correction",
+      category: "Exterior",
+      shortDescription: "Professional paint correction service.",
+      features: ["Multi-step correction", "Paint enhancement", "Protection"],
+      benefits: ["Like-new finish", "Maximum correction", "Long-lasting results"],
+      description: "Comprehensive paint correction service for maximum results.",
+      imageShowcase: "/images/services-detailing/paint-correction.jpg",
+      price: "399.99",
+      currency: "CAD",
+      image: "/images/services/paint-correction.jpg",
+      faqs: [
         {
-          question: "Is there a cancellation policy?",
-          answer : "Yes — we kindly ask for 24 hours' notice for cancellations or rescheduling, so we can manage bookings efficiently."
-        },
+          question: "How long does paint correction last?",
+          answer: "Results are permanent, but proper maintenance is required to maintain them."
+        }
+      ]
+    },
+    {
+      id: "interior-detailing",
+      label: "Interior Detailing",
+      href: "/services/interior-detailing",
+      category: "Interior",
+      shortDescription: "Complete interior cleaning and detailing.",
+      features: ["Vacuuming", "Surface cleaning", "Protection"],
+      benefits: ["Fresh interior", "Better air quality", "Enhanced comfort"],
+      description: "Professional interior detailing service for a fresh and clean cabin.",
+      imageShowcase: "/images/services-detailing/interior.jpg",
+      price: "149.99",
+      currency: "CAD",
+      image: "/images/services/interior.jpg",
+      faqs: [
+        {
+          question: "What areas are cleaned?",
+          answer: "We clean all interior surfaces including seats, carpets, dashboard, and more."
+        }
+      ]
+    },
+    {
+      id: "floor-carpet-shampoo",
+      label: "Floor & Carpet Shampoo",
+      href: "/services/floor-carpet-shampoo",
+      category: "Interior",
+      shortDescription: "Deep cleaning for floors and carpets.",
+      features: ["Deep cleaning", "Stain removal", "Odor elimination"],
+      benefits: ["Cleaner carpets", "Fresh smell", "Better appearance"],
+      description: "Professional shampoo service for vehicle floors and carpets.",
+      imageShowcase: "/images/services-detailing/carpet.jpg",
+      price: "99.99",
+      currency: "CAD",
+      image: "/images/services/carpet.jpg",
+      faqs: [
+        {
+          question: "How long does it take to dry?",
+          answer: "Typically 2-4 hours depending on conditions."
+        }
+      ]
+    },
+    {
+      id: "pet-hair-removal",
+      label: "Pet Hair Removal",
+      href: "/services/pet-hair-removal",
+      category: "Interior",
+      shortDescription: "Professional pet hair removal service.",
+      features: ["Specialized tools", "Thorough cleaning", "Odor treatment"],
+      benefits: ["Clean interior", "No more pet hair", "Fresh smell"],
+      description: "Professional service to remove pet hair and odors from your vehicle.",
+      imageShowcase: "/images/services-detailing/pet-hair.jpg",
+      price: "79.99",
+      currency: "CAD",
+      image: "/images/services/pet-hair.jpg",
+      faqs: [
+        {
+          question: "Do you remove all pet hair?",
+          answer: "Yes, we use specialized tools to remove even the most stubborn pet hair."
+        }
+      ]
+    },
+    {
+      id: "fabric-seat-shampoo",
+      label: "Fabric Seat Shampoo",
+      href: "/services/fabric-seat-shampoo",
+      category: "Interior",
+      shortDescription: "Deep cleaning for fabric seats.",
+      features: ["Deep cleaning", "Stain removal", "Protection"],
+      benefits: ["Clean seats", "Fresh smell", "Better appearance"],
+      description: "Professional shampoo service for fabric seats.",
+      imageShowcase: "/images/services-detailing/fabric-seats.jpg",
+      price: "89.99",
+      currency: "CAD",
+      image: "/images/services/fabric-seats.jpg",
+      faqs: [
+        {
+          question: "How long does it take to dry?",
+          answer: "Typically 2-3 hours depending on conditions."
+        }
       ]
     },
     {
@@ -384,24 +313,199 @@ export type Service = {
       label: "Leather Seat Treatment",
       href: "/services/leather-seat-treatment",
       category: "Interior",
-      shortDescription: "Condition and protect your leather seats.",
-      features: ["Deep cleaning of leather seats", " Application of multiple coating of leather protection"],
-      benefits: ["Preserves softness", "Prevents aging", "Restores appearance"],
-      description:
-        "Experience the ultimate in leather seat care with our luxurious treatment, including meticulous cleaning and conditioning to preserve the elegance and durability of your vehicle's leather upholstery.",
+      shortDescription: "Professional leather care and protection.",
+      features: ["Cleaning", "Conditioning", "Protection"],
+      benefits: ["Soft leather", "Longer life", "Better appearance"],
+      description: "Professional leather care and protection service.",
       imageShowcase: "/images/services-detailing/leather.jpg",
-      price: "69.99",
+      price: "129.99",
       currency: "CAD",
-      image: "/images/services/leather-treatment.jpg",
-      faqs:[
+      image: "/images/services/leather.jpg",
+      faqs: [
         {
-          question: "How long does a typical detailing service take?",
-          answer : "Most services take between 1 to 4 hours, depending on the package and condition of the vehicle."
-        },
+          question: "How often should I treat my leather seats?",
+          answer: "We recommend every 3-6 months for optimal protection."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating",
+      label: "Ceramic Coating",
+      href: "/services/ceramic-coating",
+      category: "Protection",
+      shortDescription: "Long-lasting paint protection.",
+      features: ["Paint preparation", "Coating application", "Curing"],
+      benefits: ["Long protection", "Easy cleaning", "Enhanced shine"],
+      description: "Professional ceramic coating service for maximum protection.",
+      imageShowcase: "/images/services-detailing/ceramic.jpg",
+      price: "999.99",
+      currency: "CAD",
+      image: "/images/services/ceramic.jpg",
+      faqs: [
         {
-          question: "Are your products safe for all vehicles?",
-          answer : "Yes! We use professional-grade, paint-safe and interior-safe products suitable for all vehicle types."
-        },
+          question: "How long does ceramic coating last?",
+          answer: "Our ceramic coating typically lasts 2-5 years with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "paint-sealant",
+      label: "Paint Sealant",
+      href: "/services/paint-sealant",
+      category: "Protection",
+      shortDescription: "Synthetic paint protection.",
+      features: ["Paint preparation", "Sealant application", "Curing"],
+      benefits: ["Good protection", "Enhanced shine", "Easy maintenance"],
+      description: "Professional paint sealant application service.",
+      imageShowcase: "/images/services-detailing/sealant.jpg",
+      price: "299.99",
+      currency: "CAD",
+      image: "/images/services/sealant.jpg",
+      faqs: [
+        {
+          question: "How long does paint sealant last?",
+          answer: "Typically 6-12 months with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "car-wax",
+      label: "Car Wax",
+      href: "/services/car-wax",
+      category: "Protection",
+      shortDescription: "Traditional wax protection.",
+      features: ["Paint preparation", "Wax application", "Buffing"],
+      benefits: ["Classic shine", "Good protection", "Warm glow"],
+      description: "Professional car wax application service.",
+      imageShowcase: "/images/services-detailing/wax.jpg",
+      price: "149.99",
+      currency: "CAD",
+      image: "/images/services/wax.jpg",
+      faqs: [
+        {
+          question: "How long does car wax last?",
+          answer: "Typically 2-3 months with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "fabric-textile-sealant",
+      label: "Fabric & Textile Sealant",
+      href: "/services/fabric-textile-sealant",
+      category: "Protection",
+      shortDescription: "Protection for fabric and textiles.",
+      features: ["Cleaning", "Sealant application", "Curing"],
+      benefits: ["Stain resistance", "Easy cleaning", "Longer life"],
+      description: "Professional fabric and textile protection service.",
+      imageShowcase: "/images/services-detailing/fabric-sealant.jpg",
+      price: "199.99",
+      currency: "CAD",
+      image: "/images/services/fabric-sealant.jpg",
+      faqs: [
+        {
+          question: "How long does the protection last?",
+          answer: "Typically 6-12 months with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating-paint",
+      label: "Paint",
+      href: "/services/ceramic-coating-paint",
+      category: "Ceramic Coating",
+      shortDescription: "Ceramic coating for paint.",
+      features: ["Paint preparation", "Coating application", "Curing"],
+      benefits: ["Maximum protection", "Enhanced shine", "Easy cleaning"],
+      description: "Professional ceramic coating service for vehicle paint.",
+      imageShowcase: "/images/services-detailing/ceramic-paint.jpg",
+      price: "999.99",
+      currency: "CAD",
+      image: "/images/services/ceramic-paint.jpg",
+      faqs: [
+        {
+          question: "How long does the coating last?",
+          answer: "Our ceramic paint coating typically lasts 2-5 years with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating-wheels",
+      label: "Wheel & Brake Calipers",
+      href: "/services/ceramic-coating-wheels",
+      category: "Ceramic Coating",
+      shortDescription: "Ceramic coating for wheels and calipers.",
+      features: ["Surface preparation", "Coating application", "Curing"],
+      benefits: ["Brake dust resistance", "Easy cleaning", "Enhanced appearance"],
+      description: "Professional ceramic coating service for wheels and brake calipers.",
+      imageShowcase: "/images/services-detailing/ceramic-wheels.jpg",
+      price: "399.99",
+      currency: "CAD",
+      image: "/images/services/ceramic-wheels.jpg",
+      faqs: [
+        {
+          question: "How long does the wheel coating last?",
+          answer: "The wheel and caliper coating typically lasts 1-2 years with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating-glass",
+      label: "Glass Surfaces",
+      href: "/services/ceramic-coating-glass",
+      category: "Ceramic Coating",
+      shortDescription: "Ceramic coating for glass surfaces.",
+      features: ["Glass preparation", "Coating application", "Curing"],
+      benefits: ["Water repellency", "Easy cleaning", "Enhanced visibility"],
+      description: "Professional ceramic coating service for all glass surfaces.",
+      imageShowcase: "/images/services-detailing/ceramic-glass.jpg",
+      price: "299.99",
+      currency: "CAD",
+      image: "/images/services/ceramic-glass.jpg",
+      faqs: [
+        {
+          question: "How long does the glass coating last?",
+          answer: "The glass coating typically lasts 1-2 years with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating-plastics",
+      label: "Exterior Plastics & Trims",
+      href: "/services/ceramic-coating-plastics",
+      category: "Ceramic Coating",
+      shortDescription: "Ceramic coating for exterior plastics and trims.",
+      features: ["Surface preparation", "Coating application", "Curing"],
+      benefits: ["UV protection", "Color preservation", "Enhanced appearance"],
+      description: "Professional ceramic coating service for exterior plastics and trims.",
+      imageShowcase: "/images/services-detailing/ceramic-plastics.jpg",
+      price: "249.99",
+      currency: "CAD",
+      image: "/images/services/ceramic-plastics.jpg",
+      faqs: [
+        {
+          question: "How long does the plastic coating last?",
+          answer: "The plastic and trim coating typically lasts 1-2 years with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "ceramic-coating-interior",
+      label: "Interior Leather & Synthetics",
+      href: "/services/ceramic-coating-interior",
+      category: "Ceramic Coating",
+      shortDescription: "Ceramic coating for interior surfaces.",
+      features: ["Surface preparation", "Coating application", "Curing"],
+      benefits: ["Stain resistance", "UV protection", "Easy cleaning"],
+      description: "Professional ceramic coating service for interior leather and synthetic surfaces.",
+      imageShowcase: "/images/services-detailing/ceramic-interior.jpg",
+      price: "349.99",
+      currency: "CAD",
+      image: "/images/services/ceramic-interior.jpg",
+      faqs: [
+        {
+          question: "How long does the interior coating last?",
+          answer: "The interior coating typically lasts 1-2 years with proper maintenance."
+        }
       ]
     }
   ];

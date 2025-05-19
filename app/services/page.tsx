@@ -80,6 +80,7 @@ export default function ServiePage(){
         </div>
         ))}   
       </div>
+      <div className="w-full h-[2px] bg-[#292524] my-16"></div>
       {/*section Action */}
       <div className="bg-secondary text-[#292524] py-16">
             <div className="container mx-auto px-4 text-center">
