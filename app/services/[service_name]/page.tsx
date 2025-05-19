@@ -70,7 +70,7 @@ export default function ServicePage({
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     <div className="lg:col-span-2">
                         <h2 className="text-2xl md:text-3xl font-bold text-[#292524] mb-6">
-                            Summary
+                            Why Us?
                         </h2>
                         <p className="text-[#292524] mb-8 text-lg leading-relaxed">
                             {service.description}
@@ -78,7 +78,7 @@ export default function ServicePage({
 
                         {/* Features */}
                         <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
-                            What We Offer
+                            What’s Included
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                             {service.features.map((feature, index) => (
@@ -106,7 +106,7 @@ export default function ServicePage({
                         </div>
                         {/* Benefits */}
                         <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
-                            Benefits
+                            Why It’s Important
                         </h3>
                         <ul className="list-disc pl-6 mb-12 space-y-2 text-[#292524]">
                             {service.benefits.map((benefit, index) => (
@@ -117,7 +117,7 @@ export default function ServicePage({
                         </ul>
                         {/*Price section */}
                         <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
-                            Price
+                            Pricing
                         </h3>
                         <p className="text-m font-semibold">
                             Our prices offer the best value, starting at <span className="text-[#d6781c] font-bold">{service.price} {service.currency}</span> for this service, and they may vary based on your specific needs.
@@ -150,8 +150,8 @@ export default function ServicePage({
                         )}
                     </div>
                     {/* Sidebar */}
-                    <div className="lg:col-span-1">
-                        {/* FAQ Section */}
+                   {/* <div className="lg:col-span-1">
+                        {/* FAQ Section 
                         {service.faqs && service.faqs.length > 0 && (
                         <div className="bg-white p-6 rounded-xl shadow-md">
                             <h3 className="text-xl font-bold text-[#292524] mb-6">
@@ -169,7 +169,7 @@ export default function ServicePage({
                             </div>
                         </div>
                         )}
-                    </div>
+                    </div>*/}
                 </div>
             </div>
             {/*Related Service */}
