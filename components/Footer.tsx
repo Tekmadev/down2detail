@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 import FooterLink from "./ui/FooterLink";
 import { services } from "../data/services";
