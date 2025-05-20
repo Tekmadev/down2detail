@@ -13,6 +13,7 @@ export type Service = {
     imageShowcase: string;
     gallery?: string[];
     faqs?: Array<{ question: string; answer: string }>;
+    subtitle: string;
   };
   
   export const PremiumServices: Service[] = [
@@ -29,7 +30,8 @@ export type Service = {
       imageShowcase: "/images/services-detailing/intext.jpg",
       price: "129.99",
       currency: "CAD",
-      image: "/images/services/full-detailing.jpg"
+      image: "/images/services/full-detailing.jpg",
+      subtitle: "Complete Exterior Care & Protection"
     },
     {
       id: "gloss-enhancer",
@@ -44,7 +46,8 @@ export type Service = {
       imageShowcase: "/images/services-detailing/gloss.jpg",
       price: "369.99",
       currency: "CAD",
-      image: "/images/services/gloss-enhancer.jpg"
+      image: "/images/services/gloss-enhancer.jpg",
+      subtitle: "Ultimate Paint Shine & Protection"
     },
     {
       id: "engine-bay-cleaning",
@@ -59,7 +62,8 @@ export type Service = {
       imageShowcase: "/images/services-detailing/Cleaning-engine.webp",
       price: "109.99",
       currency: "CAD",
-      image: "/images/services/engine-bay.jpg"
+      image: "/images/services/engine-bay.jpg",
+      subtitle: "Comprehensive Engine Bay Cleaning"
     },
   ]
 
@@ -67,6 +71,7 @@ export type Service = {
     {
       id: "exterior-detailing",
       label: "Exterior Detailing",
+      subtitle: "Complete Exterior Care & Protection",
       href: "/services/exterior-detailing",
       category: "Exterior",
       shortDescription: "Complete exterior cleaning and protection.",
@@ -91,6 +96,7 @@ export type Service = {
     {
       id: "paint-decontamination",
       label: "Paint Decontamination",
+      subtitle: "Professional Paint Surface Restoration",
       href: "/services/paint-decontamination",
       category: "Exterior",
       shortDescription: "Remove embedded contaminants from paint.",
@@ -111,6 +117,7 @@ export type Service = {
     {
       id: "engine-bay-detailing",
       label: "Engine Bay Detailing",
+      subtitle: "Comprehensive Engine Bay Cleaning",
       href: "/services/engine-bay-detailing",
       category: "Exterior",
       shortDescription: "Professional engine bay cleaning.",
@@ -131,6 +138,7 @@ export type Service = {
     {
       id: "headlight-restoration",
       label: "Headlight Restoration",
+      subtitle: "Restore Your Headlights to Like-New Condition",
       href: "/services/headlight-restoration",
       category: "Exterior",
       shortDescription: "Restore cloudy headlights to like-new condition.",
@@ -151,6 +159,7 @@ export type Service = {
     {
       id: "headlight-taillight-tint",
       label: "Headlight & Taillight Tint",
+      subtitle: "Custom Light Tinting Services",
       href: "/services/headlight-taillight-tint",
       category: "Exterior",
       shortDescription: "Professional tinting for lights.",
@@ -171,6 +180,7 @@ export type Service = {
     {
       id: "gloss-enhancer",
       label: "Gloss Enhancer",
+      subtitle: "Ultimate Paint Shine & Protection",
       href: "/services/gloss-enhancer",
       category: "Exterior",
       shortDescription: "Enhance paint gloss and shine.",
@@ -191,6 +201,7 @@ export type Service = {
     {
       id: "one-step-polish",
       label: "One-Step Polish",
+      subtitle: "Quick Paint Enhancement & Correction",
       href: "/services/one-step-polish",
       category: "Exterior",
       shortDescription: "Quick paint enhancement and correction.",
@@ -211,6 +222,7 @@ export type Service = {
     {
       id: "paint-correction",
       label: "Paint Correction",
+      subtitle: "Professional Paint Perfection",
       href: "/services/paint-correction",
       category: "Exterior",
       shortDescription: "Professional paint correction service.",
@@ -231,6 +243,7 @@ export type Service = {
     {
       id: "interior-detailing",
       label: "Interior Detailing",
+      subtitle: "Complete Interior Care & Refresh",
       href: "/services/interior-detailing",
       category: "Interior",
       shortDescription: "Complete interior cleaning and detailing.",
@@ -251,6 +264,7 @@ export type Service = {
     {
       id: "floor-carpet-shampoo",
       label: "Floor & Carpet Shampoo",
+      subtitle: "Deep Cleaning for Your Vehicle's Interior",
       href: "/services/floor-carpet-shampoo",
       category: "Interior",
       shortDescription: "Deep cleaning for floors and carpets.",
@@ -271,6 +285,7 @@ export type Service = {
     {
       id: "pet-hair-removal",
       label: "Pet Hair Removal",
+      subtitle: "Specialized Pet Hair & Odor Treatment",
       href: "/services/pet-hair-removal",
       category: "Interior",
       shortDescription: "Professional pet hair removal service.",
@@ -291,6 +306,7 @@ export type Service = {
     {
       id: "fabric-seat-shampoo",
       label: "Fabric Seat Shampoo",
+      subtitle: "Professional Fabric Seat Cleaning",
       href: "/services/fabric-seat-shampoo",
       category: "Interior",
       shortDescription: "Deep cleaning for fabric seats.",
@@ -311,6 +327,7 @@ export type Service = {
     {
       id: "leather-seat-treatment",
       label: "Leather Seat Treatment",
+      subtitle: "Premium Leather Care & Protection",
       href: "/services/leather-seat-treatment",
       category: "Interior",
       shortDescription: "Professional leather care and protection.",
@@ -331,6 +348,7 @@ export type Service = {
     {
       id: "ceramic-coating",
       label: "Ceramic Coating",
+      subtitle: "Long-Lasting Paint Protection",
       href: "/services/ceramic-coating",
       category: "Protection",
       shortDescription: "Long-lasting paint protection.",
@@ -351,6 +369,7 @@ export type Service = {
     {
       id: "paint-sealant",
       label: "Paint Sealant",
+      subtitle: "Synthetic Paint Protection",
       href: "/services/paint-sealant",
       category: "Protection",
       shortDescription: "Synthetic paint protection.",
@@ -371,6 +390,7 @@ export type Service = {
     {
       id: "car-wax",
       label: "Car Wax",
+      subtitle: "Traditional Wax Protection",
       href: "/services/car-wax",
       category: "Protection",
       shortDescription: "Traditional wax protection.",
@@ -391,6 +411,7 @@ export type Service = {
     {
       id: "fabric-textile-sealant",
       label: "Fabric & Textile Sealant",
+      subtitle: "Protection for Interior Fabrics",
       href: "/services/fabric-textile-sealant",
       category: "Protection",
       shortDescription: "Protection for fabric and textiles.",
@@ -411,6 +432,7 @@ export type Service = {
     {
       id: "ceramic-coating-paint",
       label: "Paint",
+      subtitle: "Premium Ceramic Paint Protection",
       href: "/services/ceramic-coating-paint",
       category: "Ceramic Coating",
       shortDescription: "Ceramic coating for paint.",
@@ -431,6 +453,7 @@ export type Service = {
     {
       id: "ceramic-coating-wheels",
       label: "Wheel & Brake Calipers",
+      subtitle: "Ceramic Protection for Wheels",
       href: "/services/ceramic-coating-wheels",
       category: "Ceramic Coating",
       shortDescription: "Ceramic coating for wheels and calipers.",
@@ -451,6 +474,7 @@ export type Service = {
     {
       id: "ceramic-coating-glass",
       label: "Glass Surfaces",
+      subtitle: "Ceramic Protection for Glass",
       href: "/services/ceramic-coating-glass",
       category: "Ceramic Coating",
       shortDescription: "Ceramic coating for glass surfaces.",
@@ -471,6 +495,7 @@ export type Service = {
     {
       id: "ceramic-coating-plastics",
       label: "Exterior Plastics & Trims",
+      subtitle: "Ceramic Protection for Plastics",
       href: "/services/ceramic-coating-plastics",
       category: "Ceramic Coating",
       shortDescription: "Ceramic coating for exterior plastics and trims.",
@@ -491,6 +516,7 @@ export type Service = {
     {
       id: "ceramic-coating-interior",
       label: "Interior Leather & Synthetics",
+      subtitle: "Ceramic Protection for Interior",
       href: "/services/ceramic-coating-interior",
       category: "Ceramic Coating",
       shortDescription: "Ceramic coating for interior surfaces.",
