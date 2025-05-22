@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navigation } from "../data/navigation";
 import NavLink from "./ui/NavLink";
@@ -15,6 +14,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [openCategory, setOpenCategory] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,9 +39,9 @@ const Navigation = () => {
   };
 
   const handleMobileItemClick = (category: string) => {
-    if(activeItem === category){
+    if (activeItem === category) {
       setActiveItem(null);
-    }else{
+    } else {
       setActiveItem(category);
     }
   };
@@ -68,6 +68,13 @@ const Navigation = () => {
     },
   }
 
+  const SousCategory = (category: string) => {
+    setOpenCategory((prev) => ({
+      ...prev,
+      [category]: !prev[category],
+    }));
+  }
+
   return (
     <nav className="bg-white shadow-md py-4 px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-left">
@@ -83,7 +90,6 @@ const Navigation = () => {
                   </NavLink>
                 );
               }
-              // Service dropdown
               if (item.label === "Services") {
                 return (
                   <MenuItem
@@ -94,30 +100,56 @@ const Navigation = () => {
                     label={item.label}
                     href={item.href}
                   >
-                    <div className="grid grid-cols-2 gap-6 min-w-[400px]">
-                      {Object.entries(servicesByCategory).map(
-                        ([category, categoryServices]) => (
-                          <CategorySection key={category} title={category}>
-                            {categoryServices.map((service) => (
-                              <NavMenuLink
-                                key={service.href}
-                                href={service.href}
+                    <div className="flex flex-col gap-4 min-w-[300px] p-4 bg-white rounded-lg shadow-lg">
+                      {Object.entries(servicesByCategory).map(([category, categoryServices]) => (
+                        <div key={category} className="space-y-2 border-b border-gray-100 last:border-0 pb-3 last:pb-0">
+                          <div 
+                            className="font-semibold text-secondary cursor-pointer hover:text-[#d6781c] flex items-center justify-between group transition-all duration-200"
+                            onClick={() => SousCategory(category)}
+                          >
+                            <span>{category}</span>
+                            <svg 
+                              className={`h-4 w-4 transition-transform duration-200 ${openCategory[category] ? 'rotate-180' : ''}`}
+                              fill="none" 
+                              viewBox="0 0 24 24" 
+                              stroke="currentColor"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </div>
+
+                          <AnimatePresence>
+                            {openCategory[category] && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="mt-2 pl-4 border-l-2 border-[#d6781c]"
                               >
-                                {service.label}
-                              </NavMenuLink>
-                            ))}
-                          </CategorySection>
-                        )
-                      )}
+                                {categoryServices.map((service) => (
+                                  <NavMenuLink
+                                    key={service.href}
+                                    href={service.href}
+                                    className="block py-2 text-sm text-gray-600 hover:text-[#d6781c] transition-colors duration-200"
+                                  >
+                                    {service.label}
+                                  </NavMenuLink>
+                                ))}
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      ))}
                     </div>
                   </MenuItem>
                 );
               }
             })}
-            <CalendlyPopText/>
+            <CalendlyPopText />
           </Menu>
         </div>
-        <div  className="md:hidden">
+        <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-secondary focus:outline-none"
@@ -148,7 +180,7 @@ const Navigation = () => {
           </button>
         </div>
       </div>
-      
+
 
       <AnimatePresence>
         {isMenuOpen && (
@@ -161,7 +193,7 @@ const Navigation = () => {
           >
             <div className="flex flex-col space-y-3">
               {navigation.map((item) => {
-                if (item.label !== "Services"){
+                if (item.label !== "Services") {
                   return (
                     <NavLink
                       key={item.href}
@@ -173,25 +205,24 @@ const Navigation = () => {
                     </NavLink>
                   );
                 }
-                
-                if(item.label == "Services"){
+
+                if (item.label == "Services") {
                   return (
                     <div key={item.href} className="space-y-2">
                       <div
-                        className="text-secondary hover:text-[#d6781c] font-medium transition-colors flex items-center justify-between cursor-pointer py-2" 
+                        className="text-secondary hover:text-[#d6781c] font-medium transition-colors flex items-center justify-between cursor-pointer py-2"
                       >
-                         <Link
+                        <Link
                           href={item.href}
-                          onClick={() => setIsMenuOpen(false)} 
+                          onClick={() => setIsMenuOpen(false)}
                         >
                           {item.label}
                         </Link>
                         <button onClick={() => handleMobileItemClick(item.label)}>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className={`h-4 w-4 transition-transform ${
-                              activeItem === item.label ? "rotate-180" : ""
-                            }`}
+                            className={`h-4 w-4 transition-transform ${activeItem === item.label ? "rotate-180" : ""
+                              }`}
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -244,9 +275,9 @@ const Navigation = () => {
                 }
                 return null;
               })}
-              <CalendlyPopText/>
-            </div>  
-          </motion.div>    
+              <CalendlyPopText />
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </nav>
