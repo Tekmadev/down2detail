@@ -42,16 +42,60 @@ export default function ServicePage({
             {/* Service Detail */}
             <div className="container mx-auto px-4 py-16 md:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                    <div className="lg:col-span-2 space-y-12">
-                        {/* Summary Card */}
-                        <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#292524] mb-6">
-                                Summary
-                            </h2>
-                            <p className="text-[#292524] mb-8 text-lg leading-relaxed">
-                                {service.description}
-                            </p>
+                    <div className="lg:col-span-2">
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#292524] mb-6">
+                            Why Us?
+                        </h2>
+                        <p className="text-[#292524] mb-8 text-lg leading-relaxed">
+                            {service.description}
+                        </p>
+
+                        {/* Features */}
+                        <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
+                            What’s Included
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                            {service.features.map((feature, index) => (
+                                <div
+                                key={index}
+                                className="flex items-start bg-white p-4 rounded-lg shadow-sm"
+                                >
+                                <div className="text-[#d6781c] mr-3 mt-1">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clipRule="evenodd"
+                                    />
+                                    </svg>
+                                </div>
+                                <p className="text-[#292524]">{feature}</p>
+                            </div>
+                        ))}
                         </div>
+                        {/* Benefits */}
+                        <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
+                            Why It’s Important
+                        </h3>
+                        <ul className="list-disc pl-6 mb-12 space-y-2 text-[#292524]">
+                            {service.benefits.map((benefit, index) => (
+                                <li key={index} className="pl-2">
+                                {benefit}
+                                </li>
+                            ))}
+                        </ul>
+                        {/*Price section */}
+                        <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">
+                            Pricing
+                        </h3>
+                        <p className="text-m font-semibold">
+                            Our prices offer the best value, starting at <span className="text-[#d6781c] font-bold">{service.price} {service.currency}</span> for this service, and they may vary based on your specific needs.
+                        </p>
 
                         {/* Features Card */}
                         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -128,8 +172,8 @@ export default function ServicePage({
                     </div>
 
                     {/* Sidebar */}
-                    <div className="lg:col-span-1">
-                        {/* FAQ Section */}
+                   {/* <div className="lg:col-span-1">
+                        {/* FAQ Section 
                         {service.faqs && service.faqs.length > 0 && (
                         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 sticky top-8">
                             <h3 className="text-xl font-bold text-[#292524] mb-6">
@@ -147,7 +191,7 @@ export default function ServicePage({
                             </div>
                         </div>
                         )}
-                    </div>
+                    </div>*/}
                 </div>
             </div>
             {/*Related Service */}
