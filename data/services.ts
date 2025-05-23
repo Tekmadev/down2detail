@@ -44,10 +44,10 @@ export type Service = {
       description:
         "Enhance the appearance of your vehicle with our Deep Clean paint service, which eliminates stubborn contaminants like airborne compounds, brake dust, and rail dust while also boosting shine of the car.",
       imageShowcase: "/images/services-detailing/gloss.jpg",
-      price: "369.99",
+      price: "309.99",
       currency: "CAD",
       image: "/images/services/gloss-enhancer.jpg",
-      subtitle: "Ultimate Paint Shine & Protection"
+      subtitle: "Shine Boost & Deep Paint Clean"
     },
     {
       id: "engine-bay-cleaning",
@@ -63,7 +63,7 @@ export type Service = {
       price: "109.99",
       currency: "CAD",
       image: "/images/services/engine-bay.jpg",
-      subtitle: "Comprehensive Engine Bay Cleaning"
+      subtitle: "Safe, Detailed & Protected"
     },
   ]
 
@@ -71,7 +71,7 @@ export type Service = {
     {
       id: "exterior-detailing",
       label: "Exterior Detailing",
-      subtitle: "Complete Exterior Care & Protection",
+      subtitle: "More Than Just a Wash",
       href: "/services/exterior-detailing",
       category: "Exterior",
       shortDescription: "Complete exterior cleaning and protection.",
@@ -79,7 +79,7 @@ export type Service = {
       benefits: ["Restores shine", "Protects paint", "Enhances appearance"],
       description: "Professional exterior detailing service that includes thorough cleaning, paint decontamination, and protection.",
       imageShowcase: "/images/services-detailing/exterior.jpg",
-      price: "149.99",
+      price: "99.99",
       currency: "CAD",
       image: "/images/services/exterior-detailing.jpg",
       faqs: [
@@ -96,7 +96,7 @@ export type Service = {
     {
       id: "paint-decontamination",
       label: "Paint Decontamination",
-      subtitle: "Professional Paint Surface Restoration",
+      subtitle: "Remove What Washing Can't",
       href: "/services/paint-decontamination",
       category: "Exterior",
       shortDescription: "Remove embedded contaminants from paint.",
@@ -138,7 +138,7 @@ export type Service = {
     {
       id: "headlight-restoration",
       label: "Headlight Restoration",
-      subtitle: "Restore Your Headlights to Like-New Condition",
+      subtitle: "Clarity, Safety & Style",
       href: "/services/headlight-restoration",
       category: "Exterior",
       shortDescription: "Restore cloudy headlights to like-new condition.",
@@ -146,7 +146,7 @@ export type Service = {
       benefits: ["Better visibility", "Improved safety", "Enhanced appearance"],
       description: "Professional headlight restoration service that removes oxidation and restores clarity.",
       imageShowcase: "/images/services-detailing/headlight.jpg",
-      price: "149.99",
+      price: "179.99",
       currency: "CAD",
       image: "/images/services/headlight.jpg",
       faqs: [
@@ -159,7 +159,7 @@ export type Service = {
     {
       id: "headlight-taillight-tint",
       label: "Headlight & Taillight Tint",
-      subtitle: "Custom Light Tinting Services",
+      subtitle: "Style, Protection & Custom Look",
       href: "/services/headlight-taillight-tint",
       category: "Exterior",
       shortDescription: "Professional tinting for lights.",
@@ -167,7 +167,7 @@ export type Service = {
       benefits: ["UV protection", "Custom look", "Enhanced appearance"],
       description: "Professional tinting service for headlights and taillights.",
       imageShowcase: "/images/services-detailing/light-tint.jpg",
-      price: "199.99",
+      price: "179.99",
       currency: "CAD",
       image: "/images/services/light-tint.jpg",
       faqs: [
@@ -201,7 +201,7 @@ export type Service = {
     {
       id: "one-step-polish",
       label: "One-Step Polish",
-      subtitle: "Quick Paint Enhancement & Correction",
+      subtitle: "Swirl Removal & Gloss Enhancement",
       href: "/services/one-step-polish",
       category: "Exterior",
       shortDescription: "Quick paint enhancement and correction.",
@@ -209,7 +209,7 @@ export type Service = {
       benefits: ["Improved appearance", "Quick results", "Cost-effective"],
       description: "Single-step paint correction and enhancement service.",
       imageShowcase: "/images/services-detailing/one-step.jpg",
-      price: "249.99",
+      price: "469.99",
       currency: "CAD",
       image: "/images/services/one-step.jpg",
       faqs: [
@@ -222,7 +222,7 @@ export type Service = {
     {
       id: "paint-correction",
       label: "Paint Correction",
-      subtitle: "Professional Paint Perfection",
+      subtitle: "Multi-Stage Perfection & Showroom Finish",
       href: "/services/paint-correction",
       category: "Exterior",
       shortDescription: "Professional paint correction service.",
@@ -230,7 +230,7 @@ export type Service = {
       benefits: ["Like-new finish", "Maximum correction", "Long-lasting results"],
       description: "Comprehensive paint correction service for maximum results.",
       imageShowcase: "/images/services-detailing/paint-correction.jpg",
-      price: "399.99",
+      price: "749.99",
       currency: "CAD",
       image: "/images/services/paint-correction.jpg",
       faqs: [
@@ -243,7 +243,7 @@ export type Service = {
     {
       id: "interior-detailing",
       label: "Interior Detailing",
-      subtitle: "Complete Interior Care & Refresh",
+      subtitle: "Deep Clean, Restore & Refresh Your Cabin",
       href: "/services/interior-detailing",
       category: "Interior",
       shortDescription: "Complete interior cleaning and detailing.",
@@ -251,7 +251,7 @@ export type Service = {
       benefits: ["Fresh interior", "Better air quality", "Enhanced comfort"],
       description: "Professional interior detailing service for a fresh and clean cabin.",
       imageShowcase: "/images/services-detailing/interior.jpg",
-      price: "149.99",
+      price: "99.99",
       currency: "CAD",
       image: "/images/services/interior.jpg",
       faqs: [
@@ -264,7 +264,7 @@ export type Service = {
     {
       id: "floor-carpet-shampoo",
       label: "Floor & Carpet Shampoo",
-      subtitle: "Deep Cleaning for Your Vehicle's Interior",
+      subtitle: "Deep Extraction for a Spotless, Odor-Free Cabin",
       href: "/services/floor-carpet-shampoo",
       category: "Interior",
       shortDescription: "Deep cleaning for floors and carpets.",
@@ -272,7 +272,7 @@ export type Service = {
       benefits: ["Cleaner carpets", "Fresh smell", "Better appearance"],
       description: "Professional shampoo service for vehicle floors and carpets.",
       imageShowcase: "/images/services-detailing/carpet.jpg",
-      price: "99.99",
+      price: "69.99",
       currency: "CAD",
       image: "/images/services/carpet.jpg",
       faqs: [
@@ -285,7 +285,7 @@ export type Service = {
     {
       id: "pet-hair-removal",
       label: "Pet Hair Removal",
-      subtitle: "Specialized Pet Hair & Odor Treatment",
+      subtitle: "Deep Interior Clean for a Fur-Free Finish",
       href: "/services/pet-hair-removal",
       category: "Interior",
       shortDescription: "Professional pet hair removal service.",
@@ -293,7 +293,7 @@ export type Service = {
       benefits: ["Clean interior", "No more pet hair", "Fresh smell"],
       description: "Professional service to remove pet hair and odors from your vehicle.",
       imageShowcase: "/images/services-detailing/pet-hair.jpg",
-      price: "79.99",
+      price: "89.99",
       currency: "CAD",
       image: "/images/services/pet-hair.jpg",
       faqs: [
@@ -306,7 +306,7 @@ export type Service = {
     {
       id: "fabric-seat-shampoo",
       label: "Fabric Seat Shampoo",
-      subtitle: "Professional Fabric Seat Cleaning",
+      subtitle: "Deep Clean, Sanitize & Refresh Your Upholstery",
       href: "/services/fabric-seat-shampoo",
       category: "Interior",
       shortDescription: "Deep cleaning for fabric seats.",
@@ -314,7 +314,7 @@ export type Service = {
       benefits: ["Clean seats", "Fresh smell", "Better appearance"],
       description: "Professional shampoo service for fabric seats.",
       imageShowcase: "/images/services-detailing/fabric-seats.jpg",
-      price: "89.99",
+      price: "69.99",
       currency: "CAD",
       image: "/images/services/fabric-seats.jpg",
       faqs: [
@@ -327,7 +327,7 @@ export type Service = {
     {
       id: "leather-seat-treatment",
       label: "Leather Seat Treatment",
-      subtitle: "Premium Leather Care & Protection",
+      subtitle: "Clean, Condition & Protect for a Luxurious Finish",
       href: "/services/leather-seat-treatment",
       category: "Interior",
       shortDescription: "Professional leather care and protection.",
@@ -335,7 +335,7 @@ export type Service = {
       benefits: ["Soft leather", "Longer life", "Better appearance"],
       description: "Professional leather care and protection service.",
       imageShowcase: "/images/services-detailing/leather.jpg",
-      price: "129.99",
+      price: "49.99",
       currency: "CAD",
       image: "/images/services/leather.jpg",
       faqs: [
@@ -369,7 +369,7 @@ export type Service = {
     {
       id: "paint-sealant",
       label: "Paint Sealant",
-      subtitle: "Synthetic Paint Protection",
+      subtitle: "Synthetic Protection & Enhanced Gloss",
       href: "/services/paint-sealant",
       category: "Protection",
       shortDescription: "Synthetic paint protection.",
