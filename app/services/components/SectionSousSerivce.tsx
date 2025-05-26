@@ -1,60 +1,59 @@
-import { getServiceById, services } from '@/data/services';
+import NavLink from '@/components/ui/NavLink';
+import { getServiceById, services, PaintPolishService } from '@/data/services';
 import Image from 'next/image';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
-    return services.map((service) => ({
-        service_name: service.id,
-    }))
+  return services.map((service) => ({
+    service_name: service.id,
+  }))
 }
 
 export const metadata = {
-    title: "Service | Down2Detail",
-    description: "Explore our professional detailing services."
+  title: "Service | Down2Detail",
+  description: "Explore our professional detailing services."
 }
 
-
-export default function ServiceSousSection({
-    params,
-}: {
-    params: any;
-}) {
-    const service = getServiceById(params.service_name);
-
-    if (!service) {
-        notFound();
-    }
+export default function ServiceSousSection() {
   return (
     <section className="bg-gradient-to-br from-white via-gray-50 to-white py-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-16 shadow-lg rounded-3xl bg-white p-8 md:p-16">
-        
-        {/* Image Section */}
-        <div className="w-full md:w-1/2">
-          <Image
-            src={service.imageShowcase}
-            alt={service.id}
-            width={600}
-            height={400}
-            className="rounded-3xl shadow-md object-cover"
-          />
-        </div>
-
-        {/* Text Section */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-4 leading-snug">
-            {service.label}
-          </h2>
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            {service.description}
-          </p>
-          <Link
-            href="/services"
-            className="inline-block px-7 py-3 bg-orange-500 text-white font-semibold rounded-xl shadow hover:bg-orange-600 transition duration-300"
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        {PaintPolishService.map((service, index) => (
+          <div 
+            key={service.id} 
+            className="flex flex-col md:flex-row items-center gap-16 shadow-lg rounded-3xl bg-white p-8 md:p-16 mb-12 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            style={{ animationDelay: `${index * 200}ms` }}
           >
-            Learn More
-          </Link>
-        </div>
+            <div className="w-full md:w-1/2 group">
+              <div className="relative overflow-hidden rounded-3xl">
+                <Image
+                  src={service.imageShowcase}
+                  alt={service.id}
+                  width={600}
+                  height={400}
+                  className="rounded-3xl shadow-md object-cover transform transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/2">
+              <h2 className="text-4xl font-extrabold text-gray-900 mb-4 leading-snug">
+                {service.label}
+              </h2>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                {service.description}
+              </p>
+              <NavLink 
+                key={service.href} 
+                href={service.href} 
+                className="inline-block px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition-all duration-300"
+              >
+                Learn More
+              </NavLink>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

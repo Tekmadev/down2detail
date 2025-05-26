@@ -51,17 +51,29 @@ export default function ServiceDetailsPage(props: { service: Service }) {
           </div>
 
           {/* BENEFITS */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">Why It's Important</h3>
-          <ul className="list-disc pl-6 mb-12 space-y-2 text-[#292524]">
-            {props.service.benefits.map((benefit, index) => (
-              <li key={index} className="pl-2">
-                {benefit}
-              </li>
-            ))}
-          </ul>
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
+            <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-6">Why It’s Important</h3>
+            <ul className="space-y-4">
+              {props.service.benefits.map((benefit, index) => (
+                <li key={index} className="flex items-start bg-gray-50 p-4 rounded-xl">
+                  <div className="text-[#d6781c] mr-3 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586
+                        7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-[#292524]">{benefit}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* FEATURES CARD */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
+          {/*<div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
             <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-6">What We Offer</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {props.service.features.map((feature, index) => (
@@ -83,29 +95,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 </div>
               ))}
             </div>
-          </div>
+          </div>*/}
 
           {/* BENEFITS CARD */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-6">Benefits</h3>
-            <ul className="space-y-4">
-              {props.service.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start bg-gray-50 p-4 rounded-xl">
-                  <div className="text-[#d6781c] mr-3 mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586
-                        7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-[#292524]">{benefit}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
 
           {/* PRICE CARD */}
           <div className="bg-gray-50 p-8 rounded-xl flex flex-col items-center">
@@ -123,7 +116,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white border border-gray-200 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
                     <span className="block text-[#292524] font-semibold text-lg mb-2">Sedan / Coupe Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
-                      {props.service.price} {props.service.currency}
+                      {props.service.price.sedan} {props.service.currency}
                     </span>
                   </div>
                 )}
@@ -141,7 +134,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white border border-gray-200 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
                     <span className="block text-[#292524] font-semibold text-lg mb-2">SUV Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
-                      {props.service.price} {props.service.currency}
+                      {props.service.price.suv} {props.service.currency}
                     </span>
                   </div>
                 )}
