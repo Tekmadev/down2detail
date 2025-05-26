@@ -100,7 +100,7 @@ const Navigation = () => {
                     label={item.label}
                     href={item.href}
                   >
-                    <div className="flex flex-col gap-4 min-w-[300px] p-4 bg-white rounded-lg shadow-lg">
+                    <div className="flex flex-col gap-4 min-w-[250px] p-4">
                       {Object.entries(servicesByCategory).map(([category, categoryServices]) => (
                         <div key={category} className="space-y-2 border-b border-gray-100 last:border-0 pb-3 last:pb-0">
                           <div 
