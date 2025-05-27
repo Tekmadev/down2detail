@@ -6,6 +6,24 @@ import { CardBody, CardItem, CardContainer } from "@/components/ui/3d-card";
 export default function Packages() {
     const selectedServices = Array.from(new Set(packages.map(pkg => pkg.category))).slice(0, 5);
 
+    // Fonction pour obtenir l'image de la catégorie
+    const getCategoryImage = (category: string) => {
+        switch (category) {
+            case "Exterior Detailing":
+                return "/images/categories/exterior.jpg";
+            case "Interior Detailing":
+                return "/images/categories/interioir.avif";
+            case "INT. & EXT. PACKAGES":
+                return "/images/categories/full.jpg";
+            case "Paint Polish & PROTECTION PACKAGES":
+                return "/images/categories/paint.jpg";
+            case "MAINTENANCE Packages":
+                return "/images/categories/maintenance.webp";
+            default:
+                return "/images/categories/default.jpg";
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
             <div className="container mx-auto px-4 py-16">
@@ -22,13 +40,20 @@ export default function Packages() {
                                     {category}
                                 </CardItem>
                                 <CardItem
+                                    as="p"
+                                    translateZ="60"
+                                    className="text-gray-500 text-sm max-w-sm mt-2"
+                                >
+                                    {packages.find(pkg => pkg.category === category)?.description[0]}
+                                </CardItem>
+                                <CardItem
                                     translateZ="100"
-                                    rotateX={20}
-                                    rotateZ={-10}
+                                    //rotateX={20}
+                                    //rotateZ={-10}
                                     className="w-full mt-4"
                                 >
                                     <img
-                                        src={`/images/services/${packages.find(pkg => pkg.category === category)?.id}.jpg`}
+                                        src={getCategoryImage(category)}
                                         height="1000"
                                         width="1000"
                                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -42,7 +67,7 @@ export default function Packages() {
                                         as="button"
                                         className="px-4 py-2 rounded-xl text-xs font-normal text-orange-600"
                                     >
-                                       View Packages
+                                        From ${packages.find(pkg => pkg.category === category)?.prices.sedanCoupesCrossovers}
                                     </CardItem>
                                     <CardItem
                                         translateZ={20}
@@ -50,7 +75,7 @@ export default function Packages() {
                                         as="button"
                                         className="px-4 py-2 rounded-xl bg-orange-600 text-white text-xs font-bold hover:bg-orange-700"
                                     >
-                                        Learn More
+                                        View Packages
                                     </CardItem>
                                 </div>
                             </CardBody>
