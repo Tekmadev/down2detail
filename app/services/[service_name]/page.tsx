@@ -5,6 +5,7 @@ import { RelatedServices } from "../components/ReletedService";
 import { CtaSection } from "../components/CtaSection";
 import ServiceDetailsPage from "./ServiceDetailPage";
 import ServiceSousSection from "../components/SectionSousSerivce";
+import CeramicCoatingPage from "../components/CeramicCoatingPage";
 
 
 export function generateStaticParams() {
@@ -22,7 +23,10 @@ export default function ServicePage({
   if (!service) notFound();
 
   if(service.id === "paint-polish"){
-    return <ServiceSousSection params={params}/>
+    return <ServiceSousSection/>
+  }
+  if(service.id ==="ceramic-coating"){
+    return <CeramicCoatingPage/>
   }
 
 //if(service && ["gloss-enhancer","one-step-polish", "paint-correction", "paint-decontamination", "floor-carpet-shampoo", "Pet Hair Removal", "Paint Sealant", "car-wax"].includes(service.id)){
