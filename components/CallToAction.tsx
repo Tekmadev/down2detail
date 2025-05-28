@@ -2,7 +2,7 @@ import Button from "./ui/Button";
 
 const CallToAction = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#57514b] relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>

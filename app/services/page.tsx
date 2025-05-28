@@ -20,7 +20,7 @@ export default function ServiePage(){
   }
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 via-white to-gray-50 min-h-screen">
+    <div className="bg-black min-h-screen">
       {/* Hero Section */}
       <div className="relative bg-secondary py-32 md:py-40 overflow-hidden">
         {/* Background Effects */}
@@ -102,7 +102,7 @@ export default function ServiePage(){
                     transition={{ duration: 0.6, delay: serviceIndex * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ y: -5 }}
-                    className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                    className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
                   >
                     <div className="relative h-68 overflow-hidden">
                       <Image
@@ -114,16 +114,16 @@ export default function ServiePage(){
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-xl font-semibold text-primary mb-2">
+                      <h3 className="text-xl font-semibold text-white mb-2">
                         {service.label}
                       </h3>
-                      <p className="text-gray-600 mb-4 line-clamp-2">
+                      <p className="text-gray-300 mb-4 line-clamp-2">
                         {service.description}
                       </p>
                       <div className="flex justify-between items-center">
                         <Link
                           href={service.href}
-                          className="inline-flex items-center font-medium text-[#3b82f6] hover:text-[#d6781c] transition-colors group"
+                          className="inline-flex items-center font-medium text-[#d6781c] hover:text-[#c66812] transition-colors group"
                         >
                           Learn More
                           <motion.svg
@@ -149,7 +149,7 @@ export default function ServiePage(){
         ))}   
       </div>
 
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#292524] to-transparent my-16"></div>
+    <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#292524] to-transparent my-16"></div>
 
       {/*section Action */}
       <motion.div 
@@ -157,7 +157,7 @@ export default function ServiePage(){
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-r from-[#d6781c]/10 via-[#d6781c]/5 to-[#d6781c]/10 py-16 relative overflow-hidden"
+        className="bg-gray-900 py-16 relative overflow-hidden"
       >
         {/* Effet de particules */}
         <div className="absolute inset-0">
@@ -177,13 +177,13 @@ export default function ServiePage(){
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.h2 
             {...fadeInUp}
-            className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#292524] to-[#d6781c] bg-clip-text text-transparent"
+            className="text-3xl font-bold mb-4 text-white"
           >
             Ready to Start Your Project?
           </motion.h2>
           <motion.p 
             {...fadeInUp}
-            className="max-w-2xl mx-auto mb-8 text-[#292524]"
+            className="max-w-2xl mx-auto mb-8 text-gray-300"
           >
             Contact us today for a free consultation and quote on your next car detailing service.
             Our team is ready to make your vehicle shine — inside and out.

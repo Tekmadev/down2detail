@@ -3,9 +3,9 @@
 
 :root {
   /* Brand colors based on PCF logo */
-  --primary: #FF4C00; /* Deep, luxurious, and elegant to reflect automotive excellence. */
-  --secondary: #0A0A0A; /* Vibrant orange to add that energetic pop and excitement, symbolizing detail and precision. */
-  --background: #F2F2F2; /* risp and clean for sharp contrast and clarity. */
+  --primary: #FF4C00; /* Orange vibrant */
+  --secondary: #FFFFFF; /* Blanc pour le texte */
+  --background: #000000;  /* Noir pour le fond */
 }
 
 @layer base {

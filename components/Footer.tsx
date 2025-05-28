@@ -15,6 +15,7 @@ import {
   getDocs,
   serverTimestamp,
 } from "firebase/firestore";
+import { cn } from "@/lib/utils";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -131,8 +132,8 @@ const Footer = () => {
                     href={link.href}
                     className={
                       pathname === link.href ||
-                      (link.href === "/services" &&
-                        pathname.includes("/services"))
+                        (link.href === "/services" &&
+                          pathname.includes("/services"))
                         ? "text-[#d6781c]"
                         : ""
                     }
@@ -146,31 +147,27 @@ const Footer = () => {
 
           {/* Services */}
           <div className="col-span-1">
-  <h3 className="text-2xl font-bold mb-6 relative pb-3">
-    Our Services
-    <span className="absolute left-0 bottom-0 block w-12 h-1 bg-orange-500"></span>
-  </h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    {services.map((service) => (
-      <FooterLink
-        key={service.href}
-        href={service.href}
-        className={`
-          block
-          px-3 py-2
-          rounded-lg
-          transition-colors duration-200
-          ${pathname === service.href 
-            ? "bg-orange-100 text-orange-600 font-semibold" 
-            : "text-gray-700 hover:bg-gray-100 hover:text-orange-600"}
-        `}
-      >
-        {service.label}
-      </FooterLink>
-    ))}
-  </div>
-</div>
-
+            <h3 className="text-2xl font-bold mb-6 relative pb-3">
+              Our Services
+              <span className="absolute left-0 bottom-0 block w-12 h-1 bg-orange-500"></span>
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {services.map((service) => (
+                <FooterLink
+                  key={service.href}
+                  href={service.href}
+                  className={cn(
+                    "block px-3 py-2 rounded-lg transition-colors duration-200",
+                    pathname === service.href
+                      ? "bg-orange-100 text-orange-600 font-semibold"
+                      : "text-white hover:bg-white hover:text-orange-600 hover:bg-opacity-10"
+                  )}
+                >
+                  {service.label}
+                </FooterLink>
+              ))}
+            </div>
+          </div>
 
           {/* Newsletter */}
           <div className="col-span-1">
@@ -187,13 +184,12 @@ const Footer = () => {
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary ${
-                      error
+                    className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary placeholder-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400 ${error
                         ? error.includes("already registered")
                           ? "border-amber-500"
                           : "border-red-500"
-                        : "border-gray-300"
-                    }`}
+                        : "border-gray-300 dark:border-gray-600"
+                      }`}
                     value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
@@ -212,11 +208,10 @@ const Footer = () => {
                 </div>
                 {error && (
                   <div
-                    className={`flex items-center gap-1 text-sm ${
-                      error.includes("already registered")
+                    className={`flex items-center gap-1 text-sm ${error.includes("already registered")
                         ? "text-amber-500"
                         : "text-red-500"
-                    }`}
+                      }`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

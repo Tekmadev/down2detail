@@ -9,21 +9,21 @@ import { ceramicCoating} from "@/data/ceramic";
 export default function CeramicCoatingPage() {
   
     return (
-      <div className="bg-white">
+      <div className="bg-black min-h-screen">
         {/* Hero Section */}
-        <div className="relative bg-gradient-to-r from-white via-gray-50 to-white py-20 overflow-hidden">
+        <div className="relative bg-black py-20 overflow-hidden">
                 <div className="container mx-auto max-w-7xl px-6">
                     {/* Title Section */}
                     <div className="text-center mb-12 transform hover:scale-105 transition-transform duration-300">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-[#292524] mb-4 tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight leading-tight">
                             {ceramicCoating.label}
                         </h1>
                         {ceramicCoating.subtitle && (
-                            <p className="text-2xl text-[#292524]/80 mb-4 font-medium">
+                            <p className="text-2xl text-gray-300 mb-4 font-medium">
                                 {ceramicCoating.subtitle}
                             </p>
                         )}
-                        <p className="text-lg text-[#292524]/90 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
                             {ceramicCoating.shortDescription}
                         </p>
                     </div>
@@ -45,14 +45,14 @@ export default function CeramicCoatingPage() {
             {/* Main Content Column */}
             <div className="lg:col-span-2 space-y-12">
               {/* Why Us? */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#292524] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">Why Us?</h2>
-                <p className="text-[#292524] mb-8 text-lg leading-relaxed">{ceramicCoating.description}</p>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Why Us?</h2>
+                <p className="text-gray-300 mb-8 text-lg leading-relaxed">{ceramicCoating.description}</p>
               </section>
 
               {/* How It Works */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">How Does It Work?</h2>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-6">How Does It Work?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Media Section */}
                   <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-500">
@@ -65,7 +65,7 @@ export default function CeramicCoatingPage() {
                   </div>
                   {/* Text Section */}
                   <div className="space-y-4">
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <ul className="list-disc list-inside space-y-2 text-gray-300">
                       {ceramicCoating.howItWorks.slice(0, 4).map((item, index) => (
                         <li key={index} className="transform hover:translate-x-2 transition-transform duration-300">{item}</li>
                       ))}
@@ -75,12 +75,12 @@ export default function CeramicCoatingPage() {
               </section>
 
               {/* Applicable Surfaces */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">Can Ceramic Coating Be Applied to Any Surface?</h2>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-6">Can Ceramic Coating Be Applied to Any Surface?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Text Section */}
                   <div className="space-y-4">
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <ul className="list-disc list-inside space-y-2 text-gray-300">
                       {ceramicCoating.appliesTo.map((item, index) => (
                         <li key={index} className="transform hover:translate-x-2 transition-transform duration-300">{item}</li>
                       ))}
@@ -99,21 +99,21 @@ export default function CeramicCoatingPage() {
               </section>
   
               {/* Durability */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">How Long Does Ceramic Coating Last?</h2>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-4">How Long Does Ceramic Coating Last?</h2>
                 <div className="overflow-hidden rounded-xl">
-                  <table className="w-full text-left mb-4">
+                  <table className="w-full text-left mb-4 text-gray-300">
                     <thead>
-                      <tr className="bg-gradient-to-r from-gray-100 to-gray-200">
-                        <th className="p-3 font-semibold">Option</th>
-                        <th className="p-3 font-semibold">Durability</th>
-                        <th className="p-3 font-semibold">Price (CAD)</th>
+                      <tr className="bg-gray-700">
+                        <th className="p-3 font-semibold text-white">Option</th>
+                        <th className="p-3 font-semibold text-white">Durability</th>
+                        <th className="p-3 font-semibold text-white">Price (CAD)</th>
                       </tr>
                     </thead>
                     <tbody>
                       {ceramicCoating.coatingLevels.map((level) => (
-                        <tr key={level.level} className="border-t border-gray-200 hover:bg-gray-50 transition-colors duration-200">
-                          <td className="p-3">{level.level}</td>
+                        <tr key={level.level} className="border-t border-gray-700 hover:bg-gray-700/50 transition-colors duration-200">
+                          <td className="p-3 text-gray-300">{level.level}</td>
                           <td className="p-3">{level.duration}</td>
                           <td className="p-3 text-orange-600 font-bold">${level.price.toFixed(2)}</td>
                         </tr>
@@ -127,9 +127,9 @@ export default function CeramicCoatingPage() {
               </section>
   
               {/* Why It's Worth It */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">Is It Worth the Investment?</h2>
-                <ul className="list-disc list-inside space-y-3 text-gray-700 text-lg">
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-4">Is It Worth the Investment?</h2>
+                <ul className="list-disc list-inside space-y-3 text-gray-300 text-lg">
                   {ceramicCoating.whyWorthIt.map((item, index) => (
                     <li key={index} className="transform hover:translate-x-2 transition-transform duration-300">{item}</li>
                   ))}
@@ -142,15 +142,15 @@ export default function CeramicCoatingPage() {
             {/* Sidebar Column */}
             <div className="lg:col-span-1 space-y-12">
               {/* Add-ons */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">Additional Surface Coatings</h2>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-6">Additional Surface Coatings</h2>
                 <ul className="space-y-4">
                   {ceramicCoating.addons.map((addon, index) => (
-                    <li key={index} className="bg-gradient-to-r from-gray-50 to-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+                    <li key={index} className="bg-gray-700 border border-gray-600 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
                       <div className="flex justify-between items-start">
                         <div>
-                          <p className="font-semibold text-[#292524]">{addon.title}</p>
-                          <p className="text-gray-600 text-sm">{addon.duration}</p>
+                          <p className="font-semibold text-white">{addon.title}</p>
+                          <p className="text-gray-400 text-sm">{addon.duration}</p>
                         </div>
                         <span className="text-orange-500 font-bold text-lg">
                           ${addon.price.toFixed(2)}
@@ -162,13 +162,13 @@ export default function CeramicCoatingPage() {
               </section>
   
               {/* FAQs */}
-              <section className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <h2 className="text-2xl font-bold text-[#292524] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#292524] to-[#4B5563]">Frequently Asked Questions</h2>
+              <section className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
                 <div className="space-y-6">
                   {ceramicCoating.faqs.map((faq, index) => (
                     <div key={index} className="transform hover:translate-x-2 transition-transform duration-300">
-                      <h3 className="text-xl font-semibold text-[#292524] mb-2">{faq.question}</h3>
-                      <p className="text-gray-700 text-lg">{faq.answer}</p>
+                      <h3 className="text-xl font-semibold text-white mb-2">{faq.question}</h3>
+                      <p className="text-gray-300 text-lg">{faq.answer}</p>
                     </div>
                   ))}
                 </div>

@@ -1,15 +1,15 @@
 export default function ValuesSection() {
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-16 md:py-24 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-medium text-[#d6781c] uppercase tracking-wider">
             Our Values
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mt-2 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mt-2 mb-6">
             The Principles That Guide Us
           </h2>
-          <p className="text-secondary/80">
+          <p className="text-gray-300">
             More than just a contractor, we're a team driven by values that
             shape every decision we make and every project we undertake.
           </p>
@@ -17,7 +17,7 @@ export default function ValuesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Value 1 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Unwavering Quality
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               We never compromise on quality, using only premium materials and
               proven techniques to ensure lasting results that exceed industry
               standards.
@@ -45,7 +45,7 @@ export default function ValuesSection() {
           </div>
 
           {/* Value 2 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +62,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Client Partnership
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               We believe in true collaboration, working closely with clients to
               understand their vision, provide honest advice, and deliver
               results that reflect their unique needs.
@@ -73,7 +73,7 @@ export default function ValuesSection() {
           </div>
 
           {/* Value 3 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +90,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Timely Execution
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               We respect that your time is valuable, which is why we're
               committed to realistic timelines, clear communication, and
               completing projects on schedule without sacrificing quality.
@@ -101,7 +101,7 @@ export default function ValuesSection() {
           </div>
 
           {/* Value 4 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,10 +118,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Innovation
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               We continuously adapt and improve, staying ahead of industry
               trends, adopting new technologies, and finding creative solutions
               to complex challenges.
@@ -129,7 +129,7 @@ export default function ValuesSection() {
           </div>
 
           {/* Value 5 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,10 +146,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Local Focus
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               As an Ottawa-based company, we're deeply committed to our
               community, supporting local suppliers, hiring local talent, and
               understanding the unique needs of our region.
@@ -157,7 +157,7 @@ export default function ValuesSection() {
           </div>
 
           {/* Value 6 */}
-          <div className="bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -174,10 +174,10 @@ export default function ValuesSection() {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-secondary mb-3">
+            <h3 className="text-xl font-bold text-gray-100 mb-3">
               Sustainability
             </h3>
-            <p className="text-secondary/80">
+            <p className="text-gray-300">
               We prioritize eco-friendly materials and practices, minimizing
               waste and environmental impact while creating healthier spaces for
               our clients.

@@ -41,13 +41,13 @@ const projects = [
 
 const RecentProjects = () => {
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-black">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-primary uppercase tracking-wider text-sm md:text-base font-medium mb-3">
                 RECENT PROJECTS
               </h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-secondary">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-100">
                 Our Craftsmanship in Action
               </h3>
               <div className="w-20 h-1 bg-[#d6781c] mx-auto mt-6"></div>

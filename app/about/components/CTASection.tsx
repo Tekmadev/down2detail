@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTASection() {
     return (
-        <section className="py-16 md:py-24 bg-[#89807a]/20">
+        <section className="py-16 md:py-24 bg-gray-800">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
           Ready to Transform Your Space?

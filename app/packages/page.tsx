@@ -24,7 +24,7 @@ export default function Packages() {
             case "Paint Polish & PROTECTION PACKAGES":
                 return "/images/categories/paint.jpg";
             case "MAINTENANCE Packages":
-                return "/images/categories/maintenace.jpeg";   
+                return "/images/categories/maintenace.jpeg";    
             default:
                 return "/images/categories/default.jpg";
         }
@@ -73,7 +73,7 @@ export default function Packages() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+        <div className="min-h-screen bg-black text-gray-300">
             <div className="container mx-auto px-4 py-16">
                 <h1 className="text-4xl font-bold text-center mb-4 text-orange-600">Discover our premium packages</h1>
 
@@ -123,7 +123,7 @@ export default function Packages() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {selectedServices.map((category) => (
                             <CardContainer key={category} className="inter-var">
-                                <CardBody className="bg-white relative group/card hover:shadow-2xl hover:shadow-orange-500/[0.1] border-orange-200 w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                                <CardBody className="bg-gray-800 relative group/card hover:shadow-2xl hover:shadow-orange-500/[0.1] border border-gray-700 rounded-xl p-6 shadow-lg text-gray-300 w-auto sm:w-[30rem] h-auto">
                                     <CardItem
                                         translateZ="50"
                                         className="text-xl font-bold text-orange-600"
@@ -133,7 +133,7 @@ export default function Packages() {
                                     <CardItem
                                         as="p"
                                         translateZ="60"
-                                        className="text-gray-500 text-sm max-w-sm mt-2"
+                                        className="text-gray-400 text-sm max-w-sm mt-2"
                                     >
                                         {packages.find(pkg => pkg.category === category)?.description[0]}
                                     </CardItem>
@@ -188,7 +188,7 @@ export default function Packages() {
                             <h2 className="text-2xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">Available Add-ons</h2>
                             <ul className="list-disc list-inside space-y-2">
                                 {selectedAddOns.map((addon, index) => (
-                                    <li key={index} className="text-neutral-600 dark:text-neutral-400">{addon}</li>
+                                    <li key={index} className="text-gray-300">{addon}</li>
                                 ))}
                             </ul>
                         </div>

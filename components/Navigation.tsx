@@ -76,11 +76,11 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="bg-white shadow-md py-4 px-4 md:px-8">
+    <nav className="sticky top-0 z-50 bg-gray-900 shadow-lg shadow-gray-800 py-4 px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-left">
         <LogoWithSpinningDs logoWidth={90} logoHeight={90} />
 
-        <div className="hidden md:flex items-center space-x-6 ">
+        <div className="hidden md:flex items-center space-x-6  ">
           <Menu setActive={handleSetActive}>
             {navigation.map((item) => {
               if (item.label !== "Services") {
@@ -100,7 +100,7 @@ const Navigation = () => {
                     label={item.label}
                     href={item.href}
                   >
-                    <div className="flex flex-col gap-4 min-w-[250px] p-4">
+                    <div className="flex flex-col gap-4 min-w-[250px] p-4 bg-gray-800 ">
                       {Object.entries(servicesByCategory).map(([category, categoryServices]) => (
                         <div key={category} className="space-y-2 border-b border-gray-100 last:border-0 pb-3 last:pb-0">
                           <div 

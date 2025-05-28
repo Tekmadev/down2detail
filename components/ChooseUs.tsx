@@ -47,7 +47,7 @@ const reasons = [
       id: "satisfaction",
       title: "Satisfaction Guaranteed",
       description:
-        "Your satisfaction is our priority. We go the extra mile to make sure every detail meets your expectations, or we’ll make it right.",
+        "Your satisfaction is our priority. We go the extra mile to make sure every detail meets your expectations, or we'll make it right.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const reasons = [
 
 const ChooseUs = () =>{
     return(
-        <section className="py-20 bg-white relative overflow-hidden">
+        <section className="py-20 bg-black relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary rounded-full opacity-10"></div>
       <div className="absolute -top-24 -left-24 w-64 h-64 bg-[#d6781c] rounded-full opacity-10"></div>
@@ -102,11 +102,11 @@ const ChooseUs = () =>{
           <h2 className="text-primary uppercase tracking-wider text-sm md:text-base font-medium mb-3">
             WHY CHOOSE US
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-secondary">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-100">
             Excellence in Every Detail
           </h3>
           <div className="w-20 h-1 bg-[#d6781c] mx-auto mt-6"></div>
-          <p className="max-w-2xl mx-auto mt-6 text-secondary-light">
+          <p className="max-w-2xl mx-auto mt-6 text-gray-300">
           At Down2Detail, we're committed to delivering top-tier car detailing services that exceed expectations.
           </p>
         </div>
@@ -115,13 +115,13 @@ const ChooseUs = () =>{
           {reasons.map((reason) => (
             <div
               key={reason.id}
-              className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow duration-300 border-b-4 border-[#d6781c] h-full flex flex-col items-center text-center"
+              className="bg-gray-800 p-8 rounded-lg hover:shadow-lg transition-shadow duration-300 border-b-4 border-[#d6781c] h-full flex flex-col items-center text-center text-gray-300"
             >
               <div className="text-[#d6781c] mb-4">{reason.icon}</div>
-              <h4 className="text-xl font-bold text-secondary mb-3">
+              <h4 className="text-xl font-bold text-gray-100 mb-3">
                 {reason.title}
               </h4>
-              <p className="text-secondary-light">{reason.description}</p>
+              <p className="text-gray-300">{reason.description}</p>
             </div>
           ))}
         </div>
