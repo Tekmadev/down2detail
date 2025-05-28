@@ -60,10 +60,10 @@ export default function ContactForm() {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_3mj6l2m", // Service ID from environment variables
-          "template_t5979wi", // Template ID from environment variables
+          "service_8n3pycc", // Service ID from environment variables
+          "template_cy82bdl", // Template ID from environment variables
           form.current,
-          "g4JzxjffiwgMMQsmu" // Public Key from environment variables
+          "VqvW7Yy30XMAvzte4" // Public Key from environment variables
         )
         .then(
           (response) => {

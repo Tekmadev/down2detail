@@ -26,7 +26,7 @@ export default function ServicePage({
     return <ServiceSousSection/>
   }
   if(service.id ==="ceramic-coating"){
-    return <CeramicCoatingPage/>
+    return
   }
 
 //if(service && ["gloss-enhancer","one-step-polish", "paint-correction", "paint-decontamination", "floor-carpet-shampoo", "Pet Hair Removal", "Paint Sealant", "car-wax"].includes(service.id)){

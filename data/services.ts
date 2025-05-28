@@ -539,7 +539,7 @@ export const PaintPolishService: Service[] =[
       id: "ceramic-coating",
       label: "Ceramic Coating",
       subtitle: "Elevate Your Vehicle's Defense",
-      href: "/services/ceramic-coating",
+      href: "/ceramic_coating",
       category: "Protection",
       shortDescription: "Long-lasting paint protection with nanotechnology.",
       features: [
@@ -651,7 +651,7 @@ export const PaintPolishService: Service[] =[
       label: "Paint Polish",
       subtitle: "Professional Paint Enhancement & Correction",
       href: "/services/paint-polish",
-      category: "Exterior",
+      category: "Paint Polish",
       shortDescription: "Professional paint polishing services.",
       features: [],
       benefits: [],

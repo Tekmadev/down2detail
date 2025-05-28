@@ -20,6 +20,10 @@ export const navigation: NavItem[] = [
          label: "Packages",
          href : "/packages"
      },
+     {
+        label: "Ceramic Coating",
+        href : "/ceramic_coating"
+    },
     {
         label: "Contact Us",
         href : "/contact"
