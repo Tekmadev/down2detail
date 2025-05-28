@@ -146,21 +146,31 @@ const Footer = () => {
 
           {/* Services */}
           <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
-              Our Services
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
-              {services.map((service) => (
-                <FooterLink
-                  key={service.href}
-                  href={service.href}
-                  className={pathname === service.href ? "text-[#d6781c]" : ""}
-                >
-                  {service.label}
-                </FooterLink>
-              ))}
-            </div>
-          </div>
+  <h3 className="text-2xl font-bold mb-6 relative pb-3">
+    Our Services
+    <span className="absolute left-0 bottom-0 block w-12 h-1 bg-orange-500"></span>
+  </h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {services.map((service) => (
+      <FooterLink
+        key={service.href}
+        href={service.href}
+        className={`
+          block
+          px-3 py-2
+          rounded-lg
+          transition-colors duration-200
+          ${pathname === service.href 
+            ? "bg-orange-100 text-orange-600 font-semibold" 
+            : "text-gray-700 hover:bg-gray-100 hover:text-orange-600"}
+        `}
+      >
+        {service.label}
+      </FooterLink>
+    ))}
+  </div>
+</div>
+
 
           {/* Newsletter */}
           <div className="col-span-1">

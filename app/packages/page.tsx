@@ -24,7 +24,7 @@ export default function Packages() {
             case "Paint Polish & PROTECTION PACKAGES":
                 return "/images/categories/paint.jpg";
             case "MAINTENANCE Packages":
-                return "/images/categories/maintenance.webp";
+                return "/images/categories/maintenace.jpeg";   
             default:
                 return "/images/categories/default.jpg";
         }

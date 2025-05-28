@@ -175,8 +175,8 @@ export interface DetailPackage {
     {
       id: "maintenance-monthly",
       category: "MAINTENANCE Packages",
-      name: "Monthly Basis (Bronze)",
-      description: ["(Int. & Ext.) Bronze Package"],
+      name: "Monthly Basis",
+      description: ["These packages are offered only to our loyal customers","(Int. & Ext.) Bronze Package"],
       prices: { sedanCoupesCrossovers: 79, compactMidFullSUVsPickups: 89 }
     },
     {
@@ -184,6 +184,7 @@ export interface DetailPackage {
       category: "MAINTENANCE Packages",
       name: "Ceramic Refresh",
       description: [
+        "These offers are exclusively for customers who have shown their loyalty",
         "STANDARD Int. & ADVANCED Ext.",
         "Ceramic Coating Topper",
         "Every (4-6 months)"

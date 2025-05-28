@@ -57,13 +57,23 @@ export default function ContactForm() {
   function handleSendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_Template_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID;
+
+    if (!serviceId || !templateId ||!publicKey) {
+      setErrorMessage("Erreur: Les identifiants de service d'email ne sont pas configurés.");
+      console.error("EmailJS Service ID or Public Key is not defined.");
+      return;
+    }
+
     if (form.current) {
       emailjs
         .sendForm(
-          "service_8n3pycc", // Service ID from environment variables
-          "template_cy82bdl", // Template ID from environment variables
+          serviceId,
+          templateId,
           form.current,
-          "VqvW7Yy30XMAvzte4" // Public Key from environment variables
+          publicKey
         )
         .then(
           (response) => {
