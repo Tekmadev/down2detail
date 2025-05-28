@@ -44,37 +44,37 @@ export default function Packages() {
                 content: (
                     <div className="space-y-4">
                         <div className="space-y-2">
-                            <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-200">Description</h3>
+                            <h3 className="text-lg font-semibold text-orange-400">Description</h3>
                             <ul className="list-disc list-inside space-y-1">
                                 {pkg.description.map((item, index) => (
-                                    <li key={index} className="text-neutral-600 dark:text-neutral-400">{item}</li>
+                                    <li key={index} className="text-white/90">{item}</li>
                                 ))}
                             </ul>
                         </div>
                         <div className="space-y-2">
-                            <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-200">Pricing</h3>
+                            <h3 className="text-lg font-semibold text-orange-400">Pricing</h3>
                             <div className="space-y-1">
-                                <p className="text-neutral-600 dark:text-neutral-400">
-                                    Sedan/Coupes/Crossovers: ${pkg.prices.sedanCoupesCrossovers}
+                                <p className="text-white/90">
+                                    Sedan/Coupes/Crossovers: <span className="text-orange-400 font-semibold">${pkg.prices.sedanCoupesCrossovers}</span>
                                 </p>
-                                <p className="text-neutral-600 dark:text-neutral-400">
-                                    Compact/Mid/Full SUVs/Pickups: ${pkg.prices.compactMidFullSUVsPickups}
+                                <p className="text-white/90">
+                                    Compact/Mid/Full SUVs/Pickups: <span className="text-orange-400 font-semibold">${pkg.prices.compactMidFullSUVsPickups}</span>
                                 </p>
                                 {pkg.prices.fullSizeSUVsPickups && (
-                                    <p className="text-neutral-600 dark:text-neutral-400">
-                                        Full Size SUVs/Pickups: ${pkg.prices.fullSizeSUVsPickups}
+                                    <p className="text-white/90">
+                                        Full Size SUVs/Pickups: <span className="text-orange-400 font-semibold">${pkg.prices.fullSizeSUVsPickups}</span>
                                     </p>
                                 )}
                             </div>
                         </div>
-                        {pkg.addOns && (
+                     {/*   {pkg.addOns && (
                             <button
                                 onClick={() => setSelectedAddOns(pkg.addOns || [])}
-                                className="mt-4 px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700"
+                                className="mt-4 px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300"
                             >
                                 View Add-ons
                             </button>
-                        )}
+                        )}*/}
                     </div>
                 )
             }));
@@ -107,11 +107,20 @@ export default function Packages() {
                                 Back to Categories
                             </button>
                             
-                                <button
-                                    className="px-6 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700"
-                                >
-                                    View Add-ons
-                                </button>
+                            
+                            <button
+                                onClick={() => {
+                                    const categoryPackages = packages.filter(pkg => pkg.category === selectedCategory);
+                                    const allAddOnsForCategory = Array.from(new Set(categoryPackages.flatMap(pkg => pkg.addOns || [])));
+                                    if(allAddOnsForCategory.length > 0){
+                                        setSelectedAddOns(allAddOnsForCategory);
+                                    }
+                                }}
+                                className="mt-4 px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300"
+                            >
+                                View Add-ons
+                            </button>
+                        
                             
                         </div>
                         <Carousel

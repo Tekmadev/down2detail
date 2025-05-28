@@ -212,22 +212,27 @@ export const Card = ({
       </AnimatePresence>
       <button
         onClick={handleOpen}
-        className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
-        <div className="relative z-40 p-8">
-          <p className="text-left font-sans text-sm font-medium text-white md:text-base">
-            {card.category}
-          </p>
-          <p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
-            {card.title}
-          </p>
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        <div className="relative z-40 flex h-full w-full flex-col justify-between p-8">
+          <div>
+            <p className="text-left font-sans text-sm font-medium text-orange-400 md:text-base">
+              {card.category}
+            </p>
+            <p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
+              {card.title}
+            </p>
+          </div>
+          <div className="mt-4 text-white/90 backdrop-blur-sm bg-black/20 p-4 rounded-xl">
+            {card.content}
+          </div>
         </div>
         <BlurImage
           src={card.src}
           alt={card.title}
           fill
-          className="absolute inset-0 z-10 object-cover"
+          className="absolute inset-0 z-10 object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </button>
     </>
