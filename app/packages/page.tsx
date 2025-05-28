@@ -67,14 +67,6 @@ export default function Packages() {
                                 )}
                             </div>
                         </div>
-                     {/*   {pkg.addOns && (
-                            <button
-                                onClick={() => setSelectedAddOns(pkg.addOns || [])}
-                                className="mt-4 px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300"
-                            >
-                                View Add-ons
-                            </button>
-                        )}*/}
                     </div>
                 )
             }));
@@ -120,8 +112,6 @@ export default function Packages() {
                             >
                                 View Add-ons
                             </button>
-                        
-                            
                         </div>
                         <Carousel
                             items={getPackagesForCategory(selectedCategory).map((card, index) => (

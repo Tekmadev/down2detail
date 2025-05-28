@@ -536,6 +536,25 @@ export const PaintPolishService: Service[] =[
       ]
     },
     {
+      id: "paint-polish",
+      label: "Paint Polish",
+      subtitle: "Professional Paint Enhancement & Correction",
+      href: "/services/paint-polish",
+      category: "Paint Polish",
+      shortDescription: "Professional paint polishing services.",
+      features: [],
+      benefits: [],
+      description: "Our paint polishing services are designed to enhance and protect your vehicle's paintwork. We offer three levels of service to meet your specific needs: Gloss Enhancer for maintaining shine, One-Step Polish for moderate correction, and Paint Correction for comprehensive restoration.",
+      imageShowcase: "/images/services-detailing/paint-polish.jpg",
+      price: {
+        sedan: "0.00",
+        suv: "0.00"
+      },
+      currency: "CAD",
+      image: "/images/services/paint-polish.jpg",
+      faqs: []
+    },
+    {
       id: "ceramic-coating",
       label: "Ceramic Coating",
       subtitle: "Elevate Your Vehicle's Defense",
@@ -646,25 +665,7 @@ export const PaintPolishService: Service[] =[
         }
       ]
     },
-    {
-      id: "paint-polish",
-      label: "Paint Polish",
-      subtitle: "Professional Paint Enhancement & Correction",
-      href: "/services/paint-polish",
-      category: "Paint Polish",
-      shortDescription: "Professional paint polishing services.",
-      features: [],
-      benefits: [],
-      description: "Our paint polishing services are designed to enhance and protect your vehicle's paintwork. We offer three levels of service to meet your specific needs: Gloss Enhancer for maintaining shine, One-Step Polish for moderate correction, and Paint Correction for comprehensive restoration.",
-      imageShowcase: "/images/services-detailing/paint-polish.jpg",
-      price: {
-        sedan: "0.00",
-        suv: "0.00"
-      },
-      currency: "CAD",
-      image: "/images/services/paint-polish.jpg",
-      faqs: []
-    }
+    
   ];
   
   export function getServiceById(id :String): Service | undefined {
