@@ -10,7 +10,7 @@ export default function Home() {
     <Hero />
     {/* <Services /> */}
     <ChooseUs />
-    <RecentProjects />
+    {/*<RecentProjects />*/}
     <CallToAction />
     </>
   );
