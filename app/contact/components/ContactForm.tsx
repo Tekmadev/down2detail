@@ -100,8 +100,8 @@ export default function ContactForm() {
   }, [messageSent]);
 
   return (
-    <div>
-      <h2 className="text-2xl font-semibold text-secondary mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
+    <div className="bg-gray-800 p-8 rounded-lg">
+      <h2 className="text-2xl font-semibold text-white mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
         Send Us a Message
       </h2>
 
@@ -109,7 +109,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-secondary mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Name <span className="text-red-500">*</span>
           </label>
@@ -119,7 +119,7 @@ export default function ContactForm() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
+            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-white"
             required
           />
         </div>
@@ -127,7 +127,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-secondary mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Email <span className="text-red-500">*</span>
           </label>
@@ -137,7 +137,7 @@ export default function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
+            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-white"
             required
           />
         </div>
@@ -145,7 +145,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="phone"
-            className="block text-sm font-medium text-secondary mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Phone Number <span className="text-red-500">*</span>
           </label>
@@ -155,7 +155,7 @@ export default function ContactForm() {
             name="phone"
             value={phone}
             onChange={handlePhoneChange}
-            className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary"
+            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-white"
             required
           />
         </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-secondary mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Message <span className="text-red-500">*</span>
           </label>
@@ -173,7 +173,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={5}
-            className="w-full px-4 py-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary resize-none"
+            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-white resize-none"
             required
           ></textarea>
         </div>

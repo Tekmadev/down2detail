@@ -17,16 +17,16 @@ export function RelatedServices({
         .filter((s) => s.id !== service.id)
         .slice(0, 3);
     return relatedServices.length > 0 && (
-            <div className="bg-gradient-to-b from-gray-50 via-white to-gray-50 py-20">
+            <div className="bg-black py-20">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#292524] mb-12 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
                         <span className="bg-gradient-to-r from-[#d6781c] to-yellow-400 bg-clip-text text-transparent">
                             Related Services You Might Be Interested In
                         </span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {relatedServices.map((relatedServices)=>(
-                            <div key={relatedServices.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                            <div key={relatedServices.id} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-700">
                                 <div className="relative h-56">
                                     <Image
                                         src={relatedServices.imageShowcase}
@@ -37,10 +37,10 @@ export function RelatedServices({
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-[#292524] mb-3">
+                                    <h3 className="text-xl font-bold text-white mb-3">
                                         {relatedServices.label}
                                     </h3>
-                                    <p className="text-[#292524]/80 mb-6 line-clamp-2 text-sm leading-relaxed">
+                                    <p className="text-gray-300 mb-6 line-clamp-2 text-sm leading-relaxed">
                                         {relatedServices.description}
                                     </p>
                                     <Link

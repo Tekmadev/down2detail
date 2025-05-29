@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export default function ServicePage({
   params,
 }: {
-  params: { service_name: string };
+  params: { service_name  : string };
 }) {
   const service = getServiceById(params.service_name);
   if (!service) notFound();
@@ -29,7 +29,7 @@ export default function ServicePage({
 
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 via-white to-gray-50 min-h-screen ">
+    <div className="bg-black from-gray-50 via-white to-gray-50 min-h-screen ">
       <HeroSection params={params} />
       <ServiceDetailsPage service={service} />
       <RelatedServices params={params} />

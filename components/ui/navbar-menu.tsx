@@ -163,7 +163,7 @@ export const MenuItem = ({
             <motion.div
               transition={transition}
               layoutId="dropdown"
-              className="bg-white rounded-md overflow-hidden border border-gray-200 shadow-xl max-h-[80vh] overflow-y-auto"
+              className="bg-gray-800 rounded-md overflow-hidden border border-gray-700 shadow-xl max-h-[80vh] overflow-y-auto"
             >
               <motion.div layout className="w-max h-full p-4">
                 {children}

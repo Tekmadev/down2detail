@@ -16,12 +16,12 @@ export const metadata = {
 
 export default function ServiceSousSection() {
   return (
-    <section className="bg-gradient-to-br from-white via-gray-50 to-white py-20">
+    <section className="bg-black py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {PaintPolishService.map((service, index) => (
           <div 
             key={service.id} 
-            className="flex flex-col md:flex-row items-center gap-16 shadow-lg rounded-3xl bg-white p-8 md:p-16 mb-12 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            className="flex flex-col md:flex-row items-center gap-16 shadow-lg rounded-3xl bg-gray-800 p-8 md:p-16 mb-12 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-700"
             style={{ animationDelay: `${index * 200}ms` }}
           >
             <div className="w-full md:w-1/2 group">
@@ -38,16 +38,16 @@ export default function ServiceSousSection() {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-extrabold text-gray-900 mb-4 leading-snug">
+              <h2 className="text-4xl font-extrabold text-white mb-4 leading-snug">
                 {service.label}
               </h2>
-              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+              <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                 {service.description}
               </p>
               <NavLink 
                 key={service.href} 
                 href={service.href} 
-                className="inline-block px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition-all duration-300"
+                className="inline-block px-8 py-4 bg-[#d6781c] text-white font-semibold rounded-full shadow-lg hover:bg-[#c66812] transition-all duration-300"
               >
                 Learn More
               </NavLink>

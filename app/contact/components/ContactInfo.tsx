@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ContactInfo() {
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 md:p-8">
-      <h2 className="text-2xl font-semibold text-secondary mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
+    <div className="bg-gray-800 rounded-xl shadow-md p-6 md:p-8">
+      <h2 className="text-2xl font-semibold text-white mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
         Contact Information
       </h2>
 
@@ -32,8 +32,8 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-secondary">Address</h3>
-            <p className="text-secondary-light mt-1">
+            <h3 className="font-semibold text-white">Address</h3>
+            <p className="text-gray-300 mt-1">
             3399 Boulevard Crémazie Est, <br />
             Montréal, QC, Canada
             </p>
@@ -58,8 +58,8 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-secondary">Phone</h3>
-            <p className="text-secondary-light mt-1">
+            <h3 className="font-semibold text-white">Phone</h3>
+            <p className="text-gray-300 mt-1">
               <a
                 href="tel:+14384838175"
                 className="hover:text-[#d6781c] transition-colors"
@@ -88,8 +88,8 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-secondary">Email</h3>
-            <p className="text-secondary-light mt-1">
+            <h3 className="font-semibold text-white">Email</h3>
+            <p className="text-gray-300 mt-1">
               <a
                 href="mailto:down2detail.ca@gmail.com"
                 className="hover:text-[#d6781c] transition-colors break-words"
@@ -102,7 +102,7 @@ export default function ContactInfo() {
       </div>
 
       <div className="mt-8">
-        <h3 className="font-semibold text-secondary mb-3">Connect With Us</h3>
+        <h3 className="font-semibold text-white mb-3">Connect With Us</h3>
         <div className="flex space-x-4">
           <a
             href="https://www.facebook.com/"

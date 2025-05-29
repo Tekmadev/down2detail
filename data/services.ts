@@ -555,6 +555,99 @@ export const PaintPolishService: Service[] =[
       faqs: []
     },
     {
+      id: "gloss-enhancer",
+      label: "Gloss Enhancer",
+      subtitle: "Ultimate Paint Shine & Protection",
+      href: "/services/gloss-enhancer",
+      category: "Paint Polish",
+      shortDescription: "Enhance paint gloss and shine.",
+      features: [
+        "Fine machine polish to boost gloss",
+        "Microfiber hand-buffing for finish",
+        "Final inspection for shine & uniformity",
+        "6-month polymer sealant (optional if ceramic coating is selected)"
+      ],
+      benefits: [
+        "Even if your paint doesn't have scratches, contaminants can build up and dull the finish. Gloss enhancement safely revives your vehicle's natural shine without aggressive polishing, making it ideal for new or regularly maintained cars."
+      ],
+      description: "A great option for newer or well-maintained vehicles, our Gloss Enhancer service deeply cleans the paint and boosts shine — removing embedded contaminants like brake dust, airborne particles, and rail dust. Finished with a fine polish to bring out clarity and gloss.",
+      imageShowcase: "/images/services-detailing/gloss.jpg",
+      price: {
+        sedan: "309.99",
+        suv: "369.99"
+      },
+      currency: "CAD",
+      image: "/images/services/gloss.jpg",
+      faqs: [
+        {
+          question: "How long does the gloss enhancement last?",
+          answer: "Results typically last 3-6 months with proper maintenance."
+        }
+      ]
+    },
+    {
+      id: "one-step-polish",
+      label: "One-Step Polish",
+      subtitle: "Swirl Removal & Gloss Enhancement",
+      href: "/services/one-step-polish",
+      category: "Paint Polish",
+      shortDescription: "Quick paint enhancement and correction.",
+      features: [
+        "One-step machine polish with cutting pad",
+        "Removes 50–70% of paint defects",
+        "6-month polymer sealant (optional if ceramic coating is selected)",
+        "Gloss inspection and touch-up as needed"
+      ],
+      benefits: [
+        "Daily driving exposes your vehicle to elements that cause swirls, oxidation, and light scratches. A one-step polish not only improves the look of your paint but also extends its life by removing defects."
+      ],
+      description: "A balanced level of paint correction using a cutting pad and compound-polish blend. This removes 50–70% of visible swirls and scratches, restoring the surface clarity and shine. Great for daily drivers or vehicles that need more than just gloss enhancement.",
+      imageShowcase: "/images/services-detailing/one-step.jpg",
+      price: {
+        sedan: "469.99",
+        suv: "569.99"
+      },
+      currency: "CAD",
+      image: "/images/services/one-step.jpg",
+      faqs: [
+        {
+          question: "What imperfections can be removed?",
+          answer: "Light to moderate swirl marks and scratches can be significantly reduced."
+        }
+      ]
+    },
+    {
+      id: "paint-correction",
+      label: "Paint Correction",
+      subtitle: "Multi-Stage Perfection & Showroom Finish",
+      href: "/services/paint-correction",
+      category: "Paint Polish",
+      shortDescription: "Professional paint correction service.",
+      features: [
+        "Multi-stage paint correction (wet sanding, compounding + polish)",
+        "Removes up to 90% of paint defects",
+        "6-month polymer sealant (optional if ceramic coating is selected)",
+        "Final surface inspection under detailing lights"
+      ],
+      benefits: [
+        "If your vehicle's paint has heavy swirling, oxidation, or water spot damage, paint correction is the only method to safely restore it. This process dramatically improves resale value and appearance, making your vehicle look better than new."
+      ],
+      description: "Our most advanced polishing service — using multiple machine steps of cutting and refining compounds, this service removes up to 90% of imperfections like heavy swirls, oxidation, scratches, and etching. The result is a mirror-like, showroom-quality finish with unmatched clarity and depth.",
+      imageShowcase: "/images/services-detailing/paint-correction.jpg",
+      price: {
+        sedan: "749.99",
+        suv: "909.99"
+      },
+      currency: "CAD",
+      image: "/images/services/paint-correction.jpg",
+      faqs: [
+        {
+          question: "How long does paint correction last?",
+          answer: "Results are permanent, but proper maintenance is required to maintain them."
+        }
+      ]
+    },
+    {
       id: "ceramic-coating",
       label: "Ceramic Coating",
       subtitle: "Elevate Your Vehicle's Defense",

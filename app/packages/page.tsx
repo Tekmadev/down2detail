@@ -133,7 +133,7 @@ export default function Packages() {
                                     <CardItem
                                         as="p"
                                         translateZ="60"
-                                        className="text-gray-400 text-sm max-w-sm mt-2"
+                                        className="text-white text-sm max-w-sm mt-2"
                                     >
                                         {packages.find(pkg => pkg.category === category)?.description[0]}
                                     </CardItem>

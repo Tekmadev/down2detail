@@ -13,11 +13,11 @@ export default function Map() {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Google Map of Ottawa, Ontario"
+          title="Google Map of Montreal"
           aria-label="Google Map showing our location in Ottawa"
         ></iframe>
       </div>
-      <div className="p-4 bg-gray-50 text-center text-sm text-secondary-light">
+      <div className="p-4 bg-gray-800 text-center text-sm text-secondary-light">
         <a
           href="https://www.google.com/maps/place/3399+Boul+Cr%C3%A9mazie+E,+Montr%C3%A9al,+QC+H1Z+2J1"
           target="_blank"

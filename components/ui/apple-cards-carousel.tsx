@@ -212,7 +212,7 @@ export const Card = ({
       </AnimatePresence>
       <button
         onClick={handleOpen}
-        className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="group relative z-10 flex min-h-[400px] w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
         <div className="relative z-40 flex h-full w-full flex-col justify-between p-8">
@@ -249,19 +249,16 @@ export const BlurImage = ({
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    <img
+    <Image
       className={cn(
         "h-full w-full transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
         className,
       )}
-      onLoad={() => setLoading(false)}
-      src={src as string}
+      onLoadingComplete={() => setLoading(false)}
+      src={src}
       width={width}
       height={height}
-      loading="lazy"
-      decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />

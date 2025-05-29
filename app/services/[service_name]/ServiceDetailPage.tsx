@@ -24,17 +24,17 @@ export default function ServiceDetailsPage(props: { service: Service }) {
     }, []);
 
   return (
-    <div className="container mx-auto px-4 py-16 md:py-20">
+    <div className="container mx-auto px-4 py-16 md:py-20 bg-black">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#292524] mb-6">Why Us?</h2>
-          <p className="text-[#292524] mb-8 text-lg leading-relaxed">{props.service.description}</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Why Us?</h2>
+          <p className="text-white mb-8 text-lg leading-relaxed">{props.service.description}</p>
 
           {/* FEATURES */}
-          <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-4">What's Included</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-4">What's Included</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
             {props.service.features.map((feature, index) => (
-              <div key={index} className="flex items-start bg-white p-4 rounded-lg shadow-sm">
+              <div key={index} className="flex items-start bg-gray-800 p-4 rounded-lg shadow-sm">
                 <div className="text-[#d6781c] mr-3 mt-1">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     <path
@@ -45,17 +45,17 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     />
                   </svg>
                 </div>
-                <p className="text-[#292524]">{feature}</p>
+                <p className="text-white">{feature}</p>
               </div>
             ))}
           </div>
 
           {/* BENEFITS */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-[#292524] mb-6">Why It’s Important</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 mb-12">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-6">Why It's Important</h3>
             <ul className="space-y-4">
               {props.service.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start bg-gray-50 p-4 rounded-xl">
+                <li key={index} className="flex items-start bg-gray-700 p-4 rounded-xl">
                   <div className="text-[#d6781c] mr-3 mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path
@@ -66,27 +66,27 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                       />
                     </svg>
                   </div>
-                  <p className="text-[#292524]">{benefit}</p>
+                  <p className="text-white">{benefit}</p>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* PRICE CARD */}
-          <div className="bg-gray-50 p-8 rounded-xl flex flex-col items-center">
-            <h4 className="text-xl font-bold text-[#292524] mb-8">Type of car</h4>
+          <div className="bg-gray-800 p-8 rounded-xl flex flex-col items-center">
+            <h4 className="text-xl font-bold text-white mb-8">Type of car</h4>
             <div className="flex flex-col md:flex-row gap-8 w-full justify-center">
               {/* Sedan */}
               <div
                 ref={sedanRef}
-                className="flex-1 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
+                className="flex-1 bg-gray-700 rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
                 onClick={() => setOpenType(openType === 'sedan' ? null : 'sedan')}
               >
-                <FaCar className="h-20 w-20 text-[#0f2c47] mb-4" />
-                <span className="text-lg font-semibold text-[#292524]">Sedan / Coupe</span>
+                <FaCar className="h-20 w-20 text-white mb-4" />
+                <span className="text-lg font-semibold text-white">Sedan / Coupe</span>
                 {openType === 'sedan' && (
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white border border-gray-200 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-[#292524] font-semibold text-lg mb-2">Sedan / Coupe Price</span>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
+                    <span className="block text-white font-semibold text-lg mb-2">Sedan / Coupe Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.sedan} {props.service.currency}
                     </span>
@@ -97,14 +97,14 @@ export default function ServiceDetailsPage(props: { service: Service }) {
               {/* SUV */}
               <div
                 ref={suvRef}
-                className="flex-1 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
+                className="flex-1 bg-gray-700 rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
                 onClick={() => setOpenType(openType === 'suv' ? null : 'suv')}
               >
-                <FaCarSide className="h-20 w-20 text-[#0f2c47] mb-4" />
-                <span className="text-lg font-semibold text-[#292524]">Compact/mid-size SUVs</span>
+                <FaCarSide className="h-20 w-20 text-white mb-4" />
+                <span className="text-lg font-semibold text-white">Compact/mid-size SUVs</span>
                 {openType === 'suv' && (
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white border border-gray-200 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-[#292524] font-semibold text-lg mb-2">SUV Price</span>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
+                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>
@@ -114,14 +114,14 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                {/* Full SUV */}
                <div
                 ref={suvRef}
-                className="flex-1 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
+                className="flex-1 bg-gray-700 rounded-2xl shadow-lg p-8 flex flex-col items-center transition hover:shadow-2xl hover:-translate-y-1 cursor-pointer relative"
                 onClick={() => setOpenType(openType === 'suv' ? null : 'suv')}
               >
-                <FaTruckPickup className="h-20 w-20 text-[#0f2c47] mb-4" />
-                <span className="text-lg font-semibold text-[#292524]">Full-size SUVs/Trucks</span>
+                <FaTruckPickup className="h-20 w-20 text-white mb-4" />
+                <span className="text-lg font-semibold text-white">Full-size SUVs/Trucks</span>
                 {openType === 'suv' && (
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white border border-gray-200 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-[#292524] font-semibold text-lg mb-2">SUV Price</span>
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
+                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>

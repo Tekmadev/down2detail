@@ -22,7 +22,7 @@ export function CtaSection() {
     }
 
     return (
-        <div className="bg-gradient-to-r from-[#d6781c]/10 via-[#d6781c]/5 to-[#d6781c]/10 py-24 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-gray-800 via-gray-600 to-gray-800 py-24 relative overflow-hidden">
             {/* Effet de fond décoratif */}
             <motion.div 
                 initial={{ opacity: 0 }}

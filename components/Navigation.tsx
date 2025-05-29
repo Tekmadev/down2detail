@@ -99,10 +99,10 @@ const Navigation = () => {
                     item={item.label}
                     label={item.label}
                     href={item.href}
-                  >
+                  > 
                     <div className="flex flex-col gap-4 min-w-[250px] p-4 bg-gray-800 ">
                       {Object.entries(servicesByCategory).map(([category, categoryServices]) => (
-                        <div key={category} className="space-y-2 border-b border-gray-100 last:border-0 pb-3 last:pb-0">
+                        <div key={category} className="space-y-2 border-b border-gray-800 last:border-0 pb-3 last:pb-0">
                           <div 
                             className="font-semibold text-secondary cursor-pointer hover:text-[#d6781c] flex items-center justify-between group transition-all duration-200"
                             onClick={() => SousCategory(category)}
@@ -131,7 +131,7 @@ const Navigation = () => {
                                   <NavMenuLink
                                     key={service.href}
                                     href={service.href}
-                                    className="block py-2 text-sm text-gray-600 hover:text-[#d6781c] transition-colors duration-200"
+                                    className="block py-2 text-sm text-white hover:text-[#d6781c] transition-colors duration-200"
                                   >
                                     {service.label}
                                   </NavMenuLink>

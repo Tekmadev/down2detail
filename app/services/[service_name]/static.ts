@@ -6,6 +6,7 @@ export function generateStaticParams() {
     }));
 }
 
+
 export const metadata = {
     title: "Service | Down2Detail",
     description: "Explore our professional detailing services."

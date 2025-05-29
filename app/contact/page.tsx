@@ -26,7 +26,7 @@ export default function ContactPage() {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
-          <div className="bg-white rounded-xl shadow-md p-6 md:p-8">
+          <div className="bg-gray-900 rounded-xl shadow-md p-6 md:p-8">
             <ContactForm />
           </div>
 

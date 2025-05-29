@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { CtaSection } from "../services/components/CtaSection";
-import { HeroSection } from "../services/components/Hero";
 import { ceramicCoating} from "@/data/ceramic";
 
 
