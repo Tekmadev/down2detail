@@ -85,9 +85,9 @@ const Footer = () => {
     <footer className="bg-background-light text-secondary-dark">
       <div className="container mx-auto px-4 pt-16 pb-8">
         {/* Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8">
           {/* Company Info */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-6 lg:col-span-3">
             <div className="mb-6">
               <LogoWithSpinningDs
                 logoWidth={80}
@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-6 lg:col-span-2">
             <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
               Our Links
             </h3>
@@ -132,8 +132,8 @@ const Footer = () => {
                     href={link.href}
                     className={
                       pathname === link.href ||
-                        (link.href === "/services" &&
-                          pathname.includes("/services"))
+                      (link.href === "/services" &&
+                        pathname.includes("/services"))
                         ? "text-[#d6781c]"
                         : ""
                     }
@@ -146,18 +146,18 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-12 lg:col-span-4">
             <h3 className="text-2xl font-bold mb-6 relative pb-3">
               Our Services
               <span className="absolute left-0 bottom-0 block w-12 h-1 bg-orange-500"></span>
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 text-sm">
               {services.map((service) => (
                 <FooterLink
                   key={service.href}
                   href={service.href}
                   className={cn(
-                    "block px-3 py-2 rounded-lg transition-colors duration-200",
+                    "block px-2 py-2 rounded-lg transition-colors duration-200 text-sm leading-tight",
                     pathname === service.href
                       ? "bg-orange-100 text-orange-600 font-semibold"
                       : "text-white hover:bg-white hover:text-orange-600 hover:bg-opacity-10"
@@ -170,7 +170,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-12 lg:col-span-3">
             <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
               Newsletter
             </h3>
@@ -180,16 +180,17 @@ const Footer = () => {
             </p>
             <form onSubmit={handleNewsletter} className="space-y-4" noValidate>
               <div className="flex flex-col gap-2">
-                <div className="flex flex-col sm:flex-row gap-2">
+                <div className="flex flex-col gap-2">
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary placeholder-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400 ${error
+                    className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary placeholder-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400 ${
+                      error
                         ? error.includes("already registered")
                           ? "border-amber-500"
                           : "border-red-500"
                         : "border-gray-300 dark:border-gray-600"
-                      }`}
+                    }`}
                     value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
@@ -200,7 +201,7 @@ const Footer = () => {
                   />
                   <button
                     type="submit"
-                    className="w-full sm:w-auto whitespace-nowrap bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300 disabled:opacity-70"
+                    className="w-full whitespace-nowrap bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300 disabled:opacity-70"
                     disabled={isLoading}
                   >
                     {isLoading ? "SUBSCRIBING..." : "SUBSCRIBE"}
@@ -208,10 +209,11 @@ const Footer = () => {
                 </div>
                 {error && (
                   <div
-                    className={`flex items-center gap-1 text-sm ${error.includes("already registered")
+                    className={`flex items-center gap-1 text-sm ${
+                      error.includes("already registered")
                         ? "text-amber-500"
                         : "text-red-500"
-                      }`}
+                    }`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -261,6 +263,7 @@ const Footer = () => {
               href="https://www.tekmadev.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-[#FF4C00] transition-colors duration-300"
             >
               Tekmadev
             </a>
