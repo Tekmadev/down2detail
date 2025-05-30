@@ -22,24 +22,27 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://down2detail.ca"),
   title: {
-    default: "Down2Detail - Premium Auto Detailing Services in Canada",
-    template: "%s | Down2Detail - Auto Detailing Experts",
+    default: "Down2Detail - Premium Auto Detailing Services in Montreal, QC",
+    template: "%s | Down2Detail - Montreal Auto Detailing Experts",
   },
   description:
-    "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and more. Premium car care in Canada with mobile and shop services.",
+    "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and mobile car wash. Serving Montreal, Laval, Longueuil, and Greater Montreal Area.",
   keywords: [
-    "auto detailing",
-    "car detailing",
-    "paint correction",
-    "ceramic coating",
-    "interior detailing",
-    "car wash",
-    "mobile detailing",
-    "Canada",
-    "professional car care",
-    "automotive detailing",
-    "paint protection",
-    "headlight restoration",
+    "auto detailing Montreal",
+    "car detailing Montreal",
+    "paint correction Montreal QC",
+    "ceramic coating Montreal",
+    "interior detailing Montreal",
+    "mobile car wash Montreal",
+    "car detailing Quebec",
+    "auto detailing Laval",
+    "car wash Longueuil",
+    "detailing services Montreal",
+    "professional car care Montreal",
+    "automotive detailing Quebec",
+    "paint protection Montreal",
+    "headlight restoration Montreal",
+    "car detailing Greater Montreal Area",
   ],
   authors: [{ name: "Down2Detail Team" }],
   creator: "Down2Detail",
@@ -60,23 +63,23 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: "https://down2detail.ca",
     siteName: "Down2Detail",
-    title: "Down2Detail - Premium Auto Detailing Services",
+    title: "Down2Detail - Premium Auto Detailing Services in Montreal",
     description:
-      "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and more. Premium car care in Canada.",
+      "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and mobile services. Serving Greater Montreal Area.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Down2Detail - Professional Auto Detailing Services",
+        alt: "Down2Detail - Professional Auto Detailing Services in Montreal",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Down2Detail - Premium Auto Detailing Services",
+    title: "Down2Detail - Premium Auto Detailing Services in Montreal",
     description:
-      "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and more.",
+      "Professional auto detailing services in Montreal including paint correction, ceramic coating, interior detailing, and mobile services.",
     images: ["/images/og-image.jpg"],
   },
   verification: {
@@ -94,7 +97,7 @@ const structuredData = {
   name: "Down2Detail",
   alternateName: "Down 2 Detail Auto Detailing",
   description:
-    "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and mobile car washing services.",
+    "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and mobile car washing services in Montreal, Quebec.",
   url: "https://down2detail.ca",
   telephone: "+1-438-483-8175",
   priceRange: "$$",
@@ -102,22 +105,61 @@ const structuredData = {
   logo: "https://down2detail.ca/images/d2dlogo.png",
   address: {
     "@type": "PostalAddress",
+    addressLocality: "Montreal",
+    addressRegion: "QC",
     addressCountry: "CA",
-    addressRegion: "Canada",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "45.5017", // Update with actual coordinates
+    latitude: "45.5017",
     longitude: "-73.5673",
   },
-  areaServed: {
-    "@type": "Country",
-    name: "Canada",
-  },
-  serviceArea: {
-    "@type": "Country",
-    name: "Canada",
-  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Montreal",
+      addressRegion: "QC",
+      addressCountry: "CA",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Greater Montreal Area",
+      addressRegion: "QC",
+      addressCountry: "CA",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Quebec",
+      addressRegion: "QC",
+      addressCountry: "CA",
+    },
+  ],
+  serviceArea: [
+    {
+      "@type": "City",
+      name: "Montreal",
+    },
+    {
+      "@type": "City",
+      name: "Laval",
+    },
+    {
+      "@type": "City",
+      name: "Longueuil",
+    },
+    {
+      "@type": "City",
+      name: "Brossard",
+    },
+    {
+      "@type": "City",
+      name: "Saint-Laurent",
+    },
+    {
+      "@type": "City",
+      name: "Verdun",
+    },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Auto Detailing Services",
@@ -127,7 +169,8 @@ const structuredData = {
         itemOffered: {
           "@type": "Service",
           name: "Paint Correction",
-          description: "Professional paint correction and polishing services",
+          description:
+            "Professional paint correction and polishing services in Montreal",
         },
       },
       {
@@ -136,7 +179,7 @@ const structuredData = {
           "@type": "Service",
           name: "Ceramic Coating",
           description:
-            "Premium ceramic coating application for long-lasting protection",
+            "Premium ceramic coating application for long-lasting protection in Montreal",
         },
       },
       {
@@ -144,7 +187,17 @@ const structuredData = {
         itemOffered: {
           "@type": "Service",
           name: "Interior Detailing",
-          description: "Complete interior cleaning and protection services",
+          description:
+            "Complete interior cleaning and protection services in Montreal",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Mobile Auto Detailing",
+          description:
+            "Convenient mobile auto detailing services throughout Montreal",
         },
       },
     ],

@@ -16,7 +16,17 @@ interface AEOContentProps {
 export default function AEOContent({
   title,
   content,
-  businessInfo,
+  businessInfo = {
+    name: "Down2Detail",
+    location: "Montreal, Quebec",
+    phone: "+1-438-483-8175",
+    services: [
+      "Paint Correction",
+      "Ceramic Coating",
+      "Interior Detailing",
+      "Mobile Auto Detailing",
+    ],
+  },
 }: AEOContentProps) {
   return (
     <div
