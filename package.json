@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:prod": "npm run build && firebase deploy --only hosting:production",
+    "deploy:dev": "npm run build && firebase deploy --only hosting:development",
+    "deploy:all": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

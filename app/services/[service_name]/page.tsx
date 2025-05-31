@@ -6,33 +6,30 @@ import { CtaSection } from "../components/CtaSection";
 import ServiceDetailsPage from "./ServiceDetailPage";
 import ServiceSousSection from "../components/SectionSousSerivce";
 
-
 export function generateStaticParams() {
   return services.map((service) => ({
     service_name: service.id,
   }));
 }
 
-export default function ServicePage({
+export default async function ServicePage({
   params,
 }: {
-  params: { service_name  : string };
+  params: Promise<{ service_name: string }>;
 }) {
-  const service = getServiceById(params.service_name);
+  const resolvedParams = await params;
+  const service = getServiceById(resolvedParams.service_name);
   if (!service) notFound();
 
-  if(service.id === "paint-polish"){
-    return <ServiceSousSection/>
+  if (service.id === "paint-polish") {
+    return <ServiceSousSection />;
   }
- 
-
-
 
   return (
     <div className="bg-black from-gray-50 via-white to-gray-50 min-h-screen ">
-      <HeroSection params={params} />
+      <HeroSection params={resolvedParams} />
       <ServiceDetailsPage service={service} />
-      <RelatedServices params={params} />
+      <RelatedServices params={resolvedParams} />
       <CtaSection />
     </div>
   );

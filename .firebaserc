@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "down-2-detail"
+  },
+  "targets": {
+    "down-2-detail": {
+      "hosting": {
+        "production": [
+          "down-2-detail"
+        ],
+        "development": [
+          "d2d-dev"
+        ]
+      }
+    }
   }
 }

@@ -56,7 +56,7 @@ export default function CeramicCoatingPage() {
                   {/* Media Section */}
                   <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-500">
                     <Image
-                      src="/images/ceramic-process.jpg"
+                      src="/images/hiw-ceramic.png"
                       alt="Ceramic Coating Process"
                       fill
                       className="object-cover transition-transform duration-700 hover:scale-110"
@@ -88,7 +88,7 @@ export default function CeramicCoatingPage() {
                   {/* Media Section */}
                   <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-500">
                     <Image
-                      src="/images/ceramic-surfaces.jpg"
+                      src="/images/ceramic.png"
                       alt="Ceramic Coating Surfaces"
                       fill
                       className="object-cover transition-transform duration-700 hover:scale-110"

@@ -41,7 +41,12 @@ export default function ContactForm() {
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const input = e.target.value;
-    setPhone(formatPhoneNumber(input));
+    const formatted = formatPhoneNumber(input);
+    setPhone(formatted);
+    setFormData((prev) => ({
+      ...prev,
+      phone: formatted,
+    }));
   };
 
   const handleChange = (
@@ -61,31 +66,33 @@ export default function ContactForm() {
     const templateId = process.env.NEXT_PUBLIC_EMAILJS_Template_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID;
 
-    if (!serviceId || !templateId ||!publicKey) {
-      setErrorMessage("Erreur: Les identifiants de service d'email ne sont pas configurés.");
+    if (!serviceId || !templateId || !publicKey) {
+      setErrorMessage(
+        "Erreur: Les identifiants de service d'email ne sont pas configurés."
+      );
       console.error("EmailJS Service ID or Public Key is not defined.");
       return;
     }
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          serviceId,
-          templateId,
-          form.current,
-          publicKey
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.text);
-            setMessageSent(true);
-            (e.target as HTMLFormElement).reset();
-          },
-          (error) => {
-            console.error("FAILED...", error.text);
-            alert("Failed to sent messages");
-          }
-        );
+      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+        (response) => {
+          console.log("SUCCESS!", response.text);
+          setMessageSent(true);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+          setPhone("");
+          (e.target as HTMLFormElement).reset();
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+          alert("Failed to sent messages");
+        }
+      );
     }
   }
   useEffect(() => {
