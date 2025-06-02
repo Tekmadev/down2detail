@@ -99,14 +99,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
           <div
             className={cn(
-              "absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l",
+              "absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l"
             )}
           ></div>
 
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "mx-auto max-w-7xl",
+              "mx-auto max-w-7xl"
             )}
           >
             {items.map((item, index) => (
@@ -170,7 +170,9 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  useOutsideClick(containerRef as React.RefObject<HTMLDivElement>, () => handleClose());
+  useOutsideClick(containerRef as React.RefObject<HTMLDivElement>, () =>
+    handleClose()
+  );
 
   const handleOpen = () => {
     setOpen(true);
@@ -186,9 +188,7 @@ export const Card = ({
       <AnimatePresence>
         {open && (
           <div className="fixed inset-0 z-50 h-screen overflow-auto">
-            <div
-              className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg"
-            />
+            <div className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg" />
             <div
               ref={containerRef}
               className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
@@ -215,7 +215,7 @@ export const Card = ({
         className="group relative z-10 flex min-h-[400px] w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div className="relative z-40 flex h-full w-full flex-col justify-between p-8">
+        <div className="relative z-40 flex h-full w-full flex-col justify-between p-3 md:p-8">
           <div>
             <p className="text-left font-sans text-sm font-medium text-orange-400 md:text-base">
               {card.category}
@@ -224,7 +224,7 @@ export const Card = ({
               {card.title}
             </p>
           </div>
-          <div className="mt-4 text-white/90 backdrop-blur-sm bg-black/20 p-4 rounded-xl">
+          <div className="mt-4 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl">
             {card.content}
           </div>
         </div>
@@ -253,7 +253,7 @@ export const BlurImage = ({
       className={cn(
         "h-full w-full transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
-        className,
+        className
       )}
       onLoadingComplete={() => setLoading(false)}
       src={src}

@@ -27,7 +27,7 @@ export default function Approach() {
                     </div>
                     </div>
                     <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-secondary mb-2">
+                    <h3 className="text-lg font-bold text-secondary mb-2">
                         Initial Inspection
                     </h3>
                     <p className="text-secondary/80">
@@ -45,7 +45,7 @@ export default function Approach() {
                     </div>
                     </div>
                     <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-secondary mb-2">
+                    <h3 className="text-lg font-bold text-secondary mb-2">
                         Deep Cleaning
                     </h3>
                     <p className="text-secondary/80">
@@ -63,7 +63,7 @@ export default function Approach() {
                     </div>
                     </div>
                     <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-secondary mb-2">
+                    <h3 className="text-lg font-bold text-secondary mb-2">
                         Paint Correction & Polishing
                     </h3>
                     <p className="text-secondary/80">
@@ -81,7 +81,7 @@ export default function Approach() {
                     </div>
                     </div>
                     <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-secondary mb-2">
+                    <h3 className="text-lg font-bold text-secondary mb-2">
                         Protection & Coating
                     </h3>
                     <p className="text-secondary/80">
@@ -99,7 +99,7 @@ export default function Approach() {
                     </div>
                     </div>
                     <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-secondary mb-2">
+                    <h3 className="text-lg font-bold text-secondary mb-2">
                         Final Touch & Delivery
                     </h3>
                     <p className="text-secondary/80">
