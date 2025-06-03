@@ -1,0 +1,15 @@
+export const brands = [
+  { name: "Ferrari", logo: "/images/brands/ferrari.png" },
+  { name: "Lamborghini", logo: "/images/brands/lamborghini.png" },
+  { name: "Porsche", logo: "/images/brands/porsche.png" },
+  { name: "Rolls-Royce", logo: "/images/brands/rolls-royce-bw.png" },
+  { name: "Mercedes-Benz", logo: "/images/brands/mercedes.png" },
+  { name: "BMW", logo: "/images/brands/BMW.png" },
+  { name: "Mini Cooper", logo: "/images/brands/mini.png" },
+  { name: "Cadillac", logo: "/images/brands/cadillac.webp" },
+  { name: "Chevrolet", logo: "/images/brands/chevrolet.png" },
+  { name: "Honda", logo: "/images/brands/honda.png" },
+  { name: "Toyota", logo: "/images/brands/toyota.png" },
+  { name: "Acura", logo: "/images/brands/acura.png" },
+  { name: "Lexus", logo: "/images/brands/lexus.png" },
+];

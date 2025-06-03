@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   keywords: [
     "auto detailing Montreal",
     "car detailing Montreal",
-    "paint correction Montreal QC",
+    "paint correction Montreal",
     "ceramic coating Montreal",
     "interior detailing Montreal",
     "mobile car wash Montreal",
@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     "paint protection Montreal",
     "headlight restoration Montreal",
     "car detailing Greater Montreal Area",
+    "paint polishing Montreal",
   ],
   authors: [{ name: "Down2Detail Team" }],
   creator: "Down2Detail",

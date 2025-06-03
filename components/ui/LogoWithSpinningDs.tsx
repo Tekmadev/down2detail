@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface LogoWithSpinningDsProps {
   logoWidth?: number;
@@ -19,6 +19,11 @@ const LogoWithSpinningDs = ({
   className = "",
 }: LogoWithSpinningDsProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const spinAnimation = {
     rotate: -360,
@@ -30,49 +35,67 @@ const LogoWithSpinningDs = ({
     },
   };
 
+  // Only render motion animations after component is mounted
+  const renderText = () => {
+    if (!isMounted) {
+      return (
+        <span className={`font-bold`} style={{ fontSize: "2.1rem", marginBottom: "-10px" }}>
+          <span className="text-[#FF4C00]">D</span>
+          own2
+          <span className="text-[#FF4C00]">D</span>
+          etail
+        </span>
+      );
+    }
+
+    return (
+      <span className={`font-bold`} style={{ fontSize: "2.1rem", marginBottom: "-10px" }}>
+        {isHovered ? (
+          <motion.span
+            className="text-[#FF4C00] inline-block"
+            initial={{ rotate: 0 }}
+            animate={spinAnimation}
+          >
+            D
+          </motion.span>
+        ) : (
+          <span className="text-[#FF4C00]">D</span>
+        )}
+        own2
+        {isHovered ? (
+          <motion.span
+            className="text-[#FF4C00] inline-block"
+            initial={{ rotate: 0 }}
+            animate={spinAnimation}
+          >
+            D
+          </motion.span>
+        ) : (
+          <span className="text-[#FF4C00]">D</span>
+        )}
+        etail
+      </span>
+    );
+  };
+
   return (
-    <Link href="/" className={className}>
+    <Link href="/" className={className} suppressHydrationWarning>
       <div
-        className="flex items-center"
+        className="flex items-end gap-1"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="flex items-center justify-center w-24 h-24">
+        <div className="flex items-end justify-center w-16 h-16 -mr-1 md:-mr-2">
           <Image
             src="/images/d2dlogo.png"
             alt="Down2Detail Logo"
-            width={logoWidth}
-            height={logoHeight}
+            width={logoWidth * 0.7}
+            height={logoHeight * 0.7}
             className="object-contain"
             priority
           />
         </div>
-        <span className={`${textSize} font-bold`}>
-          {isHovered ? (
-            <motion.span
-              className="text-[#FF4C00] inline-block"
-              initial={{ rotate: 0 }}
-              animate={spinAnimation}
-            >
-              D
-            </motion.span>
-          ) : (
-            <span className="text-[#FF4C00]">D</span>
-          )}
-          own2
-          {isHovered ? (
-            <motion.span
-              className="text-[#FF4C00] inline-block"
-              initial={{ rotate: 0 }}
-              animate={spinAnimation}
-            >
-              D
-            </motion.span>
-          ) : (
-            <span className="text-[#FF4C00]">D</span>
-          )}
-          etail
-        </span>
+        {renderText()}
       </div>
     </Link>
   );

@@ -43,10 +43,10 @@ export default function ServiePage(){
             {/* Title */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight">
               <span className="relative">
-                <span className="text-[#d6781c] drop-shadow-[0_0_15px_rgba(214,120,28,0.6)]">Our Professional</span>
-                <span className="block mt-2 bg-gradient-to-r from-[#d6781c] via-yellow-400 to-[#d6781c] bg-clip-text text-transparent">
+                <span className="text-[#d6781c] drop-shadow-[0_0_15px_rgba(214,120,28,0.6)]">Our Professional <br /> Services</span>
+                {/* <span className="block mt-2 bg-gradient-to-r from-[#d6781c] via-yellow-400 to-[#d6781c] bg-clip-text text-transparent">
                   Services
-                </span>
+                </span> */}
               </span>
             </h1>
 
