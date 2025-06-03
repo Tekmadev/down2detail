@@ -86,7 +86,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 <span className="text-lg font-semibold text-white">Sedan/Coupe</span>
                 {openType === 'sedan' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">Sedan / Coupe Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Small Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.sedan} {props.service.currency}
                     </span>
@@ -104,7 +104,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 <span className="text-lg font-semibold text-white">Compact/Mid-size SUV</span>
                 {openType === 'suv' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Medium Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>
@@ -121,7 +121,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 <span className="text-lg font-semibold text-white">Full-size SUV/Trucks</span>
                 {openType === 'suv' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Large Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>
