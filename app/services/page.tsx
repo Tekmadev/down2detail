@@ -77,7 +77,7 @@ export default function ServiePage(){
         </div>
       </div>
 
-      {/* Services par Categorie */}
+      {/* Services par Category */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         {categories.map((category, index) => (
           <motion.div 

@@ -96,21 +96,21 @@ export interface DetailPackage {
     // INT. & EXT. PACKAGES
     {
       id: "full-bronze",
-      category: "INT. & EXT. PACKAGES",
+      category: "Interior & Exterior",
       name: "BRONZE",
       description: ["Basic Int.& Ext.", "Carpets Shampoo"],
       prices: { sedanCoupesCrossovers: 99, compactMidFullSUVsPickups: 119 }
     },
     {
       id: "full-gold",
-      category: "INT. & EXT. PACKAGES",
+      category: "Interior & Exterior",
       name: "GOLD",
       description: ["STANDARD Int.& Ext.", "Engine Bay Detail"],
       prices: { sedanCoupesCrossovers: 199, compactMidFullSUVsPickups: 259 }
     },
     {
       id: "full-diamond",
-      category: "INT. & EXT. PACKAGES",
+      category: "Interior & Exterior",
       name: "DIAMOND",
       description: [
         "ADVANCED Int. & Ext.",
@@ -130,7 +130,7 @@ export interface DetailPackage {
     // Paint Polish & PROTECTION PACKAGES
     {
       id: "paint-gold",
-      category: "Paint Polish & PROTECTION PACKAGES",
+      category: "Paint Polish & Protection",
       name: "GOLD",
       description: [
         "STANDARD Exterior detail",
@@ -142,7 +142,7 @@ export interface DetailPackage {
     },
     {
       id: "paint-platinum",
-      category: "Paint Polish & PROTECTION PACKAGES",
+      category: "Paint Polish & Protection",
       name: "PLATINUM",
       description: [
         "STANDARD Exterior detail",
@@ -154,7 +154,7 @@ export interface DetailPackage {
     },
     {
       id: "paint-diamond",
-      category: "Paint Polish & PROTECTION PACKAGES",
+      category: "Paint Polish & Protection",
       name: "DIAMOND",
       description: [
         "ADVANCED Exterior detail",
@@ -174,14 +174,14 @@ export interface DetailPackage {
     // MAINTENANCE Packages
     {
       id: "maintenance-monthly",
-      category: "MAINTENANCE Packages",
+      category: "Maintenance",
       name: "Monthly Basis",
       description: ["These packages are offered only to our loyal customers","(Int. & Ext.) Bronze Package"],
       prices: { sedanCoupesCrossovers: 79, compactMidFullSUVsPickups: 89 }
     },
     {
       id: "maintenance-ceramic",
-      category: "MAINTENANCE Packages",
+      category: "Maintenance",
       name: "Ceramic Refresh",
       description: [
         "These offers are exclusively for customers who have shown their loyalty",
