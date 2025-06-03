@@ -24,11 +24,11 @@ export default function Packages() {
         return "/images/categories/exterior.jpg";
       case "Interior Detailing":
         return "/images/categories/interioir.avif";
-      case "INT. & EXT. PACKAGES":
+      case "Interior & Exterior":
         return "/images/categories/full.jpg";
-      case "Paint Polish & PROTECTION PACKAGES":
+      case "Paint Polish & Protection":
         return "/images/categories/paint.jpg";
-      case "MAINTENANCE Packages":
+      case "Maintenance":
         return "/images/categories/maintenace.jpeg";
       default:
         return "/images/categories/default.jpg";
@@ -111,7 +111,7 @@ export default function Packages() {
     <div className="min-h-screen bg-black text-gray-300">
       <div className="container mx-auto px-6 md:px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-4 text-orange-600">
-          Discover our premium packages
+          Discover our Premium Packages
         </h1>
 
         {selectedCategory ? (

@@ -188,24 +188,27 @@ export const PaintPolishService: Service[] =[
       shortDescription: "Complete exterior cleaning and protection.",
       features: [
         "Wheels & tires deep cleaned with pH-balanced wheel cleaner",
-        "Pre-rinse and snow foam application",
-        "Detailed brush cleaning (grilles, emblems, trim, fuel cap, etc.)",
-        "Door jamb cleaning (doors jambs & trunk jamb)",
-        "Contact Wash (Two-bucket method) with pH-neutral shampoo",
+        "Pre-rinse & snow foam application",
+        "Detailed brush cleaning (grille, emblems, trim, fuel cap, etc.)",
+        "Door jamb cleaning (door jambs & trunk jamb)",
+        "Contact Wash (two-bucket method) with pH-neutral shampoo",
         "Paint decontamination treatment (iron remover + clay bar/mitt)",
-        "Blow & microfiber drying towel for drying",
-        "Tire dressing, glass cleaning",
+        "Air blow & microfiber towel for drying",
+        "Tire dressing",
+        "Glass cleaning",
         "Final quality check"
       ],
       benefits: [
-        "Prevents swirl marks and micro-scratches",
-        "Safe for ceramic-coated, waxed and polymer sealed vehicles",
+        "Improves exterior appearance",
+        "Prevents swirl marks & micro-scratches",
+        "Safe for ceramic-coated, waxed & polymer sealed vehicles",
         "Cleans areas basic washes miss",
-        "Prepares car for protection or polishing",
-        "Maintains paint health and long-term shine",
-        "100% pH-neutral & coating-safe process"
+        "Prepares vehicle for protection or polishing",
+        "Maintains paint health & long-term shine",
+        "100% pH-neutral & coating-safe process",
+        "Boosts resale value"
       ],
-      description: "Basic car washes often use dirty sponges, harsh chemicals, or automated brushes that leave behind swirl marks, scratches, and miss hidden areas like grilles or door jambs. Our Exterior Detail Wash is designed to do the opposite — it safely and thoroughly cleans every part of your car's exterior using pH-neutral products and precise hand techniques.",
+      description: "Basic car washes often use dirty sponges, harsh chemicals, or automated brushes that leave behind swirl marks, scratches, and miss hidden areas like grilles or door jambs. Our Exterior Detailing service is designed to do the opposite — it safely and thoroughly cleans every part of your car's exterior using pH-neutral products and precise hand techniques.",
       imageShowcase: "/images/services-detailing/exterior.jpg",
       price: {
         sedan: "99.99",
@@ -232,18 +235,21 @@ export const PaintPolishService: Service[] =[
       category: "Exterior",
       shortDescription: "Remove embedded contaminants from paint.",
       features: [
-        "Iron Remover (Chemical Decontamination)",
-        "Tar Remover (Spot Cleaning)",
-        "Clay Bar/Mitt Treatment (Mechanical Decontamination)"
+        "Iron Remover (chemical decontamination)",
+        "Tar Remover (spot cleaning)",
+        "Clay Bar/Mitt Treatment (mechanical decontamination)",
+        "Final quality check"
       ],
       benefits: [
-        "Restores smoothness to your paint",
-        "Enhances gloss and clarity",
+        "Improves exterior appearance",
+        "Restores smoothness of your paint",
+        "Enhances gloss & clarity",
         "Prepares surface for ceramic coating or wax",
-        "Extends the life of your paint protection",
-        "Helps prevent long-term damage from embedded grime"
+        "Extends life of paint protection",
+        "Helps prevent long-term damage from embedded grime",
+        "Boosts resale value"
       ],
-      description: "Even after a proper wash, your car's paint can still feel rough or look dull. That's because microscopic contaminants like brake dust, industrial fallout, road tar, and tree sap embed themselves into your paint over time — and regular washing won't remove them.",
+      description: "Even after a proper wash, your vehicle's paint can still feel rough or look dull. That's because microscopic contaminants like brake dust, industrial fallout, road tar, and tree sap embed themselves into your paint over time — and regular washing won't remove them.",
       imageShowcase: "/images/services-detailing/decontamination.jpg",
       price: {
         sedan: "199.99",
@@ -266,22 +272,24 @@ export const PaintPolishService: Service[] =[
       category: "Exterior",
       shortDescription: "Professional engine bay cleaning.",
       features: [
-        "Full inspection and preparation of engine bay",
-        "Covering of sensitive components (fuse boxes, alternator, wiring, sensors, etc.)",
-        "Degreasing and dirt removal by hand",
+        "Full inspection & preparation of engine bay",
+        "Covering of sensitive components (fuse box, alternator, wiring, sensors, etc.)",
+        "Degreasing & dirt removal by hand",
         "Soft detailing brushes for tight spots",
-        "No pressure washer used – low-risk cleaning only",
-        "Application of a non-greasy dressing that restores shine and provides UV protection",
-        "Final wipe-down and inspection"
+        "Low-risk cleaning only (no pressure washer used)",
+        "Application of non-greasy dressing that restores shine",
+        "Product application that provides UV protection",
+        "Final quality check"
       ],
       benefits: [
-        "Improves engine appearance and resale value",
-        "Removes built-up grease, oil, and debris",
-        "Helps prevent long-term corrosion and wear",
+        "Improves engine bay appearance",
+        "Removes built-up grease, oil, & debris",
+        "Helps prevent long-term corrosion & wear",
         "Maintains safer operating temperatures",
-        "Adds a professional touch to your vehicle presentation"
+        "Adds professional touch to vehicle presentation",
+        "Boosts resale value"
       ],
-      description: "Your engine bay is one of the most overlooked areas in car detailing — yet it's one of the most impactful when done right. Our Engine Bay Cleaning service focuses on a safe, meticulous approach without using high-pressure water. We protect critical components, remove built-up grime, and finish with a non-greasy dressing that restores a deep, clean factory look and long-lasting protection.",
+      description: "Your engine bay is one of the most overlooked areas in automotive detailing — yet it's one of the most impactful when done right. Our Engine Bay Detailing service focuses on a safe, meticulous approach without using high-pressure water. We protect critical components, remove built-up grime, and finish with a non-greasy dressing that restores a deep, clean factory look and long-lasting protection.",
       imageShowcase: "/images/services-detailing/engine-bay.jpg",
       price: {
         sedan: "109.99",
@@ -304,18 +312,20 @@ export const PaintPolishService: Service[] =[
       category: "Exterior",
       shortDescription: "Restore cloudy headlights to like-new condition.",
       features: [
-        "Full surface prep and masking",
+        "Full surface prep & masking",
         "Wet sanding (multi-stage, as needed)",
         "Machine polishing to restore optical clarity",
         "Ceramic coating application for long-term protection",
-        "Final inspection and light output check"
+        "Light output inspection",
+        "Final quality check"
       ],
       benefits: [
-        "Restores nighttime visibility and safety",
-        "Improves vehicle appearance and resale value",
-        "Saves money vs. costly headlight replacement",
-        "Prevents further UV and oxidation damage",
-        "Enhances the overall finish of a detail job"
+        "Improves exterior appearance",
+        "Restores nighttime visibility & safety",
+        "Saves money (instead of costly headlight replacement)",
+        "Prevents further UV & oxidation damage",
+        "Enhances overall finish",
+        "Boosts resale value"
       ],
       description: "Faded, yellowed, or hazy headlights don't just look bad — they also reduce night visibility and compromise safety. Our professional Headlight Restoration service brings them back to life using a multi-stage sanding and polishing process that restores clarity, shine, and light output.",
       imageShowcase: "/images/services-detailing/headlight.jpg",
@@ -340,20 +350,22 @@ export const PaintPolishService: Service[] =[
       category: "Exterior",
       shortDescription: "Professional tinting for lights.",
       features: [
-        "Full surface prep and cleaning",
+        "Full surface prep & cleaning",
         "Precision-cut tint film in your choice of color",
         "Professional installation with heat-shrinking for a seamless fit",
-        "2-year warranty against bubbling, peeling, or fading",
-        "Final inspection and alignment check"
+        "1-year warranty against bubbling, peeling, or fading",
+        "Alignment check",
+        "Final quality check"
       ],
       benefits: [
-        "Achieves a blacked-out, performance look",
-        "Shields lights from UV, fading, and scratching",
-        "Backed by a 2-year no-fade, no-bubble warranty",
-        "Enhances both headlights and taillights",
-        "Fully removable with no damage to factory lenses"
+        "Improves exterior appearance",
+        "Achieves a blacked-out, sporty look",
+        "Shields lights from UV, fading, & scratching",
+        "Backed by a 1-year no-fade, no-bubble warranty",
+        "Enhances both headlights & taillights",
+        "Fully removable with no damage to factory lenses (maintains resale value)"
       ],
-      description: "Looking to enhance the look of your car's front or rear lights? Our Tint Film Service adds a sleek, custom appearance to both headlights and taillights, while offering protection against UV rays, scratches, and oxidation. Choose from two bold shades, professionally installed with a 2-year warranty.",
+      description: "Looking to enhance the look of your vehicle's front or rear lights? Our Headlight and Taillight Tint service adds a sleek, custom appearance to both headlights and taillights, while offering protection against UV rays, scratches, and oxidation. Choose from two bold shades, professionally installed with a 1-year warranty.",
       imageShowcase: "/images/services-detailing/light-tint.jpg",
       price: {
         sedan: "179.99",
@@ -377,19 +389,27 @@ export const PaintPolishService: Service[] =[
       shortDescription: "Complete interior cleaning and detailing.",
       features: [
         "Interior vacuuming (floor, mats, trunk/cargo area)",
-        "Dashboard, door panels, and center console wiped and detailed",
-        "Vents, buttons, knobs, and trim cleaned with dedicated soft detailing brushes",
+        "Dashboard, door panels, & center console wiped and detailed",
+        "Vents, buttons, knobs, & trim cleaned with dedicated soft detailing brushes",
         "Steering wheel deep cleaned to a factory matte finish",
-        "Cup holders and small compartments cleaned",
-        "Windows and mirrors cleaned from inside",
+        "Cup holders & small compartments cleaned",
+        "Windows & mirrors cleaned from inside",
         "Steam cleaning of high-touch surfaces for sanitization",
         "Headliner spot-cleaning (where applicable)",
-        "Final interior fragrance applied (optional)"
+        "Interior fragrance application",
+        "Final quality check"
       ],
       benefits: [
-        "Unlike quick wipe-downs, our professional detailing reaches the cracks, gaps, and deep corners most miss. This not only improves air quality and hygiene but also protects surfaces from wear, fading, and long-term damage. Interior detailing is essential to maintaining both the comfort and value of your vehicle."
+        "Improves interior appearance",
+        "Enhances comfort",
+        "Eliminates grime, dust, stains, allergens, & bacteria",
+        "Reaches cracks, gaps, & deep corners most miss.",
+        "Improves air quality & interior hygiene",
+        "Protects surfaces from wear, fading, & long-term damage",
+        "Extends seat lifespan",
+        "Boosts resale value"
       ],
-      description: "Most quick car washes offer rushed interior wipe-downs that leave behind dust in vents, smudges on screens, and grime in tight spaces. But your vehicle deserves better. At our detailing studio, Interior Detailing is an art — not a surface-level clean. We don't just make it look clean; we deep clean every accessible area using safe, professional-grade tools and products.",
+      description: "Most quick car washes offer rushed interior wipe-downs that leave behind dust in vents, smudges on screens, and grime in tight spaces. But your vehicle deserves better. To us, Interior Detailing is an art — not a surface-level clean. We don't just make it look clean; we deep clean every accessible area using safe, professional-grade tools and products.",
       imageShowcase: "/images/services-detailing/interior.jpg",
       price: {
         sedan: "99.99",
@@ -413,16 +433,20 @@ export const PaintPolishService: Service[] =[
       shortDescription: "Deep cleaning for floors and carpets.",
       features: [
         "Complete vacuuming of carpeted floors and mats",
-        "Floor mats removed and individually shampooed & extracted",
-        "Carpeted footwells, under-seat areas, and transmission tunnels shampooed",
+        "Floor mats removed & individually shampooed & extracted",
+        "Carpeted footwells, under-seat areas, & transmission tunnels shampooed",
         "Low-moisture cleaning process to preserve underlying electronics",
         "Spot-treatment for stubborn stains",
-        "Odor-neutralizing finish applied"
+        "Odor-neutralizing finish (optional)",
+        "Final quality check"
       ],
       benefits: [
-        "Carpet and floor areas are the most abused parts of a vehicle's interior, absorbing dirt, salt, moisture, and bacteria. Over time, this leads to odors, discoloration, and even mold growth. Our low-moisture, electronics-safe shampooing method restores cleanliness and hygiene without compromising your vehicle's sensitive under-floor components."
+        "Improves interior appearance",
+        "Eliminates dirt, salt, stains, & bacteria",
+        "Removes odors, discoloration, & mold growth",
+        "Boosts resale value"
       ],
-      description: "Your car's floors and carpets absorb dirt, salt, spills, and bacteria daily — and basic vacuuming won't cut it. Our Floor & Carpet Shampoo service goes far beyond surface cleaning by using moisture-controlled, upholstery-safe cleaning methods to deep clean and sanitize carpets without risking electrical components commonly located underfoot.",
+      description: "Your car's floors and carpets are the most abused parts of a vehicle's interior, absorbing dirt, salt, spills, and bacteria daily. Over time, this leads to odors, discoloration, and even mold growth. — and basic vacuuming won't cut it. Our Floor & Carpet Shampoo service goes far beyond surface cleaning by using moisture-controlled, upholstery-safe cleaning methods to deep clean and sanitize carpets without risking electrical components commonly located underfoot.",
       imageShowcase: "/images/services-detailing/carpet.jpg",
       price: {
         sedan: "69.99",
@@ -447,15 +471,18 @@ export const PaintPolishService: Service[] =[
       features: [
         "Full inspection of interior pet hair buildup",
         "Complete interior vacuum",
-        "Specialized tools used to lift embedded fur from fabric and carpet",
-        "Hair removed from seats, carpets, floor mats, seat creases, and cargo area",
-        "Optional: Air vents and tight areas cleaned with static or compressed tools",
-        "Final vacuum pass to ensure a fur-free finish"
+        "Specialized tools used to lift embedded fur from fabric & carpet",
+        "Hair removed from seats, carpets, floor mats, seat creases, & cargo area",
+        "Air vents and tight areas cleaned with static or compressed tools (optional)",
+        "Final quality check"
       ],
       benefits: [
-        "Pet hair is more than a nuisance — it can cause allergens, retain odors, and damage upholstery fibers over time. Regular cleaning often fails to address the deeper, embedded hair that hides in your interior. Our professional pet hair removal restores cleanliness, improves air quality, and protects interior materials for a more comfortable and hygienic ride."
+        "Improves interior appearance",
+        "Eliminates pet hair, odors, & allergens",
+        "Protects interior & upholstery fibers",
+        "Boosts resale value"
       ],
-      description: "Pet hair isn't just unsightly — it embeds itself into upholstery, floor fibers, and hard-to-reach crevices, making it extremely difficult to remove with standard vacuuming. Our Pet Hair Removal service is designed to fully extract stubborn pet hair using specialized tools and techniques that protect your interior while restoring a clean, hygienic environment.",
+      description: "Pet hair is more than a nuisance — it embeds itself into upholstery, floor fibers, and hard-to-reach crevices, making it extremely difficult to remove with standard vacuuming. It can cause allergens, retain odors, and damage upholstery fibers over time. Our Pet Hair Removal service is designed to fully extract stubborn pet hair using specialized tools and techniques that protect your interior while restoring a clean, hygienic environment.",
       imageShowcase: "/images/services-detailing/pet-hair.jpg",
       price: {
         sedan: "89.99",
@@ -481,13 +508,19 @@ export const PaintPolishService: Service[] =[
         "Fabric seats thoroughly vacuumed",
         "Pre-treatment with enzyme-based stain removers",
         "Shampooing and hot-water extraction of seat fabric",
-        "Spot stain treatment as needed",
-        "Seats are lightly deodorized for a clean, fresh scent"
+        "Spot stain treatment (as needed)",
+        "Seats are lightly deodorized for a clean, fresh scent",
+        "Final quality check"
       ],
       benefits: [
-        "Fabric seats act like sponges, absorbing moisture, oils, and contaminants. Over time, this creates not just visible stains, but lingering smells and potential bacteria buildup. Professional fabric shampooing improves hygiene, extends upholstery lifespan, and enhances the comfort of your ride — especially important for allergy sufferers and families with kids or pets."
+        "Improves interior appearance",
+        "Enhances comfort",
+        "Eliminates grime, dust, stains, allergens, & bacteria",
+        "Improves air quality & interior hygiene",
+        "Extends seat lifespan",
+        "Boosts resale value"
       ],
-      description: "Fabric seats are notorious for trapping dirt, sweat, odors, and spills over time — things a simple vacuum or wipe-down can't fix. At our studio, we go beyond surface cleaning. Our Fabric Seat Shampoo service deep-cleans your cloth upholstery, removing embedded stains, bacteria, and lingering odors to restore a fresh, hygienic cabin.",
+      description: "Fabric seats act like sponges, absorbing moisture, oils, and contaminants. They also trap dirt, sweat, odors, and spills over time — things a simple vacuum or wipe-down can't fix. We go beyond surface cleaning, our Fabric Seat Shampoo service deep-cleans your cloth upholstery, removing embedded stains, bacteria, and lingering odors to restore a fresh, hygienic cabin.",
       imageShowcase: "/images/services-detailing/fabric-seats.jpg",
       price: {
         sedan: "69.99",
@@ -512,13 +545,20 @@ export const PaintPolishService: Service[] =[
       features: [
         "Full vacuum of leather seating areas",
         "Gentle yet effective leather-safe cleaner applied",
-        "Dirt, sweat, and oils extracted with soft brushes and microfiber",
+        "Dirt, sweat, & oils extracted with soft brushes & microfiber",
         "Leather is conditioned with premium UV-protectant cream",
         "Matte, natural finish (no greasy shine)",
-        "Optional: Leather UV sealant for extended protection"
+        "Leather UV sealant for extended protection (optional)",
+        "Final quality check"
       ],
       benefits: [
-        "Leather is a natural material that requires ongoing care to prevent cracking, fading, and hardening. Generic cleaners and harsh chemicals can damage its surface. Our tailored leather care process extends the life and appearance of your seats, making them more comfortable and preserving your vehicle's value."
+        "Improves interior appearance",
+        "Enhances comfort",
+        "Eliminates dirt, stains, sweat, & oils",
+        "Leather needs regular care to prevent cracking, fading, & hardening",
+        "Improves interior hygiene",
+        "Extends seat lifespan",
+        "Boosts resale value"
       ],
       description: "Leather seats add elegance to your vehicle, but without proper care, they quickly become dull, cracked, and discolored. Our Leather Seat Treatment service is designed to clean deep into the leather grain, lifting dirt and body oils, then condition and protect the surface to maintain its supple, factory-like feel.",
       imageShowcase: "/images/services-detailing/leather.jpg",
@@ -564,11 +604,17 @@ export const PaintPolishService: Service[] =[
       features: [
         "Fine machine polish to boost gloss",
         "Microfiber hand-buffing for finish",
-        "Final inspection for shine & uniformity",
-        "6-month polymer sealant (optional if ceramic coating is selected)"
+        "Inspection for shine & uniformity",
+        "6-month polymer sealant (optional if ceramic coating is selected)",
+        "Final quality check"
       ],
       benefits: [
-        "Even if your paint doesn't have scratches, contaminants can build up and dull the finish. Gloss enhancement safely revives your vehicle's natural shine without aggressive polishing, making it ideal for new or regularly maintained cars."
+        "Improves exterior appearance",
+        "Contaminants can dull your paint even without scratches",
+        "Gloss enhancer revives shine without harsh polishing",
+        "Keeps your car looking fresh between full corrections",
+        "Maintains a smooth, reflective finish",
+        "Boosts resale value",
       ],
       description: "A great option for newer or well-maintained vehicles, our Gloss Enhancer service deeply cleans the paint and boosts shine — removing embedded contaminants like brake dust, airborne particles, and rail dust. Finished with a fine polish to bring out clarity and gloss.",
       imageShowcase: "/images/services-detailing/gloss.jpg",
@@ -596,10 +642,16 @@ export const PaintPolishService: Service[] =[
         "One-step machine polish with cutting pad",
         "Removes 50–70% of paint defects",
         "6-month polymer sealant (optional if ceramic coating is selected)",
-        "Gloss inspection and touch-up as needed"
+        "Gloss inspection and touch-up as needed",
+        "Final quality check"
       ],
       benefits: [
-        "Daily driving exposes your vehicle to elements that cause swirls, oxidation, and light scratches. A one-step polish not only improves the look of your paint but also extends its life by removing defects."
+        "Improves exterior appearance",
+        "Daily driving causes swirls, oxidation, & light scratches",
+        "Removes minor defects and blemishes",
+        "Enahnces gloss & paint clarity",
+        "Extends paint lifespan",
+        "Boosts resale value",
       ],
       description: "A balanced level of paint correction using a cutting pad and compound-polish blend. This removes 50–70% of visible swirls and scratches, restoring the surface clarity and shine. Great for daily drivers or vehicles that need more than just gloss enhancement.",
       imageShowcase: "/images/services-detailing/one-step.jpg",
@@ -627,10 +679,14 @@ export const PaintPolishService: Service[] =[
         "Multi-stage paint correction (wet sanding, compounding + polish)",
         "Removes up to 90% of paint defects",
         "6-month polymer sealant (optional if ceramic coating is selected)",
-        "Final surface inspection under detailing lights"
+        "Surface inspection under detailing lights"
       ],
       benefits: [
-        "If your vehicle's paint has heavy swirling, oxidation, or water spot damage, paint correction is the only method to safely restore it. This process dramatically improves resale value and appearance, making your vehicle look better than new."
+        "Improves exterior appearance",
+        "Corrects heavy swirls, oxidation, & water spot damage",
+        "Safely restores depth, clarity, and color",
+        "Revives neglected or damaged paint surfaces",
+        "Boosts resale value",
       ],
       description: "Our most advanced polishing service — using multiple machine steps of cutting and refining compounds, this service removes up to 90% of imperfections like heavy swirls, oxidation, scratches, and etching. The result is a mirror-like, showroom-quality finish with unmatched clarity and depth.",
       imageShowcase: "/images/services-detailing/paint-correction.jpg",
@@ -651,7 +707,7 @@ export const PaintPolishService: Service[] =[
       id: "ceramic-coating",
       label: "Ceramic Coating",
       subtitle: "Elevate Your Vehicle's Defense",
-      href: "/ceramic_coating",
+      href: "/ceramic-coating",
       category: "Protection",
       shortDescription: "Long-lasting paint protection with nanotechnology.",
       features: [
@@ -704,12 +760,16 @@ export const PaintPolishService: Service[] =[
       features: [
         "Paint preparation",
         "Sealant application",
-        "Curing"
+        "Curing",
+        "Final quality check"
       ],
       benefits: [
-        "Good protection",
-        "Enhanced shine",
-        "Easy maintenance"
+        "Improves exterior appearance",
+        "More durable than traditional waxes",
+        "Creates a long-lasting barrier against harsh elements",
+        "Protects from UV rays, bird droppings, acid rain & more",
+        "Enhances gloss, slickness, and surface smoothness",
+        "Boosts resale value",
       ],
       description: "A Paint Sealant is a synthetic, polymer-based protective coating that bonds to your vehicle's paint to create a long-lasting barrier against the elements. Unlike traditional waxes, this advanced sealant forms a durable layer that protects against UV rays, bird droppings, acid rain, and other contaminants while enhancing your car's gloss and slickness.",
       imageShowcase: "/images/services-detailing/sealant.jpg",
@@ -736,12 +796,15 @@ export const PaintPolishService: Service[] =[
       features: [
         "Paint preparation",
         "Wax application",
-        "Buffing"
+        "Buffing",
+        "Final quality check"
       ],
       benefits: [
-        "Classic shine",
-        "Good protection",
-        "Warm glow"
+        "Improves exterior appearance",
+        "Adds rich, glossy finish",
+        "Provides short-term protection from elements",
+        "Lasts longer than cheap spray waxes",
+        "Boosts resale value",
       ],
       description: "Car Wax is a classic protective layer used to enhance your vehicle's appearance while offering short-term protection. Unlike most dealerships and car washes that apply cheap spray waxes lasting only 2–3 days, we use premium-grade paste or liquid waxes blended with carnauba and synthetic polymers.",
       imageShowcase: "/images/services-detailing/wax.jpg",

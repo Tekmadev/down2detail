@@ -16,7 +16,7 @@ const reasons = [
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
           />
         </svg>
       ),
@@ -25,7 +25,7 @@ const reasons = [
       id: "fast-reliable",
       title: "Fast, Reliable Service",
       description:
-        "We value your time. Our team delivers consistent, efficient service with quick turnaround times — without compromising quality.",
+        "We value your time. Our team delivers consistent, efficient service with quick turnaround times, without compromising quality.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const reasons = [
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
           />
         </svg>
       ),
@@ -69,7 +69,7 @@ const reasons = [
       id: "long-lasting-protection",
       title: "Protection That Lasts",
       description:
-        "Our detailing treatments — from ceramic coatings to leather care — are designed to protect your car long after your appointment ends.",
+        "Our detailing treatments, from ceramic coatings to leather care, are designed to protect your car long after your appointment ends.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const reasons = [
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
           />
         </svg>
       ),

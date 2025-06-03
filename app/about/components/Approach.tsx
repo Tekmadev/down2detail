@@ -13,7 +13,7 @@ export default function Approach() {
                 The Down2Detail Difference
                 </h2>
                 <p className="text-secondary/90 mb-8">
-                At Down2Detail, it's not just about cleaning cars — it's about
+                At Down2Detail, it's not just about cleaning cars, it's about
                 delivering a meticulous, high-end experience that protects and
                 elevates your vehicle. Our refined process ensures your car looks
                 and feels its absolute best, every time.

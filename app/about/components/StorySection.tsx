@@ -31,11 +31,11 @@ export default function StorySection() {
             </div>
 
             <p className="text-secondary/90 mb-6">
-              Down2Detail was founded with a clear mission: to elevate vehicle detailing to a whole new level in Ottawa. What began as a one-man operation in a small garage has grown into a trusted brand, known for precision, passion, and perfection.
+              Down2Detail was founded with a clear mission: to elevate vehicle detailing to a whole new level in Montreal. What began as a one-man operation in a small garage has grown into a trusted brand, known for precision, passion, and perfection.
             </p>
 
             <p className="text-secondary/90 mb-6">
-              Over the years, our team has had the privilege of working with high-profile clients and prestigious vehicles — including detailing for luxury brands like <strong>Porsche</strong>, <strong>Tesla</strong>, <strong>BMW</strong>, and <strong>Mercedes-Benz</strong>. These collaborations pushed us to refine our techniques and raise our standards continuously.
+              Over the years, our team has had the privilege of working with high-profile clients and prestigious vehicles, including detailing for luxury brands like <strong>Ferrari</strong>, <strong>Lamborghini</strong>, <strong>Rolls-Royce</strong>, <strong>Porsche</strong>, and more. These collaborations pushed us to refine our techniques and raise our standards continuously.
             </p>
 
             <p className="text-secondary/90 font-medium">

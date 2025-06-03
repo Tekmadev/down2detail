@@ -74,7 +74,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
 
           {/* PRICE CARD */}
           <div className="bg-gray-800 p-8 rounded-xl flex flex-col items-center">
-            <h4 className="text-xl font-bold text-white mb-8">Type of car</h4>
+            <h4 className="text-xl font-bold text-white mb-8">Type of Vehicle</h4>
             <div className="flex flex-col md:flex-row gap-8 w-full justify-center">
               {/* Sedan */}
               <div
@@ -83,10 +83,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 onClick={() => setOpenType(openType === 'sedan' ? null : 'sedan')}
               >
                 <FaCar className="h-20 w-20 text-white mb-4" />
-                <span className="text-lg font-semibold text-white">Sedan / Coupe</span>
+                <span className="text-lg font-semibold text-white">Sedan/Coupe</span>
                 {openType === 'sedan' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">Sedan / Coupe Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Small Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.sedan} {props.service.currency}
                     </span>
@@ -101,10 +101,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 onClick={() => setOpenType(openType === 'suv' ? null : 'suv')}
               >
                 <FaCarSide className="h-20 w-20 text-white mb-4" />
-                <span className="text-lg font-semibold text-white">Compact/mid-size SUVs</span>
+                <span className="text-lg font-semibold text-white">Compact/Mid-size SUV</span>
                 {openType === 'suv' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Medium Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>
@@ -118,10 +118,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 onClick={() => setOpenType(openType === 'suv' ? null : 'suv')}
               >
                 <FaTruckPickup className="h-20 w-20 text-white mb-4" />
-                <span className="text-lg font-semibold text-white">Full-size SUVs/Trucks</span>
+                <span className="text-lg font-semibold text-white">Full-size SUV/Trucks</span>
                 {openType === 'suv' && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-gray-700 border border-gray-600 rounded-xl shadow-lg px-8 py-4 z-20 min-w-[180px] text-center animate-fade-in">
-                    <span className="block text-white font-semibold text-lg mb-2">SUV Price</span>
+                    <span className="block text-white font-semibold text-lg mb-2">Large Price</span>
                     <span className="text-2xl font-bold text-[#d6781c]">
                       {props.service.price.suv} {props.service.currency}
                     </span>
