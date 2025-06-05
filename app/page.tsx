@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import VideoHero from "@/components/VideoHero";
 import Services from "@/components/Services";
 import ChooseUs from "@/components/ChooseUs";
 import Image from "next/image";
@@ -9,7 +9,12 @@ import BrandLogos from "@/components/BrandLogos";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <VideoHero
+        fallbackImage="/images/Auto-Detailing.png"
+        videoSources={{
+          mp4: "/videos/hero-video.mp4",
+        }}
+      />
       {/* <Services /> */}
       <ChooseUs />
       <BrandLogos />

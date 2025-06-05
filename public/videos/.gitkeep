@@ -1,0 +1,9 @@
+# This file ensures the videos directory is tracked in git
+# Place your optimized video files here:
+# - hero-video.mp4 (required)
+# - hero-video.webm (optional, for better compression)
+
+# Remember to optimize your videos before adding them:
+# Maximum size: 10MB
+# Format: MP4 (H.264)
+# Resolution: 1920x1080 or 1280x720 

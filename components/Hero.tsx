@@ -18,7 +18,7 @@ const Hero = () => {
           Your Car Deserves the Royal Treatment
         </h2>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          DOWN2DETAIL – WHERE YOUR CAR MEETS PERFECTION
+          Professional Car Detailing Services in Montreal
         </h1>
         <p className="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto">
           <span className="font-bold">Down2Detail</span> offers top-tier car detailing services
