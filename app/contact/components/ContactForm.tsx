@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { useI18n } from "@/hooks/useI18n";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -13,6 +14,7 @@ type FormData = {
 };
 
 export default function ContactForm() {
+  const { t } = useI18n();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -67,9 +69,7 @@ export default function ContactForm() {
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID;
 
     if (!serviceId || !templateId || !publicKey) {
-      setErrorMessage(
-        "Erreur: Les identifiants de service d'email ne sont pas configurés."
-      );
+      setErrorMessage(t("form.configError", { ns: "contact" }));
       console.error("EmailJS Service ID or Public Key is not defined.");
       return;
     }
@@ -90,7 +90,7 @@ export default function ContactForm() {
         },
         (error) => {
           console.error("FAILED...", error.text);
-          alert("Failed to sent messages");
+          alert(t("form.sendError", { ns: "contact" }));
         }
       );
     }
@@ -109,7 +109,7 @@ export default function ContactForm() {
   return (
     <div className="bg-gray-800 p-8 rounded-lg">
       <h2 className="text-2xl font-semibold text-white mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
-        Send Us a Message
+        {t("form.title", { ns: "contact" })}
       </h2>
 
       <form className="space-y-5" ref={form} onSubmit={handleSendEmail}>
@@ -118,7 +118,8 @@ export default function ContactForm() {
             htmlFor="name"
             className="block text-sm font-medium text-white mb-1"
           >
-            Name <span className="text-red-500">*</span>
+            {t("form.name", { ns: "contact" })}{" "}
+            <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -136,7 +137,8 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-sm font-medium text-white mb-1"
           >
-            Email <span className="text-red-500">*</span>
+            {t("form.email", { ns: "contact" })}{" "}
+            <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -154,7 +156,8 @@ export default function ContactForm() {
             htmlFor="phone"
             className="block text-sm font-medium text-white mb-1"
           >
-            Phone Number <span className="text-red-500">*</span>
+            {t("form.phone", { ns: "contact" })}{" "}
+            <span className="text-red-500">*</span>
           </label>
           <input
             type="tel"
@@ -172,7 +175,8 @@ export default function ContactForm() {
             htmlFor="message"
             className="block text-sm font-medium text-white mb-1"
           >
-            Message <span className="text-red-500">*</span>
+            {t("form.message", { ns: "contact" })}{" "}
+            <span className="text-red-500">*</span>
           </label>
           <textarea
             id="message"
@@ -192,11 +196,13 @@ export default function ContactForm() {
             formStatus === "submitting" ? "opacity-70 cursor-not-allowed" : ""
           }`}
         >
-          {formStatus === "submitting" ? "Sending..." : "Send Message"}
+          {formStatus === "submitting"
+            ? t("form.sending", { ns: "contact" })
+            : t("form.send", { ns: "contact" })}
         </button>
         {messageSent && (
           <p className="success-message">
-            Your message has been sent successfully!
+            {t("form.success", { ns: "contact" })}
           </p>
         )}
       </form>

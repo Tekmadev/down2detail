@@ -16,8 +16,14 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import { cn } from "@/lib/utils";
+import { useI18n } from "@/hooks/useI18n";
+import {
+  getTranslatedNavigation,
+  getTranslatedServiceLabel,
+} from "@/lib/translations";
 
 const Footer = () => {
+  const { t } = useI18n();
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -32,14 +38,14 @@ const Footer = () => {
     setSuccess("");
 
     if (!email) {
-      setError("Please enter your email address");
+      setError(t("footer.errors.emailRequired"));
       return;
     }
 
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setError("Please enter a valid email address");
+      setError(t("footer.errors.emailInvalid"));
       return;
     }
 
@@ -52,7 +58,7 @@ const Footer = () => {
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
-        setError("This email is already registered");
+        setError(t("footer.errors.emailExists"));
         setIsLoading(false);
         return;
       }
@@ -64,13 +70,13 @@ const Footer = () => {
       });
 
       // Show success message
-      setSuccess("Thank you for subscribing!");
+      setSuccess(t("footer.success.subscribed"));
 
       // Clear the input
       setEmail("");
     } catch (err) {
       console.error("Error:", err);
-      setError("Something went wrong. Please try again later.");
+      setError(t("footer.errors.genericError"));
     } finally {
       setIsLoading(false);
     }
@@ -95,9 +101,7 @@ const Footer = () => {
                 textSize="text-2xl"
                 className="inline-block"
               />
-              <p className="text-secondary mb-4">
-                Your trusted partner for all auto detailing needs.
-              </p>
+              <p className="text-secondary mb-4">{t("footer.description")}</p>
 
               {/* Contact Information */}
               <div className="flex space-x-4 mt-6">
@@ -105,7 +109,7 @@ const Footer = () => {
                 <a
                   href="tel:+14384838175"
                   className="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
-                  title="Call us: +1 438 483 8175"
+                  title={t("footer.contactTooltips.phone")}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +131,7 @@ const Footer = () => {
                 <a
                   href="mailto:down2detail.ca@gmail.com"
                   className="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
-                  title="Email us: down2detail.ca@gmail.com"
+                  title={t("footer.contactTooltips.email")}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +155,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
-                  title="Follow us on Instagram"
+                  title={t("footer.contactTooltips.instagram")}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +175,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="col-span-1 md:col-span-6 lg:col-span-2">
             <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
-              Our Links
+              {t("footer.ourLinks")}
             </h3>
             <ul className="space-y-3">
               {navigation.map((link) => (
@@ -186,7 +190,7 @@ const Footer = () => {
                         : ""
                     }
                   >
-                    {link.label}
+                    {getTranslatedNavigation(t, link.label)}
                   </FooterLink>
                 </li>
               ))}
@@ -196,7 +200,7 @@ const Footer = () => {
           {/* Services */}
           <div className="col-span-1 md:col-span-12 lg:col-span-4">
             <h3 className="text-2xl font-bold mb-6 relative pb-3">
-              Our Services
+              {t("footer.ourServices")}
               <span className="absolute left-0 bottom-0 block w-12 h-1 bg-orange-500"></span>
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 text-sm">
@@ -211,7 +215,7 @@ const Footer = () => {
                       : "text-white hover:bg-white hover:text-orange-600 hover:bg-opacity-10"
                   )}
                 >
-                  {service.label}
+                  {getTranslatedServiceLabel(t, service.label)}
                 </FooterLink>
               ))}
             </div>
@@ -220,18 +224,17 @@ const Footer = () => {
           {/* Newsletter */}
           <div className="col-span-1 md:col-span-12 lg:col-span-3">
             <h3 className="text-xl font-semibold mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
-              Newsletter
+              {t("footer.newsletter")}
             </h3>
             <p className="text-secondary mb-6">
-              Subscribe to our newsletter to get our latest updates and news
-              about our services.
+              {t("footer.newsletterDescription")}
             </p>
             <form onSubmit={handleNewsletter} className="space-y-4" noValidate>
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-2">
                   <input
                     type="email"
-                    placeholder="Your Email"
+                    placeholder={t("footer.emailPlaceholder")}
                     className={`w-full px-4 py-3 bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-[#d6781c] text-secondary placeholder-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400 ${
                       error
                         ? error.includes("already registered")
@@ -252,7 +255,9 @@ const Footer = () => {
                     className="w-full whitespace-nowrap bg-[#d6781c] hover:bg-[#c2410c] text-white font-medium py-3 px-4 rounded-md transition-colors duration-300 disabled:opacity-70"
                     disabled={isLoading}
                   >
-                    {isLoading ? "SUBSCRIBING..." : "SUBSCRIBE"}
+                    {isLoading
+                      ? t("footer.subscribing")
+                      : t("footer.subscribe")}
                   </button>
                 </div>
                 {error && (
@@ -303,10 +308,11 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="pt-8 mt-8 border-t border-gray-300 text-center">
           <p className="text-secondary">
-            &copy; {new Date().getFullYear()} Down2Detail. All rights reserved.
+            &copy; {new Date().getFullYear()} Down2Detail.{" "}
+            {t("footer.copyright")}
           </p>
           <p className="text-secondary mt-2">
-            Developed by{" "}
+            {t("footer.developedBy")}{" "}
             <a
               href="https://www.tekmadev.com"
               target="_blank"

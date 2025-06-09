@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "Contact Us",
+    "description": "Have questions or ready to start your project? We're here to help! Reach out to us using any of the methods below."
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "configError": "Error: Email service identifiers are not configured.",
+    "sendError": "Failed to send message"
+  },
+  "info": {
+    "title": "Contact Information",
+    "address": "Address",
+    "addressValue": "3399 Boulevard Crémazie Est,\nMontréal, QC, Canada",
+    "phone": "Phone",
+    "phoneValue": "+1 (438) 483-8175",
+    "email": "Email",
+    "emailValue": "down2detail.ca@gmail.com",
+    "connectWith": "Connect With Us"
+  }
+}

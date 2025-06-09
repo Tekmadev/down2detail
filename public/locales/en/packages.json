@@ -1,0 +1,29 @@
+{
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the Perfect Package for Your Vehicle",
+    "description": "Comprehensive detailing packages designed to meet your specific needs and budget.",
+    "showCategories": "Show Categories",
+    "showCarousel": "Show Carousel",
+    "allCategories": "All Categories"
+  },
+  "packageCategories": {
+    "protection": "Protection",
+    "correction": "Correction",
+    "detailing": "Detailing",
+    "enhancement": "Enhancement",
+    "maintenance": "Maintenance"
+  },
+  "pricing": {
+    "sedanCoupesCrossovers": "Sedan/Coupes/Crossovers",
+    "compactMidsizeSuv": "Compact/Midsize SUV",
+    "fullSizeSuvTrucks": "Full-size SUV/Trucks",
+    "from": "From"
+  },
+  "addons": {
+    "title": "Available Add-ons",
+    "subtitle": "Enhance your package with these additional services",
+    "fabricTextileSealant": "Fabric & Textile Sealant",
+    "description": "Protect your interior fabrics and textiles with advanced sealant technology."
+  }
+}

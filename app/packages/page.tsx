@@ -224,21 +224,21 @@ export default function Packages() {
         {selectedAddOns && (
           <div className="fixed inset-0 z-50 h-screen overflow-auto">
             <div className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg" />
-            <div className="relative z-[60] mx-auto my-10 h-fit max-w-2xl rounded-3xl bg-white p-6 md:p-8 font-sans dark:bg-neutral-900 mx-4">
+            <div className="relative z-[60] mx-auto my-10 h-fit max-w-2xl rounded-3xl bg-white dark:bg-gray-900 p-6 md:p-8 font-sans mx-4 border border-gray-200 dark:border-gray-700">
               <button
                 onClick={() => setSelectedAddOns(null)}
-                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
+                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
               >
-                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                <IconX className="h-6 w-6 text-gray-700 dark:text-white" />
               </button>
-              <h2 className="text-xl md:text-2xl font-bold text-neutral-700 dark:text-neutral-200 mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Available Add-ons
               </h2>
               <ul className="list-disc list-inside space-y-3">
                 {selectedAddOns.map((addon, index) => (
                   <li
                     key={index}
-                    className="text-gray-300 text-sm md:text-base leading-relaxed break-words"
+                    className="text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed break-words"
                   >
                     {addon}
                   </li>

@@ -1,10 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useI18n } from "@/hooks/useI18n";
 
 export default function ContactInfo() {
+  const { t } = useI18n();
   return (
     <div className="bg-gray-800 rounded-xl shadow-md p-6 md:p-8">
       <h2 className="text-2xl font-semibold text-white mb-6 relative after:absolute after:content-[''] after:w-12 after:h-1 after:bg-[#d6781c] after:bottom-0 after:left-0 pb-3">
-        Contact Information
+        {t("info.title", { ns: "contact" })}
       </h2>
 
       <div className="space-y-6">
@@ -32,10 +36,18 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-white">Address</h3>
+            <h3 className="font-semibold text-white">
+              {t("info.address", { ns: "contact" })}
+            </h3>
             <p className="text-gray-300 mt-1">
-            3399 Boulevard Crémazie Est, <br />
-            Montréal, QC, Canada
+              {t("info.addressValue", { ns: "contact" })
+                .split("\n")
+                .map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    {index === 0 && <br />}
+                  </span>
+                ))}
             </p>
           </div>
         </div>
@@ -58,13 +70,15 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-white">Phone</h3>
+            <h3 className="font-semibold text-white">
+              {t("info.phone", { ns: "contact" })}
+            </h3>
             <p className="text-gray-300 mt-1">
               <a
                 href="tel:+14384838175"
                 className="hover:text-[#d6781c] transition-colors"
               >
-                +1 (438) 483-8175
+                {t("info.phoneValue", { ns: "contact" })}
               </a>
             </p>
           </div>
@@ -88,13 +102,15 @@ export default function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-white">Email</h3>
+            <h3 className="font-semibold text-white">
+              {t("info.email", { ns: "contact" })}
+            </h3>
             <p className="text-gray-300 mt-1">
               <a
                 href="mailto:down2detail.ca@gmail.com"
                 className="hover:text-[#d6781c] transition-colors break-words"
               >
-                down2detail.ca@gmail.com
+                {t("info.emailValue", { ns: "contact" })}
               </a>
             </p>
           </div>
@@ -102,7 +118,9 @@ export default function ContactInfo() {
       </div>
 
       <div className="mt-8">
-        <h3 className="font-semibold text-white mb-3">Connect With Us</h3>
+        <h3 className="font-semibold text-white mb-3">
+          {t("info.connectWith", { ns: "contact" })}
+        </h3>
         <div className="flex space-x-4">
           <a
             href="https://www.facebook.com/"

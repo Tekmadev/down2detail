@@ -1,0 +1,62 @@
+{
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional Auto Detailing Services",
+    "description": "We offer comprehensive auto detailing services to keep your vehicle looking its best.",
+    "readyToTransform": "Ready to Transform Your Car?",
+    "readyDescription": "Our team of experienced professionals is ready to help you with your needs. Contact us today for a consultation.",
+    "chooseYourLevel": "Choose Your Polish Level",
+    "allPolishInclude": "All polish services include polymer paint sealant for 6 months of protection",
+    "typeOfVehicle": "Type of Vehicle",
+    "faq": "Frequently Asked Questions"
+  },
+  "serviceCategories": {
+    "protection": "Protection",
+    "correction": "Correction",
+    "detailing": "Detailing",
+    "enhancement": "Enhancement"
+  },
+  "serviceLabels": {
+    "glossEnhancer": "Gloss Enhancer",
+    "oneStepPolish": "One-Step Polish",
+    "paintCorrection": "Paint Correction",
+    "interiorExteriorDetailing": "Int. & Ext. Detailing",
+    "engineBayCleaning": "Engine Bay Cleaning",
+    "exteriorDetailing": "Exterior Detailing",
+    "paintDecontamination": "Paint Decontamination",
+    "engineBayDetailing": "Engine Bay Detailing",
+    "headlightRestoration": "Headlight Restoration",
+    "headlightTaillightTint": "Headlight & Taillight Tint",
+    "interiorDetailing": "Interior Detailing",
+    "floorCarpetShampoo": "Floor & Carpet Shampoo",
+    "petHairRemoval": "Pet Hair Removal",
+    "fabricSeatShampoo": "Fabric Seat Shampoo",
+    "leatherSeatTreatment": "Leather Seat Treatment",
+    "paintPolish": "Paint Polish",
+    "ceramicCoating": "Ceramic Coating",
+    "paintSealant": "Paint Sealant",
+    "carWax": "Car Wax"
+  },
+  "serviceSubtitles": {
+    "ultimatePaintShine": "Ultimate Paint Shine & Protection",
+    "swirlRemovalGloss": "Swirl Removal & Gloss Enhancement",
+    "multiStagePerfection": "Multi-Stage Perfection & Showroom Finish",
+    "completeExteriorCare": "Complete Exterior Care & Protection",
+    "shineBoostDeepClean": "Shine Boost & Deep Paint Clean",
+    "safeDetailedProtected": "Safe, Detailed & Protected",
+    "moreThanJustWash": "More Than Just a Wash",
+    "removeWhatWashingCant": "Remove What Washing Can't",
+    "comprehensiveEngineBay": "Comprehensive Engine Bay Cleaning",
+    "claritySafetyStyle": "Clarity, Safety & Style",
+    "styleProtectionCustom": "Style, Protection & Custom Look",
+    "deepCleanRestoreRefresh": "Deep Clean, Restore & Refresh Your Cabin",
+    "deepExtractionSpotless": "Deep Extraction for a Spotless, Odor-Free Cabin",
+    "deepInteriorClean": "Deep Interior Clean for a Fur-Free Finish",
+    "deepCleanSanitizeRefresh": "Deep Clean, Sanitize & Refresh Your Upholstery",
+    "cleanConditionProtect": "Clean, Condition & Protect for a Luxurious Finish",
+    "professionalPaintEnhancement": "Professional Paint Enhancement & Correction",
+    "elevateVehicleDefense": "Elevate Your Vehicle's Defense",
+    "syntheticProtectionGloss": "Synthetic Protection & Enhanced Gloss",
+    "traditionalWaxProtection": "Traditional Wax Protection"
+  }
+}

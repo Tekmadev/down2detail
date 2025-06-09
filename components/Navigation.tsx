@@ -9,8 +9,16 @@ import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
 import { Menu, MenuItem, NavMenuLink, CategorySection } from "./ui/navbar-menu";
 import { services } from "@/data/services";
 import CalendlyPopText from "./CalendlyPopText";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useI18n } from "@/hooks/useI18n";
+import {
+  getTranslatedNavigation,
+  getTranslatedServiceLabel,
+  getTranslatedServiceCategory,
+} from "@/lib/translations";
 
 const Navigation = () => {
+  const { t } = useI18n();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -93,7 +101,7 @@ const Navigation = () => {
               if (item.label !== "Services") {
                 return (
                   <NavLink key={item.href} href={item.href}>
-                    {item.label}
+                    {getTranslatedNavigation(t, item.label)}
                   </NavLink>
                 );
               }
@@ -104,7 +112,7 @@ const Navigation = () => {
                     setActive={handleSetActive}
                     active={activeItem}
                     item={item.label}
-                    label={item.label}
+                    label={getTranslatedNavigation(t, item.label)}
                     href={item.href}
                   >
                     <div className="flex flex-col gap-4 min-w-[250px] p-4 bg-gray-800 ">
@@ -118,7 +126,9 @@ const Navigation = () => {
                               className="font-semibold text-secondary cursor-pointer hover:text-[#d6781c] flex items-center justify-between group transition-all duration-200"
                               onClick={() => SousCategory(category)}
                             >
-                              <span>{category}</span>
+                              <span>
+                                {getTranslatedServiceCategory(t, category)}
+                              </span>
                               <svg
                                 className={`h-4 w-4 transition-transform duration-200 ${
                                   openCategory[category] ? "rotate-180" : ""
@@ -151,7 +161,10 @@ const Navigation = () => {
                                       href={service.href}
                                       className="block py-2 text-sm text-white hover:text-[#d6781c] transition-colors duration-200"
                                     >
-                                      {service.label}
+                                      {getTranslatedServiceLabel(
+                                        t,
+                                        service.label
+                                      )}
                                     </NavMenuLink>
                                   ))}
                                 </motion.div>
@@ -167,6 +180,7 @@ const Navigation = () => {
             })}
             <CalendlyPopText />
           </Menu>
+          <LanguageSwitcher />
         </div>
         <div className="md:hidden flex items-center">
           <button
@@ -219,7 +233,7 @@ const Navigation = () => {
                       isMobile
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {item.label}
+                      {getTranslatedNavigation(t, item.label)}
                     </NavLink>
                   );
                 }
@@ -232,7 +246,7 @@ const Navigation = () => {
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          {item.label}
+                          {getTranslatedNavigation(t, item.label)}
                         </Link>
                         <button
                           onClick={() => handleMobileItemClick(item.label)}
@@ -269,7 +283,7 @@ const Navigation = () => {
                               ([category, categoryServices]) => (
                                 <div key={category} className="space-y-2 mb-4">
                                   <h4 className="font-semibold text-secondary">
-                                    {category}
+                                    {getTranslatedServiceCategory(t, category)}
                                   </h4>
                                   <div className="space-y-2 pl-2">
                                     {categoryServices.map((service) => (
@@ -279,7 +293,10 @@ const Navigation = () => {
                                         className="text-secondary hover:text-[#d6781c] block py-1 transition-colors"
                                         onClick={() => setIsMenuOpen(false)}
                                       >
-                                        {service.label}
+                                        {getTranslatedServiceLabel(
+                                          t,
+                                          service.label
+                                        )}
                                       </Link>
                                     ))}
                                   </div>
@@ -295,6 +312,11 @@ const Navigation = () => {
                 return null;
               })}
               <CalendlyPopText />
+
+              {/* Language Switcher - Mobile Only */}
+              <div className="flex justify-center mt-4 pt-4 border-t border-gray-700">
+                <LanguageSwitcher />
+              </div>
 
               {/* Contact Icons - Mobile Only */}
               <div className="flex justify-center space-x-4 mt-4 pt-4 border-t border-gray-700">

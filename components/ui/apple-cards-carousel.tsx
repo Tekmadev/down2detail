@@ -191,21 +191,35 @@ export const Card = ({
             <div className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg" />
             <div
               ref={containerRef}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
+              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl p-4 font-sans md:p-10 border"
+              style={{
+                backgroundColor: "#1f2937",
+                color: "#ffffff",
+                borderColor: "#374151",
+              }}
             >
               <button
-                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
+                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full transition-colors"
+                style={{
+                  backgroundColor: "#374151",
+                  color: "#ffffff",
+                }}
                 onClick={handleClose}
               >
-                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                <IconX className="h-6 w-6" />
               </button>
-              <p className="text-base font-medium text-black dark:text-white">
+              <p className="text-base font-medium" style={{ color: "#ffffff" }}>
                 {card.category}
               </p>
-              <p className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white">
+              <p
+                className="mt-4 text-2xl font-semibold md:text-5xl"
+                style={{ color: "#ffffff" }}
+              >
                 {card.title}
               </p>
-              <div className="py-10">{card.content}</div>
+              <div className="py-10" style={{ color: "#ffffff" }}>
+                {card.content}
+              </div>
             </div>
           </div>
         )}

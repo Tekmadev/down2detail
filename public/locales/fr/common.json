@@ -1,0 +1,121 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "packages": "Forfaits",
+    "ceramicCoating": "Revêtement Céramique",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "learnMore": "En savoir plus",
+    "contactUs": "Contactez-nous",
+    "getQuote": "Obtenir un devis",
+    "bookNow": "Réserver maintenant",
+    "viewPackages": "Voir les forfaits",
+    "from": "À partir de",
+    "currency": "CAD",
+    "phone": "+1 (438) 483-8175",
+    "email": "info@down2detail.ca",
+    "address": "Montréal, Québec, Canada"
+  },
+  "hero": {
+    "tagline": "Experts Premier en Détaillage Auto de Montréal",
+    "title": "Services de Détaillage Automobile Professionnels à Montréal",
+    "subtitle": "Détaillage automobile expert, correction de peinture et services de revêtement céramique. Transformez votre véhicule avec les spécialistes en détaillage de confiance de Montréal.",
+    "ctaBook": "Réserver Maintenant",
+    "ctaCall": "Appeler Maintenant",
+    "loading": "Chargement..."
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour tous vos besoins de détaillage automobile.",
+    "ourLinks": "Nos Liens",
+    "ourServices": "Nos Services",
+    "newsletter": "Infolettre",
+    "newsletterDescription": "Abonnez-vous à notre infolettre pour recevoir nos dernières mises à jour et nouvelles sur nos services.",
+    "emailPlaceholder": "Votre Courriel",
+    "subscribe": "S'ABONNER",
+    "subscribing": "ABONNEMENT...",
+    "copyright": "Tous droits réservés.",
+    "developedBy": "Développé par",
+    "contactTooltips": {
+      "phone": "Appelez-nous : +1 438 483 8175",
+      "email": "Écrivez-nous : down2detail.ca@gmail.com",
+      "instagram": "Suivez-nous sur Instagram"
+    },
+    "errors": {
+      "emailRequired": "Veuillez entrer votre adresse courriel",
+      "emailInvalid": "Veuillez entrer une adresse courriel valide",
+      "emailExists": "Cette adresse courriel est déjà enregistrée",
+      "genericError": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    },
+    "success": {
+      "subscribed": "Merci de vous être abonné !"
+    }
+  },
+  "contact": {
+    "getInTouch": "Contactez-nous",
+    "description": "Prêt à transformer votre véhicule ? Contactez-nous dès aujourd'hui pour des services de détaillage automobile professionnels à Montréal.",
+    "name": "Nom",
+    "email": "Courriel",
+    "phone": "Téléphone",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+  },
+  "vehicleTypes": {
+    "sedan": "Berline/Coupé",
+    "suv": "VUS Compact/Moyen",
+    "fullSuv": "VUS Pleine Grandeur/Camions",
+    "smallPrice": "Prix Petit",
+    "mediumPrice": "Prix Moyen",
+    "largePrice": "Prix Grand"
+  },
+  "whyChooseUs": {
+    "tagline": "POURQUOI NOUS CHOISIR",
+    "title": "Excellence dans Chaque Détail",
+    "description": "Chez Down2Detail, nous nous engageons à fournir des services de détaillage automobile de premier ordre qui dépassent les attentes.",
+    "features": {
+      "premiumProducts": {
+        "title": "Produits Premium Seulement",
+        "description": "Nous utilisons des produits et outils de détaillage haut de gamme pour offrir des résultats exceptionnels qui améliorent et protègent l'apparence de votre véhicule."
+      },
+      "fastReliable": {
+        "title": "Service Rapide et Fiable",
+        "description": "Nous valorisons votre temps. Notre équipe offre un service cohérent et efficace avec des délais d'exécution rapides, sans compromettre la qualité."
+      },
+      "satisfaction": {
+        "title": "Satisfaction Garantie",
+        "description": "Votre satisfaction est notre priorité. Nous faisons des efforts supplémentaires pour nous assurer que chaque détail répond à vos attentes, ou nous le corrigerons."
+      },
+      "protection": {
+        "title": "Protection Durable",
+        "description": "Nos traitements de détaillage, des revêtements céramiques aux soins du cuir, sont conçus pour protéger votre voiture longtemps après la fin de votre rendez-vous."
+      }
+    }
+  },
+  "callToAction": {
+    "title": "Prêt à Transformer Votre Véhicule ?",
+    "description": "Contactez-nous dès aujourd'hui pour une consultation et un devis gratuits, sans obligation. Donnons vie à votre vision avec précision et excellence.",
+    "buttons": {
+      "getQuote": "OBTENIR UN DEVIS GRATUIT",
+      "callNow": "APPELER MAINTENANT"
+    },
+    "features": {
+      "freeConsultation": {
+        "title": "Consultation Gratuite",
+        "description": "Nous discuterons de vos besoins et fournirons des recommandations d'experts."
+      },
+      "detailedEstimate": {
+        "title": "Devis Détaillé",
+        "description": "Obtenez un devis complet et transparent sans coûts cachés."
+      },
+      "qualityGuaranteed": {
+        "title": "Qualité Garantie",
+        "description": "Notre travail est soutenu par des garanties et notre garantie de satisfaction."
+      }
+    }
+  }
+}

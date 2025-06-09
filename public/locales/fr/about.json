@@ -1,0 +1,25 @@
+{
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "Excellence en Détaillage Automobile Professionnel",
+    "description": "Down2Detail est le service de détaillage automobile premier de Montréal, dédié à fournir des soins exceptionnels pour votre véhicule."
+  },
+  "values": {
+    "title": "Nos Valeurs",
+    "subtitle": "Ce qui nous motive chaque jour",
+    "qualityCraftsmanship": "Artisanat de Qualité",
+    "qualityDescription": "Nous sommes fiers de livrer des résultats exceptionnels en utilisant des produits premium et des techniques éprouvées. Chaque détail compte dans notre quête de perfection.",
+    "genuineClientCare": "Soin Client Authentique",
+    "genuineDescription": "Nous écoutons d'abord. En comprenant vos besoins et attentes, nous livrons des solutions de détaillage sur mesure avec une transparence complète et des conseils honnêtes.",
+    "timelyExecution": "Exécution Ponctuelle",
+    "timelyDescription": "Votre temps compte. Nous sommes fiers de notre planification efficace, communication claire, et de livrer des résultats impeccables — toujours à temps, jamais précipités."
+  },
+  "mission": {
+    "title": "Notre Mission",
+    "description": "Fournir les services de détaillage automobile de la plus haute qualité à Montréal tout en bâtissant des relations durables avec nos clients grâce à un service exceptionnel et une attention aux détails."
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "description": "Nos professionnels expérimentés sont passionnés par les soins automobiles et engagés à livrer des résultats qui dépassent vos attentes."
+  }
+}

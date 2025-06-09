@@ -1,25 +1,22 @@
+"use client";
+
 import ContactForm from "./components/ContactForm";
 import ContactInfo from "./components/ContactInfo";
 import Map from "./components/Map";
-
-export const metadata = {
-  title: "Contact Us | Down2Detail",
-  description:
-    "Get in touch with Down2Detail for all your home and commercial improvement needs in Montreal",
-};
+import { useI18n } from "@/hooks/useI18n";
 
 export default function ContactPage() {
+  const { t } = useI18n();
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-12 md:py-16">
         {/* Page Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-4">
-            Contact Us
+            {t("page.title", { ns: "contact" })}
           </h1>
           <p className="text-lg text-secondary max-w-2xl mx-auto">
-            Have questions or ready to start your project? We're here to help!
-            Reach out to us using any of the methods below.
+            {t("page.description", { ns: "contact" })}
           </p>
         </div>
 

@@ -1,0 +1,62 @@
+{
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Services de Détaillage Automobile Professionnels",
+    "description": "Nous offrons des services de détaillage automobile complets pour garder votre véhicule à son meilleur.",
+    "readyToTransform": "Prêt à Transformer Votre Auto ?",
+    "readyDescription": "Notre équipe de professionnels expérimentés est prête à vous aider avec vos besoins. Contactez-nous dès aujourd'hui pour une consultation.",
+    "chooseYourLevel": "Choisissez Votre Niveau de Polissage",
+    "allPolishInclude": "Tous les services de polissage incluent un scellant de peinture polymère pour 6 mois de protection",
+    "typeOfVehicle": "Type de Véhicule",
+    "faq": "Questions Fréquemment Posées"
+  },
+  "serviceCategories": {
+    "protection": "Protection",
+    "correction": "Correction",
+    "detailing": "Détaillage",
+    "enhancement": "Amélioration"
+  },
+  "serviceLabels": {
+    "glossEnhancer": "Amplificateur de Brillance",
+    "oneStepPolish": "Polissage Une Étape",
+    "paintCorrection": "Correction de Peinture",
+    "interiorExteriorDetailing": "Détaillage Int. et Ext.",
+    "engineBayCleaning": "Nettoyage du Compartiment Moteur",
+    "exteriorDetailing": "Détaillage Extérieur",
+    "paintDecontamination": "Décontamination de Peinture",
+    "engineBayDetailing": "Détaillage du Compartiment Moteur",
+    "headlightRestoration": "Restauration de phares",
+    "headlightTaillightTint": "Teinte de Phares et Feux Arrière",
+    "interiorDetailing": "Détaillage Intérieur",
+    "floorCarpetShampoo": "Shampooing Plancher et Tapis",
+    "petHairRemoval": "Enlèvement de Poils d'Animaux",
+    "fabricSeatShampoo": "Shampooing de Sièges en Tissu",
+    "leatherSeatTreatment": "Traitement de Sièges en Cuir",
+    "paintPolish": "Polissage de Peinture",
+    "ceramicCoating": "Revêtement Céramique",
+    "paintSealant": "Scellant de Peinture",
+    "carWax": "Cire d'Auto"
+  },
+  "serviceSubtitles": {
+    "ultimatePaintShine": "Brillance et Protection Ultimes de la Peinture",
+    "swirlRemovalGloss": "Élimination des Tourbillons et Amélioration de la Brillance",
+    "multiStagePerfection": "Perfection Multi-Étapes et Finition de Salle d'Exposition",
+    "completeExteriorCare": "Soin et Protection Extérieurs Complets",
+    "shineBoostDeepClean": "Boost de Brillance et Nettoyage Profond de la Peinture",
+    "safeDetailedProtected": "Sécuritaire, Détaillé et Protégé",
+    "moreThanJustWash": "Plus qu'un Simple Lavage",
+    "removeWhatWashingCant": "Enlève ce que le Lavage ne Peut Pas",
+    "comprehensiveEngineBay": "Nettoyage Complet du Compartiment Moteur",
+    "claritySafetyStyle": "Clarté, Sécurité et Style",
+    "styleProtectionCustom": "Style, Protection et Look Personnalisé",
+    "deepCleanRestoreRefresh": "Nettoyage Profond, Restauration et Rafraîchissement de votre Habitacle",
+    "deepExtractionSpotless": "Extraction Profonde pour un Habitacle Impeccable et Sans Odeur",
+    "deepInteriorClean": "Nettoyage Intérieur Profond pour une Finition Sans Poils",
+    "deepCleanSanitizeRefresh": "Nettoyage Profond, Désinfection et Rafraîchissement de votre Sellerie",
+    "cleanConditionProtect": "Nettoyage, Conditionnement et Protection pour une Finition Luxueuse",
+    "professionalPaintEnhancement": "Amélioration et Correction Professionnelles de la Peinture",
+    "elevateVehicleDefense": "Élevez la Défense de votre Véhicule",
+    "syntheticProtectionGloss": "Protection Synthétique et Brillance Améliorée",
+    "traditionalWaxProtection": "Protection Traditionnelle à la Cire"
+  }
+}

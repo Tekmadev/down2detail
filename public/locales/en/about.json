@@ -1,0 +1,25 @@
+{
+  "about": {
+    "title": "About Us",
+    "subtitle": "Professional Auto Detailing Excellence",
+    "description": "Down2Detail is Montreal's premier auto detailing service, dedicated to providing exceptional care for your vehicle."
+  },
+  "values": {
+    "title": "Our Values",
+    "subtitle": "What drives us every day",
+    "qualityCraftsmanship": "Quality Craftsmanship",
+    "qualityDescription": "We pride ourselves on delivering exceptional results using premium products and proven techniques. Every detail matters in our pursuit of perfection.",
+    "genuineClientCare": "Genuine Client Care",
+    "genuineDescription": "We listen first. By understanding your needs and expectations, we deliver tailored detailing solutions with full transparency and honest guidance.",
+    "timelyExecution": "Timely Execution",
+    "timelyDescription": "Your time matters. We pride ourselves on efficient scheduling, clear communication, and delivering pristine results — always on time, never rushed."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To provide the highest quality auto detailing services in Montreal while building lasting relationships with our clients through exceptional service and attention to detail."
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Our experienced professionals are passionate about automotive care and committed to delivering results that exceed your expectations."
+  }
+}

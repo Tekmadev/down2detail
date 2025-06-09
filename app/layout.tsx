@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import ComingSoon from "@/components/ComingSoon";
+import I18nProvider from "@/components/I18nProvider";
 import Script from "next/script";
 
 // Set this to false when you're ready to launch the full site
@@ -284,15 +285,17 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-        {MAINTENANCE_MODE ? (
-          <ComingSoon />
-        ) : (
-          <>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </>
-        )}
+        <I18nProvider>
+          {MAINTENANCE_MODE ? (
+            <ComingSoon />
+          ) : (
+            <>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </>
+          )}
+        </I18nProvider>
       </body>
     </html>
   );

@@ -1,0 +1,29 @@
+{
+  "packages": {
+    "title": "Nos Forfaits",
+    "subtitle": "Choisissez le Forfait Parfait pour Votre Véhicule",
+    "description": "Forfaits de détaillage complets conçus pour répondre à vos besoins spécifiques et votre budget.",
+    "showCategories": "Afficher les Catégories",
+    "showCarousel": "Afficher le Carrousel",
+    "allCategories": "Toutes les Catégories"
+  },
+  "packageCategories": {
+    "protection": "Protection",
+    "correction": "Correction",
+    "detailing": "Détaillage",
+    "enhancement": "Amélioration",
+    "maintenance": "Entretien"
+  },
+  "pricing": {
+    "sedanCoupesCrossovers": "Berline/Coupés/Multisegments",
+    "compactMidsizeSuv": "VUS Compact/Moyen",
+    "fullSizeSuvTrucks": "VUS Pleine Grandeur/Camions",
+    "from": "À partir de"
+  },
+  "addons": {
+    "title": "Modules Complémentaires Disponibles",
+    "subtitle": "Améliorez votre forfait avec ces services supplémentaires",
+    "fabricTextileSealant": "Scellant pour Tissus et Textiles",
+    "description": "Protégez vos tissus et textiles intérieurs avec une technologie de scellant avancée."
+  }
+}

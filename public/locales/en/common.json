@@ -1,0 +1,121 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "packages": "Packages",
+    "ceramicCoating": "Ceramic Coating",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "getQuote": "Get Quote",
+    "bookNow": "Book Now",
+    "viewPackages": "View Packages",
+    "from": "From",
+    "currency": "CAD",
+    "phone": "+1 (438) 483-8175",
+    "email": "info@down2detail.ca",
+    "address": "Montreal, Quebec, Canada"
+  },
+  "hero": {
+    "tagline": "Montreal's Premier Auto Detailing Experts",
+    "title": "Professional Car Detailing Services in Montreal",
+    "subtitle": "Expert auto detailing, paint correction, and ceramic coating services. Transform your vehicle with Montreal's trusted detailing specialists.",
+    "ctaBook": "Book Now",
+    "ctaCall": "Call Now",
+    "loading": "Loading..."
+  },
+  "footer": {
+    "description": "Your trusted partner for all auto detailing needs.",
+    "ourLinks": "Our Links",
+    "ourServices": "Our Services",
+    "newsletter": "Newsletter",
+    "newsletterDescription": "Subscribe to our newsletter to get our latest updates and news about our services.",
+    "emailPlaceholder": "Your Email",
+    "subscribe": "SUBSCRIBE",
+    "subscribing": "SUBSCRIBING...",
+    "copyright": "All rights reserved.",
+    "developedBy": "Developed by",
+    "contactTooltips": {
+      "phone": "Call us: +1 438 483 8175",
+      "email": "Email us: down2detail.ca@gmail.com",
+      "instagram": "Follow us on Instagram"
+    },
+    "errors": {
+      "emailRequired": "Please enter your email address",
+      "emailInvalid": "Please enter a valid email address",
+      "emailExists": "This email is already registered",
+      "genericError": "Something went wrong. Please try again later."
+    },
+    "success": {
+      "subscribed": "Thank you for subscribing!"
+    }
+  },
+  "contact": {
+    "getInTouch": "Get in Touch",
+    "description": "Ready to transform your vehicle? Contact us today for professional auto detailing services in Montreal.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "vehicleTypes": {
+    "sedan": "Sedan/Coupe",
+    "suv": "Compact/Mid-size SUV",
+    "fullSuv": "Full-size SUV/Trucks",
+    "smallPrice": "Small Price",
+    "mediumPrice": "Medium Price",
+    "largePrice": "Large Price"
+  },
+  "whyChooseUs": {
+    "tagline": "WHY CHOOSE US",
+    "title": "Excellence in Every Detail",
+    "description": "At Down2Detail, we're committed to delivering top-tier car detailing services that exceed expectations.",
+    "features": {
+      "premiumProducts": {
+        "title": "Premium Products Only",
+        "description": "We use top-of-the-line detailing products and tools to deliver exceptional results that enhance and protect your vehicle's appearance."
+      },
+      "fastReliable": {
+        "title": "Fast, Reliable Service",
+        "description": "We value your time. Our team delivers consistent, efficient service with quick turnaround times, without compromising quality."
+      },
+      "satisfaction": {
+        "title": "Satisfaction Guaranteed",
+        "description": "Your satisfaction is our priority. We go the extra mile to make sure every detail meets your expectations, or we'll make it right."
+      },
+      "protection": {
+        "title": "Protection That Lasts",
+        "description": "Our detailing treatments, from ceramic coatings to leather care, are designed to protect your car long after your appointment ends."
+      }
+    }
+  },
+  "callToAction": {
+    "title": "Ready to Transform Your Vehicle?",
+    "description": "Contact us today for a free, no-obligation consultation and estimate. Let's bring your vision to life with precision and excellence.",
+    "buttons": {
+      "getQuote": "GET A FREE QUOTE",
+      "callNow": "CALL NOW"
+    },
+    "features": {
+      "freeConsultation": {
+        "title": "Free Consultation",
+        "description": "We'll discuss your needs and provide expert recommendations."
+      },
+      "detailedEstimate": {
+        "title": "Detailed Estimate",
+        "description": "Get a comprehensive, transparent quote with no hidden costs."
+      },
+      "qualityGuaranteed": {
+        "title": "Quality Guaranteed",
+        "description": "Our work is backed by warranties and our satisfaction guarantee."
+      }
+    }
+  }
+}

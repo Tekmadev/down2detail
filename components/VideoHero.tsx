@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useI18n } from "@/hooks/useI18n";
 
 interface VideoHeroProps {
   // Video sources - easily switchable between local and Firebase
@@ -24,6 +25,7 @@ const VideoHero = ({
   fallbackImage = "/images/Auto-Detailing.png",
   firebaseVideoUrl,
 }: VideoHeroProps) => {
+  const { t } = useI18n();
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -117,14 +119,13 @@ const VideoHero = ({
       {/* Content */}
       <div className="relative z-30 max-w-3xl text-white">
         <h2 className="uppercase tracking-wider text-sm md:text-base text-primary mb-3">
-          Montreal's Premier Auto Detailing Experts
+          {t("hero.tagline")}
         </h2>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          Professional Car Detailing Services in Montreal
+          {t("hero.title")}
         </h1>
         <p className="text-gray-200 text-lg md:text-xl max-w-xl mx-auto mb-8">
-          Expert auto detailing, paint correction, and ceramic coating services.
-          Transform your vehicle with Montreal's trusted detailing specialists.
+          {t("hero.subtitle")}
         </p>
 
         {/* CTA Buttons */}
@@ -133,7 +134,7 @@ const VideoHero = ({
             href="/contact"
             className="inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 min-w-[180px]"
           >
-            Book Now
+            {t("hero.ctaBook")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"
@@ -166,7 +167,7 @@ const VideoHero = ({
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            Call Now
+            {t("hero.ctaCall")}
           </Link>
         </div>
 
@@ -175,7 +176,7 @@ const VideoHero = ({
           <div className="absolute top-4 right-4 text-white/60 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-              Loading...
+              {t("hero.loading")}
             </div>
           </div>
         )}
