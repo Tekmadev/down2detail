@@ -23,7 +23,7 @@ export default function ServiceSousSection() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/paint-correction-showcase.jpg" // You can change this to an appropriate image
+            src="/images/services-detailing/paint-polish.webp"
             alt="Paint Polish Services"
             fill
             priority

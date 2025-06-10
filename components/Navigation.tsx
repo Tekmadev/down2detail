@@ -26,7 +26,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1280);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -95,7 +95,7 @@ const Navigation = () => {
       <div className="container mx-auto flex justify-between items-center">
         <LogoWithSpinningDs logoWidth={90} logoHeight={90} />
 
-        <div className="hidden md:flex items-center space-x-6  ">
+        <div className="hidden xl:flex items-center space-x-6  ">
           <Menu setActive={handleSetActive}>
             {navigation.map((item) => {
               if (item.label !== "Services") {
@@ -182,7 +182,7 @@ const Navigation = () => {
           </Menu>
           <LanguageSwitcher />
         </div>
-        <div className="md:hidden flex items-center">
+        <div className="xl:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-secondary focus:outline-none p-2"
@@ -221,7 +221,7 @@ const Navigation = () => {
             animate="visible"
             exit="hidden"
             variants={mobileMenuVariants}
-            className="md:hidden px-4 pt-2 pb-4"
+            className="xl:hidden px-4 pt-2 pb-4"
           >
             <div className="flex flex-col space-y-3">
               {navigation.map((item) => {

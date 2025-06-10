@@ -21,7 +21,7 @@ export function HeroSection({ params }: { params: any }) {
       {/* Image de fond avec effet de parallaxe */}
       <div className="absolute inset-0">
         <Image
-          src={service.imageShowcase}
+          src={service.image}
           alt={service.label}
           fill
           priority

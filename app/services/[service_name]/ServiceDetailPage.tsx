@@ -1,6 +1,7 @@
 "use client";
 
 import { FaCar, FaCarSide, FaTruckPickup } from "react-icons/fa";
+import Image from "next/image";
 import type { Service } from "@/data/services";
 
 export default function ServiceDetailsPage(props: { service: Service }) {
@@ -76,6 +77,28 @@ export default function ServiceDetailsPage(props: { service: Service }) {
               ))}
             </ul>
           </div>
+
+          {/* OPTIONAL IMAGE SECTION */}
+          {props.service.optionalImage && (
+            <div className="bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8 border border-gray-700 mb-12">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
+                Service Showcase
+              </h3>
+              <div className="relative w-full rounded-xl overflow-hidden">
+                <Image
+                  src={props.service.optionalImage}
+                  alt={`${props.service.label} showcase`}
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
+              </div>
+              <p className="text-gray-300 text-center mt-4 text-sm md:text-base">
+                Professional {props.service.label} service in action
+              </p>
+            </div>
+          )}
 
           {/* PRICE CARD */}
           <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">

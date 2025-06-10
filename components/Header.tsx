@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 const Header = () => {
   return (
     <div className="w-full">
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <ContactHeader />
       </div>
       <Navigation />
