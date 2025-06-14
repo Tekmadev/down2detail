@@ -26,7 +26,7 @@ export default function Packages() {
         return "/images/categories/exterior.jpg";
       case "Interior Detailing":
         return "/images/categories/interioir.avif";
-      case "Interior & Exterior":
+      case "Top2Bottom Detailing":
         return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
         return "/images/categories/paint.jpg";
@@ -174,7 +174,7 @@ export default function Packages() {
                   >
                     {category}
                   </CardItem>
-                  <CardItem
+                  {/* <CardItem
                     as="p"
                     translateZ="60"
                     className="text-white text-sm max-w-full mt-2 break-words leading-relaxed"
@@ -183,7 +183,7 @@ export default function Packages() {
                       packages.find((pkg) => pkg.category === category)
                         ?.description[0]
                     }
-                  </CardItem>
+                  </CardItem> */}
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={getCategoryImage(category)}

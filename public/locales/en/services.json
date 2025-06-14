@@ -10,11 +10,11 @@
     "readyDescription": "Contact us today for a free consultation and quote on your next car detailing service. Our team is ready to make your vehicle shine — inside and out.",
     "contactUs": "Contact Us"
   },
-  "categories": {
+  "serviceCategories": {
     "Exterior": "Exterior",
     "Interior": "Interior",
     "Paint Polish": "Paint Polish",
-    "Protection": "Protection"
+    "protection": "Protection"
   },
   "services": {
     "title": "Our Services",

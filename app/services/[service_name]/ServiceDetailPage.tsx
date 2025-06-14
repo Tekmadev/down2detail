@@ -165,7 +165,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     Large Price
                   </span>
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${(parseFloat(service.price.suv) + 20).toFixed(2)}
+                    ${service.price.fullSuv}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
                     {service.currency}

@@ -18,12 +18,12 @@ export interface DetailPackage {
       category: "Exterior Detailing",
       name: "BASIC",
       description: [
-        "Wheels & tire Cleaning",
-        "Door Jamb cleaning",
-        "Contact Wash (2 bucket method)",
-        "Blow dry"
+        "Wheel & Tire Cleaning",
+        "Door Jamb Cleaning",
+        "Contact Washing",
+        "Air Blow Drying"
       ],
-      prices: { sedanCoupesCrossovers: 49, compactMidFullSUVsPickups: 69 }
+      prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 69.99 }
     },
     {
       id: "exterior-standard",
@@ -31,12 +31,14 @@ export interface DetailPackage {
       name: "STANDARD",
       description: [
         "Everything in BASIC",
-        "Pre rinse & Snow Foam Apply",
-        "Detailed brush Cleaning",
-        "Blow & microfiber drying towel for drying",
-        "Tire dressing & glass Cleaning"
+        "Pre-Rinse",
+        "Snow Foam Application",
+        "Detailed Brush Cleaning",
+        "Glass Cleaning",
+        "Tire Dressing",
+        "Air Blow & Microfiber Towel Drying"
       ],
-      prices: { sedanCoupesCrossovers: 69, compactMidFullSUVsPickups: 89 }
+      prices: { sedanCoupesCrossovers: 69.99, compactMidFullSUVsPickups: 89.99 }
     },
     {
       id: "exterior-advanced",
@@ -45,10 +47,10 @@ export interface DetailPackage {
       description: [
         "Everything in STANDARD",
         "Paint Decontamination",
-        "Spray Wax"
+        "Spray Wax Application"
       ],
-      prices: { sedanCoupesCrossovers: 129, compactMidFullSUVsPickups: 159 },
-      addOns: ["Paint Sealant (Protection)", "Engine Bay Detail"]
+      prices: { sedanCoupesCrossovers: 129.99, compactMidFullSUVsPickups: 159.99 },
+      addOns: ["Paint Sealant", "Engine Bay Detailing"]
     },
   
     // Interior Detailing
@@ -58,10 +60,10 @@ export interface DetailPackage {
       name: "BASIC",
       description: [
         "Interior Vacuuming",
-        "Dashboard, door panels & center console wiped",
-        "Windows cleaning inside"
+        "Interior Window Cleaning",
+        "Dashboard, Door Panel & Center Console Wiping",
       ],
-      prices: { sedanCoupesCrossovers: 49, compactMidFullSUVsPickups: 59, fullSizeSUVsPickups: 69 }
+      prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 59.99, fullSizeSUVsPickups: 69.99 }
     },
     {
       id: "interior-standard",
@@ -69,11 +71,11 @@ export interface DetailPackage {
       name: "STANDARD",
       description: [
         "Everything in BASIC",
-        "Air Vents, buttons, small areas detail",
-        "Floor & Carpets detail",
-        "Steam Cleaning"
+        "Floor & Carpet Detailing",
+        "Steam Cleaning",
+        "Air Vent, Button & Tight Space Detailing",
       ],
-      prices: { sedanCoupesCrossovers: 149, compactMidFullSUVsPickups: 169, fullSizeSUVsPickups: 189 }
+      prices: { sedanCoupesCrossovers: 149.99, compactMidFullSUVsPickups: 169.99, fullSizeSUVsPickups: 189.99 }
     },
     {
       id: "interior-advanced",
@@ -82,48 +84,70 @@ export interface DetailPackage {
       description: [
         "Everything in STANDARD",
         "Steering Wheel Deep Clean",
+        "Headliner Detailing",
         "Fabric Seat Shampoo/Leather Seat Treatment",
-        "Headliner Detail"
       ],
-      prices: { sedanCoupesCrossovers: 219, compactMidFullSUVsPickups: 239, fullSizeSUVsPickups: 259 },
+      prices: { sedanCoupesCrossovers: 219.99, compactMidFullSUVsPickups: 239.99, fullSizeSUVsPickups: 259.99 },
       addOns: [
         "Pet Hair Removal",
         "Fabric & Textile Sealant",
-        "Interior Leather and Synthetic Ceramic Coating"
+        "Leather & Synthetic Interior Ceramic Coating"
       ]
     },
   
     // INT. & EXT. PACKAGES
     {
       id: "full-bronze",
-      category: "Interior & Exterior",
+      category: "Top2Bottom Detailing",
       name: "BRONZE",
-      description: ["Basic Int.& Ext.", "Carpets Shampoo"],
-      prices: { sedanCoupesCrossovers: 99, compactMidFullSUVsPickups: 119 }
+      description: [
+        "Interior Vacuuming",
+        "Interior Window Cleaning", 
+        "Dashboard, Door Panel & Center Console Wiping",
+        "Carpet Shampoo",
+        "Wheel & Tire Cleaning",
+        "Door Jamb Cleaning",
+        "Contact Washing",
+        "Air Blow Drying"
+      ],
+      prices: { sedanCoupesCrossovers: 99.99, compactMidFullSUVsPickups: 119.99 }
     },
     {
       id: "full-gold",
-      category: "Interior & Exterior",
+      category: "Top2Bottom Detailing",
       name: "GOLD",
-      description: ["STANDARD Int.& Ext.", "Engine Bay Detail"],
-      prices: { sedanCoupesCrossovers: 199, compactMidFullSUVsPickups: 259 }
+      description: [
+        "Everything in BRONZE",
+        "Floor & Carpet Detailing",
+        "Steam Cleaning",
+        "Air Vent, Button & Tight Space Detailing",
+        "Pre-Rinse & Snow Foam Application",
+        "Detailed Brush Cleaning",
+        "Engine Bay Detailing",
+        "Glass Cleaning & Tire Dressing",
+        "Air Blow & Microfiber Towel Drying"
+      ],
+      prices: { sedanCoupesCrossovers: 199.99, compactMidFullSUVsPickups: 259.99 }
     },
     {
       id: "full-diamond",
-      category: "Interior & Exterior",
+      category: "Top2Bottom Detailing",
       name: "DIAMOND",
       description: [
-        "ADVANCED Int. & Ext.",
-        "Engine Bay Detail",
-        "Paint Sealant apply Instead of Spray Wax"
+        "Everything in GOLD",
+        "Steering Wheel Deep Clean",
+        "Headliner Detailing",
+        "Fabric Seat Shampoo/Leather Seat Treatment",
+        "Paint Decontamination",
+        "Paint Sealant Application"
       ],
-      prices: { sedanCoupesCrossovers: 369, compactMidFullSUVsPickups: 409 },
+      prices: { sedanCoupesCrossovers: 369.99, compactMidFullSUVsPickups: 409.99 },
       addOns: [
         "Pet Hair Removal",
         "Fabric & Textile Sealant",
-        "Interior Leather and Synthetic Ceramic Coating",
-        "Paint Sealant (Protection)",
-        "Engine Bay Detail"
+        "Leather & Synthetic Interior Ceramic Coating",
+        "Paint Sealant",
+        "Engine Bay Detailing"
       ]
     },
   
@@ -133,40 +157,40 @@ export interface DetailPackage {
       category: "Paint Polish & Protection",
       name: "GOLD",
       description: [
-        "STANDARD Exterior detail",
-        "Paint decontamination",
-        "Gloss enhancer",
-        "1 Year Graphene Ceramic"
+        "STANDARD Exterior Detail",
+        "Paint Decontamination",
+        "Gloss Enhancer",
+        "1-Year Graphene Ceramic Coating"
       ],
-      prices: { sedanCoupesCrossovers: 499, compactMidFullSUVsPickups: 529, fullSizeSUVsPickups: 559 }
+      prices: { sedanCoupesCrossovers: 499.99, compactMidFullSUVsPickups: 529.99, fullSizeSUVsPickups: 559.99 }
     },
     {
       id: "paint-platinum",
       category: "Paint Polish & Protection",
       name: "PLATINUM",
       description: [
-        "STANDARD Exterior detail",
-        "Paint decontamination",
-        "One Step Polish",
-        "2 Years Ceramic"
+        "STANDARD Exterior Detail",
+        "Paint Decontamination",
+        "One-Step Polish",
+        "2-Year Ceramic Coating"
       ],
-      prices: { sedanCoupesCrossovers: 899, compactMidFullSUVsPickups: 949, fullSizeSUVsPickups: 999 }
+      prices: { sedanCoupesCrossovers: 899.99, compactMidFullSUVsPickups: 949.99, fullSizeSUVsPickups: 999.99 }
     },
     {
       id: "paint-diamond",
       category: "Paint Polish & Protection",
       name: "DIAMOND",
       description: [
-        "ADVANCED Exterior detail",
+        "ADVANCED Exterior Detail",
         "Paint Decontamination",
         "Paint Correction",
-        "4 Years Ceramic"
+        "4-Year Ceramic Coating"
       ],
-      prices: { sedanCoupesCrossovers: 1249, compactMidFullSUVsPickups: 1349, fullSizeSUVsPickups: 1599 },
+      prices: { sedanCoupesCrossovers: 1249.99, compactMidFullSUVsPickups: 1349.99, fullSizeSUVsPickups: 1599.99 },
       addOns: [
-        "Wheels & Calipers Ceramic Coating",
+        "Wheel & Brake Caliper Ceramic Coating",
         "Windshield & Glass Ceramic Coating",
-        "Plastics Ceramic Coating",
+        "Plastics & Trim Ceramic Coating",
         "Leather & Synthetics Ceramic Coating"
       ]
     },
@@ -175,21 +199,24 @@ export interface DetailPackage {
     {
       id: "maintenance-monthly",
       category: "Maintenance",
-      name: "Monthly Basis",
-      description: ["These packages are offered only to our loyal customers","(Int. & Ext.) Bronze Package"],
-      prices: { sedanCoupesCrossovers: 79, compactMidFullSUVsPickups: 89 }
+      name: "Monthly Refresh",
+      description: [
+        "BRONZE Top2Bottom Detailing Package",
+        "This package is only offered to our loyal clients"
+      ],
+      prices: { sedanCoupesCrossovers: 79.99, compactMidFullSUVsPickups: 89.99 }
     },
     {
       id: "maintenance-ceramic",
       category: "Maintenance",
-      name: "Ceramic Refresh",
+      name: "Ceramic Refresh (Every 4-6 Months)",
       description: [
-        "These offers are exclusively for customers who have shown their loyalty",
-        "STANDARD Int. & ADVANCED Ext.",
+        "STANDARD Interior Detailing Package",
+        "ADVANCED Exterior Detailing Package",
         "Ceramic Coating Topper",
-        "Every (4-6 months)"
+        "This package is only offered to our loyal clients"
       ],
-      prices: { sedanCoupesCrossovers: 169, compactMidFullSUVsPickups: 199 }
+      prices: { sedanCoupesCrossovers: 169.99, compactMidFullSUVsPickups: 199.99 }
     }
   ];
   

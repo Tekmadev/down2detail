@@ -74,7 +74,7 @@ export function CtaSection() {
         >
           <motion.h2
             {...fadeInUp}
-            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#292524] to-[#d6781c] bg-clip-text text-transparent"
+            className="text-4xl md:text-5xl font-bold mb-6 pb-2 leading-tight bg-gradient-to-r from-[#292524] to-[#d6781c] bg-clip-text text-transparent"
           >
             {t("ctaSection.title")}
           </motion.h2>
