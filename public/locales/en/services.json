@@ -1,4 +1,21 @@
 {
+  "page": {
+    "badge": "Premium Car Detailing Services",
+    "title": "Our Professional Services",
+    "description": "From deep interior cleaning to professional exterior polishing, we treat every car with the care it deserves. Experience the difference with our premium detailing services.",
+    "getStarted": "Get Started",
+    "loading": "Loading...",
+    "learnMore": "Learn More",
+    "readyToStart": "Ready to Start Your Project?",
+    "readyDescription": "Contact us today for a free consultation and quote on your next car detailing service. Our team is ready to make your vehicle shine — inside and out.",
+    "contactUs": "Contact Us"
+  },
+  "categories": {
+    "Exterior": "Exterior",
+    "Interior": "Interior",
+    "Paint Polish": "Paint Polish",
+    "Protection": "Protection"
+  },
   "services": {
     "title": "Our Services",
     "subtitle": "Professional Auto Detailing Services",
@@ -10,11 +27,185 @@
     "typeOfVehicle": "Type of Vehicle",
     "faq": "Frequently Asked Questions"
   },
-  "serviceCategories": {
-    "protection": "Protection",
-    "correction": "Correction",
-    "detailing": "Detailing",
-    "enhancement": "Enhancement"
+  "serviceData": {
+    "exterior-detailing": {
+      "label": "Exterior Detailing",
+      "subtitle": "More Than Just a Wash",
+      "shortDescription": "Complete exterior cleaning and protection.",
+      "description": "Basic car washes often use dirty sponges, harsh chemicals, or automated brushes that leave behind swirl marks, scratches, and miss hidden areas like grilles or door jambs. Our Exterior Detailing service is designed to do the opposite — it safely and thoroughly cleans every part of your car's exterior using pH-neutral products and precise hand techniques.",
+      "features": [
+        "Wheels & tires deep cleaned with pH-balanced wheel cleaner",
+        "Pre-rinse & snow foam application",
+        "Detailed brush cleaning (grille, emblems, trim, fuel cap, etc.)",
+        "Door jamb cleaning (door jambs & trunk jamb)",
+        "Contact Wash (two-bucket method) with pH-neutral shampoo",
+        "Paint decontamination treatment (iron remover + clay bar/mitt)",
+        "Air blow & microfiber towel for drying",
+        "Tire dressing",
+        "Glass cleaning",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves exterior appearance",
+        "Prevents swirl marks & micro-scratches",
+        "Safe for ceramic-coated, waxed & polymer sealed vehicles",
+        "Cleans areas basic washes miss",
+        "Prepares vehicle for protection or polishing",
+        "Maintains paint health & long-term shine",
+        "100% pH-neutral & coating-safe process",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "What is included in exterior detailing?",
+          "answer": "Our exterior detailing includes pre-wash, deep cleaning, clay treatment, and protective wax application."
+        },
+        {
+          "question": "How long does it take?",
+          "answer": "Typically 2-3 hours depending on the vehicle size and condition."
+        }
+      ]
+    },
+    "paint-decontamination": {
+      "label": "Paint Decontamination",
+      "subtitle": "Remove What Washing Can't",
+      "shortDescription": "Remove embedded contaminants from paint.",
+      "description": "Even after a proper wash, your vehicle's paint can still feel rough or look dull. That's because microscopic contaminants like brake dust, industrial fallout, road tar, and tree sap embed themselves into your paint over time — and regular washing won't remove them.",
+      "features": [
+        "Iron Remover (chemical decontamination)",
+        "Tar Remover (spot cleaning)",
+        "Clay Bar/Mitt Treatment (mechanical decontamination)",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves exterior appearance",
+        "Restores smoothness of your paint",
+        "Enhances gloss & clarity",
+        "Prepares surface for ceramic coating or wax",
+        "Extends life of paint protection",
+        "Helps prevent long-term damage from embedded grime",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "How often should I decontaminate my paint?",
+          "answer": "We recommend every 6-12 months depending on driving conditions."
+        }
+      ]
+    },
+    "gloss-enhancer": {
+      "label": "Gloss Enhancer",
+      "subtitle": "Ultimate Paint Shine & Protection",
+      "shortDescription": "Enhance paint gloss and shine.",
+      "description": "A great option for newer or well-maintained vehicles, our Gloss Enhancer service deeply cleans the paint and boosts shine — removing embedded contaminants like brake dust, airborne particles, and rail dust. Finished with a fine polish to bring out clarity and gloss.",
+      "features": [
+        "Fine machine polish to boost gloss",
+        "Microfiber hand-buffing for finish",
+        "Inspection for shine & uniformity",
+        "6-month polymer sealant (optional if ceramic coating is selected)",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves exterior appearance",
+        "Contaminants can dull your paint even without scratches",
+        "Gloss enhancer revives shine without harsh polishing",
+        "Keeps your car looking fresh between full corrections",
+        "Maintains a smooth, reflective finish",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "How long does the gloss enhancement last?",
+          "answer": "Results typically last 3-6 months with proper maintenance."
+        }
+      ]
+    },
+    "engine-bay-detailing": {
+      "label": "Engine Bay Detailing",
+      "subtitle": "Comprehensive Engine Bay Cleaning",
+      "shortDescription": "Professional engine bay cleaning.",
+      "description": "Your engine bay is one of the most overlooked areas in automotive detailing — yet it's one of the most impactful when done right. Our Engine Bay Detailing service focuses on a safe, meticulous approach without using high-pressure water. We protect critical components, remove built-up grime, and finish with a non-greasy dressing that restores a deep, clean factory look and long-lasting protection.",
+      "features": [
+        "Full inspection & preparation of engine bay",
+        "Covering of sensitive components (fuse box, alternator, wiring, sensors, etc.)",
+        "Degreasing & dirt removal by hand",
+        "Soft detailing brushes for tight spots",
+        "Low-risk cleaning only (no pressure washer used)",
+        "Application of non-greasy dressing that restores shine",
+        "Product application that provides UV protection",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves engine bay appearance",
+        "Removes built-up grease, oil, & debris",
+        "Helps prevent long-term corrosion & wear",
+        "Maintains safer operating temperatures",
+        "Adds professional touch to vehicle presentation",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "Is it safe to clean the engine bay?",
+          "answer": "Yes, we take all necessary precautions to protect sensitive components."
+        }
+      ]
+    },
+    "headlight-restoration": {
+      "label": "Headlight Restoration",
+      "subtitle": "Clarity, Safety & Style",
+      "shortDescription": "Restore cloudy headlights to like-new condition.",
+      "description": "Faded, yellowed, or hazy headlights don't just look bad — they also reduce night visibility and compromise safety. Our professional Headlight Restoration service brings them back to life using a multi-stage sanding and polishing process that restores clarity, shine, and light output.",
+      "features": [
+        "Full surface prep & masking",
+        "Wet sanding (multi-stage, as needed)",
+        "Machine polishing to restore optical clarity",
+        "Ceramic coating application for long-term protection",
+        "Light output inspection",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves exterior appearance",
+        "Restores nighttime visibility & safety",
+        "Saves money (instead of costly headlight replacement)",
+        "Prevents further UV & oxidation damage",
+        "Enhances overall finish",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "How long does the restoration last?",
+          "answer": "With proper maintenance, results can last 1-2 years."
+        }
+      ]
+    },
+    "headlight-taillight-tint": {
+      "label": "Headlight & Taillight Tint",
+      "subtitle": "Style, Protection & Custom Look",
+      "shortDescription": "Professional tinting for lights.",
+      "description": "Looking to enhance the look of your vehicle's front or rear lights? Our Headlight and Taillight Tint service adds a sleek, custom appearance to both headlights and taillights, while offering protection against UV rays, scratches, and oxidation. Choose from two bold shades, professionally installed with a 1-year warranty.",
+      "features": [
+        "Full surface prep & cleaning",
+        "Precision-cut tint film in your choice of color",
+        "Professional installation with heat-shrinking for a seamless fit",
+        "1-year warranty against bubbling, peeling, or fading",
+        "Alignment check",
+        "Final quality check"
+      ],
+      "benefits": [
+        "Improves exterior appearance",
+        "Achieves a blacked-out, sporty look",
+        "Shields lights from UV, fading, & scratching",
+        "Backed by a 1-year no-fade, no-bubble warranty",
+        "Enhances both headlights & taillights",
+        "Fully removable with no damage to factory lenses (maintains resale value)"
+      ],
+      "faqs": [
+        {
+          "question": "Is tinting legal?",
+          "answer": "We ensure all tinting meets local regulations and safety standards."
+        }
+      ]
+    }
   },
   "serviceLabels": {
     "glossEnhancer": "Gloss Enhancer",

@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and mobile services. Serving Greater Montreal Area.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/ceramic.png",
         width: 1200,
         height: 630,
         alt: "Down2Detail - Professional Auto Detailing Services in Montreal",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     title: "Down2Detail - Premium Auto Detailing Services in Montreal",
     description:
       "Professional auto detailing services in Montreal including paint correction, ceramic coating, interior detailing, and mobile services.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/ceramic.png"],
   },
   verification: {
     google: "your-google-verification-code", // You'll need to add this
@@ -265,12 +265,31 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
 
+        {/* Favicon Configuration */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/favicon-16x16.png"
+          sizes="16x16"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+          sizes="180x180"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
         {/* Additional Meta Tags */}
         <meta name="theme-color" content="#FF4C00" />
         <meta name="msapplication-TileColor" content="#FF4C00" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

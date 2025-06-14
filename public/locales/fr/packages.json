@@ -1,4 +1,10 @@
 {
+  "page": {
+    "title": "Découvrez nos Forfaits Premium",
+    "backToCategories": "Retour aux Catégories",
+    "viewAddons": "Voir les Modules",
+    "viewPackages": "Voir les Forfaits"
+  },
   "packages": {
     "title": "Nos Forfaits",
     "subtitle": "Choisissez le Forfait Parfait pour Votre Véhicule",
@@ -14,11 +20,15 @@
     "enhancement": "Amélioration",
     "maintenance": "Entretien"
   },
+  "sections": {
+    "description": "Description",
+    "pricing": "Tarification"
+  },
   "pricing": {
-    "sedanCoupesCrossovers": "Berline/Coupés/Multisegments",
-    "compactMidsizeSuv": "VUS Compact/Moyen",
-    "fullSizeSuvTrucks": "VUS Pleine Grandeur/Camions",
-    "from": "À partir de"
+    "sedanCoupesCrossovers": "Berline/Coupés/Multisegments:",
+    "compactMidFullSUVsPickups": "VUS Compact/Moyen/Plein/Camionnettes:",
+    "fullSizeSUVsPickups": "VUS Pleine Grandeur/Camionnettes:",
+    "from": "À partir de "
   },
   "addons": {
     "title": "Modules Complémentaires Disponibles",

@@ -9,8 +9,10 @@ import {
   Card as CarouselCard,
 } from "@/components/ui/apple-cards-carousel";
 import { IconX } from "@tabler/icons-react";
+import { useI18n } from "@/hooks/useI18n";
 
 export default function Packages() {
+  const { t } = useI18n("packages");
   const selectedServices = Array.from(
     new Set(packages.map((pkg) => pkg.category))
   ).slice(0, 5);
@@ -50,7 +52,7 @@ export default function Packages() {
           <div className="space-y-3">
             <div className="space-y-2">
               <h3 className="text-base md:text-lg font-semibold text-orange-400">
-                Description
+                {t("sections.description")}
               </h3>
               <ul className="list-disc list-inside space-y-1 pl-1">
                 {pkg.description.map((item, index) => (
@@ -65,13 +67,13 @@ export default function Packages() {
             </div>
             <div className="space-y-2">
               <h3 className="text-base md:text-lg font-semibold text-orange-400">
-                Pricing
+                {t("sections.pricing")}
               </h3>
               <div className="space-y-2 bg-gray-800/50 rounded-lg p-2">
                 <div className="space-y-1">
                   <p className="text-white/90 text-xs md:text-sm break-words">
                     <span className="font-medium">
-                      Sedan/Coupes/Crossovers:
+                      {t("pricing.sedanCoupesCrossovers")}
                     </span>
                   </p>
                   <p className="text-orange-400 font-bold text-base md:text-lg">
@@ -81,7 +83,7 @@ export default function Packages() {
                 <div className="space-y-1">
                   <p className="text-white/90 text-xs md:text-sm break-words">
                     <span className="font-medium">
-                      Compact/Mid/Full SUVs/Pickups:
+                      {t("pricing.compactMidFullSUVsPickups")}
                     </span>
                   </p>
                   <p className="text-orange-400 font-bold text-base md:text-lg">
@@ -92,7 +94,7 @@ export default function Packages() {
                   <div className="space-y-1">
                     <p className="text-white/90 text-xs md:text-sm break-words">
                       <span className="font-medium">
-                        Full Size SUVs/Pickups:
+                        {t("pricing.fullSizeSUVsPickups")}
                       </span>
                     </p>
                     <p className="text-orange-400 font-bold text-base md:text-lg">
@@ -111,7 +113,7 @@ export default function Packages() {
     <div className="min-h-screen bg-black text-gray-300">
       <div className="container mx-auto px-6 md:px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-4 text-orange-600">
-          Discover our Premium Packages
+          {t("page.title")}
         </h1>
 
         {selectedCategory ? (
@@ -133,7 +135,7 @@ export default function Packages() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Back to Categories
+                {t("page.backToCategories")}
               </button>
 
               <button
@@ -150,7 +152,7 @@ export default function Packages() {
                 }}
                 className="px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
               >
-                View Add-ons
+                {t("page.viewAddons")}
               </button>
             </div>
             <Carousel
@@ -198,7 +200,7 @@ export default function Packages() {
                       as="button"
                       className="px-4 py-2 rounded-xl text-xs font-normal text-orange-600 break-words"
                     >
-                      From $
+                      {t("pricing.from")}
                       {
                         packages.find((pkg) => pkg.category === category)
                           ?.prices.sedanCoupesCrossovers
@@ -211,7 +213,7 @@ export default function Packages() {
                       className="px-4 py-2 rounded-xl bg-orange-600 text-white text-xs font-bold hover:bg-orange-700 whitespace-nowrap"
                       onClick={() => handleViewPackages(category)}
                     >
-                      View Packages
+                      {t("page.viewPackages")}
                     </CardItem>
                   </div>
                 </CardBody>
@@ -232,7 +234,7 @@ export default function Packages() {
                 <IconX className="h-6 w-6 text-gray-700 dark:text-white" />
               </button>
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Available Add-ons
+                {t("addons.title")}
               </h2>
               <ul className="list-disc list-inside space-y-3">
                 {selectedAddOns.map((addon, index) => (

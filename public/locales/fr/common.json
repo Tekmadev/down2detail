@@ -117,5 +117,13 @@
         "description": "Notre travail est soutenu par des garanties et notre garantie de satisfaction."
       }
     }
+  },
+  "ctaSection": {
+    "title": "Prêt à Transformer Votre Voiture ?",
+    "description": "Notre équipe de professionnels expérimentés est prête à vous aider avec vos besoins. Contactez-nous dès aujourd'hui pour une consultation.",
+    "buttons": {
+      "contactUs": "Contactez-nous",
+      "viewServices": "Voir Tous les Services"
+    }
   }
 }

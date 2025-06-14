@@ -3,8 +3,18 @@
 import { FaCar, FaCarSide, FaTruckPickup } from "react-icons/fa";
 import Image from "next/image";
 import type { Service } from "@/data/services";
+import { useI18n } from "@/hooks/useI18n";
+import { getTranslatedService } from "@/lib/translatedServices";
 
 export default function ServiceDetailsPage(props: { service: Service }) {
+  const { t } = useI18n("services");
+
+  // Apply translations if this is an exterior service
+  const service =
+    props.service.category === "Exterior"
+      ? getTranslatedService(props.service, t)
+      : props.service;
+
   return (
     <div className="container mx-auto px-4 py-16 md:py-20 bg-black">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -13,7 +23,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
             Why Us?
           </h2>
           <p className="text-white mb-8 text-lg leading-relaxed">
-            {props.service.description}
+            {service.description}
           </p>
 
           {/* FEATURES */}
@@ -21,7 +31,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
             What's Included
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-            {props.service.features.map((feature, index) => (
+            {service.features.map((feature, index) => (
               <div
                 key={index}
                 className="flex items-start bg-gray-800 p-4 rounded-lg shadow-sm"
@@ -52,7 +62,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
               Why It's Important
             </h3>
             <ul className="space-y-4">
-              {props.service.benefits.map((benefit, index) => (
+              {service.benefits.map((benefit, index) => (
                 <li
                   key={index}
                   className="flex items-start bg-gray-700 p-4 rounded-xl"
@@ -79,15 +89,15 @@ export default function ServiceDetailsPage(props: { service: Service }) {
           </div>
 
           {/* OPTIONAL IMAGE SECTION */}
-          {props.service.optionalImage && (
+          {service.optionalImage && (
             <div className="bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8 border border-gray-700 mb-12">
               <h3 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
                 Service Showcase
               </h3>
               <div className="relative w-full rounded-xl overflow-hidden">
                 <Image
-                  src={props.service.optionalImage}
-                  alt={`${props.service.label} showcase`}
+                  src={service.optionalImage}
+                  alt={`${service.label} showcase`}
                   width={800}
                   height={600}
                   className="w-full h-auto object-contain transition-transform duration-500 hover:scale-105"
@@ -95,7 +105,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
               </div>
               <p className="text-gray-300 text-center mt-4 text-sm md:text-base">
-                Professional {props.service.label} service in action
+                Professional {service.label} service in action
               </p>
             </div>
           )}
@@ -117,10 +127,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     Small Price
                   </span>
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${props.service.price.sedan}
+                    ${service.price.sedan}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
-                    {props.service.currency}
+                    {service.currency}
                   </span>
                 </div>
               </div>
@@ -136,10 +146,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     Medium Price
                   </span>
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${props.service.price.suv}
+                    ${service.price.suv}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
-                    {props.service.currency}
+                    {service.currency}
                   </span>
                 </div>
               </div>
@@ -155,10 +165,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     Large Price
                   </span>
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${(parseFloat(props.service.price.suv) + 20).toFixed(2)}
+                    ${(parseFloat(service.price.suv) + 20).toFixed(2)}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
-                    {props.service.currency}
+                    {service.currency}
                   </span>
                 </div>
               </div>

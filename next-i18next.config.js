@@ -14,7 +14,7 @@ module.exports = {
     "fr-FR": ["fr", "en"],
     default: ["en"],
   },
-  ns: ["common", "services", "packages", "about", "contact"],
+  ns: ["common", "services", "packages", "about", "contact", "ceramic"],
   defaultNS: "common",
   debug: process.env.NODE_ENV === "development",
   interpolation: {

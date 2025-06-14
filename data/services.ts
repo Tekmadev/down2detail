@@ -73,13 +73,13 @@ export const PaintPolishService: Service[] = [
     ],
     description:
       "A balanced level of paint correction using a cutting pad and compound-polish blend. This removes 50–70% of visible swirls and scratches, restoring the surface clarity and shine. Great for daily drivers or vehicles that need more than just gloss enhancement.",
-    imageShowcase: "/images/services-detailing/one-step.jpg",
+    imageShowcase: "/images/services-detailing/One-Step.webp",
     price: {
       sedan: "469.99",
       suv: "569.99",
     },
     currency: "CAD",
-    image: "/images/services-detailing/one-step.jpg",
+    image: "/images/services-detailing/One-Step.webp",
     faqs: [
       {
         question: "What imperfections can be removed?",
@@ -106,13 +106,13 @@ export const PaintPolishService: Service[] = [
     ],
     description:
       "Our most advanced polishing service — using multiple machine steps of cutting and refining compounds, this service removes up to 90% of imperfections like heavy swirls, oxidation, scratches, and etching. The result is a mirror-like, showroom-quality finish with unmatched clarity and depth.",
-    imageShowcase: "/images/services-detailing/paint-correction.jpg",
+    imageShowcase: "/images/services-detailing/paint-correction.webp",
     price: {
       sedan: "749.99",
       suv: "909.99",
     },
     currency: "CAD",
-    image: "/images/services-detailing/paint-correction.jpg",
+    image: "/images/services-detailing/paint-correction.webp",
     faqs: [
       {
         question: "How long does paint correction last?",
@@ -274,8 +274,8 @@ export const services: Service[] = [
       "Even after a proper wash, your vehicle's paint can still feel rough or look dull. That's because microscopic contaminants like brake dust, industrial fallout, road tar, and tree sap embed themselves into your paint over time — and regular washing won't remove them.",
     imageShowcase: "/images/services-detailing/paint-decon.webp",
     price: {
-      sedan: "199.99",
-      suv: "249.99",
+      sedan: "69.99",
+      suv: "85.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/paint-decon.webp",

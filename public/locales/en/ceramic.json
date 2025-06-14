@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title": "Ceramic Coating",
+    "subtitle": "Elevate Your Vehicle's Defense",
+    "shortDescription": "Long-lasting paint protection with nanotechnology."
+  },
+  "sections": {
+    "whyChoose": {
+      "title": "Why Choose Ceramic Coating?",
+      "introduction": "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more.",
+      "keyBenefitsTitle": "Key Benefits:"
+    },
+    "benefits": [
+      "Hydrophobic: Causes water to bead and slide off effortlessly, reducing water spotting.",
+      "UV-Resistant: Prevents paint fading, chalking, and oxidation.",
+      "Scratch Resistant: Offers protection from light abrasions and swirl marks.",
+      "Chemical Resistant: Defends against acids, detergents, bird droppings, and brake dust.",
+      "Gloss Enhancing: Leaves a deep, mirror-like finish that enhances paint clarity and color depth.",
+      "Minor Scratches: Adds a level of scratch resistance."
+    ],
+    "howItWorks": {
+      "title": "How Does It Work?",
+      "altText": "Ceramic Coating Process"
+    },
+    "appliesTo": {
+      "title": "Can Ceramic Coating Be Applied to Any Surface?",
+      "altText": "Ceramic Coating Surfaces",
+      "surfaces": [
+        "Paint (clear coat)",
+        "Wheels & brake calipers",
+        "Glass surfaces (windshields, windows)",
+        "Exterior plastics & trims",
+        "Interior leather and synthetics"
+      ]
+    },
+    "durability": {
+      "title": "How Long Does Ceramic Coating Last?",
+      "tableHeaders": {
+        "option": "Option",
+        "durability": "Durability",
+        "price": "Price (CAD)"
+      },
+      "disclaimer": "* All Paint Coating packages require prior Paint Decontamination & Polishing (additional cost if not already performed)."
+    },
+    "worthIt": {
+      "title": "Is It Worth the Investment?",
+      "reasons": [
+        "Long-Term Protection: Reduces the need for frequent detailing.",
+        "Enhanced Appearance: Maintains a glossy, showroom finish.",
+        "Ease of Cleaning: Dirt and grime have a harder time sticking to the surface.",
+        "Resale Value: A well-maintained exterior can increase vehicle resale value.",
+        "Minimizes long-term paint correction costs"
+      ]
+    },
+    "addons": {
+      "title": "Additional Surface Coatings",
+      "items": [
+        {
+          "title": "Wheels & Calipers Ceramic Coating",
+          "duration": "Up to 2 years or 40,000 km"
+        },
+        {
+          "title": "Windshield & Glass Ceramic Coating",
+          "duration": "Up to 12 months"
+        },
+        {
+          "title": "Plastics Ceramic Coating",
+          "duration": "Up to 2 years"
+        },
+        {
+          "title": "Leather & Synthetics Ceramic Coating",
+          "duration": "Up to 2 years"
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How long does ceramic coating last?",
+          "answer": "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/100,000 km). The longevity depends on the quality of the product, application process, and maintenance."
+        },
+        {
+          "question": "What surfaces can be coated?",
+          "answer": "Our ceramic coatings can be applied to multiple surfaces including paint, wheels & brake calipers, glass surfaces, exterior plastics & trims, and interior leather & synthetics. Each surface requires a specific formulation for optimal bonding and protection."
+        },
+        {
+          "question": "Is ceramic coating worth the investment?",
+          "answer": "Yes, ceramic coating is a worthwhile investment as it provides long-term protection, enhances appearance, makes cleaning easier, increases resale value, and minimizes long-term paint correction costs."
+        }
+      ]
+    }
+  },
+  "parallax": {
+    "title": "Professional Ceramic Coating",
+    "subtitle": "Ultimate Protection & Shine"
+  }
+}

@@ -8,12 +8,14 @@ import servicesEn from "../public/locales/en/services.json";
 import packagesEn from "../public/locales/en/packages.json";
 import aboutEn from "../public/locales/en/about.json";
 import contactEn from "../public/locales/en/contact.json";
+import ceramicEn from "../public/locales/en/ceramic.json";
 
 import commonFr from "../public/locales/fr/common.json";
 import servicesFr from "../public/locales/fr/services.json";
 import packagesFr from "../public/locales/fr/packages.json";
 import aboutFr from "../public/locales/fr/about.json";
 import contactFr from "../public/locales/fr/contact.json";
+import ceramicFr from "../public/locales/fr/ceramic.json";
 
 const resources = {
   en: {
@@ -22,6 +24,7 @@ const resources = {
     packages: packagesEn,
     about: aboutEn,
     contact: contactEn,
+    ceramic: ceramicEn,
   },
   fr: {
     common: commonFr,
@@ -29,6 +32,7 @@ const resources = {
     packages: packagesFr,
     about: aboutFr,
     contact: contactFr,
+    ceramic: ceramicFr,
   },
 };
 
@@ -48,7 +52,7 @@ i18n
 
     // Namespace options
     defaultNS: "common",
-    ns: ["common", "services", "packages", "about", "contact"],
+    ns: ["common", "services", "packages", "about", "contact", "ceramic"],
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

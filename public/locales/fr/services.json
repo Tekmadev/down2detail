@@ -58,5 +58,175 @@
     "elevateVehicleDefense": "Élevez la Défense de votre Véhicule",
     "syntheticProtectionGloss": "Protection Synthétique et Brillance Améliorée",
     "traditionalWaxProtection": "Protection Traditionnelle à la Cire"
+  },
+  "page": {
+    "badge": "Services de Détaillage Automobile Premium",
+    "title": "Nos Services Professionnels",
+    "description": "Du nettoyage intérieur en profondeur au polissage extérieur professionnel, nous traitons chaque voiture avec le soin qu'elle mérite. Découvrez la différence avec nos services de détaillage premium.",
+    "getStarted": "Commencer",
+    "loading": "Chargement...",
+    "learnMore": "En Savoir Plus",
+    "readyToStart": "Prêt à Commencer Votre Projet?",
+    "readyDescription": "Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis pour votre prochain service de détaillage automobile. Notre équipe est prête à faire briller votre véhicule — à l'intérieur comme à l'extérieur.",
+    "contactUs": "Contactez-nous"
+  },
+  "categories": {
+    "Exterior": "Extérieur",
+    "Interior": "Intérieur",
+    "Paint Polish": "Polissage de Peinture",
+    "Protection": "Protection"
+  },
+  "serviceData": {
+    "exterior-detailing": {
+      "label": "Détail Extérieur",
+      "subtitle": "Plus Qu'un Simple Lavage",
+      "shortDescription": "Nettoyage et protection complète de l'extérieur.",
+      "description": "Les lavages de voitures de base utilisent souvent des éponges sales, des produits chimiques agressifs ou des brosses automatisées qui laissent des marques de tourbillons, des rayures et manquent des zones cachées comme les grilles ou les cadres de porte. Notre service de Détail Extérieur est conçu pour faire l'inverse — il nettoie en toute sécurité et minutieusement chaque partie de l'extérieur de votre voiture en utilisant des produits à pH neutre et des techniques manuelles précises.",
+      "features": [
+        "Roues et pneus nettoyés en profondeur avec nettoyant à pH équilibré",
+        "Pré-rinçage et application de mousse de neige",
+        "Nettoyage détaillé au pinceau (grille, emblèmes, garnitures, bouchon de carburant, etc.)",
+        "Nettoyage des montants de porte (montants de porte et coffre)",
+        "Lavage de contact (méthode à deux seaux) avec shampooing à pH neutre",
+        "Traitement de décontamination de la peinture (enlève-fer + barre/gant d'argile)",
+        "Soufflage d'air et serviette en microfibre pour le séchage",
+        "Application de produit pour pneus",
+        "Nettoyage des vitres",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence extérieure",
+        "Prévient les marques de tourbillons et micro-rayures",
+        "Sûr pour les véhicules avec revêtement céramique, ciré et scellant polymère",
+        "Nettoie les zones que les lavages de base manquent",
+        "Prépare le véhicule pour la protection ou le polissage",
+        "Maintient la santé de la peinture et l'éclat à long terme",
+        "Processus 100% à pH neutre et sûr pour les revêtements",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Qu'est-ce qui est inclus dans le détail extérieur?",
+          "answer": "Notre détail extérieur comprend le pré-lavage, le nettoyage en profondeur, le traitement à l'argile et l'application de cire protectrice."
+        },
+        {
+          "question": "Combien de temps cela prend-il?",
+          "answer": "Généralement 2-3 heures selon la taille et l'état du véhicule."
+        }
+      ]
+    },
+    "paint-decontamination": {
+      "label": "Décontamination de Peinture",
+      "subtitle": "Enlève ce que le Lavage ne Peut Pas",
+      "shortDescription": "Enlève les contaminants incrustés de la peinture.",
+      "description": "Même après un lavage approprié, la peinture de votre véhicule peut encore sembler rugueuse ou terne. C'est parce que des contaminants microscopiques comme la poussière de frein, les retombées industrielles, le goudron routier et la sève d'arbre s'incrustent dans votre peinture au fil du temps — et le lavage régulier ne les enlèvera pas.",
+      "features": [
+        "Enlève-fer (décontamination chimique)",
+        "Enlève-goudron (nettoyage localisé)",
+        "Traitement à la barre/gant d'argile (décontamination mécanique)",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence extérieure",
+        "Restaure la douceur de votre peinture",
+        "Améliore la brillance et la clarté",
+        "Prépare la surface pour le revêtement céramique ou la cire",
+        "Prolonge la durée de vie de la protection de peinture",
+        "Aide à prévenir les dommages à long terme des saletés incrustées",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle fréquence dois-je décontaminer ma peinture?",
+          "answer": "Nous recommandons tous les 6-12 mois selon les conditions de conduite."
+        }
+      ]
+    },
+    "engine-bay-detailing": {
+      "label": "Détaillage du Compartiment Moteur",
+      "subtitle": "Nettoyage Complet du Compartiment Moteur",
+      "shortDescription": "Nettoyage professionnel du compartiment moteur.",
+      "description": "Votre compartiment moteur est l'une des zones les plus négligées dans le détaillage automobile — pourtant c'est l'une des plus impactantes quand c'est bien fait. Notre service de Détaillage du Compartiment Moteur se concentre sur une approche sûre et méticuleuse sans utiliser d'eau haute pression. Nous protégeons les composants critiques, enlevons la saleté accumulée, et finissons avec un habillage non gras qui restaure un aspect d'usine propre et une protection durable.",
+      "features": [
+        "Inspection complète et préparation du compartiment moteur",
+        "Couverture des composants sensibles (boîte à fusibles, alternateur, câblage, capteurs, etc.)",
+        "Dégraissage et enlèvement de la saleté à la main",
+        "Brosses de détaillage douces pour les endroits serrés",
+        "Nettoyage à faible risque seulement (pas de laveuse haute pression)",
+        "Application d'un habillage non gras qui restaure la brillance",
+        "Application de produit qui fournit une protection UV",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence du compartiment moteur",
+        "Enlève la graisse, l'huile et les débris accumulés",
+        "Aide à prévenir la corrosion et l'usure à long terme",
+        "Maintient des températures de fonctionnement plus sûres",
+        "Ajoute une touche professionnelle à la présentation du véhicule",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Est-ce sûr de nettoyer le compartiment moteur?",
+          "answer": "Oui, nous prenons toutes les précautions nécessaires pour protéger les composants sensibles."
+        }
+      ]
+    },
+    "headlight-restoration": {
+      "label": "Restauration de Phares",
+      "subtitle": "Clarté, Sécurité et Style",
+      "shortDescription": "Restaure les phares embrumés à un état comme neuf.",
+      "description": "Les phares fanés, jaunis ou embrumés ne font pas que mal paraître — ils réduisent aussi la visibilité nocturne et compromettent la sécurité. Notre service professionnel de Restauration de Phares les ramène à la vie en utilisant un processus de ponçage et polissage multi-étapes qui restaure la clarté, la brillance et la sortie de lumière.",
+      "features": [
+        "Préparation complète de la surface et masquage",
+        "Ponçage humide (multi-étapes, au besoin)",
+        "Polissage machine pour restaurer la clarté optique",
+        "Application de revêtement céramique pour protection à long terme",
+        "Inspection de la sortie de lumière",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence extérieure",
+        "Restaure la visibilité nocturne et la sécurité",
+        "Économise de l'argent (au lieu d'un remplacement coûteux de phares)",
+        "Prévient les dommages UV et d'oxydation supplémentaires",
+        "Améliore la finition générale",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps dure la restauration?",
+          "answer": "Avec un entretien approprié, les résultats peuvent durer 1-2 ans."
+        }
+      ]
+    },
+    "headlight-taillight-tint": {
+      "label": "Teinte de Phares et Feux Arrière",
+      "subtitle": "Style, Protection et Look Personnalisé",
+      "shortDescription": "Teinte professionnelle pour les feux.",
+      "description": "Vous cherchez à améliorer l'apparence des feux avant ou arrière de votre véhicule? Notre service de Teinte de Phares et Feux Arrière ajoute une apparence élégante et personnalisée aux phares et feux arrière, tout en offrant une protection contre les rayons UV, les rayures et l'oxydation. Choisissez parmi deux teintes audacieuses, installées professionnellement avec une garantie d'1 an.",
+      "features": [
+        "Préparation complète de la surface et nettoyage",
+        "Film teinté coupé avec précision dans votre choix de couleur",
+        "Installation professionnelle avec thermoformage pour un ajustement parfait",
+        "Garantie d'1 an contre les bulles, le pelage ou la décoloration",
+        "Vérification de l'alignement",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence extérieure",
+        "Obtient un look noirci et sportif",
+        "Protège les feux des UV, de la décoloration et des rayures",
+        "Soutenu par une garantie d'1 an sans décoloration ni bulles",
+        "Améliore à la fois les phares et les feux arrière",
+        "Complètement amovible sans dommage aux lentilles d'usine (maintient la valeur de revente)"
+      ],
+      "faqs": [
+        {
+          "question": "La teinte est-elle légale?",
+          "answer": "Nous nous assurons que toute teinte respecte les réglementations locales et les normes de sécurité."
+        }
+      ]
+    }
   }
 }

@@ -1,4 +1,10 @@
 {
+  "page": {
+    "title": "Discover our Premium Packages",
+    "backToCategories": "Back to Categories",
+    "viewAddons": "View Add-ons",
+    "viewPackages": "View Packages"
+  },
   "packages": {
     "title": "Our Packages",
     "subtitle": "Choose the Perfect Package for Your Vehicle",
@@ -14,11 +20,15 @@
     "enhancement": "Enhancement",
     "maintenance": "Maintenance"
   },
+  "sections": {
+    "description": "Description",
+    "pricing": "Pricing"
+  },
   "pricing": {
-    "sedanCoupesCrossovers": "Sedan/Coupes/Crossovers",
-    "compactMidsizeSuv": "Compact/Midsize SUV",
-    "fullSizeSuvTrucks": "Full-size SUV/Trucks",
-    "from": "From"
+    "sedanCoupesCrossovers": "Sedan/Coupes/Crossovers:",
+    "compactMidFullSUVsPickups": "Compact/Mid/Full SUVs/Pickups:",
+    "fullSizeSUVsPickups": "Full Size SUVs/Pickups:",
+    "from": "From $"
   },
   "addons": {
     "title": "Available Add-ons",

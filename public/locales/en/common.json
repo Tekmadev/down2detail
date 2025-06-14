@@ -117,5 +117,13 @@
         "description": "Our work is backed by warranties and our satisfaction guarantee."
       }
     }
+  },
+  "ctaSection": {
+    "title": "Ready to Transform Your Car?",
+    "description": "Our team of experienced professionals is ready to help you with your needs. Contact us today for a consultation.",
+    "buttons": {
+      "contactUs": "Contact Us",
+      "viewServices": "View All Services"
+    }
   }
 }

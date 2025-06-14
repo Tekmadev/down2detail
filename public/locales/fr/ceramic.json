@@ -1,0 +1,98 @@
+{
+  "page": {
+    "title": "Revêtement Céramique",
+    "subtitle": "Élevez la Défense de Votre Véhicule",
+    "shortDescription": "Protection de peinture durable avec la nanotechnologie."
+  },
+  "sections": {
+    "whyChoose": {
+      "title": "Pourquoi Choisir le Revêtement Céramique?",
+      "introduction": "Le revêtement céramique est un polymère liquide fabriqué à partir de SiO₂ (dioxyde de silicium) basé sur la nanotechnologie. Une fois durci, il se lie chimiquement à la peinture d'usine (ou à toute autre surface sur laquelle il est appliqué), créant un bouclier hydrophobe, lisse et ultra-durable. Contrairement aux cires ou scellants traditionnels, les revêtements céramiques offrent une surface hydrophobe durable qui repousse la saleté, l'eau, la crasse de route, les fientes d'oiseaux, les éclaboussures d'insectes, et plus encore.",
+      "keyBenefitsTitle": "Avantages Clés:"
+    },
+    "benefits": [
+      "Hydrophobe: Fait perler l'eau et glisser sans effort, réduisant les taches d'eau.",
+      "Résistant aux UV: Prévient la décoloration, l'écaillage et l'oxydation de la peinture.",
+      "Résistant aux Rayures: Offre une protection contre les abrasions légères et les tourbillons.",
+      "Résistant aux Produits Chimiques: Défend contre les acides, détergents, fientes d'oiseaux et poussière de frein.",
+      "Amélioration de l'Éclat: Laisse une finition profonde et miroir qui améliore la clarté et la profondeur de couleur.",
+      "Rayures Mineures: Ajoute un niveau de résistance aux rayures."
+    ],
+    "howItWorks": {
+      "title": "Comment Ça Fonctionne?",
+      "altText": "Processus de Revêtement Céramique"
+    },
+    "appliesTo": {
+      "title": "Le Revêtement Céramique Peut-il Être Appliqué sur N'importe Quelle Surface?",
+      "altText": "Surfaces de Revêtement Céramique",
+      "surfaces": [
+        "Peinture (vernis transparent)",
+        "Roues et étriers de frein",
+        "Surfaces vitrées (pare-brise, fenêtres)",
+        "Plastiques et garnitures extérieures",
+        "Cuir et synthétiques intérieurs"
+      ]
+    },
+    "durability": {
+      "title": "Combien de Temps Dure le Revêtement Céramique?",
+      "tableHeaders": {
+        "option": "Option",
+        "durability": "Durabilité",
+        "price": "Prix (CAD)"
+      },
+      "disclaimer": "* Tous les forfaits de revêtement de peinture nécessitent une décontamination et un polissage préalables de la peinture (coût supplémentaire si pas déjà effectué)."
+    },
+    "worthIt": {
+      "title": "Est-ce que Ça Vaut l'Investissement?",
+      "reasons": [
+        "Protection à Long Terme: Réduit le besoin de détaillage fréquent.",
+        "Apparence Améliorée: Maintient une finition brillante de salle d'exposition.",
+        "Facilité de Nettoyage: La saleté et la crasse adhèrent moins à la surface.",
+        "Valeur de Revente: Un extérieur bien entretenu peut augmenter la valeur de revente du véhicule.",
+        "Minimise les coûts de correction de peinture à long terme"
+      ]
+    },
+    "addons": {
+      "title": "Revêtements de Surface Supplémentaires",
+      "items": [
+        {
+          "title": "Revêtement Céramique Roues et Étriers",
+          "duration": "Jusqu'à 2 ans ou 40 000 km"
+        },
+        {
+          "title": "Revêtement Céramique Pare-brise et Verre",
+          "duration": "Jusqu'à 12 mois"
+        },
+        {
+          "title": "Revêtement Céramique Plastiques",
+          "duration": "Jusqu'à 2 ans"
+        },
+        {
+          "title": "Revêtement Céramique Cuir et Synthétiques",
+          "duration": "Jusqu'à 2 ans"
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Questions Fréquemment Posées",
+      "items": [
+        {
+          "question": "Combien de temps dure le revêtement céramique?",
+          "answer": "Notre revêtement céramique offre trois niveaux de protection: Niveau 1 (2 ans/30 000 km), Niveau 2 (4 ans/60 000 km), et Niveau 3 (5 ans/100 000 km). La longévité dépend de la qualité du produit, du processus d'application et de l'entretien."
+        },
+        {
+          "question": "Quelles surfaces peuvent être revêtues?",
+          "answer": "Nos revêtements céramiques peuvent être appliqués sur plusieurs surfaces incluant la peinture, roues et étriers de frein, surfaces vitrées, plastiques et garnitures extérieures, et cuir et synthétiques intérieurs. Chaque surface nécessite une formulation spécifique pour un collage et une protection optimaux."
+        },
+        {
+          "question": "Est-ce que le revêtement céramique vaut l'investissement?",
+          "answer": "Oui, le revêtement céramique est un investissement valable car il fournit une protection à long terme, améliore l'apparence, facilite le nettoyage, augmente la valeur de revente et minimise les coûts de correction de peinture à long terme."
+        }
+      ]
+    }
+  },
+  "parallax": {
+    "title": "Revêtement Céramique Professionnel",
+    "subtitle": "Protection et Brillance Ultimes"
+  }
+}

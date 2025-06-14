@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
+import { useI18n } from "@/hooks/useI18n";
 
 const metadata = {
   title: "Our Services | Down2Detail",
@@ -13,6 +14,7 @@ const metadata = {
 };
 
 export default function ServiePage() {
+  const { t } = useI18n("services");
   const categories = getAllServiceCategories();
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
@@ -108,7 +110,7 @@ export default function ServiePage() {
             {/* Badge */}
             <div className="inline-block mb-6 animate-fade-in">
               <span className="px-4 py-2 bg-[#d6781c]/10 text-[#d6781c] rounded-full text-sm font-medium border border-[#d6781c]/20">
-                Premium Car Detailing Services
+                {t("page.badge")}
               </span>
             </div>
 
@@ -116,16 +118,14 @@ export default function ServiePage() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight">
               <span className="relative">
                 <span className="text-[#d6781c] drop-shadow-[0_0_15px_rgba(214,120,28,0.6)]">
-                  Our Professional <br /> Services
+                  {t("page.title")}
                 </span>
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed">
-              From deep interior cleaning to professional exterior polishing, we
-              treat every car with the care it deserves. Experience the
-              difference with our premium detailing services.
+              {t("page.description")}
             </p>
 
             {/* CTA Buttons */}
@@ -134,7 +134,7 @@ export default function ServiePage() {
                 href="/contact"
                 className="group inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Get Started
+                {t("page.getStarted")}
                 <svg
                   className="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
                   viewBox="0 0 20 20"
@@ -154,7 +154,7 @@ export default function ServiePage() {
               <div className="absolute top-4 right-4 text-white/60 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                  Loading...
+                  {t("page.loading")}
                 </div>
               </div>
             )}
@@ -174,7 +174,7 @@ export default function ServiePage() {
             className="mb-16 last:mb-0"
           >
             <h2 className="text-3xl font-bold text-primary mb-8 border-b border-primary/20 pb-2">
-              {category}
+              {t(`categories.${category}`) || category}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services
@@ -210,7 +210,7 @@ export default function ServiePage() {
                           href={service.href}
                           className="inline-flex items-center font-medium text-[#d6781c] hover:text-[#c66812] transition-colors group"
                         >
-                          Learn More
+                          {t("page.learnMore")}
                           <motion.svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform"
@@ -264,22 +264,20 @@ export default function ServiePage() {
             {...fadeInUp}
             className="text-3xl font-bold mb-4 text-white"
           >
-            Ready to Start Your Project?
+            {t("page.readyToStart")}
           </motion.h2>
           <motion.p
             {...fadeInUp}
             className="max-w-2xl mx-auto mb-8 text-gray-300"
           >
-            Contact us today for a free consultation and quote on your next car
-            detailing service. Our team is ready to make your vehicle shine —
-            inside and out.
+            {t("page.readyDescription")}
           </motion.p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="/contact"
               className="inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Contact Us
+              {t("page.contactUs")}
               <motion.svg
                 animate={{ x: [0, 5, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
