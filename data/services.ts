@@ -46,7 +46,7 @@ export const PaintPolishService: Service[] = [
     price: {
       sedan: "309.99",
       suv: "369.99",
-      fullSuv: "429.99"
+      fullSuv: "429.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/gloss-enhancer.webp",
@@ -79,7 +79,7 @@ export const PaintPolishService: Service[] = [
     price: {
       sedan: "469.99",
       suv: "569.99",
-      fullSuv: "649.99"
+      fullSuv: "649.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/One-Step.webp",
@@ -113,7 +113,7 @@ export const PaintPolishService: Service[] = [
     price: {
       sedan: "749.99",
       suv: "909.99",
-      fullSuv: "1049.99"
+      fullSuv: "1049.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/paint-correction.webp",
@@ -146,7 +146,7 @@ export const PremiumServices: Service[] = [
     price: {
       sedan: "99.99",
       suv: "119.99",
-      fullSuv: "139.99"
+      fullSuv: "139.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/full-detailing.jpg",
@@ -170,7 +170,7 @@ export const PremiumServices: Service[] = [
     price: {
       sedan: "309.99",
       suv: "369.99",
-      fullSuv: "429.99"
+      fullSuv: "429.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/gloss-enhancer.jpg",
@@ -194,7 +194,7 @@ export const PremiumServices: Service[] = [
     price: {
       sedan: "109.99",
       suv: "109.99",
-      fullSuv: "129.99"
+      fullSuv: "129.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/engine-bay-detail.webp",
@@ -239,7 +239,7 @@ export const services: Service[] = [
     price: {
       sedan: "99.99",
       suv: "119.99",
-      fullSuv: "119.99"
+      fullSuv: "119.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/exterior-wash.webp",
@@ -284,7 +284,7 @@ export const services: Service[] = [
     price: {
       sedan: "",
       suv: "",
-      fullSuv: ""
+      fullSuv: "",
     },
     currency: "",
     image: "/images/services-detailing/paint-decon.webp",
@@ -327,7 +327,7 @@ export const services: Service[] = [
     price: {
       sedan: "109.99",
       suv: "109.99",
-      fullSuv: "109.99"
+      fullSuv: "109.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/engine-bay-detail.webp",
@@ -369,7 +369,7 @@ export const services: Service[] = [
     price: {
       sedan: "179.99",
       suv: "179.99",
-      fullSuv: "179.99"
+      fullSuv: "179.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/headlight-restoration.webp",
@@ -409,7 +409,7 @@ export const services: Service[] = [
     price: {
       sedan: "179.99",
       suv: "179.99",
-      fullSuv: "179.99"
+      fullSuv: "179.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/headlight-tint.webp",
@@ -457,7 +457,7 @@ export const services: Service[] = [
     price: {
       sedan: "99.99",
       suv: "119.99",
-      fullSuv: "119.99"
+      fullSuv: "119.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/interior.webp",
@@ -497,7 +497,7 @@ export const services: Service[] = [
     price: {
       sedan: "69.99",
       suv: "69.99",
-      fullSuv: "89.99"
+      fullSuv: "89.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/floor-shampoo.webp",
@@ -536,7 +536,7 @@ export const services: Service[] = [
     price: {
       sedan: "89.99",
       suv: "109.99",
-      fullSuv: "129.99"
+      fullSuv: "129.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/pet-hair-remove.webp",
@@ -577,7 +577,7 @@ export const services: Service[] = [
     price: {
       sedan: "69.99",
       suv: "69.99",
-      fullSuv: "89.99"
+      fullSuv: "89.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/seat-shampoo.webp",
@@ -620,7 +620,7 @@ export const services: Service[] = [
     price: {
       sedan: "49.99",
       suv: "49.99",
-      fullSuv: "149.99"
+      fullSuv: "149.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/leather-seat-treatment2.webp",
@@ -646,11 +646,128 @@ export const services: Service[] = [
     price: {
       sedan: "0.00",
       suv: "0.00",
-      fullSuv: "0.00"
+      fullSuv: "0.00",
     },
     currency: "CAD",
     image: "/images/services-detailing/paint-polish.webp",
     faqs: [],
+  },
+  {
+    id: "gloss-enhancer",
+    label: "Gloss Enhancer",
+    subtitle: "Ultimate Paint Shine & Protection",
+    href: "/services/gloss-enhancer",
+    category: "Paint Polish",
+    shortDescription: "Enhance paint gloss and shine.",
+    features: [
+      "Fine machine polish to boost gloss",
+      "Microfiber hand-buffing for finish",
+      "Inspection for shine & uniformity",
+      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "Final quality check",
+    ],
+    benefits: [
+      "Improves exterior appearance",
+      "Contaminants can dull your paint even without scratches",
+      "Gloss enhancer revives shine without harsh polishing",
+      "Keeps your car looking fresh between full corrections",
+      "Maintains a smooth, reflective finish",
+      "Boosts resale value",
+    ],
+    description:
+      "A great option for newer or well-maintained vehicles, our Gloss Enhancer service deeply cleans the paint and boosts shine — removing embedded contaminants like brake dust, airborne particles, and rail dust. Finished with a fine polish to bring out clarity and gloss.",
+    imageShowcase: "/images/services-detailing/gloss-enhancer.webp",
+    price: {
+      sedan: "309.99",
+      suv: "369.99",
+      fullSuv: "369.99",
+    },
+    currency: "CAD",
+    image: "/images/services-detailing/gloss-enhancer.webp",
+    faqs: [
+      {
+        question: "How long does the gloss enhancement last?",
+        answer: "Results typically last 3-6 months with proper maintenance.",
+      },
+    ],
+  },
+  {
+    id: "one-step-polish",
+    label: "One-Step Polish",
+    subtitle: "Swirl Removal & Gloss Enhancement",
+    href: "/services/one-step-polish",
+    category: "Paint Polish",
+    shortDescription: "Quick paint enhancement and correction.",
+    features: [
+      "One-step machine polish with cutting pad",
+      "Removes 50–70% of paint defects",
+      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "Gloss inspection and touch-up as needed",
+      "Final quality check",
+    ],
+    benefits: [
+      "Improves exterior appearance",
+      "Daily driving causes swirls, oxidation, & light scratches",
+      "Removes minor defects and blemishes",
+      "Enahnces gloss & paint clarity",
+      "Extends paint lifespan",
+      "Boosts resale value",
+    ],
+    description:
+      "A balanced level of paint correction using a cutting pad and compound-polish blend. This removes 50–70% of visible swirls and scratches, restoring the surface clarity and shine. Great for daily drivers or vehicles that need more than just gloss enhancement.",
+    imageShowcase: "/images/services-detailing/One-Step.webp",
+    price: {
+      sedan: "469.99",
+      suv: "569.99",
+      fullSuv: "569.99",
+    },
+    currency: "CAD",
+    image: "/images/services-detailing/One-Step.webp",
+    faqs: [
+      {
+        question: "What imperfections can be removed?",
+        answer:
+          "Light to moderate swirl marks and scratches can be significantly reduced.",
+      },
+    ],
+  },
+  {
+    id: "paint-correction",
+    label: "Paint Correction",
+    subtitle: "Multi-Stage Perfection & Showroom Finish",
+    href: "/services/paint-correction",
+    category: "Paint Polish",
+    shortDescription: "Professional paint correction service.",
+    features: [
+      "Multi-stage paint correction (wet sanding, compounding + polish)",
+      "Removes up to 90% of paint defects",
+      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "Surface inspection under detailing lights",
+    ],
+    benefits: [
+      "Improves exterior appearance",
+      "Corrects heavy swirls, oxidation, & water spot damage",
+      "Safely restores depth, clarity, and color",
+      "Revives neglected or damaged paint surfaces",
+      "Boosts resale value",
+    ],
+    description:
+      "Our most advanced polishing service — using multiple machine steps of cutting and refining compounds, this service removes up to 90% of imperfections like heavy swirls, oxidation, scratches, and etching. The result is a mirror-like, showroom-quality finish with unmatched clarity and depth.",
+    imageShowcase: "/images/services-detailing/paint-correction.webp",
+    price: {
+      sedan: "749.99",
+      suv: "909.99",
+      fullSuv: "909.99",
+    },
+    currency: "CAD",
+    image: "/images/services-detailing/paint-correction.webp",
+    faqs: [
+      {
+        question: "How long does paint correction last?",
+        answer:
+          "Results are permanent, but proper maintenance is required to maintain them.",
+      },
+    ],
   },
   {
     id: "ceramic-coating",
@@ -682,7 +799,7 @@ export const services: Service[] = [
     price: {
       sedan: "369.99",
       suv: "469.99",
-      fullSuv: "549.99"
+      fullSuv: "549.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/Ceramic-coating.webp",
@@ -731,7 +848,7 @@ export const services: Service[] = [
     price: {
       sedan: "99.99",
       suv: "99.99",
-      fullSuv: "99.99"
+      fullSuv: "99.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/Paint-Sealant.webp",
@@ -768,7 +885,7 @@ export const services: Service[] = [
     price: {
       sedan: "59.99",
       suv: "59.99",
-      fullSuv: "59.99"
+      fullSuv: "59.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/car-wax.webp",

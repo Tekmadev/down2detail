@@ -10,7 +10,7 @@
     "typeOfVehicle": "Type de Véhicule",
     "faq": "Questions Fréquemment Posées"
   },
-  "serviceCategories": {
+  "categories": {
     "protection": "Protection",
     "correction": "Correction",
     "detailing": "Détaillage",
@@ -70,7 +70,7 @@
     "readyDescription": "Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis pour votre prochain service de détaillage automobile. Notre équipe est prête à faire briller votre véhicule — à l'intérieur comme à l'extérieur.",
     "contactUs": "Contactez-nous"
   },
-  "categories": {
+  "serviceCategories": {
     "Exterior": "Extérieur",
     "Interior": "Intérieur",
     "Paint Polish": "Polissage de Peinture",

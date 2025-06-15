@@ -174,7 +174,7 @@ export default function ServiePage() {
             className="mb-16 last:mb-0"
           >
             <h2 className="text-3xl font-bold text-primary mb-8 border-b border-primary/20 pb-2">
-              {t(`categories.${category}`) || category}
+              {t(`serviceCategories.${category}`) || category}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services

@@ -123,11 +123,12 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   Sedan/Coupe
                 </span>
                 <div className="text-center">
-                  <span className="block text-gray-300 text-xs md:text-sm mb-1">
+                  {service.currency === "CAD" && <span className="block text-gray-300 text-xs md:text-sm mb-1">
                     Small Price
-                  </span>
+                  </span>}
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${service.price.sedan}
+                    {service.currency === "CAD" ? "$" : "Included in Exterior Detailing"}
+                    {service.price.sedan}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
                     {service.currency}
@@ -142,11 +143,12 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   Compact/Mid-size SUV
                 </span>
                 <div className="text-center">
-                  <span className="block text-gray-300 text-xs md:text-sm mb-1">
+                  {service.currency === "CAD" && <span className="block text-gray-300 text-xs md:text-sm mb-1">
                     Medium Price
-                  </span>
+                  </span>}
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${service.price.suv}
+                    {service.currency === "CAD" ? "$" : "Included in Exterior Detailing"}
+                    {service.price.suv}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
                     {service.currency}
@@ -161,11 +163,12 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   Full-size SUV/Trucks
                 </span>
                 <div className="text-center">
-                  <span className="block text-gray-300 text-xs md:text-sm mb-1">
+                  {service.currency === "CAD" && <span className="block text-gray-300 text-xs md:text-sm mb-1">
                     Large Price
-                  </span>
+                  </span>}
                   <span className="text-lg md:text-xl font-bold text-[#d6781c]">
-                    ${service.price.fullSuv}
+                    {service.currency === "CAD" ? "$" : "Included in Exterior Detailing"}
+                    {service.price.fullSuv}
                   </span>
                   <span className="text-gray-300 text-xs md:text-sm ml-1">
                     {service.currency}

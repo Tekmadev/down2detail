@@ -1,16 +1,23 @@
+"use client";
+
+import { useI18n } from "@/hooks/useI18n";
+
 export default function ValuesSection() {
-    return (
-        <section className="py-16 md:py-24 bg-black">
+  const { t } = useI18n("about");
+
+  return (
+    <section className="py-16 md:py-24 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-medium text-[#d6781c] uppercase tracking-wider">
-            Our Values
+            {t("values.title")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mt-2 mb-6">
-            The Principles That Drive Us
+            {t("values.subtitle")}
           </h2>
           <p className="text-gray-300">
-          More than just detailers, we're a passionate team guided by values that shape every polish, every wipe, and every customer interaction.
+            More than just detailers, we're a passionate team guided by values
+            that shape every polish, every wipe, and every customer interaction.
           </p>
         </div>
 
@@ -34,11 +41,9 @@ export default function ValuesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Uncompromising Quality
+              {t("values.qualityCraftsmanship")}
             </h3>
-            <p className="text-gray-300">
-            We treat every vehicle like it's our own, using only premium products, advanced techniques, and expert care to deliver results that exceed expectations.
-            </p>
+            <p className="text-gray-300">{t("values.qualityDescription")}</p>
           </div>
 
           {/* Value 2 */}
@@ -60,11 +65,9 @@ export default function ValuesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Genuine Client Care
+              {t("values.genuineClientCare")}
             </h3>
-            <p className="text-gray-300">
-            We listen first. By understanding your needs and expectations, we deliver tailored detailing solutions with full transparency and honest guidance.
-            </p>
+            <p className="text-gray-300">{t("values.genuineDescription")}</p>
           </div>
 
           {/* Value 3 */}
@@ -86,11 +89,9 @@ export default function ValuesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Timely Execution
+              {t("values.timelyExecution")}
             </h3>
-            <p className="text-gray-300">
-            Your time matters. We pride ourselves on efficient scheduling, clear communication, and delivering pristine results — always on time, never rushed.
-            </p>
+            <p className="text-gray-300">{t("values.timelyDescription")}</p>
           </div>
 
           {/* Value 4 */}
@@ -112,11 +113,9 @@ export default function ValuesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Attention to Detail
+              {t("values.attentionToDetail")}
             </h3>
-            <p className="text-gray-300">
-            No smudge, swirl, or stain goes unnoticed. We go the extra mile to deliver a flawless finish — because every detail matters.
-            </p>
+            <p className="text-gray-300">{t("values.attentionDescription")}</p>
           </div>
 
           {/* Value 5 */}
@@ -138,17 +137,15 @@ export default function ValuesSection() {
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Reliable Consistency
+              {t("values.reliableConsistency")}
             </h3>
-            <p className="text-gray-300">
-            Whether it's your first visit or your tenth, our process and results stay consistent. We're all about dependable service that earns long-term trust.
-            </p>
+            <p className="text-gray-300">{t("values.reliableDescription")}</p>
           </div>
 
           {/* Value 6 */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 bg-[#d6781c]/10 rounded-full flex items-center justify-center mb-6">
-            <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-[#d6781c]"
                 fill="none"
@@ -159,19 +156,19 @@ export default function ValuesSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
             </div>
             <h3 className="text-xl font-bold text-gray-100 mb-3">
-              Professional Standards
+              {t("values.professionalStandards")}
             </h3>
             <p className="text-gray-300">
-            We operate with respect, integrity, and full accountability — showing up prepared, delivering as promised, and holding ourselves to the highest standards.
+              {t("values.professionalDescription")}
             </p>
           </div>
         </div>
       </div>
     </section>
-    );
+  );
 }

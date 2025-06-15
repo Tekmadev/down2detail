@@ -12,7 +12,13 @@
     "genuineClientCare": "Soin Client Authentique",
     "genuineDescription": "Nous écoutons d'abord. En comprenant vos besoins et attentes, nous livrons des solutions de détaillage sur mesure avec une transparence complète et des conseils honnêtes.",
     "timelyExecution": "Exécution Ponctuelle",
-    "timelyDescription": "Votre temps compte. Nous sommes fiers de notre planification efficace, communication claire, et de livrer des résultats impeccables — toujours à temps, jamais précipités."
+    "timelyDescription": "Votre temps compte. Nous sommes fiers de notre planification efficace, communication claire, et de livrer des résultats impeccables — toujours à temps, jamais précipités.",
+    "attentionToDetail": "Attention aux Détails",
+    "attentionDescription": "Aucune tache, tourbillon ou marque ne passe inaperçu. Nous faisons un effort supplémentaire pour livrer une finition impeccable — parce que chaque détail compte.",
+    "reliableConsistency": "Consistance Fiable",
+    "reliableDescription": "Que ce soit votre première visite ou votre dixième, notre processus et nos résultats restent cohérents. Nous privilégions un service fiable qui mérite la confiance à long terme.",
+    "professionalStandards": "Standards Professionnels",
+    "professionalDescription": "Nous opérons avec respect, intégrité et responsabilité complète — nous présentant préparés, livrant comme promis, et nous tenant aux plus hauts standards."
   },
   "mission": {
     "title": "Notre Mission",
@@ -21,5 +27,27 @@
   "team": {
     "title": "Notre Équipe",
     "description": "Nos professionnels expérimentés sont passionnés par les soins automobiles et engagés à livrer des résultats qui dépassent vos attentes."
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "subtitle": "Excellence en Détaillage Guidée par la Passion",
+    "description1": "Down2Detail a été fondé avec une mission claire : élever le détaillage de véhicules à un tout nouveau niveau à Montréal. Ce qui a commencé comme une opération d'un seul homme dans un petit garage est devenu une marque de confiance, connue pour la précision, la passion et la perfection.",
+    "description2": "Au fil des années, notre équipe a eu le privilège de travailler avec des clients de haut niveau et des véhicules prestigieux, incluant le détaillage pour des marques de luxe comme Ferrari, Lamborghini, Rolls-Royce, Porsche, et plus encore. Ces collaborations nous ont poussés à raffiner nos techniques et à élever continuellement nos standards.",
+    "description3": "Aujourd'hui, Down2Detail représente un symbole de confiance et de qualité. Qu'il s'agisse d'appliquer un revêtement céramique sur une supercar ou de nettoyer en profondeur un véhicule de tous les jours, nous traitons chaque véhicule avec le même niveau de soin et de dévouement. Votre voiture mérite rien de moins que la perfection — et c'est ce que nous livrons."
+  },
+  "approach": {
+    "title": "Notre Processus",
+    "subtitle": "La Différence Down2Detail",
+    "description": "Chez Down2Detail, il ne s'agit pas seulement de nettoyer des voitures, il s'agit de livrer une expérience méticuleuse et haut de gamme qui protège et élève votre véhicule. Notre processus raffiné assure que votre voiture paraît et se sent à son meilleur absolu, à chaque fois.",
+    "step1Title": "Inspection Initiale",
+    "step1Description": "Nous effectuons une évaluation complète de l'état de votre véhicule — identifiant les défauts de peinture, l'usure intérieure, et les niveaux de contamination avant de recommander le service idéal.",
+    "step2Title": "Nettoyage Profond",
+    "step2Description": "Utilisant des outils et produits de qualité industrielle, nous effectuons des lavages haute pression, traitements mousse, décontamination, et extractions de taches à l'intérieur comme à l'extérieur.",
+    "step3Title": "Correction de Peinture et Polissage",
+    "step3Description": "Nous éliminons les marques de tourbillon, rayures, et oxydation par polissage multi-étapes, restaurant la profondeur, clarté, et brillance de la finition de votre véhicule.",
+    "step4Title": "Protection et Revêtement",
+    "step4Description": "Nous appliquons des scellants haute performance ou revêtements céramiques pour verrouiller la brillance, protéger la peinture, et assurer une durabilité à long terme.",
+    "step5Title": "Touche Finale et Livraison",
+    "step5Description": "Chaque véhicule passe par une inspection finale et retouche avant que nous vous le retournions — paraissant neuf et prêt à faire tourner les têtes."
   }
 }

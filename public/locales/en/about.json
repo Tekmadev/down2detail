@@ -12,7 +12,13 @@
     "genuineClientCare": "Genuine Client Care",
     "genuineDescription": "We listen first. By understanding your needs and expectations, we deliver tailored detailing solutions with full transparency and honest guidance.",
     "timelyExecution": "Timely Execution",
-    "timelyDescription": "Your time matters. We pride ourselves on efficient scheduling, clear communication, and delivering pristine results — always on time, never rushed."
+    "timelyDescription": "Your time matters. We pride ourselves on efficient scheduling, clear communication, and delivering pristine results — always on time, never rushed.",
+    "attentionToDetail": "Attention to Detail",
+    "attentionDescription": "No smudge, swirl, or stain goes unnoticed. We go the extra mile to deliver a flawless finish — because every detail matters.",
+    "reliableConsistency": "Reliable Consistency",
+    "reliableDescription": "Whether it's your first visit or your tenth, our process and results stay consistent. We're all about dependable service that earns long-term trust.",
+    "professionalStandards": "Professional Standards",
+    "professionalDescription": "We operate with respect, integrity, and full accountability — showing up prepared, delivering as promised, and holding ourselves to the highest standards."
   },
   "mission": {
     "title": "Our Mission",
@@ -21,5 +27,27 @@
   "team": {
     "title": "Our Team",
     "description": "Our experienced professionals are passionate about automotive care and committed to delivering results that exceed your expectations."
+  },
+  "story": {
+    "title": "Our Story",
+    "subtitle": "Passion-Driven Detailing Excellence",
+    "description1": "Down2Detail was founded with a clear mission: to elevate vehicle detailing to a whole new level in Montreal. What began as a one-man operation in a small garage has grown into a trusted brand, known for precision, passion, and perfection.",
+    "description2": "Over the years, our team has had the privilege of working with high-profile clients and prestigious vehicles, including detailing for luxury brands like Ferrari, Lamborghini, Rolls-Royce, Porsche, and more. These collaborations pushed us to refine our techniques and raise our standards continuously.",
+    "description3": "Today, Down2Detail stands as a symbol of trust and quality. Whether it's ceramic coating a supercar or deep-cleaning a daily driver, we treat every vehicle with the same level of care and dedication. Your car deserves nothing less than perfection — and that's what we deliver."
+  },
+  "approach": {
+    "title": "Our Process",
+    "subtitle": "The Down2Detail Difference",
+    "description": "At Down2Detail, it's not just about cleaning cars, it's about delivering a meticulous, high-end experience that protects and elevates your vehicle. Our refined process ensures your car looks and feels its absolute best, every time.",
+    "step1Title": "Initial Inspection",
+    "step1Description": "We perform a full assessment of your vehicle's condition — identifying paint defects, interior wear, and contamination levels before recommending the ideal service.",
+    "step2Title": "Deep Cleaning",
+    "step2Description": "Using industry-grade tools and products, we perform high-pressure washes, foam treatments, decontamination, and stain extractions inside and out.",
+    "step3Title": "Paint Correction & Polishing",
+    "step3Description": "We eliminate swirl marks, scratches, and oxidation through multi-stage polishing, restoring depth, clarity, and gloss to your vehicle's finish.",
+    "step4Title": "Protection & Coating",
+    "step4Description": "We apply high-performance sealants or ceramic coatings to lock in the shine, protect the paint, and ensure long-term durability.",
+    "step5Title": "Final Touch & Delivery",
+    "step5Description": "Every vehicle goes through a final inspection and touch-up before we return it to you — looking brand new and ready to turn heads."
   }
 }
