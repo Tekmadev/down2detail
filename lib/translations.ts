@@ -69,7 +69,7 @@ export const serviceSubtitleTranslationKeys: Record<string, string> = {
 
 // Service category translation keys mapping
 export const serviceCategoryTranslationKeys: Record<string, string> = {
-  Protection: "serviceCategories.protection",
+  Protection: "serviceCategories.Protection",
   Correction: "serviceCategories.correction",
   Detailing: "serviceCategories.detailing",
   Enhancement: "serviceCategories.enhancement",
