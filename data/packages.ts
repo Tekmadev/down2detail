@@ -87,7 +87,7 @@ export interface DetailPackage {
         "Headliner Detailing",
         "Fabric Seat Shampoo/Leather Seat Treatment",
       ],
-      prices: { sedanCoupesCrossovers: 219.99, compactMidFullSUVsPickups: 239.99, fullSizeSUVsPickups: 259.99 },
+      prices: { sedanCoupesCrossovers: 269.99, compactMidFullSUVsPickups: 299.99, fullSizeSUVsPickups: 369.99 },
       addOns: [
         "Pet Hair Removal",
         "Fabric & Textile Sealant",
