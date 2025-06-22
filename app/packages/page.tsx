@@ -30,7 +30,7 @@ export default function Packages() {
         return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
         return "/images/categories/paint.jpg";
-      case "Maintenance":
+      case "Monthly Service":
         return "/images/categories/maintenace.jpeg";
       default:
         return "/images/categories/default.jpg";

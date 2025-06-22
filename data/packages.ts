@@ -198,7 +198,7 @@ export interface DetailPackage {
     // MAINTENANCE Packages
     {
       id: "maintenance-monthly",
-      category: "Maintenance",
+      category: "Monthly Service",
       name: "Monthly Refresh",
       description: [
         "BRONZE Top2Bottom Detailing Package",
@@ -208,7 +208,7 @@ export interface DetailPackage {
     },
     {
       id: "maintenance-ceramic",
-      category: "Maintenance",
+      category: "Monthly Service",
       name: "Ceramic Refresh (Every 4-6 Months)",
       description: [
         "STANDARD Interior Detailing Package",
