@@ -25,9 +25,9 @@
     "pricing": "Pricing"
   },
   "pricing": {
-    "sedanCoupesCrossovers": "Sedan/Coupes/Crossovers:",
-    "compactMidFullSUVsPickups": "Compact/Mid/Full SUVs/Pickups:",
-    "fullSizeSUVsPickups": "Full-Size SUVs/Pickups:",
+    "sedanCoupesCrossovers": "Sedan/Coupe/Crossover:",
+    "compactMidFullSUVsPickups": "Compact/Mid Size SUV:",
+    "fullSizeSUVsPickups": "Full-Size SUV/Pickup:",
     "from": "From $"
   },
   "addons": {

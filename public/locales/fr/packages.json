@@ -25,9 +25,9 @@
     "pricing": "Tarification"
   },
   "pricing": {
-    "sedanCoupesCrossovers": "Berline/Coupés/Multisegments:",
-    "compactMidFullSUVsPickups": "VUS Compact/Moyen/Plein/Camionnettes:",
-    "fullSizeSUVsPickups": "VUS Pleine Grandeur/Camionnettes:",
+    "sedanCoupesCrossovers": "Berline/Coupé/Multisegments:",
+    "compactMidFullSUVsPickups": "VUS Compact/Moyen:",
+    "fullSizeSUVsPickups": "VUS Pleine Grandeur/Camionnette:",
     "from": "À partir de "
   },
   "addons": {

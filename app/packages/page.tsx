@@ -26,11 +26,11 @@ export default function Packages() {
         return "/images/categories/exterior.jpg";
       case "Interior Detailing":
         return "/images/categories/interioir.avif";
-      case "Top2Bottom Detailing":
-        return "/images/categories/full.jpg";
+      // case "Top2Bottom Detailing":
+      //   return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
         return "/images/categories/paint.jpg";
-      case "Monthly Service":
+      case "Monthly Plans":
         return "/images/categories/maintenace.jpeg";
       default:
         return "/images/categories/default.jpg";
