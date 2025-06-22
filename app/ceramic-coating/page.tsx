@@ -28,7 +28,7 @@ export default function CeramicCoatingPage() {
             </p>
           </div>
           {/* Main Image */}
-          <div className="relative w-full h-[700px] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+          <div className="relative w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
             <Image
               src={ceramicCoating.imageShowcase}
               alt={ceramicCoating.id}
