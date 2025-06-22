@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <VideoHero
-        fallbackImage="/images/Auto-Detailing.png"
+        fallbackImage="/images/ceramic.png"
         videoSources={{
           mp4: "/videos/hero-video.mp4",
         }}
