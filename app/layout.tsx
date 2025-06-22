@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import ComingSoon from "@/components/ComingSoon";
 import I18nProvider from "@/components/I18nProvider";
+import ScrollRestoration from "@/components/ScrollRestoration";
 import Script from "next/script";
 
 // Set this to false when you're ready to launch the full site
@@ -305,6 +306,7 @@ export default function RootLayout({
         </noscript>
 
         <I18nProvider>
+          <ScrollRestoration />
           {MAINTENANCE_MODE ? (
             <ComingSoon />
           ) : (

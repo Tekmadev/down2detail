@@ -5,7 +5,6 @@ import { RelatedServices } from "../components/ReletedService";
 import { CtaSection } from "../components/CtaSection";
 import ServiceDetailsPage from "./ServiceDetailPage";
 import ServiceSousSection from "../components/SectionSousSerivce";
-import ScrollToTop from "./ScrollToTop";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -27,8 +26,7 @@ export default async function ServicePage({
   }
 
   return (
-    <div className="bg-black from-gray-50 via-white to-gray-50 min-h-screen ">
-      <ScrollToTop />
+    <div className="bg-black from-gray-50 via-white to-gray-50 min-h-screen">
       <HeroSection params={resolvedParams} />
       <ServiceDetailsPage service={service} />
       <RelatedServices params={resolvedParams} />
