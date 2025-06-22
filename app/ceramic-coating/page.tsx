@@ -116,7 +116,7 @@ export default function CeramicCoatingPage() {
                 {/* Media Section */}
                 <div className="relative w-full h-[300px] rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-500">
                   <Image
-                    src="/images/hiw-ceramic.png"
+                    src="/images/services-detailing/ceramiccc.jpg"
                     alt={t("sections.howItWorks.altText")}
                     fill
                     className="object-cover transition-transform duration-700 hover:scale-110"
