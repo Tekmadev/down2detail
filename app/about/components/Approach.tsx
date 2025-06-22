@@ -106,7 +106,7 @@ export default function Approach() {
 
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/images/services-detailing/interior.png"
+              src="/images/services-detailing/Interior.png"
               alt="Interior Detailing"
               width={300}
               height={400}

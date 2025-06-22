@@ -460,7 +460,7 @@ export const services: Service[] = [
       fullSuv: "119.99",
     },
     currency: "CAD",
-    image: "/images/services-detailing/interior.webp",
+    image: "/images/services-detailing/Interior2.webp",
     faqs: [
       {
         question: "What areas are cleaned?",
@@ -514,7 +514,7 @@ export const services: Service[] = [
     subtitle: "Deep Interior Clean for a Fur-Free Finish",
     href: "/services/pet-hair-removal",
     category: "Interior",
-    optionalImage: "/images/services-detailing/Interior2.webp",
+    optionalImage: "/images/services-detailing/pethairremoval.webp",
     shortDescription: "Professional pet hair removal service.",
     features: [
       "Full inspection of interior pet hair buildup",
