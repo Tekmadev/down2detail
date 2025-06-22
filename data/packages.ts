@@ -13,41 +13,41 @@ export interface DetailPackage {
 
 export const packages: DetailPackage[] = [
   // Exterior Detailing
-  {
-    id: "exterior-basic",
-    category: "Exterior Detailing",
-    name: "BASIC",
-    description: [
-      "Wheel & Tire Cleaning",
-      "Door Jamb Cleaning",
-      "Contact Washing",
-      "Air Blow Drying",
-    ],
-    prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 69.99 },
-  },
+  // {
+  //   id: "exterior-basic",
+  //   category: "Exterior",
+  //   name: "BASIC",
+  //   description: [
+  //     "Wheel & Tire Cleaning",
+  //     "Door Jamb Cleaning",
+  //     "Contact Washing",
+  //     "Air Blow Drying",
+  //   ],
+  //   prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 69.99 },
+  // },
   {
     id: "exterior-standard",
-    category: "Exterior Detailing",
+    category: "Exterior",
     name: "STANDARD",
     description: [
-      "Everything in BASIC",
-      "Pre-Rinse",
-      "Snow Foam Application",
+      "Pre-Rinse & Snow Foam Application",
+      "Contact Washing",
       "Detailed Brush Cleaning",
+      "Door Jamb Degreasing",
       "Glass Cleaning",
-      "Tire Dressing",
+      "Wheel & Tire Cleaning",
       "Air Blow & Microfiber Towel Drying",
     ],
     prices: { sedanCoupesCrossovers: 69.99, compactMidFullSUVsPickups: 89.99 },
   },
   {
     id: "exterior-advanced",
-    category: "Exterior Detailing",
+    category: "Exterior",
     name: "ADVANCED",
     description: [
       "Everything in STANDARD",
       "Paint Decontamination",
-      "Spray Wax Application",
+      "Paint Sealant Application",
     ],
     prices: {
       sedanCoupesCrossovers: 129.99,
@@ -57,30 +57,32 @@ export const packages: DetailPackage[] = [
   },
 
   // Interior Detailing
+  // {
+  //   id: "interior-basic",
+  //   category: "Interior",
+  //   name: "BASIC",
+  //   description: [
+  //     "Interior Vacuuming",
+  //     "Interior Window Cleaning",
+  //     "Dashboard, Door Panel & Center Console Wiping",
+  //   ],
+  //   prices: {
+  //     sedanCoupesCrossovers: 49.99,
+  //     compactMidFullSUVsPickups: 59.99,
+  //     fullSizeSUVsPickups: 69.99,
+  //   },
+  // },
   {
-    id: "interior-basic",
-    category: "Interior Detailing",
-    name: "BASIC",
+    id: "interior-standard",
+    category: "Interior",
+    name: "STANDARD",
     description: [
       "Interior Vacuuming",
       "Interior Window Cleaning",
-      "Dashboard, Door Panel & Center Console Wiping",
-    ],
-    prices: {
-      sedanCoupesCrossovers: 49.99,
-      compactMidFullSUVsPickups: 59.99,
-      fullSizeSUVsPickups: 69.99,
-    },
-  },
-  {
-    id: "interior-standard",
-    category: "Interior Detailing",
-    name: "STANDARD",
-    description: [
-      "Everything in BASIC",
-      "Floor & Carpet Detailing",
       "Steam Cleaning",
+      "Dashboard, Door Panel & Center Console Wiping",
       "Air Vent, Button & Tight Space Detailing",
+      "Floor & Carpet Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 149.99,
@@ -90,7 +92,7 @@ export const packages: DetailPackage[] = [
   },
   {
     id: "interior-advanced",
-    category: "Interior Detailing",
+    category: "Interior",
     name: "ADVANCED",
     description: [
       "Everything in STANDARD",
@@ -234,7 +236,8 @@ export const packages: DetailPackage[] = [
     category: "Monthly Plans",
     name: "Monthly Refresh",
     description: [
-      "BRONZE Top2Bottom Detailing Package",
+      "STANDARD Exterior Package",
+      "STANDARD Interior Package",
       "This package is only offered to our loyal clients",
     ],
     prices: { sedanCoupesCrossovers: 79.99, compactMidFullSUVsPickups: 89.99 },
@@ -244,8 +247,8 @@ export const packages: DetailPackage[] = [
     category: "Monthly Plans",
     name: "Ceramic Refresh (Every 4-6 Months)",
     description: [
-      "STANDARD Interior Detailing Package",
-      "ADVANCED Exterior Detailing Package",
+      "ADVANCED Exterior Package",
+      "STANDARD Interior Package",
       "Ceramic Coating Topper",
       "This package is only offered to our loyal clients",
     ],

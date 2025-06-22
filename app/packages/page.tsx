@@ -22,9 +22,9 @@ export default function Packages() {
 
   const getCategoryImage = (category: string) => {
     switch (category) {
-      case "Exterior Detailing":
+      case "Exterior":
         return "/images/categories/exterior.jpg";
-      case "Interior Detailing":
+      case "Interior":
         return "/images/categories/interioir.avif";
       // case "Top2Bottom Detailing":
       //   return "/images/categories/full.jpg";
