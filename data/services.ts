@@ -209,7 +209,7 @@ export const services: Service[] = [
     subtitle: "More Than Just a Wash",
     href: "/services/exterior-detailing",
     category: "Exterior",
-    optionalImage: "/images/services-detailing/exterior.png",
+    optionalImage: "/images/services-detailing/Exterior.jpg",
     shortDescription: "Complete exterior cleaning and protection.",
     features: [
       "Wheels & tires deep cleaned with pH-balanced wheel cleaner",
