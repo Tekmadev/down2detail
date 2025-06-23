@@ -39,7 +39,7 @@ export const ceramicCoating: Service = {
       "Minor Scratches: Adds a level of scratch resistance."
     ],
     coatingLevels: [
-      { level: "Level 1", duration: "Up to 1 year or 30,000 km", price: 249.99 },
+      { level: "Level 1", duration: "Up to 1 year or 20,000 km", price: 249.99 },
       { level: "Level 2", duration: "Up to 4 years or 60,000 km", price: 499.99 },
       { level: "Level 3", duration: "Up to 5 years or 100,000 km", price: 599.99 }
     ],
