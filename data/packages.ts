@@ -8,6 +8,11 @@ export interface DetailPackage {
     compactMidFullSUVsPickups: number;
     fullSizeSUVsPickups?: number;
   };
+  discountedPrice?: {
+    sedanCoupesCrossovers: number;
+    compactMidFullSUVsPickups: number;
+    fullSizeSUVsPickups?: number;
+  };
   addOns?: string[];
 }
 
@@ -100,6 +105,11 @@ export const packages: DetailPackage[] = [
       "Fabric Seat Shampoo/Leather Seat Treatment",
     ],
     prices: {
+      sedanCoupesCrossovers: 349.99,
+      compactMidFullSUVsPickups: 399.99,
+      fullSizeSUVsPickups: 449.99,
+    },
+    discountedPrice: {
       sedanCoupesCrossovers: 269.99,
       compactMidFullSUVsPickups: 299.99,
       fullSizeSUVsPickups: 369.99,
@@ -185,6 +195,11 @@ export const packages: DetailPackage[] = [
       "1-Year Graphene Ceramic Coating",
     ],
     prices: {
+      sedanCoupesCrossovers: 699.99,
+      compactMidFullSUVsPickups: 729.99,
+      fullSizeSUVsPickups: 759.99,
+    },
+    discountedPrice: {
       sedanCoupesCrossovers: 499.99,
       compactMidFullSUVsPickups: 529.99,
       fullSizeSUVsPickups: 559.99,
