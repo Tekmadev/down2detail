@@ -38,7 +38,7 @@ export const packages: DetailPackage[] = [
       "Wheel & Tire Cleaning",
       "Air Blow & Microfiber Towel Drying",
     ],
-    prices: { sedanCoupesCrossovers: 69.99, compactMidFullSUVsPickups: 89.99 },
+    prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 59.99 },
   },
   {
     id: "exterior-advanced",
@@ -50,44 +50,43 @@ export const packages: DetailPackage[] = [
       "Paint Sealant Application",
     ],
     prices: {
-      sedanCoupesCrossovers: 129.99,
-      compactMidFullSUVsPickups: 159.99,
+      sedanCoupesCrossovers: 149.99,
+      compactMidFullSUVsPickups: 169.99,
     },
     addOns: ["Paint Sealant", "Engine Bay Detailing"],
   },
 
   // Interior Detailing
-  // {
-  //   id: "interior-basic",
-  //   category: "Interior",
-  //   name: "BASIC",
-  //   description: [
-  //     "Interior Vacuuming",
-  //     "Interior Window Cleaning",
-  //     "Dashboard, Door Panel & Center Console Wiping",
-  //   ],
-  //   prices: {
-  //     sedanCoupesCrossovers: 49.99,
-  //     compactMidFullSUVsPickups: 59.99,
-  //     fullSizeSUVsPickups: 69.99,
-  //   },
-  // },
+  {
+    id: "interior-basic",
+    category: "Interior",
+    name: "BASIC",
+    description: [
+      "Interior Vacuuming",
+      "Dashboard, Door Panel & Center Console Wiping",
+      "Air Vent, Button & Tight Space Detailing",
+      "Floor & Carpet Care",
+    ],
+    prices: {
+      sedanCoupesCrossovers: 49.99,
+      compactMidFullSUVsPickups: 59.99,
+      fullSizeSUVsPickups: 69.99,
+    },
+  },
   {
     id: "interior-standard",
     category: "Interior",
     name: "STANDARD",
     description: [
-      "Interior Vacuuming",
+      "Everything in BASIC",
       "Interior Window Cleaning",
       "Steam Cleaning",
-      "Dashboard, Door Panel & Center Console Wiping",
-      "Air Vent, Button & Tight Space Detailing",
       "Floor & Carpet Detailing",
     ],
     prices: {
-      sedanCoupesCrossovers: 149.99,
-      compactMidFullSUVsPickups: 169.99,
-      fullSizeSUVsPickups: 189.99,
+      sedanCoupesCrossovers: 189.99,
+      compactMidFullSUVsPickups: 219.99,
+      fullSizeSUVsPickups: 249.99,
     },
   },
   {
@@ -240,7 +239,7 @@ export const packages: DetailPackage[] = [
       "STANDARD Interior Package",
       "This package is only offered to our loyal clients",
     ],
-    prices: { sedanCoupesCrossovers: 79.99, compactMidFullSUVsPickups: 89.99 },
+    prices: { sedanCoupesCrossovers: 99.99, compactMidFullSUVsPickups: 119.99 },
   },
   {
     id: "maintenance-ceramic",
@@ -253,8 +252,8 @@ export const packages: DetailPackage[] = [
       "This package is only offered to our loyal clients",
     ],
     prices: {
-      sedanCoupesCrossovers: 169.99,
-      compactMidFullSUVsPickups: 199.99,
+      sedanCoupesCrossovers: 199.99,
+      compactMidFullSUVsPickups: 219.99,
     },
   },
 ];
