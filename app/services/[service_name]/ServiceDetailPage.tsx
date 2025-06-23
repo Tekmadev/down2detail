@@ -20,7 +20,51 @@ export default function ServiceDetailsPage(props: { service: Service }) {
   const packageServices = [
     "exterior-detailing",
     "interior-detailing",
+    "paint-decontamination",
+    "floor-carpet-shampoo",
   ];
+
+  // Dynamic mapping of service categories to package categories and URLs
+  const getPackageInfo = (service: Service) => {
+    const categoryMapping: Record<
+      string,
+      { packageCategory: string; url: string; description: string }
+    > = {
+      Exterior: {
+        packageCategory: "Exterior",
+        url: "/packages#exterior",
+        description:
+          "We offer multiple exterior detailing packages with different features and pricing levels to suit your needs and budget.",
+      },
+      Interior: {
+        packageCategory: "Interior",
+        url: "/packages#interior",
+        description:
+          "We offer multiple interior detailing packages with different features and pricing levels to suit your needs and budget.",
+      },
+      "Paint Polish": {
+        packageCategory: "Paint Polish & Protection",
+        url: "/packages#paint-polish",
+        description:
+          "We offer multiple paint polish and protection packages with different features and pricing levels to suit your needs and budget.",
+      },
+      Protection: {
+        packageCategory: "Paint Polish & Protection",
+        url: "/packages#protection",
+        description:
+          "We offer multiple protection packages with different features and pricing levels to suit your needs and budget.",
+      },
+    };
+
+    return (
+      categoryMapping[service.category || ""] || {
+        packageCategory: "Package Options",
+        url: "/packages",
+        description:
+          "We offer multiple package options with different features and pricing levels to suit your needs and budget.",
+      }
+    );
+  };
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-20 bg-black">
@@ -120,34 +164,39 @@ export default function ServiceDetailsPage(props: { service: Service }) {
           {/* PRICING SECTION */}
           {packageServices.includes(service.id) ? (
             // Show "View Packages" button for services that are offered as packages
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
-              <h4 className="text-xl font-bold text-white mb-4 text-center">
-                This service is available in different packages
-              </h4>
-              <p className="text-gray-300 mb-6 text-center max-w-2xl">
-                We offer multiple package options with different features and
-                pricing levels to suit your needs and budget.
-              </p>
-              <Link
-                href="/packages"
-                className="inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                <svg
-                  className="w-5 h-5 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                  />
-                </svg>
-                View Packages
-              </Link>
-            </div>
+            (() => {
+              const packageInfo = getPackageInfo(service);
+              return (
+                <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
+                  <h4 className="text-xl font-bold text-white mb-4 text-center">
+                    This service is available in our{" "}
+                    {packageInfo.packageCategory} packages
+                  </h4>
+                  <p className="text-gray-300 mb-6 text-center max-w-2xl">
+                    {packageInfo.description}
+                  </p>
+                  <Link
+                    href={packageInfo.url}
+                    className="inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <svg
+                      className="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                    View {packageInfo.packageCategory} Packages
+                  </Link>
+                </div>
+              );
+            })()
           ) : (
             // Show individual pricing for services with specific prices
             <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
@@ -169,7 +218,9 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     <span className="text-xs sm:text-lg md:text-xl font-bold text-[#d6781c] block">
                       {service.currency === "CAD"
                         ? "$"
-                        : "Included in Exterior Detailing"}
+                        : `Included in ${
+                            getPackageInfo(service).packageCategory
+                          }`}
                       {service.price.sedan}
                     </span>
                     {service.currency === "CAD" && (
@@ -194,7 +245,9 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     <span className="text-xs sm:text-lg md:text-xl font-bold text-[#d6781c] block">
                       {service.currency === "CAD"
                         ? "$"
-                        : "Included in Exterior Detailing"}
+                        : `Included in ${
+                            getPackageInfo(service).packageCategory
+                          }`}
                       {service.price.suv}
                     </span>
                     {service.currency === "CAD" && (
@@ -219,7 +272,9 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                     <span className="text-xs sm:text-lg md:text-xl font-bold text-[#d6781c] block">
                       {service.currency === "CAD"
                         ? "$"
-                        : "Included in Exterior Detailing"}
+                        : `Included in ${
+                            getPackageInfo(service).packageCategory
+                          }`}
                       {service.price.fullSuv}
                     </span>
                     {service.currency === "CAD" && (
