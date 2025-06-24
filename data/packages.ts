@@ -15,6 +15,7 @@ export interface DetailPackage {
   };
   addOns?: string[];
   label?: string;
+  badge?: string;
 }
 
 export const packages: DetailPackage[] = [
@@ -75,7 +76,7 @@ export const packages: DetailPackage[] = [
       "Interior Wipe Down",
       "Wipe Down Cup Holders",
       "Floor Mat Cleaning",
-      "Interior Window & Glass Cleaning", 
+      "Interior Window & Glass Cleaning",
     ],
     prices: {
       sedanCoupesCrossovers: 49.99,
@@ -229,6 +230,7 @@ export const packages: DetailPackage[] = [
       compactMidFullSUVsPickups: 1089.99,
       fullSizeSUVsPickups: 1139.99,
     },
+    badge: "Most Popular",
   },
   {
     id: "paint-diamond",

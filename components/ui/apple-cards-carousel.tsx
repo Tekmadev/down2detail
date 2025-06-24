@@ -27,6 +27,7 @@ type Card = {
   title: string;
   category: string;
   content: React.ReactNode;
+  badge?: string;
 };
 
 export const CarouselContext = createContext<{
@@ -237,6 +238,11 @@ export const Card = ({
             <p className="mt-2 font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
               {card.title}
             </p>
+            {card.badge && (
+              <div className="mt-3 inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+                {card.badge}
+              </div>
+            )}
           </div>
           <div className="mt-4 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl">
             {card.content}
