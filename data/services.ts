@@ -594,7 +594,7 @@ export const services: Service[] = [
     subtitle: "Clean, Condition & Protect for a Luxurious Finish",
     href: "/services/leather-seat-treatment",
     category: "Interior",
-    optionalImage: "/images/services-detailing/leatherSeatWashing.webp",
+    optionalImage: "/images/services-detailing/leatherSeatwashing.webp",
     shortDescription: "Professional leather care and protection.",
     features: [
       "Full vacuum of leather seating areas",

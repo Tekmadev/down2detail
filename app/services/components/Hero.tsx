@@ -18,7 +18,7 @@ export function HeroSection({ params }: { params: any }) {
 
   return (
     <div className="relative bg-secondary py-24 md:py-32 overflow-hidden">
-      {/* Image de fond avec effet de parallaxe */}
+      {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
           src={service.image}
@@ -30,7 +30,7 @@ export function HeroSection({ params }: { params: any }) {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>
 
-      {/* Contenu */}
+      {/* Hero Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl">
           {/* Badge */}
@@ -38,19 +38,19 @@ export function HeroSection({ params }: { params: any }) {
             <span className="text-[#d6781c] font-medium">Premium Service</span>
           </div>
 
-          {/* Titre avec effet de dégradé */}
+          {/* Hero Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 drop-shadow-lg bg-gradient-to-r from-white via-white/90 to-white/80 bg-clip-text text-transparent">
             {service.label}
           </h1>
 
-          {/* Sous-titre */}
+          {/* Hero Subtitle */}
           {service.subtitle && (
             <p className="text-xl md:text-2xl text-[#d6781c] font-medium mb-6 drop-shadow-sm">
               {service.subtitle}
             </p>
           )}
 
-          {/* Boutons d'action */}
+          {/* Hero Buttons */}
           <div className="flex flex-wrap items-center gap-6">
             <Link
               href="/contact"
@@ -74,7 +74,7 @@ export function HeroSection({ params }: { params: any }) {
         </div>
       </div>
 
-      {/* Décoration en bas */}
+      {/* Hero Decoration */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent"></div>
     </div>
   );

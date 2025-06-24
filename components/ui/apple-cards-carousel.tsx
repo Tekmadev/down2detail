@@ -230,11 +230,11 @@ export const Card = ({
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
         <div className="relative z-40 flex h-full w-full flex-col justify-between p-3 md:p-8">
-          <div>
-            <p className="text-left font-sans text-sm font-medium text-orange-400 md:text-base">
+          <div className="text-center">
+            <p className="font-sans text-sm font-medium text-orange-400 md:text-base">
               {card.category}
             </p>
-            <p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
+            <p className="mt-2 font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
               {card.title}
             </p>
           </div>

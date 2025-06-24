@@ -1,6 +1,15 @@
 "use client";
 
-import { FaCar, FaCarSide, FaTruckPickup } from "react-icons/fa";
+import {
+  FaCar,
+  FaCarSide,
+  FaTruckPickup,
+  FaCheckCircle,
+  FaLightbulb,
+  FaShieldAlt,
+  FaStar,
+} from "react-icons/fa";
+import { MdChecklist } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import type { Service } from "@/data/services";
@@ -77,66 +86,106 @@ export default function ServiceDetailsPage(props: { service: Service }) {
             {service.description}
           </p>
 
-          {/* FEATURES */}
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
-            What's Included
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-            {service.features.map((feature, index) => (
-              <div
-                key={index}
-                className="flex items-start bg-gray-800 p-4 rounded-lg shadow-sm"
-              >
-                <div className="text-[#d6781c] mr-3 mt-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586
-                    7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+          {/* FEATURES -- "What's Included" */}
+          <div className="relative mb-12">
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-600/10 to-red-600/10 rounded-3xl blur-xl"></div>
+            <div className="relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-orange-500/20">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl shadow-lg">
+                  <MdChecklist className="h-6 w-6 text-white" />
                 </div>
-                <p className="text-white">{feature}</p>
+                <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+                  What's Included
+                </h3>
               </div>
-            ))}
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                {service.features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="group flex items-start bg-gradient-to-r from-gray-700/50 to-gray-800/50 hover:from-orange-500/10 hover:to-red-500/10 p-3 md:p-4 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg border border-gray-600/30 hover:border-orange-500/30"
+                  >
+                    <div className="flex-shrink-0 p-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg mr-3 group-hover:from-orange-500/30 group-hover:to-red-500/30 transition-all duration-300">
+                      <FaCheckCircle className="h-4 w-4 md:h-5 md:w-5 text-orange-400 group-hover:text-orange-300" />
+                    </div>
+                    <p className="text-white text-sm md:text-base leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
+                      {feature}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* BENEFITS */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-700 mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
-              Why It's Important
-            </h3>
-            <ul className="space-y-4">
-              {service.benefits.map((benefit, index) => (
-                <li
-                  key={index}
-                  className="flex items-start bg-gray-700 p-4 rounded-xl"
-                >
-                  <div className="text-[#d6781c] mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
+          {/* BENEFITS -- "Why It's Important" */}
+          <div className="relative mb-12">
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-600/10 to-red-600/10 rounded-3xl blur-xl"></div>
+            <div className="relative bg-gradient-to-br from-gray-900/95 to-gray-800/95 backdrop-blur-sm rounded-3xl p-4 md:p-8 border border-orange-500/20">
+              <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                <div className="p-2 md:p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl md:rounded-2xl shadow-lg">
+                  <FaLightbulb className="h-4 w-4 md:h-6 md:w-6 text-white" />
+                </div>
+                <h3 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+                  Why It's Important
+                </h3>
+              </div>
+
+              <div className="space-y-2 md:space-y-3">
+                {service.benefits.map((benefit, index) => {
+                  const icons = [FaCheckCircle];
+                  const IconComponent = icons[index % icons.length];
+                  const gradients = [
+                    "from-orange-500/20 to-red-500/20",
+                    "from-red-500/20 to-pink-500/20",
+                    "from-orange-600/20 to-orange-400/20",
+                    "from-amber-500/20 to-orange-500/20",
+                  ];
+                  const hoverGradients = [
+                    "hover:from-orange-500/30 hover:to-red-500/30",
+                    "hover:from-red-500/30 hover:to-pink-500/30",
+                    "hover:from-orange-600/30 hover:to-orange-400/30",
+                    "hover:from-amber-500/30 hover:to-orange-500/30",
+                  ];
+                  const iconColors = [
+                    "text-orange-400 group-hover:text-orange-300",
+                    "text-red-400 group-hover:text-red-300",
+                    "text-orange-500 group-hover:text-orange-400",
+                    "text-amber-400 group-hover:text-amber-300",
+                  ];
+
+                  return (
+                    <div
+                      key={index}
+                      className={`group relative overflow-hidden bg-gradient-to-r ${
+                        gradients[index % gradients.length]
+                      } ${
+                        hoverGradients[index % hoverGradients.length]
+                      } p-3 md:p-5 rounded-xl md:rounded-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl border border-gray-600/20 hover:border-orange-500/30`}
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586
-                        7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-white">{benefit}</p>
-                </li>
-              ))}
-            </ul>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -skew-x-12"></div>
+                      <div className="relative flex items-start gap-3 md:gap-4">
+                        <div
+                          className={`flex-shrink-0 p-2 md:p-3 bg-gradient-to-r ${
+                            gradients[index % gradients.length]
+                          } rounded-lg md:rounded-xl border border-orange-500/20 group-hover:scale-110 transition-all duration-300`}
+                        >
+                          <IconComponent
+                            className={`h-4 w-4 md:h-6 md:w-6 ${
+                              iconColors[index % iconColors.length]
+                            } transition-colors duration-300`}
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-white text-xs md:text-base leading-snug md:leading-relaxed group-hover:text-gray-100 transition-colors duration-300 font-medium">
+                            {benefit}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* OPTIONAL IMAGE SECTION */}
