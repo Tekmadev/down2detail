@@ -14,6 +14,7 @@ export interface DetailPackage {
     fullSizeSUVsPickups?: number;
   };
   addOns?: string[];
+  label?: string;
 }
 
 export const packages: DetailPackage[] = [
@@ -263,6 +264,7 @@ export const packages: DetailPackage[] = [
     id: "maintenance-monthly",
     category: "Monthly Plans",
     name: "Monthly Refresh",
+    label: "Loyalty Program",
     description: [
       "BASIC Exterior Package",
       "STANDARD Interior Package",
@@ -275,6 +277,7 @@ export const packages: DetailPackage[] = [
     id: "maintenance-ceramic",
     category: "Monthly Plans",
     name: "Ceramic Refresh (Every 4-6 Months)",
+    label: "Loyalty Program",
     description: [
       "ADVANCED Exterior Package",
       "STANDARD Interior Package",
