@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     images: ["/images/ceramic.png"],
   },
   verification: {
-    google: "your-google-verification-code", // You'll need to add this
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || undefined,
   },
   alternates: {
     canonical: "https://down2detail.ca",

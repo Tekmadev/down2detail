@@ -7,6 +7,9 @@ import { ceramicCoating } from "@/data/ceramic";
 import ParallaxBanner from "../../components/ParallaxBanner";
 import { useI18n } from "@/hooks/useI18n";
 
+// Note: This is a client component, so metadata should be in layout.tsx
+// For now, ceramic coating metadata is handled by the main layout
+
 export default function CeramicCoatingPage() {
   const { t } = useI18n("ceramic");
 

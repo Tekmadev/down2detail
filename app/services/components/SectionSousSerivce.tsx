@@ -54,8 +54,8 @@ export default function ServiceSousSection() {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl">
-              Not all paint is created equal and not all vehicles need the
-              same level of polishing. We offer three levels of professional
+              Not all paint is created equal and not all vehicles need the same
+              level of polishing. We offer three levels of professional
               polishing tailored to your vehicle's needs, from enhancing gloss
               to removing heavy defects.
             </p>
@@ -133,13 +133,13 @@ export default function ServiceSousSection() {
                 <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                   {service.description}
                 </p>
-                <NavLink
+                <Link
                   key={service.href}
                   href={service.href}
-                  className="inline-block px-8 py-4 bg-[#d6781c] text-white font-semibold rounded-full shadow-lg hover:bg-[#c66812] transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#d6781c] text-white font-semibold rounded-full shadow-lg hover:bg-[#c66812] transition-all duration-300 transform hover:scale-105 no-underline"
                 >
                   Learn More
-                </NavLink>
+                </Link>
               </div>
             </div>
           ))}

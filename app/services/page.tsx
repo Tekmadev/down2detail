@@ -6,12 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { useI18n } from "@/hooks/useI18n";
-
-const metadata = {
-  title: "Our Services | Down2Detail",
-  description:
-    "Down2Detail offers premium car detailing services designed to restore and protect your vehicle inside and out. From deep interior cleaning to professional exterior polishing, we treat every car with the care it deserves.",
-};
+// Note: This is a client component, so metadata is handled in layout.tsx
 
 export default function ServiePage() {
   const { t } = useI18n("services");

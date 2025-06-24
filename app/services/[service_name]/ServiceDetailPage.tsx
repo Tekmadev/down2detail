@@ -18,6 +18,7 @@ import { getTranslatedService } from "@/lib/translatedServices";
 
 export default function ServiceDetailsPage(props: { service: Service }) {
   const { t } = useI18n("services");
+  const { t: tPackages } = useI18n("packages");
 
   // Apply translations if this is an exterior service
   const service =
@@ -258,9 +259,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <FaCar className="h-6 w-6 sm:h-10 sm:w-10 md:h-16 md:w-16 text-white mb-1 sm:mb-3" />
                   <div className="text-xs sm:text-sm md:text-base font-semibold text-white text-center mb-1 sm:mb-2 leading-tight h-8 sm:h-10 flex items-center justify-center">
                     <span>
-                      Sedan
-                      <br />
-                      Coupe
+                      {tPackages("pricing.sedanCoupesCrossovers").replace(
+                        ":",
+                        ""
+                      )}
                     </span>
                   </div>
                   <div className="text-center">
@@ -285,9 +287,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <FaCarSide className="h-6 w-6 sm:h-10 sm:w-10 md:h-16 md:w-16 text-white mb-1 sm:mb-3" />
                   <div className="text-xs sm:text-sm md:text-base font-semibold text-white text-center mb-1 sm:mb-2 leading-tight h-8 sm:h-10 flex items-center justify-center">
                     <span>
-                      Compact
-                      <br />
-                      Mid SUV
+                      {tPackages("pricing.compactMidFullSUVsPickups").replace(
+                        ":",
+                        ""
+                      )}
                     </span>
                   </div>
                   <div className="text-center">
@@ -312,9 +315,10 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <FaTruckPickup className="h-6 w-6 sm:h-10 sm:w-10 md:h-16 md:w-16 text-white mb-1 sm:mb-3" />
                   <div className="text-xs sm:text-sm md:text-base font-semibold text-white text-center mb-1 sm:mb-2 leading-tight h-8 sm:h-10 flex items-center justify-center">
                     <span>
-                      Full SUV
-                      <br />
-                      Trucks
+                      {tPackages("pricing.fullSizeSUVsPickups").replace(
+                        ":",
+                        ""
+                      )}
                     </span>
                   </div>
                   <div className="text-center">

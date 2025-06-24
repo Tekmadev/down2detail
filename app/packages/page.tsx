@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { packages } from "@/data/packages";
 import { CardBody, CardItem, CardContainer } from "@/components/ui/3d-card";
 import { useRouter } from "next/navigation";
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui/apple-cards-carousel";
 import { IconX } from "@tabler/icons-react";
 import { useI18n } from "@/hooks/useI18n";
+// Note: This is a client component, so metadata is handled in layout.tsx
 
 export default function Packages() {
   const { t } = useI18n("packages");
