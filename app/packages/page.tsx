@@ -23,15 +23,15 @@ export default function Packages() {
   const getCategoryImage = (category: string) => {
     switch (category) {
       case "Exterior":
-        return "/images/categories/exterior.jpg";
+        return "/images/categories/exterior2.jpg";
       case "Interior":
-        return "/images/categories/interioir.avif";
+        return "/images/categories/interior2.webp";
       // case "Top2Bottom Detailing":
       //   return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
-        return "/images/categories/paint.jpg";
+        return "/images/categories/paint.webp";
       case "Monthly Plans":
-        return "/images/categories/maintenace.jpeg";
+        return "/images/categories/monthly.webp";
       default:
         return "/images/categories/default.jpg";
     }
