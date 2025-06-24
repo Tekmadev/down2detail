@@ -196,22 +196,26 @@ export default function Packages() {
                 {t("page.backToCategories")}
               </button>
 
-              <button
-                onClick={() => {
-                  const categoryPackages = packages.filter(
-                    (pkg) => pkg.category === selectedCategory
-                  );
-                  const allAddOnsForCategory = Array.from(
-                    new Set(categoryPackages.flatMap((pkg) => pkg.addOns || []))
-                  );
-                  if (allAddOnsForCategory.length > 0) {
-                    setSelectedAddOns(allAddOnsForCategory);
-                  }
-                }}
-                className="px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
-              >
-                {t("page.viewAddons")}
-              </button>
+              {selectedCategory !== "Monthly Plans" && (
+                <button
+                  onClick={() => {
+                    const categoryPackages = packages.filter(
+                      (pkg) => pkg.category === selectedCategory
+                    );
+                    const allAddOnsForCategory = Array.from(
+                      new Set(
+                        categoryPackages.flatMap((pkg) => pkg.addOns || [])
+                      )
+                    );
+                    if (allAddOnsForCategory.length > 0) {
+                      setSelectedAddOns(allAddOnsForCategory);
+                    }
+                  }}
+                  className="px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
+                >
+                  {t("page.viewAddons")}
+                </button>
+              )}
             </div>
             <Carousel
               items={getPackagesForCategory(selectedCategory).map(
