@@ -46,7 +46,7 @@ export const packages: DetailPackage[] = [
       "Tire Dressing",
       "Window & Glass Cleaning",
     ],
-    prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 59.99 },
+    prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 59.99, fullSizeSUVsPickups: 59.99 },
   },
   {
     id: "exterior-advanced",
@@ -62,6 +62,7 @@ export const packages: DetailPackage[] = [
     prices: {
       sedanCoupesCrossovers: 149.99,
       compactMidFullSUVsPickups: 169.99,
+      fullSizeSUVsPickups: 169.99,
     },
     addOns: ["Paint Sealant", "Engine Bay Detailing"],
   },
@@ -273,7 +274,7 @@ export const packages: DetailPackage[] = [
       "Summer Carpet/Winter Mat Detailing",
       "This package is only offered to our loyal clients",
     ],
-    prices: { sedanCoupesCrossovers: 99.99, compactMidFullSUVsPickups: 119.99 },
+    prices: { sedanCoupesCrossovers: 99.99, compactMidFullSUVsPickups: 119.99, fullSizeSUVsPickups: 119.99 },
   },
   {
     id: "maintenance-ceramic",
@@ -289,6 +290,7 @@ export const packages: DetailPackage[] = [
     prices: {
       sedanCoupesCrossovers: 199.99,
       compactMidFullSUVsPickups: 219.99,
+      fullSizeSUVsPickups: 219.99,
     },
   },
 ];
