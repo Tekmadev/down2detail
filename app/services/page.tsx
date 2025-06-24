@@ -80,6 +80,21 @@ export default function ServiePage() {
           ></div>
         </div>
 
+        {/* Fallback Image */}
+        <div
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            isVideoLoaded ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <Image
+            src="/images/paint-polish.webp" // Placeholder - user will add the link later
+            alt="Car detailing services hero background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
         {/* Service Video Background */}
         {isVideoVisible && !hasError && (
           <video
