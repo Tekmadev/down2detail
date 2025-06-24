@@ -44,10 +44,10 @@ export const ceramicCoating: Service = {
       { level: "Level 3", duration: "Up to 5 years or 100,000 km", price: 599.99 }
     ],
     addons: [
-      { title: "Wheels & Calipers Ceramic Coating", duration: "Up to 2 years or 40,000 km", price: 99.99 },
-      { title: "Windshield & Glass Ceramic Coating", duration: "Up to 12 months", price: 69.99 },
-      { title: "Plastics Ceramic Coating", duration: "Up to 2 years", price: 69.99 },
-      { title: "Leather & Synthetics Ceramic Coating", duration: "Up to 2 years", price: 79.99 }
+      { title: "Wheels & Calipers Ceramic Coating", duration: "Up to 2 years or 40,000 km", price: 199.99 },
+      { title: "Windshield & Glass Ceramic Coating", duration: "Up to 12 months", price: 149.99 },
+      { title: "Plastics Ceramic Coating", duration: "Up to 2 years", price: 149.99 },
+      { title: "Leather & Synthetics Ceramic Coating", duration: "Up to 2 years", price: 199.99 }
     ],
     whyWorthIt: [
       "Long-Term Protection: Reduces the need for frequent detailing.",
