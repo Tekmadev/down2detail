@@ -23,7 +23,7 @@ export default function ServiceSousSection() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/services-detailing/paint-polish.webp"
+            src="/images/services-detailing/paint-polish2.webp"
             alt="Paint Polish Services"
             fill
             priority
@@ -81,8 +81,8 @@ export default function ServiceSousSection() {
                 </svg>
               </Link>
 
-              <div className="text-sm text-gray-400">
-                <span className="text-[#d6781c]">📋</span> Paint inspection
+              <div className="text-sm text-white">
+                <span className="text-[#d6781c]">★</span> Paint inspection
                 recommended before booking
               </div>
             </div>

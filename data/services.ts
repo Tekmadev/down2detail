@@ -642,14 +642,14 @@ export const services: Service[] = [
     benefits: [],
     description:
       "Our paint polishing services are designed to enhance and protect your vehicle's paintwork. We offer three levels of service to meet your specific needs: Gloss Enhancer for maintaining shine, One-Step Polish for moderate correction, and Paint Correction for comprehensive restoration.",
-    imageShowcase: "/images/services-detailing/paint-polish.webp",
+    imageShowcase: "/images/services-detailing/paint-polish2.webp",
     price: {
       sedan: "0.00",
       suv: "0.00",
       fullSuv: "0.00",
     },
     currency: "CAD",
-    image: "/images/services-detailing/paint-polish.webp",
+    image: "/images/services-detailing/paint-polish2.webp",
     faqs: [],
   },
   {
