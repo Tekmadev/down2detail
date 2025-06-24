@@ -52,6 +52,11 @@ export default function Packages() {
         content: (
           <div className="space-y-3">
             <div className="space-y-2">
+              {pkg.label && (
+                <p className="text-center text-lg md:text-xl text-red-400 font-bold">
+                  {pkg.label}
+                </p>
+              )}
               <h3 className="text-base md:text-lg font-semibold text-orange-400">
                 {t("sections.description")}
               </h3>
