@@ -838,6 +838,7 @@ export const services: Service[] = [
       "Paint preparation",
       "Sealant application",
       "Curing",
+      "3 months of protection",
       "Final quality check",
     ],
     benefits: [
@@ -849,7 +850,7 @@ export const services: Service[] = [
       "Boosts resale value",
     ],
     description:
-      "A Paint Sealant is a synthetic, polymer-based protective coating that bonds to your vehicle's paint to create a long-lasting barrier against the elements. Unlike traditional waxes, this advanced sealant forms a durable layer that protects against UV rays, bird droppings, acid rain, and other contaminants while enhancing your car's gloss and slickness.",
+      "A Paint Sealant is a synthetic, polymer-based protective coating that bonds to your vehicle's paint to create a long-lasting barrier against the elements. Unlike traditional waxes, this advanced sealant forms a durable layer that protects against UV rays, bird droppings, acid rain, and other contaminants while enhancing your car's gloss and slickness and adding up to 3 months of protection on its paint.",
     imageShowcase: "/images/services-detailing/Paint-Sealant.webp",
     price: {
       sedan: "99.99",
@@ -876,6 +877,7 @@ export const services: Service[] = [
       "Paint preparation",
       "Wax application",
       "Buffing",
+      "3-4 weeks of protection",
       "Final quality check",
     ],
     benefits: [
@@ -886,7 +888,7 @@ export const services: Service[] = [
       "Boosts resale value",
     ],
     description:
-      "Car Wax is a classic protective layer used to enhance your vehicle's appearance while offering short-term protection. Unlike most dealerships and car washes that apply cheap spray waxes lasting only 2–3 days, we use premium-grade paste or liquid waxes blended with carnauba and synthetic polymers.",
+      "Car Wax is a classic protective layer used to enhance your vehicle's appearance while offering short-term protection. Unlike most dealerships and car washes that apply cheap spray waxes lasting only 2–3 days, we use premium-grade paste waxes blended with carnauba and synthetic polymers to provide up to 3-4 weeks of protection.",
     imageShowcase: "/images/services-detailing/car-wax.webp",
     price: {
       sedan: "59.99",
