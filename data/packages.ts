@@ -91,7 +91,6 @@ export const packages: DetailPackage[] = [
     name: "STANDARD",
     description: [
       "BASIC Package Included",
-      "Interior Window Cleaning",
       "Steam Cleaning",
       "Air Vent, Button & Tight Space Detailing",
       "Floor & Carpet Shampoo",
