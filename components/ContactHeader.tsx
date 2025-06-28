@@ -52,8 +52,8 @@ const ContactHeader = () => {
         </div>
 
         <div className="flex items-center text-white space-x-3 py-1 sm:py-0">
-          {/* <a
-            href="https://www.instagram.com/down2detail.ca/"
+          <a
+            href="https://www.facebook.com/people/Down2Detail/61577327687487/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#3b5998] rounded-full w-8 h-8 flex items-center justify-center hover:opacity-80 transition-opacity"
@@ -66,7 +66,7 @@ const ContactHeader = () => {
                 />
               </svg>
             </div>
-            </a> */}
+            </a>
             <a
             href="https://www.instagram.com/down2detail.ca/"
             target="_blank"

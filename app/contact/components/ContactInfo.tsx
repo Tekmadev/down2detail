@@ -123,7 +123,7 @@ export default function ContactInfo() {
         </h3>
         <div className="flex space-x-4">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/people/Down2Detail/61577327687487/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
@@ -140,10 +140,10 @@ export default function ContactInfo() {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/down2detail.ca/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#E1306C] rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
+            className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

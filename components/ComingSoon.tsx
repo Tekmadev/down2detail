@@ -312,7 +312,7 @@ const ComingSoon = () => {
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/share/15YrsnB1EY/"
+                href="https://www.facebook.com/people/Down2Detail/61577327687487/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#FF4C00] transition-colors"

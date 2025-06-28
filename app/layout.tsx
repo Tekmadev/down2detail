@@ -207,7 +207,7 @@ const structuredData = {
   },
   sameAs: [
     "https://www.instagram.com/down2detail.ca",
-    "https://www.facebook.com/share/15YrsnB1EY/",
+    "https://www.facebook.com/people/Down2Detail/61577327687487/",
   ],
   openingHours: "Mo-Su 08:00-18:00",
   potentialAction: {
