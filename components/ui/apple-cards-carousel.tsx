@@ -106,7 +106,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
           <div
             className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
+              "flex flex-row justify-center gap-4 px-4",
               "mx-auto max-w-7xl"
             )}
           >
@@ -227,24 +227,24 @@ export const Card = ({
       </AnimatePresence>
       <button
         onClick={handleOpen}
-        className="group relative z-10 flex min-h-[400px] w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+        className="group relative z-10 flex min-h-[350px] w-48 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 transition-all duration-300 hover:scale-105 md:h-[40rem] md:w-96 dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div className="relative z-40 flex h-full w-full flex-col justify-between p-3 md:p-8">
+        <div className="relative z-40 flex h-full w-full flex-col justify-between p-2 md:p-8">
           <div className="text-center">
-            <p className="font-sans text-sm font-medium text-orange-400 md:text-base">
+            <p className="font-sans text-xs font-medium text-orange-400 md:text-base">
               {card.category}
             </p>
-            <p className="mt-2 font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
+            <p className="mt-1 font-sans text-lg font-semibold [text-wrap:balance] text-white md:text-3xl leading-tight">
               {card.title}
             </p>
             {card.badge && (
-              <div className="mt-3 inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
+              <div className="mt-2 inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-2 py-1 rounded-full text-xs font-bold shadow-lg animate-pulse">
                 {card.badge}
               </div>
             )}
           </div>
-          <div className="mt-4 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl">
+          <div className="mt-2 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl text-xs md:text-sm">
             {card.content}
           </div>
         </div>

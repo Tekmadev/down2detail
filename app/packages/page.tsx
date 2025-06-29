@@ -55,18 +55,18 @@ export default function Packages() {
           <div className="space-y-3">
             <div className="space-y-2">
               {pkg.label && (
-                <p className="text-center text-lg md:text-xl text-red-400 font-bold">
+                <p className="text-center text-sm md:text-xl text-red-400 font-bold">
                   {pkg.label}
                 </p>
               )}
-              <h3 className="text-base md:text-lg font-semibold text-orange-400">
+              <h3 className="text-sm md:text-lg font-semibold text-orange-400">
                 {t("sections.description")}
               </h3>
               <ul className="list-disc list-inside space-y-1 pl-1">
                 {pkg.description.map((item, index) => (
                   <li
                     key={index}
-                    className="text-white/90 text-xs md:text-sm leading-relaxed break-words"
+                    className="text-white/90 text-xs leading-relaxed break-words"
                   >
                     {item}
                   </li>
@@ -74,24 +74,26 @@ export default function Packages() {
               </ul>
             </div>
             <div className="space-y-2">
-              <h3 className="text-base md:text-lg font-semibold text-orange-400">
+              <h3 className="text-sm md:text-lg font-semibold text-orange-400">
                 {t("sections.pricing")}
               </h3>
-              <div className="space-y-2 bg-gray-800/50 rounded-lg p-2">
+              <div className="space-y-2 bg-gray-800/50 rounded-lg p-2 text-center">
                 <div className="space-y-1">
-                  <p className="text-white/90 text-xs md:text-sm break-words">
+                  <p className="text-white/90 text-xs break-words">
                     <span className="font-medium">
                       {t("pricing.sedanCoupesCrossovers")}
                     </span>
                   </p>
                   {pkg.discountedPrice ? (
-                    <div className="flex items-center gap-2">
-                      <p className="text-gray-500 font-bold text-sm md:text-base line-through">
-                        ${pkg.prices.sedanCoupesCrossovers}
-                      </p>
-                      <p className="text-orange-400 font-bold text-base md:text-lg">
-                        ${pkg.discountedPrice.sedanCoupesCrossovers}
-                      </p>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex items-center gap-2">
+                        <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
+                          ${pkg.prices.sedanCoupesCrossovers}
+                        </p>
+                        <p className="text-orange-400 font-bold text-sm md:text-base">
+                          ${pkg.discountedPrice.sedanCoupesCrossovers}
+                        </p>
+                      </div>
                       <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
                         SAVE $
                         {(
@@ -101,25 +103,27 @@ export default function Packages() {
                       </span>
                     </div>
                   ) : (
-                    <p className="text-orange-400 font-bold text-base md:text-lg text-center">
+                    <p className="text-orange-400 font-bold text-sm md:text-base">
                       ${pkg.prices.sedanCoupesCrossovers}
                     </p>
                   )}
                 </div>
                 <div className="space-y-1">
-                  <p className="text-white/90 text-xs md:text-sm break-words">
+                  <p className="text-white/90 text-xs break-words">
                     <span className="font-medium">
                       {t("pricing.compactMidFullSUVsPickups")}
                     </span>
                   </p>
                   {pkg.discountedPrice ? (
-                    <div className="flex items-center gap-2">
-                      <p className="text-gray-500 font-bold text-sm md:text-base line-through">
-                        ${pkg.prices.compactMidFullSUVsPickups}
-                      </p>
-                      <p className="text-orange-400 font-bold text-base md:text-lg">
-                        ${pkg.discountedPrice.compactMidFullSUVsPickups}
-                      </p>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex items-center gap-2">
+                        <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
+                          ${pkg.prices.compactMidFullSUVsPickups}
+                        </p>
+                        <p className="text-orange-400 font-bold text-sm md:text-base">
+                          ${pkg.discountedPrice.compactMidFullSUVsPickups}
+                        </p>
+                      </div>
                       <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
                         SAVE $
                         {(
@@ -129,26 +133,28 @@ export default function Packages() {
                       </span>
                     </div>
                   ) : (
-                    <p className="text-orange-400 font-bold text-base md:text-lg text-center">
+                    <p className="text-orange-400 font-bold text-sm md:text-base">
                       ${pkg.prices.compactMidFullSUVsPickups}
                     </p>
                   )}
                 </div>
                 {pkg.prices.fullSizeSUVsPickups && (
                   <div className="space-y-1">
-                    <p className="text-white/90 text-xs md:text-sm break-words">
+                    <p className="text-white/90 text-xs break-words">
                       <span className="font-medium">
                         {t("pricing.fullSizeSUVsPickups")}
                       </span>
                     </p>
                     {pkg.discountedPrice?.fullSizeSUVsPickups ? (
-                      <div className="flex items-center gap-2">
-                        <p className="text-gray-500 font-bold text-sm md:text-base line-through">
-                          ${pkg.prices.fullSizeSUVsPickups}
-                        </p>
-                        <p className="text-orange-400 font-bold text-base md:text-lg">
-                          ${pkg.discountedPrice.fullSizeSUVsPickups}
-                        </p>
+                      <div className="flex flex-col items-center gap-1">
+                        <div className="flex items-center gap-2">
+                          <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
+                            ${pkg.prices.fullSizeSUVsPickups}
+                          </p>
+                          <p className="text-orange-400 font-bold text-sm md:text-base">
+                            ${pkg.discountedPrice.fullSizeSUVsPickups}
+                          </p>
+                        </div>
                         <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
                           SAVE $
                           {pkg.prices.fullSizeSUVsPickups &&
@@ -161,7 +167,7 @@ export default function Packages() {
                         </span>
                       </div>
                     ) : (
-                      <p className="text-orange-400 font-bold text-base md:text-lg text-center">
+                      <p className="text-orange-400 font-bold text-sm md:text-base">
                         ${pkg.prices.fullSizeSUVsPickups}
                       </p>
                     )}
