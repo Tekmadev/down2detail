@@ -35,7 +35,7 @@ export const PaintPolishService: Service[] = [
       "Fine machine polish to boost gloss",
       "Microfiber hand-buffing for finish",
       "Final inspection for shine & uniformity",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
     ],
     benefits: [
       "Even if your paint doesn't have scratches, contaminants can build up and dull the finish. Gloss enhancement safely revives your vehicle's natural shine without aggressive polishing, making it ideal for new or regularly maintained cars.",
@@ -67,7 +67,7 @@ export const PaintPolishService: Service[] = [
     features: [
       "One-step machine polish with cutting pad",
       "Removes 50–70% of paint defects",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
       "Gloss inspection and touch-up as needed",
     ],
     benefits: [
@@ -101,7 +101,7 @@ export const PaintPolishService: Service[] = [
     features: [
       "Multi-stage paint correction (wet sanding, compounding + polish)",
       "Removes up to 90% of paint defects",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
       "Final surface inspection under detailing lights",
     ],
     benefits: [
@@ -665,7 +665,7 @@ export const services: Service[] = [
       "Fine machine polish to boost gloss",
       "Microfiber hand-buffing for finish",
       "Inspection for shine & uniformity",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
       "Final quality check",
     ],
     benefits: [
@@ -704,7 +704,7 @@ export const services: Service[] = [
       "Exterior detail wash",
       "Paint decontamination",
       "One-step machine polish with cutting pad",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
       "Gloss inspection and touch-up as needed",
       "Final quality check",
     ],
@@ -745,7 +745,7 @@ export const services: Service[] = [
       "Exterior detail wash",
       "Paint decontamination",
       "Multi-stage paint correction (wet sanding, compounding + polish)",
-      "6-month polymer sealant (optional if ceramic coating is selected)",
+      "3-month polymer sealant (optional if ceramic coating is selected)",
       "Surface inspection under detailing lights",
       "Final quality check",
     ],
@@ -800,7 +800,7 @@ export const services: Service[] = [
       "Increased resale value",
     ],
     description:
-      "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more. The coating's molecular structure forms a tight, glass-like layer that offers UV resistance, scratch protection, chemical resistance, and enhanced gloss. Available in three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/100,000 km).",
+      "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more. The coating's molecular structure forms a tight, glass-like layer that offers UV resistance, scratch protection, chemical resistance, and enhanced gloss. Available in three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km).",
     imageShowcase: "/images/services-detailing/ceramic-coat.webp",
     price: {
       sedan: "369.99",
@@ -813,7 +813,7 @@ export const services: Service[] = [
       {
         question: "How long does ceramic coating last?",
         answer:
-          "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/100,000 km). The longevity depends on the quality of the product, application process, and maintenance.",
+          "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km). The longevity depends on the quality of the product, application process, and maintenance.",
       },
       {
         question: "What surfaces can be coated?",
@@ -891,9 +891,9 @@ export const services: Service[] = [
       "Car Wax is a classic protective layer used to enhance your vehicle's appearance while offering short-term protection. Unlike most dealerships and car washes that apply cheap spray waxes lasting only 2–3 days, we use premium-grade paste waxes blended with carnauba and synthetic polymers to provide up to 3-4 weeks of protection.",
     imageShowcase: "/images/services-detailing/car-wax.webp",
     price: {
-      sedan: "59.99",
-      suv: "59.99",
-      fullSuv: "59.99",
+      sedan: "49.99",
+      suv: "69.99",
+      fullSuv: "89.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/car-wax.webp",

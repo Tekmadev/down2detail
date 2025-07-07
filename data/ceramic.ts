@@ -26,7 +26,7 @@ export const ceramicCoating: Service = {
     category: "Protection",
     shortDescription: "Long-lasting paint protection with nanotechnology.",
     description:
-      "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more. The coating's molecular structure forms a tight, glass-like layer that offers UV resistance, scratch protection, chemical resistance, and enhanced gloss. Available in three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/100,000 km).",
+      "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more. The coating's molecular structure forms a tight, glass-like layer that offers UV resistance, scratch protection, chemical resistance, and enhanced gloss. Available in three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km).",
     imageShowcase: "/images/services-detailing/ceramic-coat.webp",
     image: "/images/services-detailing/Ceramic-coating.webp",
     currency: "CAD",
@@ -41,7 +41,7 @@ export const ceramicCoating: Service = {
     coatingLevels: [
       { level: "Level 1", duration: "Up to 1 year or 20,000 km", price: 249.99 },
       { level: "Level 2", duration: "Up to 4 years or 60,000 km", price: 499.99 },
-      { level: "Level 3", duration: "Up to 5 years or 100,000 km", price: 599.99 }
+      { level: "Level 3", duration: "Up to 5 years or 80,000 km", price: 599.99 }
     ],
     addons: [
       { title: "Wheels & Calipers Ceramic Coating", duration: "Up to 2 years or 40,000 km", price: 199.99 },
@@ -67,7 +67,7 @@ export const ceramicCoating: Service = {
       {
         question: "How long does ceramic coating last?",
         answer:
-          "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/100,000 km). The longevity depends on the quality of the product, application process, and maintenance."
+          "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km). The longevity depends on the quality of the product, application process, and maintenance."
       },
       {
         question: "What surfaces can be coated?",

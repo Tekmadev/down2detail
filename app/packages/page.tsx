@@ -31,7 +31,7 @@ export default function Packages() {
       // case "Top2Bottom Detailing":
       //   return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
-        return "/images/categories/paint.webp";
+        return "/images/categories/ceramic-sealant-spray.jpg";
       case "Monthly Plans":
         return "/images/categories/monthly.webp";
       default:
