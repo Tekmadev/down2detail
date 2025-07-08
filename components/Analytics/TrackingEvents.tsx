@@ -26,7 +26,7 @@ export const trackConversion = (
 ) => {
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", "conversion", {
-      send_to: "AW-CONVERSION_ID/CONVERSION_LABEL", // Replace with actual conversion ID
+      send_to: "AW-17074659027", // Your Google Ads conversion ID
       event_category: "conversion",
       event_label: conversionType,
       custom_parameter_service: service,
@@ -39,7 +39,7 @@ export const trackConversion = (
 // Page view tracking
 export const trackPageView = (pageTitle: string, pagePath: string) => {
   if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("config", "GA_TRACKING_ID", {
+    window.gtag("config", "AW-17074659027", {
       page_title: pageTitle,
       page_location: window.location.href,
       page_path: pagePath,

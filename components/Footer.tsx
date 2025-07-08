@@ -214,6 +214,28 @@ const Footer = () => {
                   </FooterLink>
                 </li>
               ))}
+              {/* Privacy Policy Link */}
+              <li>
+                <FooterLink
+                  href="/privacy-policy"
+                  className={
+                    pathname === "/privacy-policy" ? "text-[#d6781c]" : ""
+                  }
+                >
+                  Privacy Policy
+                </FooterLink>
+              </li>
+              {/* Terms of Service Link */}
+              <li>
+                <FooterLink
+                  href="/terms-of-service"
+                  className={
+                    pathname === "/terms-of-service" ? "text-[#d6781c]" : ""
+                  }
+                >
+                  Terms of Service
+                </FooterLink>
+              </li>
             </ul>
           </div>
 
