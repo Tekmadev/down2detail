@@ -61,7 +61,7 @@ export default function TermsOfServicePage() {
                 <li>Ceramic coating application</li>
                 <li>Headlight restoration</li>
                 <li>Engine bay cleaning</li>
-                <li>Mobile detailing services</li>
+                {/* <li>Mobile detailing services</li> */}
               </ul>
               <p className="text-gray-700 leading-relaxed">
                 Service availability and specific offerings may vary by location
@@ -102,8 +102,7 @@ export default function TermsOfServicePage() {
                 3.3 Access and Preparation
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Customers must provide safe and accessible parking for their
-                vehicle during the service period. Vehicles should be free of
+                Vehicles should be free of
                 personal belongings, and customers are responsible for removing
                 valuable items before service begins.
               </p>
