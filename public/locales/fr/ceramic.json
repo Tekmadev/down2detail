@@ -11,12 +11,16 @@
       "keyBenefitsTitle": "Avantages Clés:"
     },
     "benefits": [
-      "Hydrophobe: Fait perler l'eau et glisser sans effort, réduisant les taches d'eau.",
-      "Résistant aux UV: Prévient la décoloration, l'écaillage et l'oxydation de la peinture.",
-      "Résistant aux Rayures: Offre une protection contre les abrasions légères et les tourbillons.",
-      "Résistant aux Produits Chimiques: Défend contre les acides, détergents, fientes d'oiseaux et poussière de frein.",
-      "Amélioration de l'Éclat: Laisse une finition profonde et miroir qui améliore la clarté et la profondeur de couleur.",
-      "Rayures Mineures: Ajoute un niveau de résistance aux rayures."
+      "<strong>Hydrophobe:</strong> Fait perler l'eau et glisser sans effort, réduisant les taches d'eau.",
+      "<strong>Résistant aux UV:</strong> Prévient la décoloration, l'écaillage et l'oxydation de la peinture.",
+      "<strong>Résistant aux Rayures:</strong> Offre une protection contre les abrasions légères et les tourbillons.",
+      "<strong>Résistant aux Produits Chimiques:</strong> Défend contre les acides, détergents, fientes d'oiseaux et poussière de frein.",
+      "<strong>Amélioration de l'Éclat:</strong> Laisse une finition profonde et miroir qui améliore la clarté et la profondeur de couleur.",
+      "<strong>Protection contre la Pluie Acide:</strong> protège contre les dommages corrosifs de la pluie.",
+      "<strong>Barrière contre les Fientes d'Oiseaux:</strong> empêche la gravure et les taches de peinture.",
+      "<strong>Défense contre les Retombées Industrielles:</strong> bloque les contaminants métalliques aéroportés.",
+      "<strong>Résistance à la Sève d'Arbre:</strong> empêche la sève d'adhérer à la peinture.",
+      "<strong>Protection contre l'Érosion Météorologique:</strong> protège contre l'usure climatique sévère."
     ],
     "howItWorks": {
       "title": "Comment Ça Fonctionne?",
@@ -45,11 +49,11 @@
     "worthIt": {
       "title": "Est-ce que Ça Vaut l'Investissement?",
       "reasons": [
-        "Protection à Long Terme: Réduit le besoin de détaillage fréquent.",
-        "Apparence Améliorée: Maintient une finition brillante de salle d'exposition.",
-        "Facilité de Nettoyage: La saleté et la crasse adhèrent moins à la surface.",
-        "Valeur de Revente: Un extérieur bien entretenu peut augmenter la valeur de revente du véhicule.",
-        "Minimise les coûts de correction de peinture à long terme"
+        "<strong>Protection à Long Terme:</strong> réduit le besoin de détaillage fréquent.",
+        "<strong>Apparence Améliorée:</strong> maintient une finition brillante de salle d'exposition.",
+        "<strong>Facilité de Nettoyage:</strong> la saleté et la crasse adhèrent moins à la surface.",
+        "<strong>Valeur de Revente:</strong> un extérieur bien entretenu peut augmenter la valeur de revente du véhicule.",
+        "<strong>Économies:</strong> minimise les coûts de correction de peinture à long terme."
       ]
     },
     "addons": {
@@ -77,16 +81,20 @@
       "title": "Questions Fréquemment Posées",
       "items": [
         {
-          "question": "Combien de temps dure le revêtement céramique?",
-          "answer": "Notre revêtement céramique offre trois niveaux de protection: Niveau 1 (2 ans/30 000 km), Niveau 2 (4 ans/60 000 km), et Niveau 3 (5 ans/100 000 km). La longévité dépend de la qualité du produit, du processus d'application et de l'entretien."
+          "question": "Le revêtement céramique nécessite-t-il un entretien?",
+          "answer": "Oui, pour une performance optimale, nous recommandons un lavage détaillé professionnel, une décontamination de la peinture, et une application de booster céramique tous les 4-6 mois pour maintenir une protection maximale et restaurer la performance du revêtement."
         },
         {
-          "question": "Quelles surfaces peuvent être revêtues?",
-          "answer": "Nos revêtements céramiques peuvent être appliqués sur plusieurs surfaces incluant la peinture, roues et étriers de frein, surfaces vitrées, plastiques et garnitures extérieures, et cuir et synthétiques intérieurs. Chaque surface nécessite une formulation spécifique pour un collage et une protection optimaux."
+          "question": "Le revêtement céramique est-il meilleur que le cirage traditionnel?",
+          "answer": "Absolument. Le revêtement céramique est considérablement plus durable et durable que la cire traditionnelle, offrant une protection supérieure contre les contaminants environnementaux, les rayons UV et les dommages chimiques."
         },
         {
-          "question": "Est-ce que le revêtement céramique vaut l'investissement?",
-          "answer": "Oui, le revêtement céramique est un investissement valable car il fournit une protection à long terme, améliore l'apparence, facilite le nettoyage, augmente la valeur de revente et minimise les coûts de correction de peinture à long terme."
+          "question": "Puis-je laver ma voiture normalement avec un revêtement céramique?",
+          "answer": "Oui, vous pouvez laver votre voiture normalement, mais nous recommandons fortement d'éviter les lavages automatiques. Le lavage à la main ou les services de détaillage professionnel sont les meilleurs pour préserver l'intégrité et l'efficacité du revêtement."
+        },
+        {
+          "question": "Le revêtement céramique empêche-t-il toutes les rayures?",
+          "answer": "Le revêtement céramique offre une excellente résistance contre les rayures mineures et les marques de tourbillon, mais il n'est pas complètement à l'épreuve des rayures. Les rayures profondes ou les dommages graves peuvent toujours se produire et peuvent nécessiter une correction professionnelle."
         }
       ]
     }

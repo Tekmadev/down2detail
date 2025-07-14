@@ -11,12 +11,16 @@
       "keyBenefitsTitle": "Key Benefits:"
     },
     "benefits": [
-      "Hydrophobic: causes water to bead and slide off effortlessly, reducing water spotting.",
-      "UV-Resistant: prevents paint fading, chalking, and oxidation.",
-      "Scratch Resistant: offers protection from light abrasions and swirl marks.",
-      "Chemical Resistant: defends against acids, detergents, bird droppings, and brake dust.",
-      "Gloss Enhancing: leaves a deep, mirror-like finish that enhances paint clarity and color depth.",
-      "Minor Scratches: adds a level of scratch resistance."
+      "<strong>Hydrophobic:</strong> causes water to bead and slide off effortlessly, reducing water spotting.",
+      "<strong>UV-Resistant:</strong> prevents paint fading, chalking, and oxidation.",
+      "<strong>Scratch Resistant:</strong> offers protection from light abrasions and swirl marks.",
+      "<strong>Chemical Resistant:</strong> defends against acids, detergents, bird droppings, and brake dust.",
+      "<strong>Gloss Enhancing:</strong> leaves a deep, mirror-like finish that enhances paint clarity and color depth.",
+      "<strong>Acid Rain Protection:</strong> shields against corrosive rain damage.",
+      "<strong>Bird Droppings Barrier:</strong> prevents etching and paint stains.",
+      "<strong>Industrial Fallout Defense:</strong> blocks airborne metal contaminants.",
+      "<strong>Tree Sap Resistance:</strong> stops sap from bonding to paint.",
+      "<strong>Weather Erosion Guard:</strong> protects against harsh climate wear."
     ],
     "howItWorks": {
       "title": "How Does It Work?",
@@ -45,11 +49,11 @@
     "worthIt": {
       "title": "Is It Worth the Investment?",
       "reasons": [
-        "Long-Term Protection: reduces the need for frequent detailing.",
-        "Enhanced Appearance: maintains a glossy, showroom finish.",
-        "Ease of Cleaning: dirt and grime have a harder time sticking to the surface.",
-        "Resale Value: well-maintained exterior can increase vehicle's resale value.",
-        "Minimizes long-term paint correction costs."
+        "<strong>Long-Term Protection:</strong> reduces the need for frequent detailing.",
+        "<strong>Enhanced Appearance:</strong> maintains a glossy, showroom finish.",
+        "<strong>Ease of Cleaning:</strong> dirt and grime have a harder time sticking to the surface.",
+        "<strong>Resale Value:</strong> well-maintained exterior can increase vehicle's resale value.",
+        "<strong>Cost-Savings:</strong> minimizes long-term paint correction costs."
       ]
     },
     "addons": {
@@ -77,16 +81,20 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "question": "How long does ceramic coating last?",
-          "answer": "Our ceramic coating offers three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km). The longevity depends on the quality of the product, application process, and maintenance."
+          "question": "Does ceramic coating require maintenance?",
+          "answer": "Yes, for optimal performance, we recommend a professional detail wash, paint decontamination, and ceramic booster application every 4-6 months to maintain peak protection and restore coating performance."
         },
         {
-          "question": "What surfaces can be coated?",
-          "answer": "Our ceramic coatings can be applied to multiple surfaces including paint, wheels & brake calipers, glass surfaces, exterior plastics & trims, and interior leather & synthetics. Each surface requires a specific formulation for optimal bonding and protection."
+          "question": "Is ceramic coating better than traditional waxing?",
+          "answer": "Absolutely. Ceramic coating is significantly more durable and longer-lasting than traditional wax, offering superior protection against environmental contaminants, UV rays, and chemical damage."
         },
         {
-          "question": "Is ceramic coating worth the investment?",
-          "answer": "Yes, ceramic coating is a worthwhile investment as it provides long-term protection, enhances appearance, makes cleaning easier, increases resale value, and minimizes long-term paint correction costs."
+          "question": "Can I wash my car normally with ceramic coating?",
+          "answer": "Yes, you can wash your car normally, but we strongly recommend avoiding automated car washes. Hand washing or professional detailing services are best to preserve the coating's integrity and effectiveness."
+        },
+        {
+          "question": "Does ceramic coating prevent all scratches?",
+          "answer": "Ceramic coating provides excellent resistance against minor scratches and swirl marks, but it's not completely scratch-proof. Deep scratches or severe damage can still occur and may require professional correction."
         }
       ]
     }

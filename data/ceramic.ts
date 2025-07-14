@@ -15,6 +15,8 @@ export type Service = {
   appliesTo: string[];
   addons: Array<{ title: string; duration: string; price: number }>;
   faqs: Array<{ question: string; answer: string }>;
+  beforeAfterImage: string;
+  surfaceImage: string;
 };
 
 
@@ -27,8 +29,10 @@ export const ceramicCoating: Service = {
     shortDescription: "Long-lasting paint protection with nanotechnology.",
     description:
       "Ceramic coating is a liquid polymer made from nanotechnology-based SiO₂ (silicon dioxide). Once cured, it chemically bonds to the factory paint (or any other surface it's applied to), creating a hydrophobic, slick, and ultra-durable shield. Unlike traditional waxes or sealants, ceramic coatings provide a long-lasting, hydrophobic surface that repels dirt, water, road grime, bird droppings, bug splatter, and more. The coating's molecular structure forms a tight, glass-like layer that offers UV resistance, scratch protection, chemical resistance, and enhanced gloss. Available in three levels of protection: Level 1 (2 years/30,000 km), Level 2 (4 years/60,000 km), and Level 3 (5 years/80,000 km).",
-    imageShowcase: "/images/services-detailing/ceramic-coat.webp",
+    imageShowcase: "/images/services-detailing/ceramiccoating.webp",
     image: "/images/services-detailing/Ceramic-coating.webp",
+    beforeAfterImage: "/images/services-detailing/beforeaftercoating.webp",
+    surfaceImage: "/images/services-detailing/wheelcoating.webp",
     currency: "CAD",
     howItWorks: [
       "Hydrophobic: Causes water to bead and slide off effortlessly, reducing water spotting.",
@@ -45,7 +49,7 @@ export const ceramicCoating: Service = {
     ],
     addons: [
       { title: "Wheels & Calipers Ceramic Coating", duration: "Up to 2 years or 40,000 km", price: 199.99 },
-      { title: "Windshield & Glass Ceramic Coating", duration: "Up to 12 months", price: 149.99 },
+      { title: "Windshield & Glass Ceramic Coating", duration: "Up to 12 months", price: 229.99 },
       { title: "Plastics Ceramic Coating", duration: "Up to 2 years", price: 149.99 },
       { title: "Leather & Synthetics Ceramic Coating", duration: "Up to 2 years", price: 199.99 }
     ],
