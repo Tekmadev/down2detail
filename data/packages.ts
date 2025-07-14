@@ -203,11 +203,11 @@ export const packages: DetailPackage[] = [
       compactMidFullSUVsPickups: 789.99,
       fullSizeSUVsPickups: 839.99,
     },
-    discountedPrice: {
-      sedanCoupesCrossovers: 599.99,
-      compactMidFullSUVsPickups: 659.99,
-      fullSizeSUVsPickups: 719.99,
-    },
+    // discountedPrice: {
+    //   sedanCoupesCrossovers: 599.99,
+    //   compactMidFullSUVsPickups: 659.99,
+    //   fullSizeSUVsPickups: 719.99,
+    // },
   },
   {
     id: "paint-platinum",
@@ -225,11 +225,11 @@ export const packages: DetailPackage[] = [
       compactMidFullSUVsPickups: 1289.99,
       fullSizeSUVsPickups: 1339.99,
     },
-    discountedPrice: {
-      sedanCoupesCrossovers: 999.99,
-      compactMidFullSUVsPickups: 1089.99,
-      fullSizeSUVsPickups: 1139.99,
-    },
+    // discountedPrice: {
+    //   sedanCoupesCrossovers: 999.99,
+    //   compactMidFullSUVsPickups: 1089.99,
+    //   fullSizeSUVsPickups: 1139.99,
+    // },
     badge: "Most Popular",
   },
   {
@@ -248,11 +248,11 @@ export const packages: DetailPackage[] = [
       compactMidFullSUVsPickups: 1609.99,
       fullSizeSUVsPickups: 1769.99,
     },
-    discountedPrice: {
-      sedanCoupesCrossovers: 1279.99,
-      compactMidFullSUVsPickups: 1369.99,
-      fullSizeSUVsPickups: 1499.99,
-    },
+    // discountedPrice: {
+    //   sedanCoupesCrossovers: 1279.99,
+    //   compactMidFullSUVsPickups: 1369.99,
+    //   fullSizeSUVsPickups: 1499.99,
+    // },
     addOns: [
       "Wheel & Brake Caliper Ceramic Coating",
       "Windshield & Glass Ceramic Coating",
