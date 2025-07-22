@@ -354,6 +354,7 @@ export const services: Service[] = [
       "Ceramic coating application for long-term protection",
       "Light output inspection",
       "Final quality check",
+      "2-4 years guarantee of long-term clarity",
     ],
     benefits: [
       "Improves exterior appearance",
@@ -367,9 +368,9 @@ export const services: Service[] = [
       "Faded, yellowed, or hazy headlights don't just look bad — they also reduce night visibility and compromise safety. Our professional Headlight Restoration service brings them back to life using a multi-stage sanding and polishing process that restores clarity, shine, and light output.",
     imageShowcase: "/images/services-detailing/headlight-restoration.webp",
     price: {
-      sedan: "179.99",
-      suv: "179.99",
-      fullSuv: "179.99",
+      sedan: "259.99",
+      suv: "259.99",
+      fullSuv: "259.99",
     },
     currency: "CAD",
     image: "/images/services-detailing/headlight-restoration.webp",
