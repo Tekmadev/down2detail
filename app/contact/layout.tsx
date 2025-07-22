@@ -24,8 +24,11 @@ export const metadata: Metadata = {
     "contact auto detailing Montreal",
     "car detailing phone number Montreal",
     "book auto detailing Montreal",
-    "mobile detailing quote Montreal",
+    "exterior detailing quote Montreal",
+    "interior detailing quote Montreal",
     "Down2Detail contact information",
+    "Down2Detail contact number",
+    "Down2Detail support",
   ],
 };
 

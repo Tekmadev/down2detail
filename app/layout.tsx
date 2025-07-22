@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     template: "%s | Down2Detail - Montreal Auto Detailing Experts",
   },
   description:
-    "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and mobile car wash. Serving Montreal, Laval, Longueuil, and Greater Montreal Area.",
+    "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and exterior car detailing. Serving Montreal, Laval, Longueuil, and Greater Montreal Area.",
   keywords: [
     "auto detailing Montreal",
     "car detailing Montreal",
     "paint correction Montreal",
     "ceramic coating Montreal",
     "interior detailing Montreal",
-    "mobile car wash Montreal",
+    "exterior car detailing Montreal",
     "car detailing Quebec",
     "auto detailing Laval",
     "car wash Longueuil",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     siteName: "Down2Detail",
     title: "Down2Detail - Premium Auto Detailing Services in Montreal",
     description:
-      "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and mobile services. Serving Greater Montreal Area.",
+      "Professional auto detailing services in Montreal, Quebec including paint correction, ceramic coating, interior detailing, and exterior detailing services. Serving Greater Montreal Area.",
     images: [
       {
         url: "/images/ceramic.png",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Down2Detail - Premium Auto Detailing Services in Montreal",
     description:
-      "Professional auto detailing services in Montreal including paint correction, ceramic coating, interior detailing, and mobile services.",
+      "Professional auto detailing services in Montreal including paint correction, ceramic coating, interior detailing, and exterior detailing services.",
     images: ["/images/ceramic.png"],
   },
   verification: {
@@ -100,7 +100,7 @@ const structuredData = {
   name: "Down2Detail",
   alternateName: "Down 2 Detail Auto Detailing",
   description:
-    "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and mobile car washing services in Montreal, Quebec.",
+    "Professional auto detailing services including paint correction, ceramic coating, interior detailing, and exterior car detailing services in Montreal, Quebec.",
   url: "https://down2detail.ca",
   telephone: "+1-438-483-8175",
   priceRange: "$$",
@@ -198,9 +198,9 @@ const structuredData = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Mobile Auto Detailing",
+          name: "Exterior Detailing",
           description:
-            "Convenient mobile auto detailing services throughout Montreal",
+            "Complete exterior car detailing services in Montreal",
         },
       },
     ],

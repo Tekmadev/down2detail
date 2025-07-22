@@ -25,7 +25,9 @@ export const metadata: Metadata = {
     "car detailing packages Montreal",
     "paint correction packages Montreal",
     "ceramic coating packages Montreal",
-    "detailing service packages Quebec",
+    "exterior detailing packages Montreal",
+    "interior detailing packages Montreal",
+    "headlight restoration packages Montreal",
     "monthly car maintenance Montreal",
   ],
 };
