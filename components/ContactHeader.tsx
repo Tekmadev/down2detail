@@ -1,6 +1,8 @@
+import TrackablePhoneLink from "./TrackablePhoneLink";
+
 const ContactHeader = () => {
-    return(
-        <div className="bg-[#b53904] text-white py-2 md:py-3">
+  return (
+    <div className="bg-[#b53904] text-white py-2 md:py-3">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
         <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
           <div className="flex items-center">
@@ -19,12 +21,16 @@ const ContactHeader = () => {
                 />
               </svg>
             </div>
-            <a
-              href="tel:+14384838175"
+            <TrackablePhoneLink
+              phoneNumber="+14384838175"
               className="text-sm hover:text-white hover:underline transition-colors"
+              trackingData={{
+                source: "Contact Header",
+                page: "Header",
+              }}
             >
               +1 438 483 8175
-            </a>
+            </TrackablePhoneLink>
           </div>
           <div className="flex items-center">
             <div className="w-5 h-5 mr-2 relative">
@@ -66,8 +72,8 @@ const ContactHeader = () => {
                 />
               </svg>
             </div>
-            </a>
-            <a
+          </a>
+          <a
             href="https://www.instagram.com/down2detail.ca/"
             target="_blank"
             rel="noopener noreferrer"
@@ -82,11 +88,10 @@ const ContactHeader = () => {
               </svg>
             </div>
           </a>
-          </div>
-          
+        </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default ContactHeader;

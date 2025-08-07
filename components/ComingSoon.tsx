@@ -13,6 +13,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/config/firebase";
 import Button from "./ui/Button";
+import { metaTracker } from "@/lib/meta-tracking";
 
 const ComingSoon = () => {
   const [email, setEmail] = useState("");
@@ -78,6 +79,11 @@ const ComingSoon = () => {
       await addDoc(collection(db, "coming_soon_subscribers"), {
         email: email,
         createdAt: serverTimestamp(),
+      });
+
+      // Track coming soon signup with Meta API
+      await metaTracker.trackComingSoonSignup(email, {
+        signup_source: "Coming Soon Page",
       });
 
       // Show success message

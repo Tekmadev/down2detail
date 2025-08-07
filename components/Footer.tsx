@@ -21,6 +21,7 @@ import {
   getTranslatedNavigation,
   getTranslatedServiceLabel,
 } from "@/lib/translations";
+import { metaTracker } from "@/lib/meta-tracking";
 
 const Footer = () => {
   const { t } = useI18n();
@@ -67,6 +68,12 @@ const Footer = () => {
       await addDoc(collection(db, "newsletter"), {
         email: email,
         createdAt: serverTimestamp(),
+      });
+
+      // Track newsletter signup with Meta API
+      await metaTracker.trackNewsletterSignup(email, {
+        signup_source: "Footer",
+        page_url: pathname,
       });
 
       // Show success message

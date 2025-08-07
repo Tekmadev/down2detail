@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useI18n } from "@/hooks/useI18n";
+import { metaTracker } from "@/lib/meta-tracking";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -61,8 +62,9 @@ export default function ContactForm() {
     }));
   };
 
-  function handleSendEmail(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setFormStatus("submitting");
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_EMAILJS_Template_ID;
@@ -71,28 +73,58 @@ export default function ContactForm() {
     if (!serviceId || !templateId || !publicKey) {
       setErrorMessage(t("form.configError", { ns: "contact" }));
       console.error("EmailJS Service ID or Public Key is not defined.");
+      setFormStatus("error");
       return;
     }
 
     if (form.current) {
-      emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-        (response) => {
-          console.log("SUCCESS!", response.text);
-          setMessageSent(true);
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-          setPhone("");
-          (e.target as HTMLFormElement).reset();
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          alert(t("form.sendError", { ns: "contact" }));
-        }
-      );
+      try {
+        // Send email via EmailJS
+        const response = await emailjs.sendForm(
+          serviceId,
+          templateId,
+          form.current,
+          publicKey
+        );
+        console.log("SUCCESS!", response.text);
+
+        // Track conversion with Meta API
+        const nameParts = formData.name.split(" ");
+        const firstName = nameParts[0] || "";
+        const lastName = nameParts.slice(1).join(" ") || "";
+
+        await metaTracker.trackContactFormSubmission(
+          {
+            email: formData.email,
+            phone: formData.phone,
+            firstName,
+            lastName,
+            city: "Montreal", // Default city - you can make this dynamic
+            state: "Quebec",
+            country: "Canada",
+          },
+          {
+            message_length: formData.message.length,
+            form_source: "Contact Page",
+          }
+        );
+
+        // Reset form on success
+        setMessageSent(true);
+        setFormStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setPhone("");
+        (e.target as HTMLFormElement).reset();
+      } catch (error) {
+        console.error("FAILED...", error);
+        setErrorMessage(t("form.sendError", { ns: "contact" }));
+        setFormStatus("error");
+      }
     }
   }
   useEffect(() => {
