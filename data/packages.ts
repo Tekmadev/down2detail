@@ -197,17 +197,19 @@ export const packages: DetailPackage[] = [
       "Paint Decontamination",
       "Gloss Enhancer",
       "1-Year Graphene Ceramic Coating",
+      "Front Windshield Ceramic Coating",
+      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 729.99,
       compactMidFullSUVsPickups: 789.99,
       fullSizeSUVsPickups: 839.99,
     },
-    // discountedPrice: {
-    //   sedanCoupesCrossovers: 599.99,
-    //   compactMidFullSUVsPickups: 659.99,
-    //   fullSizeSUVsPickups: 719.99,
-    // },
+    discountedPrice: {
+      sedanCoupesCrossovers: 649.99,
+      compactMidFullSUVsPickups: 719.99,
+      fullSizeSUVsPickups: 779.99,
+    },
   },
   {
     id: "paint-platinum",
@@ -219,17 +221,19 @@ export const packages: DetailPackage[] = [
       "Paint Decontamination",
       "One-Step Polish",
       "4-Year Ceramic Coating",
+      "Front Windshield Ceramic Coating",
+      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 1199.99,
       compactMidFullSUVsPickups: 1289.99,
       fullSizeSUVsPickups: 1339.99,
     },
-    // discountedPrice: {
-    //   sedanCoupesCrossovers: 999.99,
-    //   compactMidFullSUVsPickups: 1089.99,
-    //   fullSizeSUVsPickups: 1139.99,
-    // },
+    discountedPrice: {
+      sedanCoupesCrossovers: 999.99,
+      compactMidFullSUVsPickups: 1099.99,
+      fullSizeSUVsPickups: 1199.99,
+    },
     badge: "Most Popular",
   },
   {
@@ -242,17 +246,19 @@ export const packages: DetailPackage[] = [
       "Paint Decontamination",
       "Paint Correction",
       "5-Year Ceramic Coating",
+      "Front Windshield Ceramic Coating",
+      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 1499.99,
       compactMidFullSUVsPickups: 1609.99,
       fullSizeSUVsPickups: 1769.99,
     },
-    // discountedPrice: {
-    //   sedanCoupesCrossovers: 1279.99,
-    //   compactMidFullSUVsPickups: 1369.99,
-    //   fullSizeSUVsPickups: 1499.99,
-    // },
+    discountedPrice: {
+      sedanCoupesCrossovers: 1199.99,
+      compactMidFullSUVsPickups: 1289.99,
+      fullSizeSUVsPickups: 1339.99,
+    },
     addOns: [
       "Wheel & Brake Caliper Ceramic Coating",
       "Windshield & Glass Ceramic Coating",
