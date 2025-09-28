@@ -8,7 +8,7 @@ const GoogleReviews = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-sm md:text-base font-medium text-orange-400 uppercase tracking-wider mb-3">
-            What clients say about Down2Detail
+            D<span className="text-white">2</span>D: WORTHY OF YOUR TRUST
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Real feedback from Montreal car owners we've served recently.
