@@ -342,7 +342,7 @@ export default function PrivacyPolicyPage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: 3399 Boulevard Crémazie Est, Montréal, QC, Canada
+                  Address: 8595 Avenue Bloomfield, Montréal, QC, Canada
                 </p>
               </div>
             </section>
