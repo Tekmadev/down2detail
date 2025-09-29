@@ -2,6 +2,8 @@ import VideoHero from "@/components/VideoHero";
 import Services from "@/components/Services";
 import ChooseUs from "@/components/ChooseUs";
 import Image from "next/image";
+import Script from "next/script";
+import GoogleReviews from "@/components/GoogleReviews";
 import CallToAction from "@/components/CallToAction";
 import RecentProjects from "@/components/RecentProjects";
 import BrandLogos from "@/components/BrandLogos";
@@ -47,6 +49,7 @@ export default function Home() {
       />
       {/* <Services /> */}
       <ChooseUs />
+      <GoogleReviews />
       <BrandLogos />
       {/*<RecentProjects />*/}
       <CallToAction />
