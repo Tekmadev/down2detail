@@ -6,7 +6,7 @@ export default function Map() {
       <div className="w-full h-[400px]">
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.706164354281!2d-73.64625062246401!3d45.53316197107529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918fdbb7270d3%3A0xd826b0ab46a2bffb!2s8595%20Av.%20Bloomfield%2C%20Montr%C3%A9al%2C%20QC%20H3N%202J4!5e0!3m2!1sen!2sca!4v1759028393084!5m2!1sen!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.6098790174037!2d-73.61940902372747!3d45.437364971073414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc911187040533f%3A0x52789d369025ad72!2s2063%20Rue%20Lapierre%2C%20Montr%C3%A9al%2C%20QC%20H8N%201B1!5e0!3m2!1sen!2sca!4v1759288048233!5m2!1sen!2sca"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -19,7 +19,7 @@ export default function Map() {
       </div>
       <div className="p-4 bg-gray-800 text-center text-sm text-secondary-light">
         <a
-          href="https://www.google.com/maps/place/8595+Av.+Bloomfield,+Montr%C3%A9al,+QC+H3N+2J4"
+          href="https://www.google.com/maps/place/2063+Rue+Lapierre,+Montr%C3%A9al,+QC+H8N+1B1"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#d6781c] hover:underline transition-colors font-medium"

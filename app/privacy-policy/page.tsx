@@ -342,7 +342,7 @@ export default function PrivacyPolicyPage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: 8595 Avenue Bloomfield, Montréal, QC, Canada
+                  Address: 2063 Rue Lapierre, Montréal, QC, Canada
                 </p>
               </div>
             </section>
