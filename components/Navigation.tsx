@@ -9,6 +9,7 @@ import LogoWithSpinningDs from "./ui/LogoWithSpinningDs";
 import { Menu, MenuItem, NavMenuLink, CategorySection } from "./ui/navbar-menu";
 import { services } from "@/data/services";
 import CalendlyPopText from "./CalendlyPopText";
+import BookingModal from "./BookingModal";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useI18n } from "@/hooks/useI18n";
 import {
@@ -16,6 +17,7 @@ import {
   getTranslatedServiceLabel,
   getTranslatedServiceCategory,
 } from "@/lib/translations";
+import Button from "./ui/Button";
 
 const Navigation = () => {
   const { t } = useI18n();
@@ -23,6 +25,7 @@ const Navigation = () => {
   const [activeItem, setActiveItem] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [openCategory, setOpenCategory] = useState<Record<string, boolean>>({});
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -178,7 +181,14 @@ const Navigation = () => {
                 );
               }
             })}
-            <CalendlyPopText />
+            <Button
+              onClick={() => setIsBookingModalOpen(true)}
+              variant="primary"
+              className="ml-4"
+            >
+              {t("common.bookNow")}
+            </Button>
+            {/* <CalendlyPopText /> */}
           </Menu>
           <LanguageSwitcher />
         </div>
@@ -311,7 +321,16 @@ const Navigation = () => {
                 }
                 return null;
               })}
-              <CalendlyPopText />
+              <Button
+                onClick={() => {
+                  setIsBookingModalOpen(true);
+                  setIsMenuOpen(false);
+                }}
+                variant="primary"
+                className="w-full mt-4"
+              >
+                {t("common.bookNow")}
+              </Button>
 
               {/* Language Switcher - Mobile Only */}
               <div className="flex justify-center mt-4 pt-4 border-t border-gray-700">
@@ -412,6 +431,12 @@ const Navigation = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Booking Modal */}
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </nav>
   );
 };

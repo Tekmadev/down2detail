@@ -1,0 +1,82 @@
+{
+  "modal": {
+    "title": "Réserver Votre Service",
+    "titleConfirmed": "Réservation Confirmée !",
+    "calendlyButton": "Calendly",
+    "calendlyTooltip": "Réserver avec Calendly"
+  },
+  "form": {
+    "fields": {
+      "name": {
+        "label": "Nom Complet",
+        "placeholder": "Jean Dupont",
+        "required": "Le nom complet est requis"
+      },
+      "phone": {
+        "label": "Numéro de Téléphone",
+        "labelNote": "(format canadien)",
+        "placeholder": "(514) 123-4567",
+        "required": "Le numéro de téléphone est requis",
+        "invalid": "Veuillez entrer un numéro de téléphone canadien valide",
+        "validFormat": "✓ Format correct ! Numéro de téléphone canadien détecté."
+      },
+      "email": {
+        "label": "Adresse Courriel",
+        "placeholder": "jean.dupont@exemple.com",
+        "required": "L'adresse courriel est requise",
+        "invalid": "Veuillez entrer une adresse courriel valide"
+      },
+      "service": {
+        "label": "Catégorie de Service",
+        "placeholder": "Sélectionner un service",
+        "required": "Veuillez sélectionner une catégorie de service",
+        "depositSuffix": "acompte"
+      }
+    },
+    "depositInfo": {
+      "title": "Acompte de Sécurité Requis",
+      "description": "Un acompte de sécurité est requis pour confirmer votre rendez-vous. Cet acompte est entièrement remboursable si vous annulez ou reportez au moins 24 heures avant la date de service prévue."
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "submit": "Soumettre la Demande de Réservation",
+      "processing": "Traitement en cours..."
+    },
+    "errors": {
+      "submit": "Échec de la soumission de la réservation. Veuillez réessayer.",
+      "payment": "Le traitement du paiement a échoué. Veuillez réessayer."
+    }
+  },
+  "success": {
+    "title": "Réservation Confirmée !",
+    "message": "Votre réservation a été soumise avec succès. Nous vous contacterons sous peu pour confirmer les détails de votre rendez-vous.",
+    "nextSteps": "Prochaines Étapes",
+    "steps": {
+      "confirmation": "Nous vous enverrons un courriel de confirmation dans les 24 heures",
+      "payment": "Complétez votre paiement d'acompte pour sécuriser votre réservation",
+      "scheduling": "Nous vous contacterons pour planifier votre date et heure préférées"
+    },
+    "buttons": {
+      "close": "Fermer",
+      "newBooking": "Réserver un Autre Service"
+    }
+  },
+  "payment": {
+    "title": "Complétez Votre Acompte",
+    "description": "Veuillez compléter votre paiement d'acompte pour sécuriser votre réservation.",
+    "amount": "Montant de l'Acompte",
+    "buttons": {
+      "pay": "Payer l'Acompte",
+      "processing": "Traitement du Paiement...",
+      "cancel": "Annuler le Paiement"
+    },
+    "errors": {
+      "failed": "Le paiement a échoué. Veuillez réessayer.",
+      "cancelled": "Le paiement a été annulé."
+    },
+    "success": {
+      "title": "Paiement Réussi !",
+      "message": "Votre acompte a été traité avec succès. Votre réservation est maintenant confirmée."
+    }
+  }
+}

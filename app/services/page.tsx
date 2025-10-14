@@ -1,6 +1,7 @@
 "use client";
 
 import { getAllServiceCategories, services } from "@/data/services";
+import { getTranslatedService } from "@/lib/translatedServices";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -202,19 +203,26 @@ export default function ServiePage() {
                     <div className="relative h-68 overflow-hidden">
                       <Image
                         src={service.imageShowcase}
-                        alt={service.label}
+                        alt={getTranslatedService(service, t, "services").label}
                         fill
                         className="object-cover transform hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-xl font-semibold text-white mb-2">
-                        {service.label}
-                      </h3>
-                      <p className="text-gray-300 mb-4 line-clamp-2">
-                        {service.description}
-                      </p>
+                      {(() => {
+                        const s = getTranslatedService(service, t, "services");
+                        return (
+                          <>
+                            <h3 className="text-xl font-semibold text-white mb-2">
+                              {s.label}
+                            </h3>
+                            <p className="text-gray-300 mb-4 line-clamp-2">
+                              {s.shortDescription || s.description}
+                            </p>
+                          </>
+                        );
+                      })()}
                       <div className="flex justify-between items-center">
                         <Link
                           href={service.href}

@@ -1,0 +1,82 @@
+{
+  "modal": {
+    "title": "Book Your Service",
+    "titleConfirmed": "Booking Confirmed!",
+    "calendlyButton": "Calendly",
+    "calendlyTooltip": "Book with Calendly"
+  },
+  "form": {
+    "fields": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "John Doe",
+        "required": "Full name is required"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "labelNote": "(Canadian format)",
+        "placeholder": "(416) 123-4567",
+        "required": "Phone number is required",
+        "invalid": "Please enter a valid Canadian phone number",
+        "validFormat": "✓ Format looks good! Canadian phone number detected."
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "john.doe@example.com",
+        "required": "Email address is required",
+        "invalid": "Please enter a valid email address"
+      },
+      "service": {
+        "label": "Service Category",
+        "placeholder": "Select a service",
+        "required": "Please select a service category",
+        "depositSuffix": "deposit"
+      }
+    },
+    "depositInfo": {
+      "title": "Security Deposit Required",
+      "description": "A security deposit is required to confirm your appointment. This deposit is fully refundable if you cancel or reschedule at least 24 hours before your scheduled service date."
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "submit": "Submit Booking Request",
+      "processing": "Processing..."
+    },
+    "errors": {
+      "submit": "Failed to submit booking. Please try again.",
+      "payment": "Payment processing failed. Please try again."
+    }
+  },
+  "success": {
+    "title": "Booking Confirmed!",
+    "message": "Your booking has been successfully submitted. We'll contact you shortly to confirm your appointment details.",
+    "nextSteps": "What's Next?",
+    "steps": {
+      "confirmation": "We'll send you a confirmation email within 24 hours",
+      "payment": "Complete your deposit payment to secure your booking",
+      "scheduling": "We'll contact you to schedule your preferred date and time"
+    },
+    "buttons": {
+      "close": "Close",
+      "newBooking": "Book Another Service"
+    }
+  },
+  "payment": {
+    "title": "Complete Your Deposit",
+    "description": "Please complete your deposit payment to secure your booking.",
+    "amount": "Deposit Amount",
+    "buttons": {
+      "pay": "Pay Deposit",
+      "processing": "Processing Payment...",
+      "cancel": "Cancel Payment"
+    },
+    "errors": {
+      "failed": "Payment failed. Please try again.",
+      "cancelled": "Payment was cancelled."
+    },
+    "success": {
+      "title": "Payment Successful!",
+      "message": "Your deposit has been processed successfully. Your booking is now confirmed."
+    }
+  }
+}

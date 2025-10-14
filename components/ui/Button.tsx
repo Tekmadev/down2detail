@@ -7,6 +7,8 @@ type ButtonProps = {
   variant?: "primary" | "secondary";
   className?: string;
   onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 };
 
 const Button = ({
@@ -15,6 +17,8 @@ const Button = ({
   variant = "primary",
   className = "",
   onClick,
+  type = "button",
+  disabled = false,
 }: ButtonProps) => {
   const baseStyles = "px-8 py-3 text-center font-medium transition-colors";
 
@@ -24,7 +28,9 @@ const Button = ({
       "btn border-2 border-secondary text-secondary hover:bg-[#d6781c] hover:text-white",
   };
 
-  const buttonStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;
+  const buttonStyles = `${baseStyles} ${variantStyles[variant]} ${className} ${
+    disabled ? "opacity-50 cursor-not-allowed" : ""
+  }`;
 
   if (href) {
     return (
@@ -35,7 +41,12 @@ const Button = ({
   }
 
   return (
-    <button className={buttonStyles} onClick={onClick}>
+    <button
+      type={type}
+      className={buttonStyles}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {children}
     </button>
   );

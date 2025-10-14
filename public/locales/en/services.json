@@ -208,6 +208,94 @@
           "answer": "We ensure all tinting meets local regulations and safety standards."
         }
       ]
+    },
+    "interior-detailing": {
+      "label": "Interior Detailing",
+      "subtitle": "Deep Clean, Restore & Refresh",
+      "shortDescription": "Thorough interior cleaning for a fresh, like-new cabin.",
+      "description": "Complete interior service including vacuuming, plastics cleaning, crevice brushing and protection to restore a clean, fresh cabin.",
+      "features": [],
+      "benefits": []
+    },
+    "floor-carpet-shampoo": {
+      "label": "Floor & Carpet Shampoo",
+      "subtitle": "Deep Extraction for a Spotless Cabin",
+      "shortDescription": "Steam and shampoo to remove stains and odors from carpets.",
+      "description": "Deep clean carpets and floor mats using extraction to remove embedded dirt, stains and odors.",
+      "features": [],
+      "benefits": []
+    },
+    "pet-hair-removal": {
+      "label": "Pet Hair Removal",
+      "subtitle": "Deep Interior Clean",
+      "shortDescription": "Specialized removal of stubborn pet hair from fabrics.",
+      "description": "Thorough removal of embedded pet hair from seats, carpets and cargo areas.",
+      "features": [],
+      "benefits": []
+    },
+    "fabric-seat-shampoo": {
+      "label": "Fabric Seat Shampoo",
+      "subtitle": "Deep Clean, Sanitize & Refresh",
+      "shortDescription": "Extract and sanitize fabric seats to lift stains and odors.",
+      "description": "Hot-water extraction and stain treatment for cloth seats to restore a fresh appearance.",
+      "features": [],
+      "benefits": []
+    },
+    "leather-seat-treatment": {
+      "label": "Leather Seat Treatment",
+      "subtitle": "Clean, Condition & Protect",
+      "shortDescription": "Professional leather cleaning and conditioning.",
+      "description": "Gently clean, condition and protect leather seats for a supple, luxurious finish.",
+      "features": [],
+      "benefits": []
+    },
+    "ceramic-coating": {
+      "label": "Ceramic Coating",
+      "subtitle": "Elevate Your Vehicle's Defense",
+      "shortDescription": "Durable ceramic protection with extreme gloss.",
+      "description": "Professional-grade ceramic coating for long-lasting protection, hydrophobicity and gloss.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-sealant": {
+      "label": "Paint Sealant",
+      "subtitle": "Synthetic Protection & Enhanced Gloss",
+      "shortDescription": "6–12 month polymer sealant protection.",
+      "description": "High quality synthetic sealant applied to protect paint and boost shine.",
+      "features": [],
+      "benefits": []
+    },
+    "car-wax": {
+      "label": "Car Wax",
+      "subtitle": "Traditional Wax Protection",
+      "shortDescription": "Classic wax finish for rich gloss and protection.",
+      "description": "Premium carnauba/hybrid wax application to enhance gloss and add short-term protection.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-polish": {
+      "label": "Paint Polish",
+      "subtitle": "Professional Paint Enhancement",
+      "shortDescription": "Restore your vehicle's paint to showroom condition.",
+      "description": "Professional paint polishing to remove swirl marks, light scratches and restore deep gloss.",
+      "features": [],
+      "benefits": []
+    },
+    "one-step-polish": {
+      "label": "One-Step Polish",
+      "subtitle": "Swirl Removal & Gloss Enhancement",
+      "shortDescription": "Correct minor imperfections and enhance gloss in one step.",
+      "description": "Efficient single-step process that combines light correction with gloss enhancement for excellent results.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-correction": {
+      "label": "Paint Correction",
+      "subtitle": "Multi-Stage Perfection & Showroom Finish",
+      "shortDescription": "Eliminate scratches, swirls and imperfections for flawless finish.",
+      "description": "Multi-stage paint correction process to remove defects and achieve showroom-quality finish.",
+      "features": [],
+      "benefits": []
     }
   },
   "serviceLabels": {

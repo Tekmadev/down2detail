@@ -230,6 +230,94 @@
           "answer": "Nous nous assurons que toute teinte respecte les réglementations locales et les normes de sécurité."
         }
       ]
+    },
+    "interior-detailing": {
+      "label": "Détaillage Intérieur",
+      "subtitle": "Nettoyage Profond, Restauration et Rafraîchissement",
+      "shortDescription": "Nettoyage intérieur complet pour un habitacle comme neuf.",
+      "description": "Service intérieur complet incluant aspiration, nettoyage des plastiques, brossage des crevasses et protection pour restaurer un habitacle propre et frais.",
+      "features": [],
+      "benefits": []
+    },
+    "floor-carpet-shampoo": {
+      "label": "Shampooing Plancher et Tapis",
+      "subtitle": "Extraction Profonde pour un Habitacle Impeccable",
+      "shortDescription": "Vapeur et shampooing pour enlever les taches et odeurs.",
+      "description": "Nettoyage en profondeur des tapis et carpettes avec extraction pour retirer saletés, taches et odeurs.",
+      "features": [],
+      "benefits": []
+    },
+    "pet-hair-removal": {
+      "label": "Enlèvement de Poils d'Animaux",
+      "subtitle": "Nettoyage Intérieur Profond",
+      "shortDescription": "Retrait spécialisé des poils d'animaux tenaces.",
+      "description": "Retrait minutieux des poils incrustés sur les sièges, tapis et zone cargo.",
+      "features": [],
+      "benefits": []
+    },
+    "fabric-seat-shampoo": {
+      "label": "Shampooing de Sièges en Tissu",
+      "subtitle": "Nettoyer, Désinfecter et Rafraîchir",
+      "shortDescription": "Extraction et assainissement des sièges en tissu pour enlever taches et odeurs.",
+      "description": "Extraction à l'eau chaude et traitement des taches pour restaurer l'apparence des sièges en tissu.",
+      "features": [],
+      "benefits": []
+    },
+    "leather-seat-treatment": {
+      "label": "Traitement de Sièges en Cuir",
+      "subtitle": "Nettoyer, Conditionner et Protéger",
+      "shortDescription": "Nettoyage et conditionnement professionnels du cuir.",
+      "description": "Nettoyage doux, conditionnement et protection des sièges en cuir pour une finition souple et luxueuse.",
+      "features": [],
+      "benefits": []
+    },
+    "ceramic-coating": {
+      "label": "Revêtement Céramique",
+      "subtitle": "Élevez la Défense de votre Véhicule",
+      "shortDescription": "Protection céramique durable avec brillance extrême.",
+      "description": "Revêtement céramique de qualité professionnelle pour une protection durable, hydrophobie et brillance.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-sealant": {
+      "label": "Scellant de Peinture",
+      "subtitle": "Protection Synthétique et Brillance Améliorée",
+      "shortDescription": "Protection au scellant polymère de 6 à 12 mois.",
+      "description": "Application d'un scellant synthétique de haute qualité pour protéger la peinture et augmenter la brillance.",
+      "features": [],
+      "benefits": []
+    },
+    "car-wax": {
+      "label": "Cire d'Auto",
+      "subtitle": "Protection Traditionnelle à la Cire",
+      "shortDescription": "Finition à la cire pour une brillance riche et protection.",
+      "description": "Application de cire de carnauba/hybride de qualité pour rehausser la brillance et ajouter une protection à court terme.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-polish": {
+      "label": "Polissage de Peinture",
+      "subtitle": "Amélioration Professionnelle de la Peinture",
+      "shortDescription": "Restaurez la peinture de votre véhicule à l'état de salon.",
+      "description": "Polissage professionnel de la peinture pour éliminer les marques de tourbillons, les rayures légères et restaurer la brillance profonde.",
+      "features": [],
+      "benefits": []
+    },
+    "one-step-polish": {
+      "label": "Polissage en Une Étape",
+      "subtitle": "Élimination des Tourbillons et Amélioration de la Brillance",
+      "shortDescription": "Corrige les imperfections mineures et améliore la brillance en une seule étape.",
+      "description": "Processus efficace en une seule étape qui combine la correction légère avec l'amélioration de la brillance pour d'excellents résultats.",
+      "features": [],
+      "benefits": []
+    },
+    "paint-correction": {
+      "label": "Correction de Peinture",
+      "subtitle": "Perfection Multi-Étapes et Finition de Salle d'Exposition",
+      "shortDescription": "Élimine les rayures, les tourbillons et les imperfections pour une finition impeccable.",
+      "description": "Processus de correction de peinture multi-étapes pour éliminer les défauts et obtenir une finition de qualité salon.",
+      "features": [],
+      "benefits": []
     }
   }
 }
