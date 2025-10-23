@@ -68,7 +68,27 @@
     "learnMore": "En Savoir Plus",
     "readyToStart": "Prêt à Commencer Votre Projet?",
     "readyDescription": "Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis pour votre prochain service de détaillage automobile. Notre équipe est prête à faire briller votre véhicule — à l'intérieur comme à l'extérieur.",
-    "contactUs": "Contactez-nous"
+    "contactUs": "Contactez-nous",
+    "premiumService": "Service Premium",
+    "whyUs": "Pourquoi Nous?",
+    "whatsIncluded": "Ce qui est Inclus",
+    "whyItsImportant": "Pourquoi C'est Important",
+    "serviceShowcase": "Présentation du Service",
+    "serviceInAction": "service en action",
+    "thisServiceAvailable": "Ce service est disponible dans nos forfaits",
+    "typeOfVehicle": "Type de Véhicule",
+    "packageDescription": "Nous offrons plusieurs forfaits de détaillage avec différentes fonctionnalités et niveaux de prix pour répondre à vos besoins et à votre budget.",
+    "relatedServicesTitle": "Services Connexes Qui Pourraient Vous Intéresser",
+    "paintPolishServices": {
+      "badge": "Services de Peinture Professionnels",
+      "title": "Services de Polissage de Peinture",
+      "subtitle": "Restaurez, Raffinez et Rafraîchissez Votre Peinture",
+      "description": "Toutes les peintures ne sont pas créées égales et tous les véhicules n'ont pas besoin du même niveau de polissage. Nous offrons trois niveaux de polissage professionnel adaptés aux besoins de votre véhicule, de l'amélioration de la brillance à l'élimination des défauts importants.",
+      "bookInspection": "Réserver une Inspection",
+      "inspectionNote": "Inspection de peinture recommandée avant la réservation",
+      "chooseLevel": "Choisissez Votre Niveau de Polissage",
+      "allPolishInclude": "Tous les services de polissage incluent un scellant de peinture polymère pour 6 mois de protection"
+    }
   },
   "serviceCategories": {
     "Exterior": "Extérieur",
@@ -235,89 +255,426 @@
       "label": "Détaillage Intérieur",
       "subtitle": "Nettoyage Profond, Restauration et Rafraîchissement",
       "shortDescription": "Nettoyage intérieur complet pour un habitacle comme neuf.",
-      "description": "Service intérieur complet incluant aspiration, nettoyage des plastiques, brossage des crevasses et protection pour restaurer un habitacle propre et frais.",
-      "features": [],
-      "benefits": []
+      "description": "La plupart des lavages de voitures rapides offrent des essuyages intérieurs précipités qui laissent derrière eux de la poussière dans les bouches d'aération, des traces sur les écrans et de la saleté dans les espaces restreints. Mais votre véhicule mérite mieux. Pour nous, le Détaillage Intérieur est un art — pas un nettoyage superficiel. Nous ne nous contentons pas de le faire paraître propre ; nous nettoyons en profondeur chaque zone accessible en utilisant des outils et des produits professionnels sûrs.",
+      "features": [
+        "Aspiration intérieure (plancher, tapis, zone coffre/cargo)",
+        "Tableau de bord, panneaux de porte et console centrale essuyés et détaillés",
+        "Bouches d'aération, boutons, boutons et garnitures nettoyés avec des brosses de détaillage douces dédiées",
+        "Volant nettoyé en profondeur pour une finition mate d'usine",
+        "Porte-gobelets et petits compartiments nettoyés",
+        "Vitres et miroirs nettoyés de l'intérieur",
+        "Nettoyage vapeur des surfaces à contact élevé pour la désinfection",
+        "Nettoyage localisé du plafonnier (le cas échéant)"
+      ],
+      "benefits": [
+        "Améliore l'apparence et la propreté intérieures",
+        "Enlève la saleté incrustée, la poussière et la crasse de toutes les surfaces",
+        "Désinfecte les zones à contact élevé pour une meilleure hygiène",
+        "Restaure l'apparence et la sensation d'usine",
+        "Protège les surfaces contre l'usure prématurée",
+        "Élimine les odeurs et les allergènes",
+        "Augmente la valeur de revente",
+        "Crée un environnement de conduite plus sain"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle fréquence dois-je faire le détaillage intérieur?",
+          "answer": "Nous recommandons tous les 3-6 mois selon l'utilisation et les facteurs de style de vie."
+        },
+        {
+          "question": "Le détaillage intérieur est-il sûr pour tous les matériaux?",
+          "answer": "Oui, nous utilisons des produits professionnels sûrs adaptés à tous les matériaux intérieurs."
+        }
+      ]
     },
     "floor-carpet-shampoo": {
       "label": "Shampooing Plancher et Tapis",
       "subtitle": "Extraction Profonde pour un Habitacle Impeccable",
       "shortDescription": "Vapeur et shampooing pour enlever les taches et odeurs.",
-      "description": "Nettoyage en profondeur des tapis et carpettes avec extraction pour retirer saletés, taches et odeurs.",
-      "features": [],
-      "benefits": []
+      "description": "Les tapis et carpettes de votre véhicule subissent l'usure quotidienne des chaussures, des déversements et des débris. Avec le temps, la saleté incrustée, les taches et les odeurs peuvent faire paraître et sentir votre intérieur moins frais. Notre service de Shampooing Plancher et Tapis utilise un équipement d'extraction de qualité professionnelle et des solutions de nettoyage spécialisées pour nettoyer en profondeur et désinfecter vos tapis, les restaurant à un état comme neuf.",
+      "features": [
+        "Pré-traitement des taches et des zones très sales",
+        "Extraction à l'eau chaude avec équipement de qualité professionnelle",
+        "Nettoyage vapeur pour une désinfection profonde",
+        "Application de shampooing pour tapis spécialisé",
+        "Aspiration complète de toutes les surfaces tapissées",
+        "Traitement localisé pour les taches tenaces",
+        "Traitement désodorisant pour éliminer les odeurs",
+        "Inspection finale et vérification qualité"
+      ],
+      "benefits": [
+        "Enlève la saleté incrustée, les taches et les odeurs",
+        "Désinfecte les tapis pour une meilleure hygiène",
+        "Restaure la couleur et la texture originales des tapis",
+        "Élimine les allergènes et les bactéries",
+        "Prolonge la durée de vie et l'apparence des tapis",
+        "Crée un intérieur plus frais et propre",
+        "Résultats de qualité professionnelle",
+        "Sûr pour tous les types de tapis"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps prend le shampooing de tapis?",
+          "answer": "Généralement 1-2 heures selon la taille et l'état des tapis."
+        },
+        {
+          "question": "Le shampooing de tapis est-il sûr pour tous les types de tapis?",
+          "answer": "Oui, nous utilisons des produits sûrs de qualité professionnelle adaptés à tous les matériaux de tapis."
+        }
+      ]
     },
     "pet-hair-removal": {
       "label": "Enlèvement de Poils d'Animaux",
       "subtitle": "Nettoyage Intérieur Profond",
       "shortDescription": "Retrait spécialisé des poils d'animaux tenaces.",
-      "description": "Retrait minutieux des poils incrustés sur les sièges, tapis et zone cargo.",
-      "features": [],
-      "benefits": []
+      "description": "Les poils d'animaux peuvent être incroyablement tenaces, s'incrustant profondément dans les fibres de tissu et devenant presque impossibles à enlever avec l'aspiration régulière. Notre service spécialisé d'Enlèvement de Poils d'Animaux utilise des outils et des techniques de qualité professionnelle pour éliminer complètement les poils d'animaux de toutes les surfaces intérieures, laissant votre véhicule propre et sans poils.",
+      "features": [
+        "Outils et brosses spécialisés pour l'enlèvement de poils d'animaux",
+        "Aspiration profonde avec équipement haute puissance",
+        "Traitement à la brosse pour tissus pour les poils incrustés",
+        "Traitement au rouleau adhésif pour les zones tenaces",
+        "Nettoyage vapeur pour détacher les poils incrustés",
+        "Nettoyage détaillé de toutes les surfaces en tissu",
+        "Nettoyage de la zone cargo et du coffre",
+        "Inspection finale pour un enlèvement complet"
+      ],
+      "benefits": [
+        "Enlève complètement tous les poils d'animaux de l'intérieur",
+        "Élimine les allergènes et les squames d'animaux",
+        "Restaure une apparence propre et professionnelle",
+        "Empêche la propagation des poils d'animaux",
+        "Sûr pour tous les types de tissus",
+        "Résultats de qualité professionnelle",
+        "Crée un environnement plus sain",
+        "Économise du temps et de la frustration"
+      ],
+      "faqs": [
+        {
+          "question": "Quelle est l'efficacité de l'enlèvement professionnel de poils d'animaux?",
+          "answer": "Nos outils et techniques spécialisés peuvent enlever 99% des poils d'animaux, y compris les poils profondément incrustés que l'aspiration régulière manque."
+        },
+        {
+          "question": "L'enlèvement de poils d'animaux est-il sûr pour tous les matériaux intérieurs?",
+          "answer": "Oui, nous utilisons des méthodes sûres et douces qui n'endommageront aucun matériau intérieur."
+        }
+      ]
     },
     "fabric-seat-shampoo": {
       "label": "Shampooing de Sièges en Tissu",
       "subtitle": "Nettoyer, Désinfecter et Rafraîchir",
       "shortDescription": "Extraction et assainissement des sièges en tissu pour enlever taches et odeurs.",
-      "description": "Extraction à l'eau chaude et traitement des taches pour restaurer l'apparence des sièges en tissu.",
-      "features": [],
-      "benefits": []
+      "description": "Les sièges en tissu sont sujets à absorber les déversements, les taches et les odeurs avec le temps. Notre service de Shampooing de Sièges en Tissu utilise un équipement d'extraction à eau chaude de qualité professionnelle et des solutions de nettoyage spécialisées pour nettoyer en profondeur, désinfecter et rafraîchir vos sièges en tissu, les restaurant à un état comme neuf.",
+      "features": [
+        "Pré-traitement des taches et des zones très sales",
+        "Extraction à l'eau chaude avec équipement professionnel",
+        "Solutions de nettoyage spécialisées pour tissus",
+        "Nettoyage vapeur pour une désinfection profonde",
+        "Traitement des taches pour les marques tenaces",
+        "Traitement désodorisant pour éliminer les odeurs",
+        "Application de protection pour tissus",
+        "Inspection finale et vérification qualité"
+      ],
+      "benefits": [
+        "Enlève la saleté incrustée, les taches et les odeurs",
+        "Désinfecte les tissus pour une meilleure hygiène",
+        "Restaure la couleur et la texture originales des tissus",
+        "Élimine les allergènes et les bactéries",
+        "Prolonge la durée de vie et l'apparence des tissus",
+        "Crée un intérieur plus frais et propre",
+        "Résultats de qualité professionnelle",
+        "Sûr pour tous les types de tissus"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps prend le shampooing de sièges en tissu?",
+          "answer": "Généralement 1-2 heures selon le nombre de sièges et leur état."
+        },
+        {
+          "question": "Le shampooing de tissus est-il sûr pour tous les types de tissus?",
+          "answer": "Oui, nous utilisons des produits sûrs de qualité professionnelle adaptés à tous les matériaux de tissus."
+        }
+      ]
     },
     "leather-seat-treatment": {
       "label": "Traitement de Sièges en Cuir",
       "subtitle": "Nettoyer, Conditionner et Protéger",
       "shortDescription": "Nettoyage et conditionnement professionnels du cuir.",
-      "description": "Nettoyage doux, conditionnement et protection des sièges en cuir pour une finition souple et luxueuse.",
-      "features": [],
-      "benefits": []
+      "description": "Les sièges en cuir nécessitent des soins spéciaux pour maintenir leur apparence luxueuse et prévenir la fissuration ou la décoloration. Notre service de Traitement de Sièges en Cuir utilise des produits de nettoyage et de conditionnement de cuir de qualité supérieure pour nettoyer doucement, nourrir et protéger vos sièges en cuir, les gardant souples et beaux pendant des années.",
+      "features": [
+        "Nettoyage doux du cuir avec des produits à pH équilibré",
+        "Nettoyage en profondeur des surfaces et crevasses en cuir",
+        "Conditionnement du cuir pour restaurer la souplesse",
+        "Protection UV pour prévenir la décoloration et la fissuration",
+        "Traitement des taches pour les problèmes spécifiques au cuir",
+        "Application de protection pour cuir",
+        "Polissage final pour une finition luxueuse",
+        "Inspection qualité et instructions d'entretien"
+      ],
+      "benefits": [
+        "Restaure la souplesse naturelle du cuir",
+        "Prévient la fissuration et le vieillissement prématuré",
+        "Protège contre les dommages UV et la décoloration",
+        "Élimine les taches et odeurs spécifiques au cuir",
+        "Maintient l'apparence luxueuse",
+        "Prolonge considérablement la durée de vie du cuir",
+        "Conditionnement de qualité professionnelle",
+        "Sûr pour tous les types de cuir"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle fréquence les sièges en cuir doivent-ils être traités?",
+          "answer": "Nous recommandons tous les 3-6 mois pour maintenir une condition optimale du cuir."
+        },
+        {
+          "question": "Le traitement du cuir est-il sûr pour tous les types de cuir?",
+          "answer": "Oui, nous utilisons des produits de qualité supérieure sûrs pour tous les matériaux de cuir, y compris le cuir perforé."
+        }
+      ]
     },
     "ceramic-coating": {
       "label": "Revêtement Céramique",
       "subtitle": "Élevez la Défense de votre Véhicule",
       "shortDescription": "Protection céramique durable avec brillance extrême.",
-      "description": "Revêtement céramique de qualité professionnelle pour une protection durable, hydrophobie et brillance.",
-      "features": [],
-      "benefits": []
+      "description": "Le Revêtement Céramique est la solution de protection de peinture ultime, offrant des années de protection durable contre les contaminants environnementaux, les dommages UV et l'usure quotidienne. Notre revêtement céramique de qualité professionnelle crée une liaison moléculaire avec votre peinture, formant une surface incroyablement dure et hydrophobe qui repousse l'eau, la saleté et les contaminants tout en maintenant une brillance et clarté exceptionnelles.",
+      "features": [
+        "Préparation et décontamination de la surface de peinture",
+        "Correction de peinture multi-étapes (si nécessaire)",
+        "Application de revêtement céramique de qualité professionnelle",
+        "Épaisseur et couverture précises du revêtement",
+        "Processus de durcissement en environnement contrôlé",
+        "Inspection qualité et tests",
+        "Instructions d'entretien et guide de maintenance",
+        "Documentation de garantie et support"
+      ],
+      "benefits": [
+        "Années de protection durable de la peinture",
+        "Propriétés hydrophobes exceptionnelles",
+        "Prévention des dommages UV et d'oxydation",
+        "Entretien et nettoyage faciles",
+        "Brillance et profondeur améliorées",
+        "Résistance chimique et durabilité",
+        "Application de qualité professionnelle",
+        "Augmentation significative de la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps dure le revêtement céramique?",
+          "answer": "Les revêtements céramiques professionnels peuvent durer 2-5 ans avec un entretien et des soins appropriés."
+        },
+        {
+          "question": "Le revêtement céramique vaut-il l'investissement?",
+          "answer": "Oui, le revêtement céramique offre une protection à long terme, un entretien plus facile et peut augmenter considérablement la valeur de revente de votre véhicule."
+        }
+      ]
     },
     "paint-sealant": {
       "label": "Scellant de Peinture",
       "subtitle": "Protection Synthétique et Brillance Améliorée",
       "shortDescription": "Protection au scellant polymère de 6 à 12 mois.",
-      "description": "Application d'un scellant synthétique de haute qualité pour protéger la peinture et augmenter la brillance.",
-      "features": [],
-      "benefits": []
+      "description": "Le Scellant de Peinture offre une excellente protection pour la peinture de votre véhicule avec une formule de polymère synthétique qui se lie à la surface, créant une barrière durable contre les contaminants environnementaux. Ce scellant de qualité professionnelle offre 6-12 mois de protection tout en améliorant la brillance et en facilitant l'entretien.",
+      "features": [
+        "Préparation et nettoyage de la surface de peinture",
+        "Application de scellant synthétique de qualité professionnelle",
+        "Couverture uniforme et durcissement approprié",
+        "Amélioration de la brillance et de l'éclat",
+        "Protection contre les dommages UV et environnementaux",
+        "Inspection qualité et tests",
+        "Instructions d'entretien et guide de soins",
+        "Recommandations de service de suivi"
+      ],
+      "benefits": [
+        "6-12 mois de protection durable",
+        "Brillance et éclat améliorés",
+        "Prévention des dommages UV et d'oxydation",
+        "Nettoyage et entretien plus faciles",
+        "Résistance chimique et durabilité",
+        "Application de qualité professionnelle",
+        "Solution de protection rentable",
+        "Amélioration de l'état de la peinture"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps dure le scellant de peinture?",
+          "answer": "Les scellants de peinture professionnels durent généralement 6-12 mois selon les conditions de conduite et l'entretien."
+        },
+        {
+          "question": "Quelle est la différence entre le scellant et le revêtement céramique?",
+          "answer": "Le scellant offre 6-12 mois de protection et est plus abordable, tandis que le revêtement céramique dure 2-5 ans mais coûte plus cher."
+        }
+      ]
     },
     "car-wax": {
       "label": "Cire d'Auto",
       "subtitle": "Protection Traditionnelle à la Cire",
       "shortDescription": "Finition à la cire pour une brillance riche et protection.",
-      "description": "Application de cire de carnauba/hybride de qualité pour rehausser la brillance et ajouter une protection à court terme.",
-      "features": [],
-      "benefits": []
+      "description": "La Cire d'Auto est l'approche traditionnelle de la protection de peinture, utilisant des formules de cire de carnauba ou hybride de qualité supérieure pour créer une finition brillante et profonde. Cette méthode classique offre 2-4 mois de protection tout en améliorant la beauté naturelle de votre peinture avec une apparence chaude et riche que seule la cire peut offrir.",
+      "features": [
+        "Préparation et nettoyage de la surface de peinture",
+        "Application de cire de carnauba ou hybride de qualité supérieure",
+        "Application manuelle pour une couverture optimale",
+        "Processus de durcissement et polissage approprié",
+        "Amélioration de la brillance et de la profondeur",
+        "Protection contre les dommages UV et environnementaux",
+        "Inspection qualité et polissage final",
+        "Instructions d'entretien et conseils de soins"
+      ],
+      "benefits": [
+        "Apparence brillante chaude et riche classique",
+        "2-4 mois de protection fiable",
+        "Profondeur et clarté de peinture améliorées",
+        "Prévention des dommages UV et d'oxydation",
+        "Beauté et chaleur traditionnelles de la cire",
+        "Application de qualité professionnelle",
+        "Solution de protection abordable",
+        "Entretien et réapplication faciles"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle fréquence dois-je cirer ma voiture?",
+          "answer": "Nous recommandons de cirer tous les 2-4 mois ou après chaque 3-4 lavages pour maintenir une protection optimale."
+        },
+        {
+          "question": "Quelle est la différence entre la cire et le scellant?",
+          "answer": "La cire offre une brillance plus chaude et riche et dure 2-4 mois, tandis que le scellant offre une protection plus longue (6-12 mois) avec une apparence différente."
+        }
+      ]
     },
     "paint-polish": {
       "label": "Polissage de Peinture",
       "subtitle": "Amélioration Professionnelle de la Peinture",
       "shortDescription": "Restaurez la peinture de votre véhicule à l'état de salon.",
-      "description": "Polissage professionnel de la peinture pour éliminer les marques de tourbillons, les rayures légères et restaurer la brillance profonde.",
-      "features": [],
-      "benefits": []
+      "description": "Le polissage professionnel de la peinture est l'art de restaurer la peinture de votre véhicule à sa gloire originale. Notre service de Polissage de Peinture utilise des techniques avancées et des produits de qualité supérieure pour éliminer les marques de tourbillons, les rayures légères et l'oxydation, révélant la vraie profondeur et clarté de votre peinture. Ce processus améliore la brillance, améliore l'état de la peinture et prépare la surface pour la protection.",
+      "features": [
+        "Évaluation et préparation de l'état de la peinture",
+        "Polissage multi-étapes avec composés professionnels",
+        "Élimination des marques de tourbillons et rayures",
+        "Élimination de l'oxydation et restauration de la peinture",
+        "Amélioration de la brillance et de la profondeur",
+        "Raffinement et lissage de la surface de peinture",
+        "Inspection finale et vérification qualité",
+        "Application optionnelle de protection de peinture"
+      ],
+      "benefits": [
+        "Élimine les marques de tourbillons et rayures légères",
+        "Restaure la profondeur et clarté originales de la peinture",
+        "Améliore considérablement la brillance et l'éclat",
+        "Élimine l'oxydation et la terne",
+        "Prépare la peinture pour les produits de protection",
+        "Améliore l'état général de la peinture",
+        "Résultats de qualité professionnelle",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle fréquence dois-je polir ma peinture?",
+          "answer": "Nous recommandons tous les 6-12 mois selon les conditions de conduite et la routine d'entretien de la peinture."
+        },
+        {
+          "question": "Le polissage de peinture est-il sûr pour tous les types de peinture?",
+          "answer": "Oui, nous utilisons des techniques sûres et professionnelles adaptées à toutes les finitions de peinture, y compris le vernis transparent."
+        }
+      ]
     },
     "one-step-polish": {
       "label": "Polissage en Une Étape",
       "subtitle": "Élimination des Tourbillons et Amélioration de la Brillance",
       "shortDescription": "Corrige les imperfections mineures et améliore la brillance en une seule étape.",
-      "description": "Processus efficace en une seule étape qui combine la correction légère avec l'amélioration de la brillance pour d'excellents résultats.",
-      "features": [],
-      "benefits": []
+      "description": "Notre service de Polissage en Une Étape est parfait pour les véhicules qui ont besoin d'un rafraîchissement rapide sans travail de correction extensif. Ce processus efficace combine la correction légère de la peinture avec l'amélioration de la brillance en une seule étape, ce qui le rend idéal pour les véhicules bien entretenus ou ceux avec des imperfections mineures. Il est plus rapide que la correction multi-étapes tout en offrant d'excellents résultats.",
+      "features": [
+        "Préparation et nettoyage de la surface de peinture",
+        "Polissage en une seule étape avec composé à double action",
+        "Élimination des marques de tourbillons et rayures légères",
+        "Amélioration de la brillance et de l'éclat",
+        "Raffinement de la surface de peinture",
+        "Polissage final et inspection",
+        "Application optionnelle de protection de peinture",
+        "Vérification qualité et révision client"
+      ],
+      "benefits": [
+        "Temps de service plus rapide que la correction multi-étapes",
+        "Élimine les marques de tourbillons et rayures mineures",
+        "Améliore considérablement la brillance et l'éclat de la peinture",
+        "Parfait pour les véhicules bien entretenus",
+        "Amélioration de peinture rentable",
+        "Prépare la peinture pour les produits de protection",
+        "Résultats de qualité professionnelle en moins de temps",
+        "Maintient l'état de la peinture"
+      ],
+      "faqs": [
+        {
+          "question": "Quand dois-je choisir le polissage en une étape plutôt que la correction multi-étapes?",
+          "answer": "Le polissage en une étape est idéal pour les véhicules bien entretenus avec des imperfections mineures, tandis que la correction multi-étapes est meilleure pour la peinture gravement endommagée."
+        },
+        {
+          "question": "Combien de temps prend le polissage en une étape?",
+          "answer": "Généralement 2-4 heures selon la taille du véhicule et l'état de la peinture."
+        }
+      ]
     },
     "paint-correction": {
       "label": "Correction de Peinture",
       "subtitle": "Perfection Multi-Étapes et Finition de Salle d'Exposition",
       "shortDescription": "Élimine les rayures, les tourbillons et les imperfections pour une finition impeccable.",
-      "description": "Processus de correction de peinture multi-étapes pour éliminer les défauts et obtenir une finition de qualité salon.",
-      "features": [],
-      "benefits": []
+      "description": "La Correction de Peinture est notre service de restauration de peinture le plus complet, conçu pour éliminer les marques de tourbillons sévères, les rayures et les défauts de peinture grâce à un processus multi-étapes. Ce service intensif utilise divers composés de polissage et techniques pour obtenir une finition de qualité salon, révélant la vraie profondeur et clarté de la peinture de votre véhicule.",
+      "features": [
+        "Évaluation détaillée de l'état de la peinture",
+        "Composition et polissage multi-étapes",
+        "Élimination des marques de tourbillons et rayures lourdes",
+        "Élimination de l'oxydation et des défauts de peinture",
+        "Restauration et amélioration de la profondeur de peinture",
+        "Perfection de la brillance et amélioration de la clarté",
+        "Raffinement et lissage de la surface de peinture",
+        "Inspection finale et préparation de la protection"
+      ],
+      "benefits": [
+        "Élimine les marques de tourbillons et rayures sévères",
+        "Restaure la peinture à l'état de salon",
+        "Révèle la vraie profondeur et clarté de la peinture",
+        "Enlève l'oxydation et les défauts de peinture",
+        "Obtient une finition de qualité professionnelle",
+        "Prépare la peinture pour une protection optimale",
+        "Améliore considérablement l'apparence de la peinture",
+        "Maximise la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps prend la correction de peinture?",
+          "answer": "Généralement 6-12 heures selon l'état de la peinture et la taille du véhicule."
+        },
+        {
+          "question": "La correction de peinture est-elle sûre pour tous les types de peinture?",
+          "answer": "Oui, nous utilisons des techniques sûres et professionnelles adaptées à toutes les finitions de peinture, y compris la peinture monostage et le vernis transparent."
+        }
+      ]
+    },
+    "gloss-enhancer": {
+      "label": "Amplificateur de Brillance",
+      "subtitle": "Brillance et Protection Ultimes de la Peinture",
+      "shortDescription": "Améliore la brillance et l'éclat de la peinture.",
+      "description": "Une excellente option pour les véhicules plus récents ou bien entretenus, notre service d'Amplificateur de Brillance nettoie en profondeur la peinture et augmente l'éclat — en éliminant les contaminants incrustés comme la poussière de frein, les particules en suspension et la poussière de rail. Terminé avec un polissage fin pour faire ressortir la clarté et la brillance.",
+      "features": [
+        "Lavage de détail extérieur",
+        "Décontamination de la peinture",
+        "Polissage machine fin pour augmenter la brillance",
+        "Polissage manuel en microfibre pour la finition",
+        "Inspection pour la brillance et l'uniformité",
+        "Scellant polymère de 3 mois (optionnel si le revêtement céramique est sélectionné)",
+        "Vérification qualité finale"
+      ],
+      "benefits": [
+        "Améliore l'apparence extérieure",
+        "Les contaminants peuvent ternir votre peinture même sans rayures",
+        "L'amplificateur de brillance ravive l'éclat sans polissage agressif",
+        "Garde votre voiture fraîche entre les corrections complètes",
+        "Maintient une finition lisse et réfléchissante",
+        "Augmente la valeur de revente"
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps dure l'amélioration de la brillance?",
+          "answer": "Les résultats durent généralement 3-6 mois avec un entretien approprié."
+        }
+      ]
     }
   }
 }

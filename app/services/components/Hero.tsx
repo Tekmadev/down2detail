@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { getServiceById, services } from "@/data/services";
 import { notFound } from "next/navigation";
+import { useI18n } from "@/hooks/useI18n";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -11,10 +14,16 @@ export function generateStaticParams() {
 
 export function HeroSection({ params }: { params: any }) {
   const service = getServiceById(params.service_name);
+  const { t } = useI18n("services");
+  const { t: tCommon } = useI18n("common");
 
   if (!service) {
     notFound();
   }
+
+  // Get translated service data
+  const translatedLabel = t(`serviceData.${service.id}.label`, { defaultValue: service.label });
+  const translatedSubtitle = t(`serviceData.${service.id}.subtitle`, { defaultValue: service.subtitle });
 
   return (
     <div className="relative bg-secondary py-24 md:py-32 overflow-hidden">
@@ -35,18 +44,18 @@ export function HeroSection({ params }: { params: any }) {
         <div className="max-w-4xl">
           {/* Badge */}
           <div className="inline-block bg-[#d6781c]/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#d6781c]/20">
-            <span className="text-[#d6781c] font-medium">Premium Service</span>
+            <span className="text-[#d6781c] font-medium">{t("page.premiumService")}</span>
           </div>
 
           {/* Hero Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 drop-shadow-lg bg-gradient-to-r from-white via-white/90 to-white/80 bg-clip-text text-transparent">
-            {service.label}
+            {translatedLabel}
           </h1>
 
           {/* Hero Subtitle */}
-          {service.subtitle && (
+          {translatedSubtitle && (
             <p className="text-xl md:text-2xl text-[#d6781c] font-medium mb-6 drop-shadow-sm">
-              {service.subtitle}
+              {translatedSubtitle}
             </p>
           )}
 
@@ -56,7 +65,7 @@ export function HeroSection({ params }: { params: any }) {
               href="/contact"
               className="inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-4 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
-              Book Now
+              {tCommon("common.bookNow")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 ml-2"

@@ -14,11 +14,10 @@
     "allCategories": "Toutes les Catégories"
   },
   "packageCategories": {
-    "protection": "Protection",
-    "correction": "Correction",
-    "detailing": "Détaillage",
-    "enhancement": "Amélioration",
-    "maintenance": "Entretien"
+    "Exterior": "Extérieur",
+    "Interior": "Intérieur",
+    "Paint Polish & Protection": "Polissage de Peinture et Protection",
+    "Monthly Plans": "Forfaits Mensuels"
   },
   "sections": {
     "description": "Description",
@@ -35,5 +34,52 @@
     "subtitle": "Améliorez votre forfait avec ces services supplémentaires",
     "fabricTextileSealant": "Scellant pour Tissus et Textiles",
     "description": "Protégez vos tissus et textiles intérieurs avec une technologie de scellant avancée."
+  },
+  "packageNames": {
+    "STANDARD": "STANDARD",
+    "ADVANCED": "AVANCÉ",
+    "PREMIUM": "PREMIUM",
+    "BASIC": "BASIQUE"
+  },
+  "packageDescriptions": {
+    "exterior-standard": [
+      "Détaillage des Roues et Pneus",
+      "Pré-rinçage et Application de Mousse",
+      "Lavage de Contact Professionnel",
+      "Nettoyage Détaillé à la Brosse",
+      "Dégraissage des Encadrements de Porte",
+      "Séchage à l'Air et à la Microfibre",
+      "Habillage des Pneus",
+      "Nettoyage des Vitres et Verres"
+    ],
+    "exterior-advanced": [
+      "Forfait STANDARD Inclus",
+      "Décontamination de Peinture",
+      "Traitement d'Élimination de Fer",
+      "Traitement à l'Argile",
+      "Protection Scellant de Peinture (jusqu'à 3 mois)"
+    ],
+    "interior-standard": [
+      "Aspiration Intérieure",
+      "Nettoyage du Tableau de Bord et Console",
+      "Nettoyage des Panneaux de Porte",
+      "Nettoyage des Vitres et Verres",
+      "Nettoyage des Porte-gobelets",
+      "Nettoyage des Bouches d'Aération"
+    ],
+    "interior-advanced": [
+      "Forfait STANDARD Inclus",
+      "Nettoyage Vapeur",
+      "Protection des Tissus",
+      "Conditionnement du Cuir",
+      "Élimination des Odeurs"
+    ]
+  },
+  "packageLabels": {
+    "SAVE": "ÉCONOMISEZ"
+  },
+  "packageBadges": {
+    "NEW": "NOUVEAU",
+    "POPULAR": "POPULAIRE"
   }
 }

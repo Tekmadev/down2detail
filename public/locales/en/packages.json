@@ -14,11 +14,10 @@
     "allCategories": "All Categories"
   },
   "packageCategories": {
-    "protection": "Protection",
-    "correction": "Correction",
-    "detailing": "Detailing",
-    "enhancement": "Enhancement",
-    "maintenance": "Maintenance"
+    "Exterior": "Exterior",
+    "Interior": "Interior",
+    "Paint Polish & Protection": "Paint Polish & Protection",
+    "Monthly Plans": "Monthly Plans"
   },
   "sections": {
     "description": "Description",
@@ -35,5 +34,52 @@
     "subtitle": "Enhance your package with these additional services",
     "fabricTextileSealant": "Fabric & Textile Sealant",
     "description": "Protect your interior fabrics and textiles with advanced sealant technology."
+  },
+  "packageNames": {
+    "STANDARD": "STANDARD",
+    "ADVANCED": "ADVANCED",
+    "PREMIUM": "PREMIUM",
+    "BASIC": "BASIC"
+  },
+  "packageDescriptions": {
+    "exterior-standard": [
+      "Wheel & Tire Detailing",
+      "Pre-Rinse & Snow Foam Application", 
+      "Professional Contact Washing",
+      "Detailed Brush Cleaning",
+      "Door Jamb Degreasing",
+      "Air Blow & Microfiber Towel Drying",
+      "Tire Dressing",
+      "Window & Glass Cleaning"
+    ],
+    "exterior-advanced": [
+      "STANDARD Package Included",
+      "Paint Decontamination",
+      "Iron Removal Treatment", 
+      "Clay Treatment",
+      "Paint Sealant Protection (up to 3 months)"
+    ],
+    "interior-standard": [
+      "Interior Vacuuming",
+      "Dashboard & Console Cleaning",
+      "Door Panel Cleaning",
+      "Window & Glass Cleaning",
+      "Cup Holder Cleaning",
+      "Air Vent Cleaning"
+    ],
+    "interior-advanced": [
+      "STANDARD Package Included",
+      "Steam Cleaning",
+      "Fabric Protection",
+      "Leather Conditioning",
+      "Odor Elimination"
+    ]
+  },
+  "packageLabels": {
+    "SAVE": "SAVE"
+  },
+  "packageBadges": {
+    "NEW": "NEW",
+    "POPULAR": "POPULAR"
   }
 }

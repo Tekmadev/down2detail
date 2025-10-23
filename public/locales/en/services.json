@@ -8,7 +8,27 @@
     "learnMore": "Learn More",
     "readyToStart": "Ready to Start Your Project?",
     "readyDescription": "Contact us today for a free consultation and quote on your next car detailing service. Our team is ready to make your vehicle shine — inside and out.",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "premiumService": "Premium Service",
+    "whyUs": "Why Us?",
+    "whatsIncluded": "What's Included",
+    "whyItsImportant": "Why It's Important",
+    "serviceShowcase": "Service Showcase",
+    "serviceInAction": "service in action",
+    "thisServiceAvailable": "This service is available in our",
+    "typeOfVehicle": "Type of Vehicle",
+    "packageDescription": "We offer multiple detailing packages with different features and pricing levels to suit your needs and budget.",
+    "relatedServicesTitle": "Related Services You Might Be Interested In",
+    "paintPolishServices": {
+      "badge": "Professional Paint Services",
+      "title": "Paint Polish Services",
+      "subtitle": "Restore, Refine & Refresh Your Paint",
+      "description": "Not all paint is created equal and not all vehicles need the same level of polishing. We offer three levels of professional polishing tailored to your vehicle's needs, from enhancing gloss to removing heavy defects.",
+      "bookInspection": "Book Inspection",
+      "inspectionNote": "Paint inspection recommended before booking",
+      "chooseLevel": "Choose Your Polish Level",
+      "allPolishInclude": "All polish services include polymer paint sealant for 6 months of protection"
+    }
   },
   "serviceCategories": {
     "Exterior": "Exterior",
@@ -99,6 +119,8 @@
       "shortDescription": "Enhance paint gloss and shine.",
       "description": "A great option for newer or well-maintained vehicles, our Gloss Enhancer service deeply cleans the paint and boosts shine — removing embedded contaminants like brake dust, airborne particles, and rail dust. Finished with a fine polish to bring out clarity and gloss.",
       "features": [
+        "Exterior detail wash",
+        "Paint decontamination",
         "Fine machine polish to boost gloss",
         "Microfiber hand-buffing for finish",
         "Inspection for shine & uniformity",
@@ -213,89 +235,397 @@
       "label": "Interior Detailing",
       "subtitle": "Deep Clean, Restore & Refresh",
       "shortDescription": "Thorough interior cleaning for a fresh, like-new cabin.",
-      "description": "Complete interior service including vacuuming, plastics cleaning, crevice brushing and protection to restore a clean, fresh cabin.",
-      "features": [],
-      "benefits": []
+      "description": "Most quick car washes offer rushed interior wipe-downs that leave behind dust in vents, smudges on screens, and grime in tight spaces. But your vehicle deserves better. To us, Interior Detailing is an art — not a surface-level clean. We don't just make it look clean; we deep clean every accessible area using safe, professional-grade tools and products.",
+      "features": [
+        "Interior vacuuming (floor, mats, trunk/cargo area)",
+        "Dashboard, door panels, & center console wiped and detailed",
+        "Vents, buttons, knobs, & trim cleaned with dedicated soft detailing brushes",
+        "Steering wheel deep cleaned to a factory matte finish",
+        "Cup holders & small compartments cleaned",
+        "Windows & mirrors cleaned from inside",
+        "Steam cleaning of high-touch surfaces for sanitization",
+        "Headliner spot-cleaning (where applicable)"
+      ],
+      "benefits": [
+        "Improves interior appearance and cleanliness",
+        "Removes embedded dirt, dust, and grime from all surfaces",
+        "Sanitizes high-touch areas for better hygiene",
+        "Restores factory-fresh look and feel",
+        "Protects surfaces from premature wear",
+        "Eliminates odors and allergens",
+        "Boosts resale value",
+        "Creates a healthier driving environment"
+      ],
+      "faqs": [
+        {
+          "question": "How often should I get interior detailing?",
+          "answer": "We recommend every 3-6 months depending on usage and lifestyle factors."
+        },
+        {
+          "question": "Is interior detailing safe for all materials?",
+          "answer": "Yes, we use safe, professional-grade products suitable for all interior materials."
+        }
+      ]
     },
     "floor-carpet-shampoo": {
       "label": "Floor & Carpet Shampoo",
       "subtitle": "Deep Extraction for a Spotless Cabin",
       "shortDescription": "Steam and shampoo to remove stains and odors from carpets.",
-      "description": "Deep clean carpets and floor mats using extraction to remove embedded dirt, stains and odors.",
-      "features": [],
-      "benefits": []
+      "description": "Your vehicle's carpets and floor mats endure daily wear from shoes, spills, and debris. Over time, embedded dirt, stains, and odors can make your interior look and smell less than fresh. Our Floor & Carpet Shampoo service uses professional-grade extraction equipment and specialized cleaning solutions to deep clean and sanitize your carpets, restoring them to like-new condition.",
+      "features": [
+        "Pre-treatment of stains and heavily soiled areas",
+        "Hot water extraction with professional-grade equipment",
+        "Steam cleaning for deep sanitization",
+        "Specialized carpet shampoo application",
+        "Thorough vacuuming of all carpeted surfaces",
+        "Spot treatment for stubborn stains",
+        "Deodorizing treatment to eliminate odors",
+        "Final inspection and quality check"
+      ],
+      "benefits": [
+        "Removes embedded dirt, stains, and odors",
+        "Sanitizes carpets for better hygiene",
+        "Restores original carpet color and texture",
+        "Eliminates allergens and bacteria",
+        "Extends carpet life and appearance",
+        "Creates a fresher, cleaner interior",
+        "Professional-grade results",
+        "Safe for all carpet types"
+      ],
+      "faqs": [
+        {
+          "question": "How long does carpet shampooing take?",
+          "answer": "Typically 1-2 hours depending on the size and condition of the carpets."
+        },
+        {
+          "question": "Is carpet shampooing safe for all carpet types?",
+          "answer": "Yes, we use safe, professional-grade products suitable for all carpet materials."
+        }
+      ]
     },
     "pet-hair-removal": {
       "label": "Pet Hair Removal",
       "subtitle": "Deep Interior Clean",
       "shortDescription": "Specialized removal of stubborn pet hair from fabrics.",
-      "description": "Thorough removal of embedded pet hair from seats, carpets and cargo areas.",
-      "features": [],
-      "benefits": []
+      "description": "Pet hair can be incredibly stubborn, embedding itself deep into fabric fibers and becoming nearly impossible to remove with regular vacuuming. Our specialized Pet Hair Removal service uses professional-grade tools and techniques to completely eliminate pet hair from all interior surfaces, leaving your vehicle clean and hair-free.",
+      "features": [
+        "Specialized pet hair removal tools and brushes",
+        "Deep vacuuming with high-powered equipment",
+        "Fabric brush treatment for embedded hair",
+        "Lint roller treatment for stubborn areas",
+        "Steam cleaning to loosen embedded hair",
+        "Detailed cleaning of all fabric surfaces",
+        "Cargo area and trunk cleaning",
+        "Final inspection for complete removal"
+      ],
+      "benefits": [
+        "Completely removes all pet hair from interior",
+        "Eliminates allergens and pet dander",
+        "Restores clean, professional appearance",
+        "Prevents pet hair from spreading",
+        "Safe for all fabric types",
+        "Professional-grade results",
+        "Creates a healthier environment",
+        "Saves time and frustration"
+      ],
+      "faqs": [
+        {
+          "question": "How effective is professional pet hair removal?",
+          "answer": "Our specialized tools and techniques can remove 99% of pet hair, including deeply embedded hair that regular vacuuming misses."
+        },
+        {
+          "question": "Is pet hair removal safe for all interior materials?",
+          "answer": "Yes, we use safe, gentle methods that won't damage any interior materials."
+        }
+      ]
     },
     "fabric-seat-shampoo": {
       "label": "Fabric Seat Shampoo",
       "subtitle": "Deep Clean, Sanitize & Refresh",
       "shortDescription": "Extract and sanitize fabric seats to lift stains and odors.",
-      "description": "Hot-water extraction and stain treatment for cloth seats to restore a fresh appearance.",
-      "features": [],
-      "benefits": []
+      "description": "Fabric seats are prone to absorbing spills, stains, and odors over time. Our Fabric Seat Shampoo service uses professional-grade hot water extraction equipment and specialized cleaning solutions to deep clean, sanitize, and refresh your fabric seats, restoring them to like-new condition.",
+      "features": [
+        "Pre-treatment of stains and heavily soiled areas",
+        "Hot water extraction with professional equipment",
+        "Specialized fabric cleaning solutions",
+        "Steam cleaning for deep sanitization",
+        "Stain treatment for stubborn marks",
+        "Deodorizing treatment to eliminate odors",
+        "Fabric protection application",
+        "Final inspection and quality check"
+      ],
+      "benefits": [
+        "Removes embedded dirt, stains, and odors",
+        "Sanitizes fabric for better hygiene",
+        "Restores original fabric color and texture",
+        "Eliminates allergens and bacteria",
+        "Extends fabric life and appearance",
+        "Creates a fresher, cleaner interior",
+        "Professional-grade results",
+        "Safe for all fabric types"
+      ],
+      "faqs": [
+        {
+          "question": "How long does fabric seat shampooing take?",
+          "answer": "Typically 1-2 hours depending on the number of seats and their condition."
+        },
+        {
+          "question": "Is fabric shampooing safe for all fabric types?",
+          "answer": "Yes, we use safe, professional-grade products suitable for all fabric materials."
+        }
+      ]
     },
     "leather-seat-treatment": {
       "label": "Leather Seat Treatment",
       "subtitle": "Clean, Condition & Protect",
       "shortDescription": "Professional leather cleaning and conditioning.",
-      "description": "Gently clean, condition and protect leather seats for a supple, luxurious finish.",
-      "features": [],
-      "benefits": []
+      "description": "Leather seats require special care to maintain their luxurious appearance and prevent cracking or fading. Our Leather Seat Treatment service uses premium leather cleaning and conditioning products to gently clean, nourish, and protect your leather seats, keeping them supple and beautiful for years to come.",
+      "features": [
+        "Gentle leather cleaning with pH-balanced products",
+        "Deep cleaning of leather surfaces and crevices",
+        "Leather conditioning to restore suppleness",
+        "UV protection to prevent fading and cracking",
+        "Stain treatment for leather-specific issues",
+        "Leather protection application",
+        "Final buffing for a luxurious finish",
+        "Quality inspection and care instructions"
+      ],
+      "benefits": [
+        "Restores leather's natural suppleness",
+        "Prevents cracking and premature aging",
+        "Protects against UV damage and fading",
+        "Eliminates leather-specific stains and odors",
+        "Maintains luxurious appearance",
+        "Extends leather life significantly",
+        "Professional-grade conditioning",
+        "Safe for all leather types"
+      ],
+      "faqs": [
+        {
+          "question": "How often should leather seats be treated?",
+          "answer": "We recommend every 3-6 months to maintain optimal leather condition."
+        },
+        {
+          "question": "Is leather treatment safe for all leather types?",
+          "answer": "Yes, we use premium products safe for all leather materials, including perforated leather."
+        }
+      ]
     },
     "ceramic-coating": {
       "label": "Ceramic Coating",
       "subtitle": "Elevate Your Vehicle's Defense",
       "shortDescription": "Durable ceramic protection with extreme gloss.",
-      "description": "Professional-grade ceramic coating for long-lasting protection, hydrophobicity and gloss.",
-      "features": [],
-      "benefits": []
+      "description": "Ceramic Coating is the ultimate paint protection solution, providing years of durable protection against environmental contaminants, UV damage, and everyday wear. Our professional-grade ceramic coating creates a molecular bond with your paint, forming an incredibly hard, hydrophobic surface that repels water, dirt, and contaminants while maintaining exceptional gloss and clarity.",
+      "features": [
+        "Paint surface preparation and decontamination",
+        "Multi-stage paint correction (if needed)",
+        "Professional-grade ceramic coating application",
+        "Precise coating thickness and coverage",
+        "Curing process in controlled environment",
+        "Quality inspection and testing",
+        "Care instructions and maintenance guide",
+        "Warranty documentation and support"
+      ],
+      "benefits": [
+        "Years of durable paint protection",
+        "Exceptional hydrophobic properties",
+        "UV damage and oxidation prevention",
+        "Easy maintenance and cleaning",
+        "Enhanced gloss and depth",
+        "Chemical resistance and durability",
+        "Professional-grade application",
+        "Significant resale value increase"
+      ],
+      "faqs": [
+        {
+          "question": "How long does ceramic coating last?",
+          "answer": "Professional ceramic coatings can last 2-5 years with proper maintenance and care."
+        },
+        {
+          "question": "Is ceramic coating worth the investment?",
+          "answer": "Yes, ceramic coating provides long-term protection, easier maintenance, and can significantly increase your vehicle's resale value."
+        }
+      ]
     },
     "paint-sealant": {
       "label": "Paint Sealant",
       "subtitle": "Synthetic Protection & Enhanced Gloss",
       "shortDescription": "6–12 month polymer sealant protection.",
-      "description": "High quality synthetic sealant applied to protect paint and boost shine.",
-      "features": [],
-      "benefits": []
+      "description": "Paint Sealant provides excellent protection for your vehicle's paint with a synthetic polymer formula that bonds to the surface, creating a durable barrier against environmental contaminants. This professional-grade sealant offers 6-12 months of protection while enhancing gloss and making maintenance easier.",
+      "features": [
+        "Paint surface preparation and cleaning",
+        "Professional-grade synthetic sealant application",
+        "Even coverage and proper curing",
+        "Gloss enhancement and shine improvement",
+        "Protection against UV and environmental damage",
+        "Quality inspection and testing",
+        "Maintenance instructions and care guide",
+        "Follow-up service recommendations"
+      ],
+      "benefits": [
+        "6-12 months of durable protection",
+        "Enhanced gloss and shine",
+        "UV damage and oxidation prevention",
+        "Easier cleaning and maintenance",
+        "Chemical resistance and durability",
+        "Professional-grade application",
+        "Cost-effective protection solution",
+        "Improved paint condition"
+      ],
+      "faqs": [
+        {
+          "question": "How long does paint sealant last?",
+          "answer": "Professional paint sealants typically last 6-12 months depending on driving conditions and maintenance."
+        },
+        {
+          "question": "What's the difference between sealant and ceramic coating?",
+          "answer": "Sealant provides 6-12 months protection and is more affordable, while ceramic coating lasts 2-5 years but costs more."
+        }
+      ]
     },
     "car-wax": {
       "label": "Car Wax",
       "subtitle": "Traditional Wax Protection",
       "shortDescription": "Classic wax finish for rich gloss and protection.",
-      "description": "Premium carnauba/hybrid wax application to enhance gloss and add short-term protection.",
-      "features": [],
-      "benefits": []
+      "description": "Car Wax is the traditional approach to paint protection, using premium carnauba or hybrid wax formulas to create a beautiful, deep gloss finish. This classic method provides 2-4 months of protection while enhancing the natural beauty of your paint with a warm, rich appearance that only wax can achieve.",
+      "features": [
+        "Paint surface preparation and cleaning",
+        "Premium carnauba or hybrid wax application",
+        "Hand application for optimal coverage",
+        "Proper curing and buffing process",
+        "Gloss enhancement and depth improvement",
+        "Protection against UV and environmental damage",
+        "Quality inspection and final buffing",
+        "Maintenance instructions and care tips"
+      ],
+      "benefits": [
+        "Classic warm, rich gloss appearance",
+        "2-4 months of reliable protection",
+        "Enhanced paint depth and clarity",
+        "UV damage and oxidation prevention",
+        "Traditional wax beauty and warmth",
+        "Professional-grade application",
+        "Affordable protection solution",
+        "Easy maintenance and reapplication"
+      ],
+      "faqs": [
+        {
+          "question": "How often should I wax my car?",
+          "answer": "We recommend waxing every 2-4 months or after every 3-4 washes to maintain optimal protection."
+        },
+        {
+          "question": "What's the difference between wax and sealant?",
+          "answer": "Wax provides a warmer, richer gloss and lasts 2-4 months, while sealant offers longer protection (6-12 months) with a different appearance."
+        }
+      ]
     },
     "paint-polish": {
       "label": "Paint Polish",
       "subtitle": "Professional Paint Enhancement",
       "shortDescription": "Restore your vehicle's paint to showroom condition.",
-      "description": "Professional paint polishing to remove swirl marks, light scratches and restore deep gloss.",
-      "features": [],
-      "benefits": []
+      "description": "Professional paint polishing is the art of restoring your vehicle's paint to its original glory. Our Paint Polish service uses advanced techniques and premium products to remove swirl marks, light scratches, and oxidation, revealing the true depth and clarity of your paint. This process enhances gloss, improves paint condition, and prepares the surface for protection.",
+      "features": [
+        "Paint condition assessment and preparation",
+        "Multi-stage polishing with professional compounds",
+        "Swirl mark and scratch removal",
+        "Oxidation removal and paint restoration",
+        "Gloss enhancement and depth improvement",
+        "Paint surface refinement and smoothing",
+        "Final inspection and quality check",
+        "Optional paint protection application"
+      ],
+      "benefits": [
+        "Removes swirl marks and light scratches",
+        "Restores original paint depth and clarity",
+        "Enhances gloss and shine significantly",
+        "Eliminates oxidation and dullness",
+        "Prepares paint for protection products",
+        "Improves overall paint condition",
+        "Professional-grade results",
+        "Boosts resale value"
+      ],
+      "faqs": [
+        {
+          "question": "How often should I polish my paint?",
+          "answer": "We recommend every 6-12 months depending on driving conditions and paint care routine."
+        },
+        {
+          "question": "Is paint polishing safe for all paint types?",
+          "answer": "Yes, we use safe, professional techniques suitable for all paint finishes including clear coat."
+        }
+      ]
     },
     "one-step-polish": {
       "label": "One-Step Polish",
       "subtitle": "Swirl Removal & Gloss Enhancement",
       "shortDescription": "Correct minor imperfections and enhance gloss in one step.",
-      "description": "Efficient single-step process that combines light correction with gloss enhancement for excellent results.",
-      "features": [],
-      "benefits": []
+      "description": "Our One-Step Polish service is perfect for vehicles that need a quick refresh without extensive correction work. This efficient process combines light paint correction with gloss enhancement in a single step, making it ideal for well-maintained vehicles or those with minor imperfections. It's faster than multi-stage correction while still delivering excellent results.",
+      "features": [
+        "Paint surface preparation and cleaning",
+        "Single-stage polishing with dual-action compound",
+        "Light swirl mark and scratch removal",
+        "Gloss enhancement and shine improvement",
+        "Paint surface refinement",
+        "Final buffing and inspection",
+        "Optional paint protection application",
+        "Quality check and customer review"
+      ],
+      "benefits": [
+        "Faster service time compared to multi-stage correction",
+        "Removes light swirl marks and minor scratches",
+        "Significantly enhances paint gloss and shine",
+        "Perfect for well-maintained vehicles",
+        "Cost-effective paint enhancement",
+        "Prepares paint for protection products",
+        "Professional-grade results in less time",
+        "Maintains paint condition"
+      ],
+      "faqs": [
+        {
+          "question": "When should I choose one-step polish over multi-stage correction?",
+          "answer": "One-step polish is ideal for well-maintained vehicles with minor imperfections, while multi-stage correction is better for heavily damaged paint."
+        },
+        {
+          "question": "How long does one-step polish take?",
+          "answer": "Typically 2-4 hours depending on vehicle size and paint condition."
+        }
+      ]
     },
     "paint-correction": {
       "label": "Paint Correction",
       "subtitle": "Multi-Stage Perfection & Showroom Finish",
       "shortDescription": "Eliminate scratches, swirls and imperfections for flawless finish.",
-      "description": "Multi-stage paint correction process to remove defects and achieve showroom-quality finish.",
-      "features": [],
-      "benefits": []
+      "description": "Paint Correction is our most comprehensive paint restoration service, designed to eliminate severe swirl marks, scratches, and paint defects through a multi-stage process. This intensive service uses various polishing compounds and techniques to achieve a showroom-quality finish, revealing the true depth and clarity of your vehicle's paint.",
+      "features": [
+        "Detailed paint condition assessment",
+        "Multi-stage compounding and polishing",
+        "Heavy swirl mark and scratch removal",
+        "Oxidation and paint defect elimination",
+        "Paint depth restoration and enhancement",
+        "Gloss perfection and clarity improvement",
+        "Paint surface refinement and smoothing",
+        "Final inspection and protection preparation"
+      ],
+      "benefits": [
+        "Eliminates severe swirl marks and scratches",
+        "Restores paint to showroom condition",
+        "Reveals true paint depth and clarity",
+        "Removes oxidation and paint defects",
+        "Achieves professional-grade finish",
+        "Prepares paint for optimal protection",
+        "Significantly improves paint appearance",
+        "Maximizes resale value"
+      ],
+      "faqs": [
+        {
+          "question": "How long does paint correction take?",
+          "answer": "Typically 6-12 hours depending on paint condition and vehicle size."
+        },
+        {
+          "question": "Is paint correction safe for all paint types?",
+          "answer": "Yes, we use safe, professional techniques suitable for all paint finishes, including single-stage and clear coat."
+        }
+      ]
     }
   },
   "serviceLabels": {

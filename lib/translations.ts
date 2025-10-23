@@ -69,6 +69,9 @@ export const serviceSubtitleTranslationKeys: Record<string, string> = {
 
 // Service category translation keys mapping
 export const serviceCategoryTranslationKeys: Record<string, string> = {
+  Exterior: "serviceCategories.Exterior",
+  Interior: "serviceCategories.Interior",
+  "Paint Polish": "serviceCategories.Paint Polish",
   Protection: "serviceCategories.Protection",
   Correction: "serviceCategories.correction",
   Detailing: "serviceCategories.detailing",

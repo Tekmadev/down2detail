@@ -198,7 +198,6 @@ export const packages: DetailPackage[] = [
       "Gloss Enhancer",
       "1-Year Graphene Ceramic Coating",
       "Front Windshield Ceramic Coating",
-      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 729.99,
@@ -222,7 +221,6 @@ export const packages: DetailPackage[] = [
       "One-Step Polish",
       "4-Year Ceramic Coating",
       "Front Windshield Ceramic Coating",
-      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 1199.99,
@@ -247,7 +245,6 @@ export const packages: DetailPackage[] = [
       "Paint Correction",
       "5-Year Ceramic Coating",
       "Front Windshield Ceramic Coating",
-      "Engine Bay Detailing",
     ],
     prices: {
       sedanCoupesCrossovers: 1499.99,

@@ -19,12 +19,10 @@ import { getTranslatedService } from "@/lib/translatedServices";
 export default function ServiceDetailsPage(props: { service: Service }) {
   const { t } = useI18n("services");
   const { t: tPackages } = useI18n("packages");
+  const { t: tCommon } = useI18n("common");
 
-  // Apply translations if this is an exterior service
-  const service =
-    props.service.category === "Exterior"
-      ? getTranslatedService(props.service, t)
-      : props.service;
+  // Apply translations for all services that have translation data
+  const service = getTranslatedService(props.service, t, "services");
 
   // Services that should redirect to packages instead of showing individual pricing
   const packageServices = [
@@ -43,26 +41,22 @@ export default function ServiceDetailsPage(props: { service: Service }) {
       Exterior: {
         packageCategory: "Exterior",
         url: "/packages#exterior",
-        description:
-          "We offer multiple exterior detailing packages with different features and pricing levels to suit your needs and budget.",
+        description: t("page.packageDescription"),
       },
       Interior: {
         packageCategory: "Interior",
         url: "/packages#interior",
-        description:
-          "We offer multiple interior detailing packages with different features and pricing levels to suit your needs and budget.",
+        description: t("page.packageDescription"),
       },
       "Paint Polish": {
         packageCategory: "Paint Polish & Protection",
         url: "/packages#paint-polish",
-        description:
-          "We offer multiple paint polish and protection packages with different features and pricing levels to suit your needs and budget.",
+        description: t("page.packageDescription"),
       },
       Protection: {
         packageCategory: "Paint Polish & Protection",
         url: "/packages#protection",
-        description:
-          "We offer multiple protection packages with different features and pricing levels to suit your needs and budget.",
+        description: t("page.packageDescription"),
       },
     };
 
@@ -70,8 +64,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
       categoryMapping[service.category || ""] || {
         packageCategory: "Package Options",
         url: "/packages",
-        description:
-          "We offer multiple package options with different features and pricing levels to suit your needs and budget.",
+        description: t("page.packageDescription"),
       }
     );
   };
@@ -81,7 +74,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-            Why Us?
+            {t("page.whyUs")}
           </h2>
           <p className="text-white mb-8 text-lg leading-relaxed">
             {service.description}
@@ -96,7 +89,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <MdChecklist className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-                  What's Included
+                  {t("page.whatsIncluded")}
                 </h3>
               </div>
 
@@ -127,7 +120,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                   <FaLightbulb className="h-4 w-4 md:h-6 md:w-6 text-white" />
                 </div>
                 <h3 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-                  Why It's Important
+                  {t("page.whyItsImportant")}
                 </h3>
               </div>
 
@@ -193,7 +186,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
           {service.optionalImage && (
             <div className="bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8 border border-gray-700 mb-12">
               <h3 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
-                Service Showcase
+                {t("page.serviceShowcase")}
               </h3>
               <div className="relative w-full rounded-xl overflow-hidden">
                 <Image
@@ -206,7 +199,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
               </div>
               <p className="text-gray-300 text-center mt-4 text-sm md:text-base">
-                Professional {service.label} service in action
+                {service.label} {t("page.serviceInAction")}
               </p>
             </div>
           )}
@@ -219,8 +212,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
               return (
                 <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
                   <h4 className="text-xl font-bold text-white mb-4 text-center">
-                    This service is available in our{" "}
-                    {packageInfo.packageCategory} packages
+                    {t("page.thisServiceAvailable")} {packageInfo.packageCategory}
                   </h4>
                   <p className="text-gray-300 mb-6 text-center max-w-2xl">
                     {packageInfo.description}
@@ -242,7 +234,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                         d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                       />
                     </svg>
-                    View {packageInfo.packageCategory} Packages
+                    {tCommon("common.viewPackages")} {packageInfo.packageCategory}
                   </Link>
                 </div>
               );
@@ -251,7 +243,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
             // Show individual pricing for services with specific prices
             <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
               <h4 className="text-xl font-bold text-white mb-6">
-                Type of Vehicle
+                {t("page.typeOfVehicle")}
               </h4>
               <div className="grid grid-cols-3 gap-1 sm:gap-4 w-full max-w-4xl">
                 {/* Sedan */}

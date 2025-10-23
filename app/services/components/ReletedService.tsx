@@ -1,13 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServicesByCategory, getServiceById } from "@/data/services";
+import { useI18n } from "@/hooks/useI18n";
+import { getTranslatedService } from "@/lib/translatedServices";
 
 export function RelatedServices({
     params,
 }: {
     params: any;
 }) {
+    const { t } = useI18n("services");
+    const { t: tCommon } = useI18n("common");
     const service = getServiceById(params.service_name);
 
     if (!service) {
@@ -15,13 +21,14 @@ export function RelatedServices({
     }
     const relatedServices = getServicesByCategory(service.category || "")
         .filter((s) => s.id !== service.id)
-        .slice(0, 3);
+        .slice(0, 3)
+        .map(relatedService => getTranslatedService(relatedService, t, "services"));
     return relatedServices.length > 0 && (
             <div className="bg-black py-20">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
                         <span className="bg-gradient-to-r from-[#d6781c] to-yellow-400 bg-clip-text text-transparent">
-                            Related Services You Might Be Interested In
+                            {t("page.relatedServicesTitle")}
                         </span>
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -47,7 +54,7 @@ export function RelatedServices({
                                         href={relatedServices.href}
                                         className="inline-flex items-center font-medium text-[#d6781c] hover:text-[#c66812] transition-colors group"
                                     >
-                                        Learn More
+                                        {tCommon("common.learnMore")}
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1"
