@@ -24,5 +24,8 @@
     "email": "Email",
     "emailValue": "down2detail.ca@gmail.com",
     "connectWith": "Connect With Us"
+  },
+  "map": {
+    "getDirections": "Get Directions"
   }
 }

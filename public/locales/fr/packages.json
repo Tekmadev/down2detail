@@ -15,7 +15,7 @@
   },
   "packageCategories": {
     "Exterior": "Extérieur",
-    "Interior": "Intérieur",
+    "Interior": "Intérieurs",
     "Paint Polish & Protection": "Polissage de Peinture et Protection",
     "Monthly Plans": "Forfaits Mensuels"
   },
@@ -39,7 +39,12 @@
     "STANDARD": "STANDARD",
     "ADVANCED": "AVANCÉ",
     "PREMIUM": "PREMIUM",
-    "BASIC": "BASIQUE"
+    "BASIC": "BASIQUE",
+    "GOLD": "OR",
+    "PLATINUM": "PLATINE",
+    "DIAMOND": "DIAMANT",
+    "Monthly Refresh": "Rafraîchissement Mensuel",
+    "Ceramic Refresh (Every 4-6 Months)": "Rafraîchissement Céramique (Tous les 4-6 Mois)"
   },
   "packageDescriptions": {
     "exterior-standard": [
@@ -67,19 +72,64 @@
       "Nettoyage des Porte-gobelets",
       "Nettoyage des Bouches d'Aération"
     ],
+    "interior-basic": [
+      "Aspiration Intérieure",
+      "Nettoyage Intérieur",
+      "Nettoyage des Porte-gobelets",
+      "Nettoyage des Nattes de Plancher",
+      "Nettoyage des Vitres et Verres Intérieurs"
+    ],
     "interior-advanced": [
       "Forfait STANDARD Inclus",
       "Nettoyage Vapeur",
       "Protection des Tissus",
       "Conditionnement du Cuir",
       "Élimination des Odeurs"
+    ],
+    "paint-gold": [
+      "Lavage de Détail à la Main",
+      "Élimination du Fer",
+      "Décontamination de Peinture",
+      "Amplificateur de Brillance",
+      "Revêtement Céramique Graphène 1 An",
+      "Revêtement Céramique Pare-brise Avant"
+    ],
+    "paint-platinum": [
+      "Lavage de Détail à la Main",
+      "Élimination du Fer",
+      "Décontamination de Peinture",
+      "Polissage Une Étape",
+      "Revêtement Céramique 4 Ans",
+      "Revêtement Céramique Pare-brise Avant"
+    ],
+    "paint-diamond": [
+      "Lavage de Détail à la Main",
+      "Élimination du Fer",
+      "Décontamination de Peinture",
+      "Correction de Peinture",
+      "Revêtement Céramique 5 Ans",
+      "Revêtement Céramique Pare-brise Avant"
+    ],
+    "maintenance-monthly": [
+      "Forfait Extérieur BASIQUE",
+      "Forfait Intérieur STANDARD",
+      "Détaillage Tapis d'Été/Nattes d'Hiver",
+      "Ce forfait n'est offert qu'à nos clients fidèles"
+    ],
+    "maintenance-ceramic": [
+      "Forfait Extérieur AVANCÉ",
+      "Forfait Intérieur STANDARD",
+      "Topper de Revêtement Céramique",
+      "Ce forfait n'est offert qu'à nos clients fidèles"
     ]
   },
   "packageLabels": {
-    "SAVE": "ÉCONOMISEZ"
+    "SAVE": "ÉCONOMISEZ",
+    "Loyalty Program": "Programme de Fidélité"
   },
   "packageBadges": {
     "NEW": "NOUVEAU",
-    "POPULAR": "POPULAIRE"
+    "POPULAR": "POPULAIRE",
+    "Most Popular": "Plus Populaire"
   }
 }

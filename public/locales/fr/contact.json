@@ -24,5 +24,8 @@
     "email": "Courriel",
     "emailValue": "down2detail.ca@gmail.com",
     "connectWith": "Connectez-vous avec Nous"
+  },
+  "map": {
+    "getDirections": "Obtenir les Directions"
   }
 }

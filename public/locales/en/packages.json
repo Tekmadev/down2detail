@@ -39,7 +39,12 @@
     "STANDARD": "STANDARD",
     "ADVANCED": "ADVANCED",
     "PREMIUM": "PREMIUM",
-    "BASIC": "BASIC"
+    "BASIC": "BASIC",
+    "GOLD": "GOLD",
+    "PLATINUM": "PLATINUM",
+    "DIAMOND": "DIAMOND",
+    "Monthly Refresh": "Monthly Refresh",
+    "Ceramic Refresh (Every 4-6 Months)": "Ceramic Refresh (Every 4-6 Months)"
   },
   "packageDescriptions": {
     "exterior-standard": [
@@ -67,19 +72,64 @@
       "Cup Holder Cleaning",
       "Air Vent Cleaning"
     ],
+    "interior-basic": [
+      "Interior Vacuuming",
+      "Interior Wipe Down",
+      "Wipe Down Cup Holders",
+      "Floor Mat Cleaning",
+      "Interior Window & Glass Cleaning"
+    ],
     "interior-advanced": [
       "STANDARD Package Included",
       "Steam Cleaning",
       "Fabric Protection",
       "Leather Conditioning",
       "Odor Elimination"
+    ],
+    "paint-gold": [
+      "Hand Wash Detailing",
+      "Iron Removal",
+      "Paint Decontamination",
+      "Gloss Enhancer",
+      "1-Year Graphene Ceramic Coating",
+      "Front Windshield Ceramic Coating"
+    ],
+    "paint-platinum": [
+      "Hand Wash Detailing",
+      "Iron Removal",
+      "Paint Decontamination",
+      "One-Step Polish",
+      "4-Year Ceramic Coating",
+      "Front Windshield Ceramic Coating"
+    ],
+    "paint-diamond": [
+      "Hand Wash Detailing",
+      "Iron Removal",
+      "Paint Decontamination",
+      "Paint Correction",
+      "5-Year Ceramic Coating",
+      "Front Windshield Ceramic Coating"
+    ],
+    "maintenance-monthly": [
+      "BASIC Exterior Package",
+      "STANDARD Interior Package",
+      "Summer Carpet/Winter Mat Detailing",
+      "This package is only offered to our loyal clients"
+    ],
+    "maintenance-ceramic": [
+      "ADVANCED Exterior Package",
+      "STANDARD Interior Package",
+      "Ceramic Coating Topper",
+      "This package is only offered to our loyal clients"
     ]
   },
   "packageLabels": {
-    "SAVE": "SAVE"
+    "SAVE": "SAVE",
+    "Loyalty Program": "Loyalty Program"
   },
   "packageBadges": {
     "NEW": "NEW",
-    "POPULAR": "POPULAR"
+    "POPULAR": "POPULAR",
+    "Most Popular": "Most Popular"
   }
 }

@@ -17,7 +17,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { getTranslatedService } from "@/lib/translatedServices";
 
 export default function ServiceDetailsPage(props: { service: Service }) {
-  const { t } = useI18n("services");
+  const { t, language } = useI18n("services");
   const { t: tPackages } = useI18n("packages");
   const { t: tCommon } = useI18n("common");
 
@@ -212,7 +212,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
               return (
                 <div className="bg-gray-800 p-6 md:p-8 rounded-xl flex flex-col items-center">
                   <h4 className="text-xl font-bold text-white mb-4 text-center">
-                    {t("page.thisServiceAvailable")} {packageInfo.packageCategory}
+                    {t("page.thisServiceAvailable")} {tPackages(`packageCategories.${packageInfo.packageCategory}`)} {language === "fr" ? "" : "packages"}
                   </h4>
                   <p className="text-gray-300 mb-6 text-center max-w-2xl">
                     {packageInfo.description}
@@ -234,7 +234,7 @@ export default function ServiceDetailsPage(props: { service: Service }) {
                         d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                       />
                     </svg>
-                    {tCommon("common.viewPackages")} {packageInfo.packageCategory}
+                    {tCommon("common.viewPackages")} {tPackages(`packageCategories.${packageInfo.packageCategory}`)}
                   </Link>
                 </div>
               );

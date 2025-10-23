@@ -10,6 +10,7 @@ import aboutEn from "../public/locales/en/about.json";
 import contactEn from "../public/locales/en/contact.json";
 import ceramicEn from "../public/locales/en/ceramic.json";
 import bookingEn from "../public/locales/en/booking.json";
+import homeEn from "../public/locales/en/home.json";
 
 import commonFr from "../public/locales/fr/common.json";
 import servicesFr from "../public/locales/fr/services.json";
@@ -18,6 +19,7 @@ import aboutFr from "../public/locales/fr/about.json";
 import contactFr from "../public/locales/fr/contact.json";
 import ceramicFr from "../public/locales/fr/ceramic.json";
 import bookingFr from "../public/locales/fr/booking.json";
+import homeFr from "../public/locales/fr/home.json";
 
 const resources = {
   en: {
@@ -28,6 +30,7 @@ const resources = {
     contact: contactEn,
     ceramic: ceramicEn,
     booking: bookingEn,
+    home: homeEn,
   },
   fr: {
     common: commonFr,
@@ -37,6 +40,7 @@ const resources = {
     contact: contactFr,
     ceramic: ceramicFr,
     booking: bookingFr,
+    home: homeFr,
   },
 };
 
@@ -64,6 +68,7 @@ i18n
       "contact",
       "ceramic",
       "booking",
+      "home",
     ],
 
     interpolation: {
