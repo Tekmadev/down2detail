@@ -342,7 +342,7 @@ export default function PrivacyPolicyPage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: 2063 Rue Lapierre, Montréal, QC, Canada
+                  Address: 1205 Rue Labadie, Longueuil, QC J4N 1E2
                 </p>
               </div>
             </section>

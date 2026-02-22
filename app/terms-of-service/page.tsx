@@ -102,9 +102,9 @@ export default function TermsOfServicePage() {
                 3.3 Access and Preparation
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Vehicles should be free of
-                personal belongings, and customers are responsible for removing
-                valuable items before service begins.
+                Vehicles should be free of personal belongings, and customers
+                are responsible for removing valuable items before service
+                begins.
               </p>
             </section>
 
@@ -322,7 +322,7 @@ export default function TermsOfServicePage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: 2063 Rue Lapierre, Montréal, QC, Canada
+                  Address: Lapierre, Montréal, QC, Canada
                 </p>
               </div>
             </section>
