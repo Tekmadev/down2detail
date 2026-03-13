@@ -1,0 +1,29 @@
+{
+  "nap": {
+    "visitTitle": "Visitez Down2Detail",
+    "serving": "Desservant",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Courriel",
+    "hours": "Heures",
+    "hoursValue": "Lundi – Dimanche : 8h00 – 18h00",
+    "neighborhoods": "Quartiers que nous desservons",
+    "getQuote": "Obtenir un devis gratuit",
+    "callNow": "Appelez — (438) 483-8175",
+    "getDirections": "Obtenir les directions sur Google Maps"
+  },
+  "stickyCta": {
+    "getQuote": "Obtenir un devis gratuit",
+    "callNow": "Appelez maintenant"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Avis réels de clients satisfaits à Montréal, Laval et Longueuil",
+    "viewAll": "Voir les {{count}} avis",
+    "seeAllGoogle": "Voir tous les avis sur Google"
+  },
+  "faq": {
+    "mythLabel": "Mythe",
+    "factLabel": "Réalité"
+  }
+}

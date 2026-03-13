@@ -1,0 +1,29 @@
+{
+  "nap": {
+    "visitTitle": "Visit Down2Detail",
+    "serving": "Serving",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursValue": "Monday – Sunday: 8:00 AM – 6:00 PM",
+    "neighborhoods": "Neighborhoods We Serve",
+    "getQuote": "Get a Free Quote",
+    "callNow": "Call Now — (438) 483-8175",
+    "getDirections": "Get Directions on Google Maps"
+  },
+  "stickyCta": {
+    "getQuote": "Get a Free Quote",
+    "callNow": "Call Now"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real reviews from satisfied clients across Montreal, Laval, and Longueuil",
+    "viewAll": "View All {{count}} Reviews",
+    "seeAllGoogle": "See all reviews on Google"
+  },
+  "faq": {
+    "mythLabel": "Myth",
+    "factLabel": "Fact"
+  }
+}

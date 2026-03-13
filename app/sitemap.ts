@@ -30,19 +30,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/packages`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/ceramic-coating`,
       lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy-policy`,
@@ -58,6 +58,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Geographic landing pages (high priority for local SEO)
+  const geoPages = [
+    {
+      url: `${baseUrl}/ceramic-coating-longueuil`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/paint-correction-montreal`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/detailing-laval`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+  ];
+
   // Dynamic service pages
   const servicePages = services.map((service) => ({
     url: `${baseUrl}${service.href}`,
@@ -66,5 +88,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages];
+  return [...staticPages, ...geoPages, ...servicePages];
 }

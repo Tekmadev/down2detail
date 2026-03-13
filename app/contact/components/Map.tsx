@@ -9,7 +9,7 @@ export default function Map() {
     <div className="bg-white rounded-xl shadow-md overflow-hidden">
       <div className="w-full h-[400px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5586.5557877244055!2d-73.45575!3d45.56485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc903322fe556c9%3A0xa08d5aebcd1b939b!2s1205%20Rue%20Labadie%2C%20Longueuil%2C%20QC%20J4N%201E2!5e0!3m2!1sen!2sca!4v1766024795515!5m2!1sen!2sca"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.281432796376!2d-73.45839698797407!3d45.564778826601355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc903322fd128d5%3A0xbd8ce978f4b931ac!2s1207%20Rue%20Labadie%2C%20Longueuil%2C%20QC%20J4N%201E2!5e0!3m2!1sen!2sca!4v1772250529115!5m2!1sen!2sca"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -22,7 +22,7 @@ export default function Map() {
       </div>
       <div className="p-4 bg-gray-800 text-center">
         <a
-          href="https://maps.app.goo.gl/Rec93dCEYbVxSYZp6"
+          href="https://maps.app.goo.gl/19TYSqw2voz7fmZp8"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center bg-[#d6781c] hover:bg-[#c66812] text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"

@@ -6,7 +6,10 @@ interface ServiceSEOProps {
 }
 
 export default function ServiceSEO({ service }: ServiceSEOProps) {
-  const structuredData = {
+  const isCeramicCoating = service.id === "ceramic-coating";
+  const isPaintCorrection = service.id === "paint-correction";
+
+  const structuredData: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `https://down2detail.ca${service.href}#service`,
@@ -15,34 +18,41 @@ export default function ServiceSEO({ service }: ServiceSEOProps) {
     image: `https://down2detail.ca${service.image}`,
     url: `https://down2detail.ca${service.href}`,
     provider: {
-      "@type": "LocalBusiness",
+      "@type": "AutoBodyShop",
       "@id": "https://down2detail.ca/#business",
       name: "Down2Detail",
       url: "https://down2detail.ca",
       telephone: "+1-438-483-8175",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "1207 Rue Labadie",
+        addressLocality: "Longueuil",
+        addressRegion: "QC",
+        postalCode: "J4N 1E2",
         addressCountry: "CA",
       },
     },
-    areaServed: {
-      "@type": "Country",
-      name: "Canada",
-    },
-    serviceType: "Auto Detailing",
+    areaServed: [
+      { "@type": "City", name: "Montreal" },
+      { "@type": "City", name: "Laval" },
+      { "@type": "City", name: "Longueuil" },
+    ],
+    serviceType: service.category || "Auto Detailing",
     category: service.category || "Auto Detailing",
-    offers: {
-      "@type": "Offer",
-      price: service.price.sedan,
-      priceCurrency: service.currency,
-      availability: "https://schema.org/InStock",
-      validFrom: new Date().toISOString(),
-      description: `${service.label} starting at ${service.price.sedan} ${service.currency} for sedans`,
-      seller: {
-        "@type": "LocalBusiness",
-        "@id": "https://down2detail.ca/#business",
-      },
-    },
+    offers: service.price.sedan !== "Package Pricing"
+      ? {
+          "@type": "Offer",
+          price: service.price.sedan,
+          priceCurrency: service.currency || "CAD",
+          availability: "https://schema.org/InStock",
+          validFrom: new Date().toISOString(),
+          description: `${service.label} starting at $${service.price.sedan} CAD for sedans`,
+          seller: {
+            "@type": "AutoBodyShop",
+            "@id": "https://down2detail.ca/#business",
+          },
+        }
+      : undefined,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${service.label} Features`,
@@ -56,6 +66,26 @@ export default function ServiceSEO({ service }: ServiceSEOProps) {
       })),
     },
   };
+
+  if (isCeramicCoating) {
+    structuredData.isRelatedTo = {
+      "@type": "Service",
+      "@id": "https://down2detail.ca/services/paint-correction#service",
+      name: "Paint Correction",
+      description:
+        "Essential prerequisite for optimal ceramic coating bonding. Removes paint defects before the coating is applied.",
+    };
+  }
+
+  if (isPaintCorrection) {
+    structuredData.isRelatedTo = {
+      "@type": "Service",
+      "@id": "https://down2detail.ca/ceramic-coating#service",
+      name: "Ceramic Coating",
+      description:
+        "Recommended follow-up to paint correction. Ceramic coating protects and preserves the corrected finish for 2-5 years.",
+    };
+  }
 
   // FAQ Structured Data
   const faqStructuredData = service.faqs

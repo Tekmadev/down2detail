@@ -14,8 +14,33 @@ import { useI18n } from "@/hooks/useI18n";
 import { getTranslatedPackage } from "@/lib/translatedPackages";
 // Note: This is a client component, so metadata is handled in layout.tsx
 
+const UNDER_DEVELOPMENT = true;
+
 export default function Packages() {
   const { t } = useI18n("packages");
+
+  if (UNDER_DEVELOPMENT) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center px-6">
+        <div className="text-center max-w-lg">
+          <div className="text-6xl mb-6">🔧</div>
+          <h1 className="text-3xl md:text-4xl font-bold text-orange-600 mb-4">
+            New Packages Coming Soon
+          </h1>
+          <p className="text-gray-400 text-base md:text-lg mb-8">
+            We&apos;re currently updating our packages to serve you better. Check back soon
+            for our latest detailing options and pricing.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block px-6 py-3 rounded-xl bg-orange-600 text-white font-bold hover:bg-orange-700 transition-colors duration-300"
+          >
+            Contact Us for a Quote
+          </a>
+        </div>
+      </div>
+    );
+  }
   const selectedServices = Array.from(
     new Set(packages.map((pkg) => pkg.category))
   ).slice(0, 5);
