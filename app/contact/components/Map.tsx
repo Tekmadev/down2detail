@@ -9,7 +9,7 @@ export default function Map() {
     <div className="bg-white rounded-xl shadow-md overflow-hidden">
       <div className="w-full h-[400px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.281432796376!2d-73.45839698797407!3d45.564778826601355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc903322fd128d5%3A0xbd8ce978f4b931ac!2s1207%20Rue%20Labadie%2C%20Longueuil%2C%20QC%20J4N%201E2!5e0!3m2!1sen!2sca!4v1772250529115!5m2!1sen!2sca"
+          src="https://maps.google.com/maps?q=4500+Bd+Kimber,+Saint-Hubert,+QC+J3Y+8K5&output=embed&z=15"
           width="100%"
           height="100%"
           style={{ border: 0 }}

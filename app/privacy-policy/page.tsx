@@ -342,7 +342,7 @@ export default function PrivacyPolicyPage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: 1207 Rue Labadie, Longueuil, QC J4N 1E2
+                  Address: 4500 Bd Kimber, Saint-Hubert, QC J3Y 8K5
                 </p>
               </div>
             </section>

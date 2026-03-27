@@ -117,10 +117,10 @@ const structuredData = {
   logo: "https://down2detail.ca/images/d2dlogo.png",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1207 Rue Labadie",
-    addressLocality: "Longueuil",
+    streetAddress: "4500 Bd Kimber",
+    addressLocality: "Saint-Hubert",
     addressRegion: "QC",
-    postalCode: "J4N 1E2",
+    postalCode: "J3Y 8K5",
     addressCountry: "CA",
   },
   geo: {

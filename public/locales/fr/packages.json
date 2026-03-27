@@ -14,8 +14,7 @@
     "allCategories": "Toutes les Catégories"
   },
   "packageCategories": {
-    "Exterior": "Extérieur",
-    "Interior": "Intérieurs",
+    "Exterior & Interior Detail": "Détaillage Extérieur & Intérieur",
     "Paint Polish & Protection": "Polissage de Peinture et Protection",
     "Monthly Plans": "Forfaits Mensuels"
   },
@@ -36,10 +35,14 @@
     "description": "Protégez vos tissus et textiles intérieurs avec une technologie de scellant avancée."
   },
   "packageNames": {
+    "ESSENTIAL": "ESSENTIEL",
+    "SIGNATURE": "SIGNATURE",
+    "ELITE": "ÉLITE",
     "STANDARD": "STANDARD",
     "ADVANCED": "AVANCÉ",
     "PREMIUM": "PREMIUM",
     "BASIC": "BASIQUE",
+    "SILVER": "ARGENT",
     "GOLD": "OR",
     "PLATINUM": "PLATINE",
     "DIAMOND": "DIAMANT",
@@ -47,68 +50,50 @@
     "Ceramic Refresh (Every 4-6 Months)": "Rafraîchissement Céramique (Tous les 4-6 Mois)"
   },
   "packageDescriptions": {
-    "exterior-standard": [
-      "Détaillage des Roues et Pneus",
-      "Pré-rinçage et Application de Mousse",
-      "Lavage de Contact Professionnel",
-      "Nettoyage Détaillé à la Brosse",
-      "Dégraissage des Encadrements de Porte",
-      "Séchage à l'Air et à la Microfibre",
-      "Habillage des Pneus",
+    "full-essential": [
+      "Nettoyage des Roues et Pneus",
+      "Lavage à la Main",
+      "Nettoyage des Encadrements de Porte",
+      "Aspirateur Intérieur",
+      "Essuyage Intérieur",
+      "Nettoyage des Tapis d'Hiver",
       "Nettoyage des Vitres et Verres"
     ],
-    "exterior-advanced": [
-      "Forfait STANDARD Inclus",
+    "full-signature": [
+      "Essentiel Inclus",
+      "Nettoyage Détaillé à la Brosse",
+      "Habillage des Pneus",
+      "Shampooing des Planchers et Tapis"
+    ],
+    "full-elite": [
+      "Signature Inclus",
+      "Pré-rinçage et Application de Mousse de Neige",
+      "Détaillage du Compartiment Moteur",
+      "Shampooing des Sièges en Tissu / Traitement des Sièges en Cuir"
+    ],
+    "paint-silver": [
+      "Lavage à la Main",
       "Décontamination de Peinture",
-      "Traitement d'Élimination de Fer",
-      "Traitement à l'Argile",
-      "Protection Scellant de Peinture (jusqu'à 3 mois)"
-    ],
-    "interior-standard": [
-      "Aspiration Intérieure",
-      "Nettoyage du Tableau de Bord et Console",
-      "Nettoyage des Panneaux de Porte",
-      "Nettoyage des Vitres et Verres",
-      "Nettoyage des Porte-gobelets",
-      "Nettoyage des Bouches d'Aération"
-    ],
-    "interior-basic": [
-      "Aspiration Intérieure",
-      "Nettoyage Intérieur",
-      "Nettoyage des Porte-gobelets",
-      "Nettoyage des Nattes de Plancher",
-      "Nettoyage des Vitres et Verres Intérieurs"
-    ],
-    "interior-advanced": [
-      "Forfait STANDARD Inclus",
-      "Nettoyage Vapeur",
-      "Protection des Tissus",
-      "Conditionnement du Cuir",
-      "Élimination des Odeurs"
+      "Amplificateur de Brillance (Polissage Fin à la Machine)",
+      "Scellant de Peinture (jusqu'à 3 mois)"
     ],
     "paint-gold": [
-      "Lavage de Détail à la Main",
-      "Élimination du Fer",
+      "Lavage à la Main",
       "Décontamination de Peinture",
-      "Amplificateur de Brillance",
-      "Revêtement Céramique Graphène 1 An",
-      "Revêtement Céramique Pare-brise Avant"
+      "Polissage Une Étape (Enlèvement des Tourbillons Légers — ~50-60% de correction)",
+      "Scellant de Peinture (jusqu'à 3 mois)"
     ],
     "paint-platinum": [
-      "Lavage de Détail à la Main",
-      "Élimination du Fer",
+      "Lavage à la Main",
       "Décontamination de Peinture",
-      "Polissage Une Étape",
-      "Revêtement Céramique 4 Ans",
-      "Revêtement Céramique Pare-brise Avant"
+      "Correction de Peinture 2 Étapes (Rotorbital + Laine, DA + Mousse — ~90% de correction)",
+      "Scellant de Peinture (jusqu'à 3 mois)"
     ],
     "paint-diamond": [
-      "Lavage de Détail à la Main",
-      "Élimination du Fer",
+      "Lavage à la Main",
       "Décontamination de Peinture",
-      "Correction de Peinture",
-      "Revêtement Céramique 5 Ans",
-      "Revêtement Céramique Pare-brise Avant"
+      "Correction de Peinture 3 Étapes (Rotorbital + Laine, DA + Microfibre, DA + Mousse — ~95-99% de correction)",
+      "Revêtement Céramique Peinture 1 An"
     ],
     "maintenance-monthly": [
       "Forfait Extérieur BASIQUE",

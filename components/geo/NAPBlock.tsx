@@ -31,11 +31,11 @@ export default function NAPBlock({
               Address
             </p>
             <p className="text-white" itemProp="address">
-              <span itemProp="streetAddress">1207 Rue Labadie</span>
+              <span itemProp="streetAddress">4500 Bd Kimber</span>
               <br />
-              <span itemProp="addressLocality">Longueuil</span>,{" "}
+              <span itemProp="addressLocality">Saint-Hubert</span>,{" "}
               <span itemProp="addressRegion">QC</span>{" "}
-              <span itemProp="postalCode">J4N 1E2</span>
+              <span itemProp="postalCode">J3Y 8K5</span>
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function NAPBlock({
           </a>
           {showMap && (
             <a
-              href="https://maps.google.com/maps?q=1207+Rue+Labadie+Longueuil+QC+J4N+1E2"
+              href="https://maps.google.com/maps?q=4500+Bd+Kimber+Saint-Hubert+QC+J3Y+8K5"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-gray-300 hover:border-[#d6781c] hover:text-white font-medium rounded-lg transition-colors text-center text-sm"

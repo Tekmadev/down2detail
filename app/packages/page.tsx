@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { packages } from "@/data/packages";
+import { packages, type AddOnDetail } from "@/data/packages";
 import { CardBody, CardItem, CardContainer } from "@/components/ui/3d-card";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -14,7 +14,7 @@ import { useI18n } from "@/hooks/useI18n";
 import { getTranslatedPackage } from "@/lib/translatedPackages";
 // Note: This is a client component, so metadata is handled in layout.tsx
 
-const UNDER_DEVELOPMENT = true;
+const UNDER_DEVELOPMENT = false;
 
 export default function Packages() {
   const { t } = useI18n("packages");
@@ -46,16 +46,12 @@ export default function Packages() {
   ).slice(0, 5);
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedAddOns, setSelectedAddOns] = useState<string[] | null>(null);
+  const [selectedAddOns, setSelectedAddOns] = useState<AddOnDetail[] | null>(null);
 
   const getCategoryImage = (category: string) => {
     switch (category) {
-      case "Exterior":
+      case "Exterior & Interior Detail":
         return "/images/categories/exterior2.jpg";
-      case "Interior":
-        return "/images/categories/interior2.webp";
-      // case "Top2Bottom Detailing":
-      //   return "/images/categories/full.jpg";
       case "Paint Polish & Protection":
         return "/images/categories/ceramic-sealant-spray.jpg";
       case "Monthly Plans":
@@ -80,124 +76,113 @@ export default function Packages() {
           category: translatedPackage.category,
           badge: translatedPackage.badge,
           content: (
-            <div className="space-y-3">
-              <div className="space-y-2">
-                {translatedPackage.label && (
-                  <p className="text-center text-sm md:text-xl text-red-400 font-bold">
-                    {translatedPackage.label}
-                  </p>
-                )}
-                <h3 className="text-sm md:text-lg font-semibold text-orange-400">
+            <div className="space-y-4">
+              {/* Label badge */}
+              {translatedPackage.label && (
+                <span className="inline-block text-xs font-bold text-red-400 bg-red-400/10 border border-red-400/30 rounded-full px-3 py-1 tracking-wide">
+                  {translatedPackage.label}
+                </span>
+              )}
+
+              {/* Included services */}
+              <div>
+                <p className="text-[10px] md:text-xs font-semibold uppercase tracking-widest text-orange-400 mb-2">
                   {t("sections.description")}
-                </h3>
-                <ul className="list-disc list-inside space-y-1 pl-1">
+                </p>
+                <ul className="space-y-1.5">
                   {translatedPackage.description.map((item, index) => (
                     <li
                       key={index}
-                      className="text-white/90 text-xs leading-relaxed break-words"
+                      className="flex items-start gap-2 text-white/85 text-xs leading-snug"
                     >
-                      {item}
+                      <span className="mt-0.5 shrink-0 w-3.5 h-3.5 rounded-full bg-orange-500/20 border border-orange-500/40 flex items-center justify-center">
+                        <span className="w-1 h-1 rounded-full bg-orange-400 block" />
+                      </span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-sm md:text-lg font-semibold text-orange-400">
+
+              {/* Divider */}
+              <div className="border-t border-white/10" />
+
+              {/* Pricing rows */}
+              <div>
+                <p className="text-[10px] md:text-xs font-semibold uppercase tracking-widest text-orange-400 mb-2">
                   {t("sections.pricing")}
-                </h3>
-                <div className="space-y-2 bg-gray-800/50 rounded-lg p-2 text-center">
-                  <div className="space-y-1">
-                    <p className="text-white/90 text-xs break-words">
-                      <span className="font-medium">
-                        {t("pricing.sedanCoupesCrossovers")}
-                      </span>
-                    </p>
+                </p>
+                <div className="space-y-2">
+                  {/* Sedan row */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-white/70 text-xs shrink-0">
+                      {selectedCategory === "Paint Polish & Protection" || selectedCategory === "Exterior & Interior Detail"
+                        ? "Sedan"
+                        : t("pricing.sedanCoupesCrossovers")}
+                    </span>
+                    <span className="flex-1 border-b border-dashed border-white/15 mx-2" />
                     {pkg.discountedPrice ? (
-                      <div className="flex flex-col items-center gap-1">
-                        <div className="flex items-center gap-2">
-                          <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
-                            ${pkg.prices.sedanCoupesCrossovers}
-                          </p>
-                          <p className="text-orange-400 font-bold text-sm md:text-base">
-                            ${pkg.discountedPrice.sedanCoupesCrossovers}
-                          </p>
-                        </div>
-                        <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
-                          SAVE $
-                          {(
-                            pkg.prices.sedanCoupesCrossovers -
-                            pkg.discountedPrice.sedanCoupesCrossovers
-                          ).toFixed(0)}
+                      <span className="flex items-center gap-1.5 shrink-0">
+                        <span className="text-gray-500 text-xs line-through">
+                          ${pkg.prices.sedanCoupesCrossovers}
                         </span>
-                      </div>
+                        <span className="text-orange-400 font-bold text-sm">
+                          ${pkg.discountedPrice.sedanCoupesCrossovers}
+                        </span>
+                      </span>
                     ) : (
-                      <p className="text-orange-400 font-bold text-sm md:text-base">
+                      <span className="text-orange-400 font-bold text-sm shrink-0">
                         ${pkg.prices.sedanCoupesCrossovers}
-                      </p>
-                    )}
-                  </div>
-                  <div className="space-y-1">
-                    <p className="text-white/90 text-xs break-words">
-                      <span className="font-medium">
-                        {t("pricing.compactMidFullSUVsPickups")}
                       </span>
-                    </p>
-                    {pkg.discountedPrice ? (
-                      <div className="flex flex-col items-center gap-1">
-                        <div className="flex items-center gap-2">
-                          <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
-                            ${pkg.prices.compactMidFullSUVsPickups}
-                          </p>
-                          <p className="text-orange-400 font-bold text-sm md:text-base">
-                            ${pkg.discountedPrice.compactMidFullSUVsPickups}
-                          </p>
-                        </div>
-                        <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
-                          SAVE $
-                          {(
-                            pkg.prices.compactMidFullSUVsPickups -
-                            pkg.discountedPrice.compactMidFullSUVsPickups
-                          ).toFixed(0)}
-                        </span>
-                      </div>
-                    ) : (
-                      <p className="text-orange-400 font-bold text-sm md:text-base">
-                        ${pkg.prices.compactMidFullSUVsPickups}
-                      </p>
                     )}
                   </div>
-                  {pkg.prices.fullSizeSUVsPickups && (
-                    <div className="space-y-1">
-                      <p className="text-white/90 text-xs break-words">
-                        <span className="font-medium">
-                          {t("pricing.fullSizeSUVsPickups")}
+
+                  {/* Mid SUV row */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-white/70 text-xs shrink-0">
+                      {selectedCategory === "Paint Polish & Protection" || selectedCategory === "Exterior & Interior Detail"
+                        ? "Mid SUVs"
+                        : t("pricing.compactMidFullSUVsPickups")}
+                    </span>
+                    <span className="flex-1 border-b border-dashed border-white/15 mx-2" />
+                    {pkg.discountedPrice ? (
+                      <span className="flex items-center gap-1.5 shrink-0">
+                        <span className="text-gray-500 text-xs line-through">
+                          ${pkg.prices.compactMidFullSUVsPickups}
                         </span>
-                      </p>
+                        <span className="text-orange-400 font-bold text-sm">
+                          ${pkg.discountedPrice.compactMidFullSUVsPickups}
+                        </span>
+                      </span>
+                    ) : (
+                      <span className="text-orange-400 font-bold text-sm shrink-0">
+                        ${pkg.prices.compactMidFullSUVsPickups}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Truck / Full SUV row */}
+                  {pkg.prices.fullSizeSUVsPickups && (
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-white/70 text-xs shrink-0">
+                        {selectedCategory === "Paint Polish & Protection" || selectedCategory === "Exterior & Interior Detail"
+                          ? "Truck"
+                          : t("pricing.fullSizeSUVsPickups")}
+                      </span>
+                      <span className="flex-1 border-b border-dashed border-white/15 mx-2" />
                       {pkg.discountedPrice?.fullSizeSUVsPickups ? (
-                        <div className="flex flex-col items-center gap-1">
-                          <div className="flex items-center gap-2">
-                            <p className="text-gray-500 font-bold text-xs md:text-sm line-through">
-                              ${pkg.prices.fullSizeSUVsPickups}
-                            </p>
-                            <p className="text-orange-400 font-bold text-sm md:text-base">
-                              ${pkg.discountedPrice.fullSizeSUVsPickups}
-                            </p>
-                          </div>
-                          <span className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg animate-pulse">
-                            SAVE $
-                            {pkg.prices.fullSizeSUVsPickups &&
-                            pkg.discountedPrice.fullSizeSUVsPickups
-                              ? (
-                                  pkg.prices.fullSizeSUVsPickups -
-                                  pkg.discountedPrice.fullSizeSUVsPickups
-                                ).toFixed(0)
-                              : "0"}
+                        <span className="flex items-center gap-1.5 shrink-0">
+                          <span className="text-gray-500 text-xs line-through">
+                            ${pkg.prices.fullSizeSUVsPickups}
                           </span>
-                        </div>
+                          <span className="text-orange-400 font-bold text-sm">
+                            ${pkg.discountedPrice.fullSizeSUVsPickups}
+                          </span>
+                        </span>
                       ) : (
-                        <p className="text-orange-400 font-bold text-sm md:text-base">
+                        <span className="text-orange-400 font-bold text-sm shrink-0">
                           ${pkg.prices.fullSizeSUVsPickups}
-                        </p>
+                        </span>
                       )}
                     </div>
                   )}
@@ -205,6 +190,7 @@ export default function Packages() {
               </div>
             </div>
           ),
+
         };
       });
   };
@@ -218,6 +204,7 @@ export default function Packages() {
 
         {selectedCategory ? (
           <div className="mt-8">
+            {/* Buttons row stays inside the padded container */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 sm:gap-0">
               <button
                 onClick={() => setSelectedCategory(null)}
@@ -244,13 +231,26 @@ export default function Packages() {
                     const categoryPackages = packages.filter(
                       (pkg) => pkg.category === selectedCategory
                     );
-                    const allAddOnsForCategory = Array.from(
-                      new Set(
-                        categoryPackages.flatMap((pkg) => pkg.addOns || [])
-                      )
+                    // Prefer addOnDetails (with pricing) over legacy addOns
+                    const detailedAddOns = Array.from(
+                      new Map(
+                        categoryPackages
+                          .flatMap((pkg) => pkg.addOnDetails || [])
+                          .map((a) => [a.name, a])
+                      ).values()
                     );
-                    if (allAddOnsForCategory.length > 0) {
-                      setSelectedAddOns(allAddOnsForCategory);
+                    if (detailedAddOns.length > 0) {
+                      setSelectedAddOns(detailedAddOns);
+                    } else {
+                      // Fallback to legacy string-only addOns
+                      const legacyAddOns = Array.from(
+                        new Set(
+                          categoryPackages.flatMap((pkg) => pkg.addOns || [])
+                        )
+                      ).map((name) => ({ name }));
+                      if (legacyAddOns.length > 0) {
+                        setSelectedAddOns(legacyAddOns);
+                      }
                     }
                   }}
                   className="px-4 py-2 rounded-xl bg-orange-600 text-white text-sm font-bold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
@@ -259,13 +259,16 @@ export default function Packages() {
                 </button>
               )}
             </div>
-            <Carousel
-              items={getPackagesForCategory(selectedCategory).map(
-                (card, index) => (
-                  <CarouselCard key={index} card={card} index={index} />
-                )
-              )}
-            />
+            {/* Break carousel out of container padding so the first card is never clipped on mobile */}
+            <div className="-mx-6 md:-mx-4">
+              <Carousel
+                items={getPackagesForCategory(selectedCategory).map(
+                  (card, index) => (
+                    <CarouselCard key={index} card={card} index={index} />
+                  )
+                )}
+              />
+            </div>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -354,16 +357,28 @@ export default function Packages() {
               >
                 <IconX className="h-6 w-6 text-gray-700 dark:text-white" />
               </button>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 {t("addons.title")}
               </h2>
-              <ul className="list-disc list-inside space-y-3">
+              <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">
+                Enhance your package with any of the following optional services.
+              </p>
+              <ul className="space-y-3">
                 {selectedAddOns.map((addon, index) => (
                   <li
                     key={index}
-                    className="text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed break-words"
+                    className="flex items-center justify-between gap-4 py-2 border-b border-gray-200 dark:border-gray-700 last:border-0"
                   >
-                    {addon}
+                    <span className="text-gray-800 dark:text-gray-200 text-sm md:text-base">
+                      {addon.name}
+                    </span>
+                    <span className="shrink-0 font-bold text-orange-500 text-sm md:text-base">
+                      {addon.priceDisplay
+                        ? addon.priceDisplay
+                        : addon.price !== undefined
+                          ? `+$${addon.price}`
+                          : "Contact for pricing"}
+                    </span>
                   </li>
                 ))}
               </ul>

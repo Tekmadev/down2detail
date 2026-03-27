@@ -1,6 +1,7 @@
 "use client";
 import React, {
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
   createContext,
@@ -44,12 +45,22 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const [canScrollRight, setCanScrollRight] = React.useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
+  // Set scroll position before paint to avoid the "jump from the side" visual artifact
+  useLayoutEffect(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft = initialScroll;
-      checkScrollability();
     }
   }, [initialScroll]);
+
+  // Check scrollability after paint and keep it in sync on window resize
+  useEffect(() => {
+    const raf = requestAnimationFrame(checkScrollability);
+    window.addEventListener("resize", checkScrollability);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", checkScrollability);
+    };
+  }, []);
 
   const checkScrollability = () => {
     if (carouselRef.current) {
@@ -106,8 +117,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
           <div
             className={cn(
-              "flex flex-row justify-center gap-4 px-4",
-              "mx-auto max-w-7xl"
+              "flex flex-row justify-start gap-4 pl-4 pr-4"
             )}
           >
             {items.map((item, index) => (
@@ -244,7 +254,7 @@ export const Card = ({
               </div>
             )}
           </div>
-          <div className="mt-2 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl text-xs md:text-sm">
+          <div className="mt-2 text-white/90 backdrop-blur-sm bg-black/20 p-2 md:p-4 rounded-xl text-xs md:text-sm text-left">
             {card.content}
           </div>
         </div>

@@ -1,3 +1,9 @@
+export interface AddOnDetail {
+  name: string;
+  price?: number; // undefined means "Contact for pricing"
+  priceDisplay?: string; // overrides price display when set (e.g., "$59–$129")
+}
+
 export interface DetailPackage {
   id: string;
   category: string;
@@ -14,6 +20,7 @@ export interface DetailPackage {
     fullSizeSUVsPickups?: number;
   };
   addOns?: string[];
+  addOnDetails?: AddOnDetail[];
   label?: string;
   badge?: string;
 }
@@ -32,95 +39,80 @@ export const packages: DetailPackage[] = [
   //   ],
   //   prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 69.99 },
   // },
+  // Exterior & Interior Detail (Combined)
   {
-    id: "exterior-standard",
-    category: "Exterior",
-    name: "STANDARD",
+    id: "full-essential",
+    category: "Exterior & Interior Detail",
+    name: "ESSENTIAL",
     description: [
-      "Wheel & Tire Detailing",
-      "Pre-Rinse & Snow Foam Application",
-      "Professional Contact Washing",
-      "Detailed Brush Cleaning",
-      "Door Jamb Degreasing",
-      "Air Blow & Microfiber Towel Drying",
-      "Tire Dressing",
-      "Window & Glass Cleaning",
-    ],
-    prices: { sedanCoupesCrossovers: 49.99, compactMidFullSUVsPickups: 59.99, fullSizeSUVsPickups: 59.99 },
-  },
-  {
-    id: "exterior-advanced",
-    category: "Exterior",
-    name: "ADVANCED",
-    description: [
-      "STANDARD Package Included",
-      "Paint Decontamination",
-      "Iron Removal Treatment",
-      "Clay Treatment",
-      "Paint Sealant Protection (up to 3 months)",
-    ],
-    prices: {
-      sedanCoupesCrossovers: 149.99,
-      compactMidFullSUVsPickups: 169.99,
-      fullSizeSUVsPickups: 169.99,
-    },
-    addOns: ["Paint Sealant", "Engine Bay Detailing"],
-  },
-
-  // Interior Detailing
-  {
-    id: "interior-basic",
-    category: "Interior",
-    name: "BASIC",
-    description: [
-      "Interior Vacuuming",
+      "Wheel & Tire Cleaning",
+      "Hand Wash",
+      "Door Jamb Cleaning",
+      "Interior Vacuum",
       "Interior Wipe Down",
-      "Wipe Down Cup Holders",
-      "Floor Mat Cleaning",
-      "Interior Window & Glass Cleaning",
+      "Winter Mats Cleaning",
+      "Windows & Glass Cleaning",
     ],
     prices: {
-      sedanCoupesCrossovers: 49.99,
-      compactMidFullSUVsPickups: 59.99,
-      fullSizeSUVsPickups: 69.99,
+      sedanCoupesCrossovers: 59,
+      compactMidFullSUVsPickups: 69,
+      fullSizeSUVsPickups: 79,
     },
+    addOnDetails: [
+      { name: "Odor Treatment", price: 29 },
+      { name: "Pet Hair Removal", priceDisplay: "$59–$129" },
+      { name: "Fabric & Textile Sealant", price: 49 },
+      { name: "Leather & Synthetic Ceramic Coating", price: 149 },
+      { name: "Paint Decontamination (Clay Treatment)", price: 25 },
+      { name: "Paint Sealant (up to 3 months)", price: 25 },
+    ],
   },
   {
-    id: "interior-standard",
-    category: "Interior",
-    name: "STANDARD",
+    id: "full-signature",
+    category: "Exterior & Interior Detail",
+    name: "SIGNATURE",
     description: [
-      "BASIC Package Included",
-      "Steam Cleaning",
-      "Air Vent, Button & Tight Space Detailing",
+      "Essential Included",
+      "Detailed Brush Cleaning",
+      "Tire Dressing",
       "Floor & Carpet Shampoo",
     ],
     prices: {
-      sedanCoupesCrossovers: 189.99,
-      compactMidFullSUVsPickups: 219.99,
-      fullSizeSUVsPickups: 249.99,
+      sedanCoupesCrossovers: 149,
+      compactMidFullSUVsPickups: 169,
+      fullSizeSUVsPickups: 189,
     },
+    addOnDetails: [
+      { name: "Odor Treatment", price: 29 },
+      { name: "Pet Hair Removal", priceDisplay: "$59–$129" },
+      { name: "Fabric & Textile Sealant", price: 49 },
+      { name: "Leather & Synthetic Ceramic Coating", price: 149 },
+      { name: "Paint Decontamination (Clay Treatment)", price: 25 },
+      { name: "Paint Sealant (up to 3 months)", price: 25 },
+    ],
   },
   {
-    id: "interior-advanced",
-    category: "Interior",
-    name: "ADVANCED",
+    id: "full-elite",
+    category: "Exterior & Interior Detail",
+    name: "ELITE",
     description: [
-      "STANDARD Package Included",
-      "Steering Wheel Deep Clean",
-      "Headliner Detailing",
-      "Fabric Seat Shampoo/Leather Seat Treatment",
-      "Salt Removal",
+      "Signature Included",
+      "Pre Rinse & Snow Foam Application",
+      "Engine Bay Detail",
+      "Fabric Seat Shampoo / Leather Seat Treatment",
     ],
     prices: {
-      sedanCoupesCrossovers: 269.99,
-      compactMidFullSUVsPickups: 299.99,
-      fullSizeSUVsPickups: 369.99,
+      sedanCoupesCrossovers: 249,
+      compactMidFullSUVsPickups: 269,
+      fullSizeSUVsPickups: 289,
     },
-    addOns: [
-      "Pet Hair Removal",
-      "Fabric & Textile Sealant",
-      "Leather & Synthetic Interior Ceramic Coating",
+    addOnDetails: [
+      { name: "Odor Treatment", price: 29 },
+      { name: "Pet Hair Removal", priceDisplay: "$59–$129" },
+      { name: "Fabric & Textile Sealant", price: 49 },
+      { name: "Leather & Synthetic Ceramic Coating", price: 149 },
+      { name: "Paint Decontamination (Clay Treatment)", price: 25 },
+      { name: "Paint Sealant (up to 3 months)", price: 25 },
     ],
   },
 
@@ -188,79 +180,107 @@ export const packages: DetailPackage[] = [
 
   // Paint Polish & PROTECTION PACKAGES
   {
+    id: "paint-silver",
+    category: "Paint Polish & Protection",
+    name: "SILVER",
+    description: [
+      "Hand Wash",
+      "Paint Decontamination",
+      "Gloss Enhancer (Fine Machine Polish)",
+      "Paint Sealant (up to 3 months)",
+    ],
+    prices: {
+      sedanCoupesCrossovers: 349,
+      compactMidFullSUVsPickups: 399,
+      fullSizeSUVsPickups: 449,
+    },
+    addOnDetails: [
+      { name: "1-Year Paint Ceramic Coating", price: 99 },
+      { name: "2-Year Paint Ceramic Coating", price: 149 },
+      { name: "3-Year Paint Ceramic Coating", price: 249 },
+      { name: "8-Year Paint Ceramic Coating", price: 499 },
+      { name: "Wheel & Brake Caliper Ceramic Coating" },
+      { name: "Windshields & Glass Ceramic Coating", price: 149 },
+      { name: "Plastics & Trim Ceramic Coating" },
+      { name: "Leather & Synthetics Ceramic Coating" },
+    ],
+  },
+  {
     id: "paint-gold",
     category: "Paint Polish & Protection",
     name: "GOLD",
     description: [
-      "Hand Wash Detailing",
-      "Iron Removal",
+      "Hand Wash",
       "Paint Decontamination",
-      "Gloss Enhancer",
-      "1-Year Graphene Ceramic Coating",
-      "Front Windshield Ceramic Coating",
+      "One-Step Polish (Light Swirls Removed — ~50–60% defect removal)",
+      "Paint Sealant (up to 3 months)",
     ],
     prices: {
-      sedanCoupesCrossovers: 729.99,
-      compactMidFullSUVsPickups: 789.99,
-      fullSizeSUVsPickups: 839.99,
+      sedanCoupesCrossovers: 699,
+      compactMidFullSUVsPickups: 799,
+      fullSizeSUVsPickups: 899,
     },
-    discountedPrice: {
-      sedanCoupesCrossovers: 649.99,
-      compactMidFullSUVsPickups: 719.99,
-      fullSizeSUVsPickups: 779.99,
-    },
+    addOnDetails: [
+      { name: "1-Year Paint Ceramic Coating", price: 99 },
+      { name: "2-Year Paint Ceramic Coating", price: 149 },
+      { name: "3-Year Paint Ceramic Coating", price: 249 },
+      { name: "8-Year Paint Ceramic Coating", price: 499 },
+      { name: "Wheel & Brake Caliper Ceramic Coating" },
+      { name: "Windshields & Glass Ceramic Coating", price: 149 },
+      { name: "Plastics & Trim Ceramic Coating" },
+      { name: "Leather & Synthetics Ceramic Coating" },
+    ],
   },
   {
     id: "paint-platinum",
     category: "Paint Polish & Protection",
     name: "PLATINUM",
     description: [
-      "Hand Wash Detailing",
-      "Iron Removal",
+      "Hand Wash",
       "Paint Decontamination",
-      "One-Step Polish",
-      "4-Year Ceramic Coating",
-      "Front Windshield Ceramic Coating",
+      "2-Step Paint Correction (Rotary + Wool Pad, DA + Foam Pad — ~90% defect removal)",
+      "Paint Sealant (up to 3 months)",
     ],
     prices: {
-      sedanCoupesCrossovers: 1199.99,
-      compactMidFullSUVsPickups: 1289.99,
-      fullSizeSUVsPickups: 1339.99,
-    },
-    discountedPrice: {
-      sedanCoupesCrossovers: 999.99,
-      compactMidFullSUVsPickups: 1099.99,
-      fullSizeSUVsPickups: 1199.99,
+      sedanCoupesCrossovers: 999,
+      compactMidFullSUVsPickups: 1199,
+      fullSizeSUVsPickups: 1399,
     },
     badge: "Most Popular",
+    addOnDetails: [
+      { name: "1-Year Paint Ceramic Coating", price: 99 },
+      { name: "2-Year Paint Ceramic Coating", price: 149 },
+      { name: "3-Year Paint Ceramic Coating", price: 249 },
+      { name: "8-Year Paint Ceramic Coating", price: 499 },
+      { name: "Wheel & Brake Caliper Ceramic Coating" },
+      { name: "Windshields & Glass Ceramic Coating", price: 149 },
+      { name: "Plastics & Trim Ceramic Coating" },
+      { name: "Leather & Synthetics Ceramic Coating" },
+    ],
   },
   {
     id: "paint-diamond",
     category: "Paint Polish & Protection",
     name: "DIAMOND",
     description: [
-      "Hand Wash Detailing",
-      "Iron Removal",
+      "Hand Wash",
       "Paint Decontamination",
-      "Paint Correction",
-      "5-Year Ceramic Coating",
-      "Front Windshield Ceramic Coating",
+      "3-Step Paint Correction (Rotary + Wool Pad, DA + Microfibre, DA + Foam — ~95–99% defect removal)",
+      "1-Year Paint Ceramic Coating",
     ],
     prices: {
-      sedanCoupesCrossovers: 1499.99,
-      compactMidFullSUVsPickups: 1609.99,
-      fullSizeSUVsPickups: 1769.99,
+      sedanCoupesCrossovers: 1699,
+      compactMidFullSUVsPickups: 1999,
+      fullSizeSUVsPickups: 2399,
     },
-    discountedPrice: {
-      sedanCoupesCrossovers: 1199.99,
-      compactMidFullSUVsPickups: 1289.99,
-      fullSizeSUVsPickups: 1339.99,
-    },
-    addOns: [
-      "Wheel & Brake Caliper Ceramic Coating",
-      "Windshield & Glass Ceramic Coating",
-      "Plastics & Trim Ceramic Coating",
-      "Leather & Synthetics Ceramic Coating",
+    addOnDetails: [
+      { name: "2-Year Paint Ceramic Coating Upgrade", price: 149 },
+      { name: "3-Year Paint Ceramic Coating Upgrade", price: 249 },
+      { name: "8-Year Paint Ceramic Coating Upgrade", price: 499 },
+      { name: "Wheel & Brake Caliper Ceramic Coating" },
+      { name: "Windshields & Glass Ceramic Coating", price: 149 },
+      { name: "Plastics & Trim Ceramic Coating" },
+      { name: "Leather & Synthetics Ceramic Coating" },
     ],
   },
 

@@ -322,7 +322,7 @@ export default function TermsOfServicePage() {
                   </a>
                 </p>
                 <p className="text-gray-700">
-                  Address: Lapierre, Montréal, QC, Canada
+                  Address: 4500 Bd Kimber, Saint-Hubert, QC J3Y 8K5
                 </p>
               </div>
             </section>
