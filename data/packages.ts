@@ -54,9 +54,9 @@ export const packages: DetailPackage[] = [
       "Windows & Glass Cleaning",
     ],
     prices: {
-      sedanCoupesCrossovers: 59,
-      compactMidFullSUVsPickups: 69,
-      fullSizeSUVsPickups: 79,
+      sedanCoupesCrossovers: 99,
+      compactMidFullSUVsPickups: 119,
+      fullSizeSUVsPickups: 139,
     },
     addOnDetails: [
       { name: "Odor Treatment", price: 29 },
@@ -78,9 +78,9 @@ export const packages: DetailPackage[] = [
       "Floor & Carpet Shampoo",
     ],
     prices: {
-      sedanCoupesCrossovers: 149,
-      compactMidFullSUVsPickups: 169,
-      fullSizeSUVsPickups: 189,
+      sedanCoupesCrossovers: 249,
+      compactMidFullSUVsPickups: 269,
+      fullSizeSUVsPickups: 299,
     },
     addOnDetails: [
       { name: "Odor Treatment", price: 29 },
@@ -102,9 +102,9 @@ export const packages: DetailPackage[] = [
       "Fabric Seat Shampoo / Leather Seat Treatment",
     ],
     prices: {
-      sedanCoupesCrossovers: 249,
-      compactMidFullSUVsPickups: 269,
-      fullSizeSUVsPickups: 289,
+      sedanCoupesCrossovers: 399,
+      compactMidFullSUVsPickups: 449,
+      fullSizeSUVsPickups: 499,
     },
     addOnDetails: [
       { name: "Odor Treatment", price: 29 },
